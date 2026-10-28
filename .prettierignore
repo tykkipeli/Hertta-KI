@@ -1,0 +1,4 @@
+node_modules/
+artifacts/
+src/future-model.js
+test/fixtures/ai-v1.js

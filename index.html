@@ -1,1 +1,145 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hertta · Hearts</title><link rel="stylesheet" href="style.css"></head><body><header><div><span class="eyebrow">DAS KLASSISCHE KARTENSPIEL</span><h1>Hertta <span>♥</span></h1></div><button id="new">Neues Spiel</button></header><main><section class="table" aria-label="Spieltisch"><div id="north" class="seat north"></div><div id="west" class="seat west"></div><div id="east" class="seat east"></div><div class="center"><div id="trick" class="trick"></div><p id="status" role="status" aria-live="polite"></p><button id="action" hidden></button></div><div id="south" class="seat south"></div></section><section class="hand-area"><div class="hand-heading"><span>DEINE KARTEN</span><span id="pass-info"></span></div><div id="hand" class="hand"></div><div class="controls"><label>KI-Bedenkzeit <select id="strength"><option value="200">Schnell · 0,2 s</option><option value="1200" selected>Stark · 1,2 s</option><option value="5000">Intensiv · 5 s</option></select></label><button id="hint">Tipp berechnen</button><span id="analysis" aria-live="polite"></span></div></section><section class="details"><div><h2>Spielstand</h2><div id="scores"></div></div><div><h2>So wird gespielt</h2><p>Bediene die angespielte Farbe. Jede Herzkarte zählt einen Strafpunkt, die Pik-Dame 13. Wer alle 26 Punkte sammelt, gibt jedem Gegner 26 Punkte. Bei 100 Punkten endet das Spiel; der niedrigste Gesamtstand gewinnt.</p><p>Die Kreuz-Zwei beginnt. Im ersten Stich dürfen keine Strafkarten abgelegt werden, solange andere Karten vorhanden sind. Herzen dürfen erst nach dem ersten abgeworfenen Herz ausgespielt werden – außer du hast nur Herzen.</p><p id="last"></p></div></section></main><footer>Verdeckte Karten. Echte Simulationen. Kein Blick in die Hände der Gegner.</footer><script type="module" src="src/app.js"></script></body></html>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10251f" />
+    <title>Hertta · Hearts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./" aria-label="Hertta Startseite"
+        ><span class="brand-mark">♥</span>
+        <div>
+          <h1>Hertta</h1>
+          <span class="eyebrow">VIER SPIELER. JEDER FÜR SICH.</span>
+        </div></a
+      ><button id="new" class="quiet">Neues Spiel</button>
+    </header>
+    <main>
+      <div class="table-toolbar">
+        <div><b id="round-number"></b><span id="pass-info"></span></div>
+        <span id="progress">0 / 13 Stiche</span><span id="hearts-status"></span>
+      </div>
+      <section class="table" aria-label="Spieltisch">
+        <div class="table-watermark" aria-hidden="true">H<span>♥</span></div>
+        <div id="north" class="seat north"></div>
+        <div id="west" class="seat west"></div>
+        <div id="east" class="seat east"></div>
+        <div id="south" class="seat south"></div>
+        <div id="trick" class="trick" aria-label="Aktueller Stich"></div>
+      </section>
+      <section class="game-message">
+        <div
+          id="winner-banner"
+          class="winner-banner"
+          aria-hidden="true"
+          hidden
+        ></div>
+        <p id="status" role="status" aria-live="polite"></p>
+        <button id="action" class="primary" hidden></button>
+      </section>
+      <section
+        id="exchange"
+        class="exchange"
+        aria-label="Erhaltene und weitergegebene Karten"
+        hidden
+      >
+        <div class="exchange-intro">
+          <span class="eyebrow">KARTENTAUSCH</span>
+          <h2>Deine neuen Karten</h2>
+          <p>
+            Schau sie dir in Ruhe an. Sie sind auch in deiner Hand markiert.
+          </p>
+        </div>
+        <div>
+          <h3>Erhalten <span id="received-from"></span></h3>
+          <div id="received" class="exchange-cards"></div>
+        </div>
+        <div class="sent-group">
+          <h3>Weitergegeben <span id="sent-to"></span></h3>
+          <div id="sent" class="exchange-cards"></div>
+        </div>
+      </section>
+      <section
+        id="round-summary"
+        class="round-summary"
+        aria-label="Rundenergebnis"
+        hidden
+      ></section>
+      <section class="hand-area" aria-label="Deine Hand">
+        <div class="hand-heading">
+          <div>
+            <span class="eyebrow">DEINE HAND</span
+            ><span id="selection-help"
+              >Wähle drei Karten <b id="selection-count"></b
+            ></span>
+          </div>
+          <span class="received-key">● Neu erhalten</span>
+        </div>
+        <div id="hand" class="hand"></div>
+        <div class="controls">
+          <label
+            >KI-Bedenkzeit
+            <select id="strength">
+              <option value="200">Schnell · 0,2 s</option>
+              <option value="1200" selected>Stark · 1,2 s</option>
+              <option value="5000">Intensiv · 5 s</option>
+            </select></label
+          ><button id="hint" class="quiet">✧ Tipp berechnen</button
+          ><span id="analysis" aria-live="polite"></span>
+        </div>
+      </section>
+      <section class="details">
+        <div>
+          <h2>Die Runde im Überblick</h2>
+          <div class="score-row score-heading">
+            <span>Spieler</span><span>Stiche</span><span>Runde</span
+            ><span>Gesamt</span>
+          </div>
+          <div id="scores"></div>
+          <p id="last"></p>
+          <details class="history-panel">
+            <summary>Stichverlauf ansehen</summary>
+            <p id="history-empty">Noch kein Stich abgeschlossen.</p>
+            <div id="history"></div>
+          </details>
+        </div>
+        <div>
+          <h2>Weniger Punkte. Mehr gewinnen.</h2>
+          <p>
+            Jedes Herz zählt einen Strafpunkt, die Pik-Dame 13. Wer alle 26
+            Punkte sammelt, gibt jedem Gegner 26 Punkte. Sobald jemand 100
+            Punkte erreicht, gewinnt der niedrigste Gesamtstand.
+          </p>
+          <details>
+            <summary>Spielregeln & Bedienung</summary>
+            <p>
+              Die Kreuz-Zwei beginnt. Bediene die angespielte Farbe, wenn du sie
+              hast. Im ersten Stich dürfen keine Strafkarten abgeworfen werden,
+              solange andere Karten vorhanden sind. Herzen dürfen erst
+              ausgespielt werden, wenn ein Herz abgeworfen wurde – außer du hast
+              nur Herzen.
+            </p>
+            <p>
+              Die Weitergabe wechselt: links, rechts, gegenüber, keine. Helle
+              Karten sind spielbar. Mit Tab und Enter kannst du die Karten auch
+              per Tastatur wählen. Bei reduzierter Bewegung in deinen
+              Systemeinstellungen werden Animationen verkürzt.
+            </p>
+          </details>
+          <div class="privacy-note">
+            <span>◇</span>
+            <p>
+              Jede KI spielt für ihren eigenen Sieg. Sie kennt nur ihre Hand,
+              ihre weitergegebenen Karten und den öffentlichen Spielverlauf.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Hertta · Ein klassisches Spiel mit neuen Herausforderungen.</footer>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
