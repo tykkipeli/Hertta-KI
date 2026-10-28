@@ -1,45 +1,70 @@
 # Hertta ♥
 
-Hearts für einen Menschen und drei Computergegner, mit deutschsprachiger Browseroberfläche. Keine externen Laufzeit-Abhängigkeiten, Konten oder API-Schlüssel.
+Hearts für einen Menschen und drei unabhängig spielende Computergegner. Deutschsprachige Browseroberfläche, vollständige Spielregeln und lokale KI-Berechnung ohne Konto oder externe KI-Dienste.
 
 ## Starten
 
-Voraussetzung: Node.js 22 oder neuer und ein moderner Browser mit JavaScript-Modulen und Web Workers.
+Node.js 22 oder neuer genügt zum Spielen:
 
 ```sh
-cd /workspace/Hertta-KI
 npm start
 ```
 
-Öffne auf deinem eigenen Rechner `http://localhost:3000`. In einer Cloud-Umgebung nutze deren unterstützte Portfreigabe für Port 3000. `PORT=8080 npm start` wählt einen anderen Port. Beenden mit Strg+C.
+Öffne auf deinem eigenen Rechner `http://localhost:3000`. In einer Cloud-Umgebung verwende die unterstützte Portfreigabe für Port 3000. `PORT=8080 npm start` wählt einen anderen Port. Beenden mit Strg+C.
+
+## Die Oberfläche
+
+- Jeder Platz zeigt **Stiche**, **Punkte**, verbleibende Karten und den Gesamtstand. Ein Stapel aus 13 kleinen Karten macht gewonnene Stiche zusätzlich sichtbar.
+- Jede ausgespielte Karte landet an der Position ihres Spielers. Die letzte Karte wird animiert; Name und aktive Markierung zeigen den Spielverlauf.
+- Ein vollständiger Stich bleibt kurz liegen. Gewinner und Siegerkarte leuchten auf, anschließend wandern die Karten zum Gewinner.
+- Nach der Weitergabe siehst du **erhaltene und abgegebene Karten nebeneinander**. Erst „Karten aufnehmen & spielen“ startet das Spiel. Neue Karten bleiben in der Hand markiert.
+- Der Stichverlauf lässt sich aufklappen. Die Rundenabrechnung unterscheidet Stiche, Rundenpunkte und Gesamtstand einschließlich Durchmarsch.
+- Die Oberfläche unterstützt schmale Bildschirme, Tastaturbedienung, Screenreader-Beschriftungen und reduzierte Bewegung.
+
+Wähle zunächst drei Karten zum Weitergeben. Danach sind spielbare Karten hell dargestellt. „Tipp berechnen“ markiert einen Vorschlag. „Neues Spiel“ beendet auch laufende KI-Berechnungen.
+
+## Regeln
+
+Bediene die angespielte Farbe, falls du sie hast. Die Kreuz-Zwei beginnt. Im ersten Stich dürfen keine Strafkarten abgeworfen werden, solange andere Karten vorhanden sind. Herzen dürfen erst nach dem ersten abgeworfenen Herz ausgespielt werden – außer du hast nur Herzen.
+
+Jedes Herz zählt einen Punkt, die Pik-Dame 13. Wer alle 26 Punkte sammelt, gibt den drei Gegnern jeweils 26 Punkte. Die Weitergabe wechselt zwischen links, rechts, gegenüber und keiner Weitergabe. Sobald jemand mindestens 100 Punkte erreicht, gewinnt der niedrigste Gesamtstand. Gleichstände zählen als geteilte Siege.
+
+## Die KI
+
+Die KI bewertet die **Chance auf den eigenen Spielsieg bis 100 Punkte**. Dazu kombiniert sie mögliche verdeckte Hände, ausgespielte Runden und ein empirisches Modell weiterer Runden aus 1.500 Referenzrunden. Das Modell berücksichtigt auch Durchmärsche und die Weitergaberichtung.
+
+Bei ausreichend Bedenkzeit versucht sie außerdem, mögliche ursprüngliche Hände zu rekonstruieren, die zu ihrer eigenen Weitergabe passen. Computergegner werden dabei mit ihrer bekannten Weitergabestrategie modelliert. **Menschen dürfen beliebige drei Karten weitergeben**; ihnen wird diese Strategie nicht aufgezwungen. Eine begrenzte Initialisierung und ein Rückfall auf einfachere Verteilungen halten das Spiel bedienbar.
+
+Jeder Suchlauf läuft in einem eigenen Worker. Er erhält nur die **eigene Hand**, die **eigenen abgegebenen und erhaltenen Karten**, öffentliche Karten, Fehlfarben und Spielstände. Gegnerische tatsächliche Hände werden nicht übergeben. Es gibt keine Mannschaftswertung oder gemeinsame private KI-Erinnerung. Auch der Tipp für den Menschen verwendet ausschließlich dessen Informationen.
+
+Die Bedenkzeit lässt sich zwischen 0,2, 1,2 und 5 Sekunden pro Zug wählen. Sie beeinflusst die Zahl der geprüften Möglichkeiten; ein längerer Suchlauf garantiert keinen besseren Einzelzug. Die KI und sämtliche Modelle laufen lokal im Browser.
+
+Methodik, Vergleich mit der eingefrorenen Vorgängerversion und Grenzen stehen in [docs/AI.md](docs/AI.md).
+
+## Prüfen und vergleichen
 
 ```sh
 npm test
-npm run benchmark -- 100
+npm ci
+npm run test:browser
+npm run benchmark -- 80 --matches --ms 25 --samples 1 --seed 20261127
 ```
 
-Die Tests prüfen Kartenweitergabe, Bedienpflicht, ersten Stich, Herzfreigabe, Pik-Dame, Durchmarsch, 100 vollständige Runden, Informationsgrenzen und legale Simulationsentscheidungen. Der reproduzierbare Benchmark vergleicht einen rotierenden KI-Sitz mit drei heuristischen Gegnern; niedrige Strafpunkte sind besser. Er spielt einzelne Runden ohne Weitergabe und ist keine Ranglistenmessung.
+Zum Spielen und für die Regeltests sind keine zusätzlichen Pakete nötig. `npm ci` installiert das festgeschriebene Playwright für Browserprüfungen. Der Browser-Test startet und beendet seinen eigenen Testserver. Er verwendet vorhandenes Chromium oder `CHROMIUM_PATH`; alternativ lässt sich Chromium mit `npx playwright install chromium` installieren. `BASE_URL` erlaubt die Prüfung eines bereits laufenden Servers.
 
-## Spielen
+Der Browser-Test prüft Kartenempfang, Tippfunktion, eine vollständige Runde, Abrechnung, Neustart, getrennte Worker-Nachrichten und Bildschirmbreiten von 320, 390 und 768 Pixeln. Screenshots und Benchmarkdaten landen im ignorierten Verzeichnis `artifacts/`.
 
-Wähle zuerst drei Karten und bestätige die Weitergabe. Ihre Richtung wechselt pro Runde: links, rechts, gegenüber, keine. Klicke danach auf eine freigegebene Karte, wenn du am Zug bist. Der letzte abgeschlossene Stich bleibt bis zur nächsten Karte sichtbar. Die Tabelle zeigt Gesamtpunkte, die Plätze am Tisch die aktuellen Rundenpunkte. Bei mindestens 100 Gesamtpunkten endet das Spiel. Die niedrigste Punktzahl gewinnt, Gleichstände sind möglich. Ein Durchmarsch gibt den drei Gegnern jeweils 26 Punkte.
+Der Benchmark spielt eine neue KI gegen drei unveränderte Instanzen aus [test/fixtures/ai-v1.js](test/fixtures/ai-v1.js). Er rotiert den neuen Spieler durch alle Plätze, verwendet getrennte Zufallsströme und protokolliert Siege, Gleichstände, tatsächliche Laufzeiten, Seeds und Quellcode-Hashes. `--matches` spielt bis 100 Punkte; ohne diese Option werden einzelne Runden verglichen. `--ms` setzt ein gleiches Zeitbudget, `--samples` eine Untergrenze der Stichproben. Zeitbasierte Läufe können trotz gleicher Karten-Seeds wegen schwankender Rechenzeit unterschiedliche Entscheidungen treffen.
 
-Die Bedenkzeit gilt pro KI-Zug. „Intensiv“ verwendet etwa fünf Sekunden; die Oberfläche bleibt durch Web Workers bedienbar. „Tipp berechnen“ markiert einen Vorschlag für deine Hand. „Neues Spiel“ bricht eine laufende Berechnung ab und setzt den Spielstand zurück.
+## Das Modell erneuern
 
-## KI und Informationsgrenzen
+Die ausgelieferte KI benötigt kein Training. Das kleine Modell zukünftiger Runden lässt sich mit Node.js neu erzeugen:
 
-Die KI verwendet informationsbeschränkte Monte-Carlo-Auswertung: Sie erzeugt mögliche Verteilungen der unbekannten Karten, die zur öffentlichen Historie, zur Bedienpflicht und zu ihren selbst weitergegebenen Karten passen. Jede legale Karte wird in denselben möglichen Verteilungen bis zum Rundenende ausgespielt. Sie wählt die Karte mit dem besten mittleren Ergebnis relativ zu den anderen Spielern. Durchmärsche fließen in die Endbewertung ein. Die Ausspielstrategie bevorzugt sichere Stiche und das Abwerfen gefährlicher Karten. Die Weitergabe erfolgt heuristisch.
+```sh
+node scripts/collect-rounds.js 1500 8
+node scripts/build-future-model.js
+```
 
-Gegnerische Hände sind im Spielzustand des Browsers notwendig, werden aber **nicht an den KI-Worker übergeben**. Jeder Gegner bekommt nur seine eigene Beobachtung. Das ist kein manipulationssicheres Online-Spiel.
+Die Referenz-KI spielt dabei isolierte Runden gegen sich selbst. Die Datensammlung enthält ausschließlich synthetische Spielergebnisse; es werden keine Partien des Benutzers aufgezeichnet.
 
-Grenzen: Die Simulation verwendet vereinfachte gegnerische Strategien und keine vollständige Suche über Informationsmengen. Sie optimiert Rundenpunkte, nicht die Gewinnwahrscheinlichkeit beim aktuellen Gesamtspielstand. Es gibt keine trainierten neuronalen Netze, keine zugesicherte optimale Spielweise und keinen belegten Vergleich mit Spitzenprogrammen. Mehr Rechenzeit reduziert Stichprobenrauschen, garantiert aber keinen besseren Einzelzug. Für weitere Verbesserungen sind stärkere Gegner-Benchmarks, strategische Durchmarschplanung und ein über Selbstspiel trainiertes Bewertungsmodell sinnvolle nächste Schritte.
-
-## Aufbau
-
-- `src/game.js`: unabhängige Regeln und Zustandsübergänge.
-- `src/ai.js`: Beobachtungen, verdeckte Kartenverteilungen, Rollouts, Entscheidungen.
-- `src/worker.js`: Berechnung außerhalb des UI-Threads.
-- `src/app.js`, `index.html`, `style.css`: Oberfläche und Spielablauf.
-- `server.js`: kleiner statischer Entwicklungsserver.
-
-Spielstände werden derzeit nicht dauerhaft gespeichert. Es werden keine Telemetrie oder externen Schriftarten geladen.
+Spielstände werden derzeit nicht dauerhaft gespeichert. Das Spiel ist eine lokale Einzelspieler-Anwendung; der Browser enthält den vollständigen Spielzustand und ist kein manipulationssicherer Online-Server.
