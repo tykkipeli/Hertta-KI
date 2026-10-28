@@ -1,0 +1,1 @@
+{"name":"hertta-ki","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.js","test":"node test/game.test.js","benchmark":"node benchmark.js"},"engines":{"node":">=22"}}
