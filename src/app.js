@@ -443,7 +443,7 @@ async function move(c, stamp) {
   render();
 }
 
-function computePass(hand, direction) {
+function computePass(hand, direction, explain = false) {
   const current = new Worker(new URL("./worker.js", import.meta.url), {
     type: "module",
   });
@@ -453,7 +453,7 @@ function computePass(hand, direction) {
       current.terminate();
       passWorkers = passWorkers.filter((w) => w !== current);
       if (event.data.error) reject(Error(event.data.error));
-      else resolve(event.data.cards);
+      else resolve(explain ? event.data : event.data.cards);
     };
     current.onerror = (event) => {
       current.terminate();
@@ -510,9 +510,12 @@ async function advance(stamp) {
       const result = await compute(state.turn);
       if (stamp !== epoch) return;
       busy = false;
-      $("analysis").textContent = result.samples
-        ? `${names[state.turn]} hat ${result.samples} mögliche Kartenverteilungen geprüft.`
-        : "Nur ein legaler Zug.";
+      $("analysis").textContent =
+        result.method === "exact"
+          ? `${names[state.turn]} hat das bekannte Endspiel exakt geprüft (${result.nodes} Stellungen).`
+          : result.samples
+            ? `${names[state.turn]} hat ${result.samples} mögliche Kartenverteilungen geprüft.`
+            : "Nur ein legaler Zug.";
       await move(result.card, stamp);
     } catch (error) {
       if (stamp !== epoch) return;
@@ -537,13 +540,15 @@ $("hint").onclick = async () => {
   render();
   try {
     const result = passing
-      ? await computePass(state.hands[0], [1, 3, 2, 0][round % 4])
+      ? await computePass(state.hands[0], [1, 3, 2, 0][round % 4], true)
       : await compute(0);
     if (stamp !== epoch) return;
-    hinted = passing ? result : result.card;
+    hinted = passing ? result.cards : result.card;
     $("analysis").textContent = passing
-      ? `Tipp zum Weitergeben: ${result.map(label).join(" · ")}. Die markierten Karten bleiben frei wählbar.`
-      : `Tipp: ${label(result.card)} · ${result.samples} Kartenverteilungen geprüft.`;
+      ? `Tipp zum Weitergeben: ${result.cards.map(label).join(" · ")}. ${result.explanation} Die markierten Karten bleiben frei wählbar.`
+      : result.method === "exact"
+        ? `Tipp: ${label(result.card)} · Bekanntes Endspiel exakt geprüft.`
+        : `Tipp: ${label(result.card)} · ${result.samples} Kartenverteilungen geprüft.`;
   } catch (error) {
     if (stamp === epoch) $("analysis").textContent = error.message;
   } finally {

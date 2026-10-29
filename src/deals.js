@@ -80,7 +80,7 @@ export function createDealSampler(o) {
   const played = Array(52).fill(false);
   for (const t of [...o.history, { trick: o.trick }])
     for (const x of t.trick) played[x.card] = true;
-  return (rng = Math.random) => {
+  const draw = (rng = Math.random) => {
     if (!count) return null;
     const hands = fixed.map((h) => h.slice());
     if (unrestricted) {
@@ -128,6 +128,13 @@ export function createDealSampler(o) {
       played: played.slice(),
     };
   };
+  draw.totalDeals = !valid
+    ? 0
+    : unrestricted
+      ? factorial[pool.length] /
+        capacities.reduce((n, c) => n * factorial[c], 1)
+      : count;
+  return draw;
 }
 export function sample(o, rng = Math.random) {
   return createDealSampler(o)(rng);

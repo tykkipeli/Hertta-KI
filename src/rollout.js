@@ -1,8 +1,17 @@
+import { strategicChoice } from "./strategy.js";
 // Compact execution of the reference rollout policy. It sees the hypothetical
 // player's hand and public trick only; no opponent hand enters card selection.
-export function rollout(world, first, rng) {
+export function rollout(
+  world,
+  first,
+  rng,
+  strategyPlayer = -1,
+  moonPlan = false,
+  modelOpponentLeads = false,
+) {
   const hands = world.hands.map((h) => h.slice());
   const taken = world.taken.slice();
+  const voids = world.voids.map((v) => v.slice());
   let turn = world.turn,
     completed = world.completed,
     broken = world.broken;
@@ -21,6 +30,7 @@ export function rollout(world, first, rng) {
     }
     pot += x.card >= 39 ? 1 : x.card === 36 ? 13 : 0;
   }
+  const played = world.played ? world.played.slice() : Array(52).fill(false);
   let card = first;
   while (completed < 13) {
     const hand = hands[turn];
@@ -34,6 +44,36 @@ export function rollout(world, first, rng) {
       else if (!broken) for (const c of hand) if (c < 39) choices.push(c);
       if (!choices.length) choices = hand;
       if (choices.length === 1) card = choices[0];
+      else if (
+        turn === strategyPlayer ||
+        strategyPlayer === -2 ||
+        (!length && modelOpponentLeads)
+      )
+        card = strategicChoice({
+          hand,
+          choices,
+          led,
+          top,
+          pot,
+          length,
+          played,
+          taken,
+          turn,
+          winner,
+          completed,
+          moonPlan: turn === strategyPlayer && moonPlan,
+          followers: !length
+            ? [0, 1, 2, 3].map(
+                (color) =>
+                  [0, 1, 2, 3].filter(
+                    (p) =>
+                      p !== turn &&
+                      hands[p].length > 0 &&
+                      !voids[p].includes(color),
+                  ).length,
+              )
+            : undefined,
+        });
       else if (rng() < 0.08) card = choices[Math.floor(rng() * choices.length)];
       else {
         let best = -Infinity;
@@ -59,6 +99,9 @@ export function rollout(world, first, rng) {
     }
     const color = Math.floor(card / 13),
       rank = card % 13;
+    if (length && color !== led && !voids[turn].includes(led))
+      voids[turn].push(led);
+    played[card] = true;
     hand.splice(hand.indexOf(card), 1);
     if (!length) {
       led = color;
