@@ -1,0 +1,605 @@
+{
+  "sourceHashes": {
+    "src/agent.js": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d",
+    "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+    "src/app.js": "6368f6affe602b1ce38058b94f243f3d9d952d2ace96268a90ac92b20f82b23b",
+    "src/deals.js": "c93914c9a31a1148f87010ea05632e63d1ff1925bb757528d7bd809d86134f13",
+    "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+    "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+    "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+    "src/rollout.js": "2f10deff310b94460b91b4f8ec3297001375e7096fb328dba3e9bfe9e212d79b",
+    "src/worker.js": "705119669535f5ed9bcf6bfddeadb9e433d8322ff0d5b328f77b7447e233919e",
+    "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+    "activeEngine": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad"
+  },
+  "enginePath": "src/ai.js",
+  "algorithm": "Uniform private Monte Carlo with paired rollout randomness",
+  "mode": "matches-to-100",
+  "seed": 3710299,
+  "games": 80,
+  "rounds": 823,
+  "budget": {
+    "old": {
+      "milliseconds": 1200,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 1200,
+      "minSamples": 16
+    }
+  },
+  "beliefModes": {
+    "passing-prior": 6643,
+    "uniform": 1844
+  },
+  "meanDecisionMilliseconds": [952.1006741421437, 956.9445457157498],
+  "meanPassingMilliseconds": [0.018502236419046688, 0.008932749054942382],
+  "engines": ["new", "v1-opponent-1", "v1-opponent-2", "v1-opponent-3"],
+  "winShares": [0.20625, 0.3125, 0.2375, 0.24375],
+  "outrightWins": [16, 25, 19, 19],
+  "meanPoints": [76.2375, 72.275, 74.8, 72.1125],
+  "newWinRateDescriptive95": [0.13206052357692263, 0.3073585714785152],
+  "seconds": 40905.405164629,
+  "records": [
+    {
+      "game": 0,
+      "newSeat": 0,
+      "rounds": 8,
+      "totals": [21, 40, 42, 105],
+      "winners": [0]
+    },
+    {
+      "game": 1,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [45, 78, 28, 109],
+      "winners": [2]
+    },
+    {
+      "game": 2,
+      "newSeat": 2,
+      "rounds": 8,
+      "totals": [41, 34, 24, 109],
+      "winners": [2]
+    },
+    {
+      "game": 3,
+      "newSeat": 3,
+      "rounds": 11,
+      "totals": [67, 92, 26, 101],
+      "winners": [2]
+    },
+    {
+      "game": 4,
+      "newSeat": 0,
+      "rounds": 12,
+      "totals": [48, 67, 88, 109],
+      "winners": [0]
+    },
+    {
+      "game": 5,
+      "newSeat": 1,
+      "rounds": 12,
+      "totals": [54, 74, 77, 107],
+      "winners": [0]
+    },
+    {
+      "game": 6,
+      "newSeat": 2,
+      "rounds": 13,
+      "totals": [68, 75, 91, 104],
+      "winners": [0]
+    },
+    {
+      "game": 7,
+      "newSeat": 3,
+      "rounds": 10,
+      "totals": [55, 100, 77, 80],
+      "winners": [0]
+    },
+    {
+      "game": 8,
+      "newSeat": 0,
+      "rounds": 8,
+      "totals": [32, 102, 42, 32],
+      "winners": [0, 3]
+    },
+    {
+      "game": 9,
+      "newSeat": 1,
+      "rounds": 13,
+      "totals": [81, 79, 77, 101],
+      "winners": [2]
+    },
+    {
+      "game": 10,
+      "newSeat": 2,
+      "rounds": 13,
+      "totals": [108, 93, 69, 68],
+      "winners": [3]
+    },
+    {
+      "game": 11,
+      "newSeat": 3,
+      "rounds": 12,
+      "totals": [54, 87, 59, 112],
+      "winners": [0]
+    },
+    {
+      "game": 12,
+      "newSeat": 0,
+      "rounds": 8,
+      "totals": [46, 44, 103, 67],
+      "winners": [1]
+    },
+    {
+      "game": 13,
+      "newSeat": 1,
+      "rounds": 8,
+      "totals": [16, 65, 112, 67],
+      "winners": [0]
+    },
+    {
+      "game": 14,
+      "newSeat": 2,
+      "rounds": 13,
+      "totals": [61, 98, 116, 63],
+      "winners": [0]
+    },
+    {
+      "game": 15,
+      "newSeat": 3,
+      "rounds": 8,
+      "totals": [33, 38, 101, 36],
+      "winners": [0]
+    },
+    {
+      "game": 16,
+      "newSeat": 0,
+      "rounds": 9,
+      "totals": [51, 113, 87, 87],
+      "winners": [0]
+    },
+    {
+      "game": 17,
+      "newSeat": 1,
+      "rounds": 8,
+      "totals": [71, 110, 87, 44],
+      "winners": [3]
+    },
+    {
+      "game": 18,
+      "newSeat": 2,
+      "rounds": 9,
+      "totals": [64, 103, 84, 35],
+      "winners": [3]
+    },
+    {
+      "game": 19,
+      "newSeat": 3,
+      "rounds": 11,
+      "totals": [110, 90, 84, 54],
+      "winners": [3]
+    },
+    {
+      "game": 20,
+      "newSeat": 0,
+      "rounds": 7,
+      "totals": [105, 57, 50, 74],
+      "winners": [2]
+    },
+    {
+      "game": 21,
+      "newSeat": 1,
+      "rounds": 8,
+      "totals": [31, 106, 50, 73],
+      "winners": [0]
+    },
+    {
+      "game": 22,
+      "newSeat": 2,
+      "rounds": 12,
+      "totals": [105, 74, 89, 96],
+      "winners": [1]
+    },
+    {
+      "game": 23,
+      "newSeat": 3,
+      "rounds": 14,
+      "totals": [118, 97, 73, 76],
+      "winners": [2]
+    },
+    {
+      "game": 24,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [105, 39, 97, 19],
+      "winners": [3]
+    },
+    {
+      "game": 25,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [115, 24, 92, 29],
+      "winners": [1]
+    },
+    {
+      "game": 26,
+      "newSeat": 2,
+      "rounds": 10,
+      "totals": [113, 45, 81, 21],
+      "winners": [3]
+    },
+    {
+      "game": 27,
+      "newSeat": 3,
+      "rounds": 10,
+      "totals": [97, 65, 109, 41],
+      "winners": [3]
+    },
+    {
+      "game": 28,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [57, 96, 100, 59],
+      "winners": [0]
+    },
+    {
+      "game": 29,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [36, 114, 77, 33],
+      "winners": [3]
+    },
+    {
+      "game": 30,
+      "newSeat": 2,
+      "rounds": 10,
+      "totals": [39, 111, 68, 42],
+      "winners": [0]
+    },
+    {
+      "game": 31,
+      "newSeat": 3,
+      "rounds": 7,
+      "totals": [69, 17, 100, 48],
+      "winners": [1]
+    },
+    {
+      "game": 32,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [104, 39, 52, 65],
+      "winners": [1]
+    },
+    {
+      "game": 33,
+      "newSeat": 1,
+      "rounds": 8,
+      "totals": [42, 32, 104, 82],
+      "winners": [1]
+    },
+    {
+      "game": 34,
+      "newSeat": 2,
+      "rounds": 12,
+      "totals": [98, 66, 100, 100],
+      "winners": [1]
+    },
+    {
+      "game": 35,
+      "newSeat": 3,
+      "rounds": 10,
+      "totals": [76, 42, 84, 110],
+      "winners": [1]
+    },
+    {
+      "game": 36,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [44, 57, 40, 119],
+      "winners": [2]
+    },
+    {
+      "game": 37,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [32, 74, 39, 115],
+      "winners": [0]
+    },
+    {
+      "game": 38,
+      "newSeat": 2,
+      "rounds": 12,
+      "totals": [79, 61, 62, 110],
+      "winners": [1]
+    },
+    {
+      "game": 39,
+      "newSeat": 3,
+      "rounds": 8,
+      "totals": [24, 52, 30, 102],
+      "winners": [0]
+    },
+    {
+      "game": 40,
+      "newSeat": 0,
+      "rounds": 8,
+      "totals": [43, 34, 77, 106],
+      "winners": [1]
+    },
+    {
+      "game": 41,
+      "newSeat": 1,
+      "rounds": 8,
+      "totals": [34, 20, 51, 103],
+      "winners": [1]
+    },
+    {
+      "game": 42,
+      "newSeat": 2,
+      "rounds": 10,
+      "totals": [33, 70, 101, 108],
+      "winners": [0]
+    },
+    {
+      "game": 43,
+      "newSeat": 3,
+      "rounds": 12,
+      "totals": [36, 84, 78, 114],
+      "winners": [0]
+    },
+    {
+      "game": 44,
+      "newSeat": 0,
+      "rounds": 8,
+      "totals": [18, 102, 59, 29],
+      "winners": [0]
+    },
+    {
+      "game": 45,
+      "newSeat": 1,
+      "rounds": 9,
+      "totals": [15, 102, 84, 33],
+      "winners": [0]
+    },
+    {
+      "game": 46,
+      "newSeat": 2,
+      "rounds": 10,
+      "totals": [26, 103, 63, 68],
+      "winners": [0]
+    },
+    {
+      "game": 47,
+      "newSeat": 3,
+      "rounds": 9,
+      "totals": [25, 121, 56, 32],
+      "winners": [0]
+    },
+    {
+      "game": 48,
+      "newSeat": 0,
+      "rounds": 14,
+      "totals": [84, 83, 97, 100],
+      "winners": [1]
+    },
+    {
+      "game": 49,
+      "newSeat": 1,
+      "rounds": 11,
+      "totals": [55, 88, 43, 100],
+      "winners": [2]
+    },
+    {
+      "game": 50,
+      "newSeat": 2,
+      "rounds": 15,
+      "totals": [102, 93, 101, 94],
+      "winners": [1]
+    },
+    {
+      "game": 51,
+      "newSeat": 3,
+      "rounds": 14,
+      "totals": [109, 81, 101, 73],
+      "winners": [3]
+    },
+    {
+      "game": 52,
+      "newSeat": 0,
+      "rounds": 11,
+      "totals": [98, 67, 69, 104],
+      "winners": [1]
+    },
+    {
+      "game": 53,
+      "newSeat": 1,
+      "rounds": 13,
+      "totals": [70, 77, 101, 90],
+      "winners": [0]
+    },
+    {
+      "game": 54,
+      "newSeat": 2,
+      "rounds": 12,
+      "totals": [50, 101, 81, 80],
+      "winners": [0]
+    },
+    {
+      "game": 55,
+      "newSeat": 3,
+      "rounds": 11,
+      "totals": [62, 60, 50, 114],
+      "winners": [2]
+    },
+    {
+      "game": 56,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [102, 45, 107, 58],
+      "winners": [1]
+    },
+    {
+      "game": 57,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [59, 80, 100, 73],
+      "winners": [0]
+    },
+    {
+      "game": 58,
+      "newSeat": 2,
+      "rounds": 13,
+      "totals": [65, 72, 99, 102],
+      "winners": [0]
+    },
+    {
+      "game": 59,
+      "newSeat": 3,
+      "rounds": 13,
+      "totals": [79, 112, 105, 94],
+      "winners": [0]
+    },
+    {
+      "game": 60,
+      "newSeat": 0,
+      "rounds": 8,
+      "totals": [75, 56, 74, 107],
+      "winners": [1]
+    },
+    {
+      "game": 61,
+      "newSeat": 1,
+      "rounds": 9,
+      "totals": [71, 68, 104, 95],
+      "winners": [1]
+    },
+    {
+      "game": 62,
+      "newSeat": 2,
+      "rounds": 11,
+      "totals": [76, 81, 75, 106],
+      "winners": [2]
+    },
+    {
+      "game": 63,
+      "newSeat": 3,
+      "rounds": 8,
+      "totals": [73, 51, 81, 107],
+      "winners": [1]
+    },
+    {
+      "game": 64,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [60, 61, 115, 24],
+      "winners": [3]
+    },
+    {
+      "game": 65,
+      "newSeat": 1,
+      "rounds": 12,
+      "totals": [73, 64, 118, 57],
+      "winners": [3]
+    },
+    {
+      "game": 66,
+      "newSeat": 2,
+      "rounds": 14,
+      "totals": [100, 72, 107, 85],
+      "winners": [1]
+    },
+    {
+      "game": 67,
+      "newSeat": 3,
+      "rounds": 11,
+      "totals": [74, 44, 102, 66],
+      "winners": [1]
+    },
+    {
+      "game": 68,
+      "newSeat": 0,
+      "rounds": 12,
+      "totals": [108, 82, 50, 72],
+      "winners": [2]
+    },
+    {
+      "game": 69,
+      "newSeat": 1,
+      "rounds": 9,
+      "totals": [103, 78, 42, 63],
+      "winners": [2]
+    },
+    {
+      "game": 70,
+      "newSeat": 2,
+      "rounds": 9,
+      "totals": [101, 81, 66, 38],
+      "winners": [3]
+    },
+    {
+      "game": 71,
+      "newSeat": 3,
+      "rounds": 8,
+      "totals": [55, 103, 28, 22],
+      "winners": [3]
+    },
+    {
+      "game": 72,
+      "newSeat": 0,
+      "rounds": 11,
+      "totals": [80, 52, 91, 115],
+      "winners": [1]
+    },
+    {
+      "game": 73,
+      "newSeat": 1,
+      "rounds": 8,
+      "totals": [102, 30, 72, 56],
+      "winners": [1]
+    },
+    {
+      "game": 74,
+      "newSeat": 2,
+      "rounds": 11,
+      "totals": [81, 72, 84, 101],
+      "winners": [1]
+    },
+    {
+      "game": 75,
+      "newSeat": 3,
+      "rounds": 11,
+      "totals": [66, 76, 80, 116],
+      "winners": [0]
+    },
+    {
+      "game": 76,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [99, 75, 30, 108],
+      "winners": [2]
+    },
+    {
+      "game": 77,
+      "newSeat": 1,
+      "rounds": 9,
+      "totals": [54, 86, 74, 124],
+      "winners": [0]
+    },
+    {
+      "game": 78,
+      "newSeat": 2,
+      "rounds": 11,
+      "totals": [42, 63, 111, 70],
+      "winners": [0]
+    },
+    {
+      "game": 79,
+      "newSeat": 3,
+      "rounds": 8,
+      "totals": [57, 96, 59, 100],
+      "winners": [0]
+    }
+  ]
+}
