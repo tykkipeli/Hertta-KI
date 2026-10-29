@@ -74,6 +74,28 @@ mkdirSync("artifacts", { recursive: true });
     await page.goto(baseURL);
     await page.locator("#strength").selectOption("200");
     assert.equal(await page.locator("#hand .card").count(), 13);
+    assert.ok(await page.locator("#hint").isEnabled());
+    const originalHand = await page
+      .locator("#hand .card")
+      .evaluateAll((cards) => cards.map((c) => c.dataset.card));
+    await page.locator("#hint").click();
+    await page.waitForFunction(() => !document.querySelector("#hint").disabled);
+    assert.equal(await page.locator("#hand .hinted").count(), 3);
+    const passHint = await page
+      .locator("#hand .hinted")
+      .evaluateAll((cards) => cards.map((c) => Number(c.dataset.card)));
+    assert.equal(await page.locator("#hand .selected").count(), 0);
+    assert.match(
+      await page.locator("#analysis").textContent(),
+      /Tipp zum Weitergeben:/,
+    );
+    assert.deepEqual(
+      await page
+        .locator("#hand .card")
+        .evaluateAll((cards) => cards.map((c) => c.dataset.card)),
+      originalHand,
+    );
+    assert.equal(await page.locator("body").getAttribute("data-phase"), "pass");
     const sent = [];
     for (let i = 0; i < 3; i++) {
       sent.push(
@@ -87,7 +109,19 @@ mkdirSync("artifacts", { recursive: true });
     await page.locator("#exchange").waitFor({ state: "visible" });
     assert.ok(await page.locator("#exchange").isVisible());
     const passRequests = await page.evaluate(() => window.passRequests);
-    assert.equal(passRequests.length, 3);
+    assert.equal(passRequests.length, 4);
+    const { choosePass } = await import("../src/ai.js");
+    assert.deepEqual(
+      await page
+        .locator("#hand .hinted")
+        .evaluateAll((cards) => cards.map((c) => Number(c.dataset.card))),
+      [],
+    );
+    assert.equal(passRequests[0].direction, 1);
+    assert.deepEqual(
+      new Set(passHint),
+      new Set(choosePass(passRequests[0].hand, { direction: 1 })),
+    );
     for (const message of passRequests) {
       assert.equal(message.hand.length, 13);
       assert.equal(message.hands, undefined);

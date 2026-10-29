@@ -401,6 +401,13 @@ main {
   outline: 3px solid #9ceac3;
   transform: translateY(-10px);
 }
+.card.selected.hinted {
+  outline-color: var(--gold);
+  transform: translateY(-16px);
+  box-shadow:
+    0 0 0 6px #9ceac355,
+    0 8px 15px #0005;
+}
 .card.received-card:before {
   content: "";
   position: absolute;

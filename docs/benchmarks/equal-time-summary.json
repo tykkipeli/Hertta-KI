@@ -1,0 +1,44 @@
+{
+  "files": [
+    "docs/benchmarks/equal-time-160.json",
+    "docs/benchmarks/equal-time-320.json"
+  ],
+  "mode": "matches-to-100",
+  "budget": {
+    "old": {
+      "milliseconds": 5,
+      "minSamples": 1
+    },
+    "new": {
+      "milliseconds": 5,
+      "minSamples": 1
+    }
+  },
+  "games": 480,
+  "independentDealBlocks": 120,
+  "winShares": [0.346875, 0.225, 0.2, 0.228125],
+  "newWinShareBlockBootstrap95": [0.3072916666666667, 0.38645833333333335],
+  "meanOldWinShare": 0.2177083333333333,
+  "newMinusMeanOld": 0.12916666666666668,
+  "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
+  "runs": [
+    {
+      "file": "docs/benchmarks/equal-time-160.json",
+      "seed": 20261213,
+      "rounds": 1679,
+      "winShares": [0.296875, 0.259375, 0.21875, 0.225],
+      "meanDecisionMilliseconds": [4.014777142255056, 4.073406480123958],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    },
+    {
+      "file": "docs/benchmarks/equal-time-320.json",
+      "seed": 20261215,
+      "rounds": 3326,
+      "winShares": [0.371875, 0.2078125, 0.190625, 0.2296875],
+      "meanDecisionMilliseconds": [3.9837610436883715, 4.057663510253231],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    }
+  ]
+}

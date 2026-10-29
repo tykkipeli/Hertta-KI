@@ -1,43 +1,35 @@
-# KI, Informationsgrenzen und Bewertung
+# KI und Informationsgrenzen
 
-## Ziel und Suchverfahren
+Jeder Spieler bewertet seinen eigenen Strafpunktnachteil. Es gibt keine Teamwertung, keine gemeinsame private Kartenkenntnis und keine Nachrichten zwischen KI-Workern. Die Bewertung ist eine Näherung für erfolgreiches Hearts-Spiel, keine berechnete optimale Match-Strategie.
 
-Jeder Spieler maximiert seine eigene geschätzte Gewinnwahrscheinlichkeit. Eine Teamwertung, ein gemeinsamer privater Kartenbestand oder Nachrichten zwischen den KI-Workern sind nicht vorgesehen.
+## Kartenhypothesen
 
-Eine Beobachtung enthält die eigene Hand, eigene Weitergabedaten sowie öffentliche Fehlfarben, Karten und Punkte. Die KI zieht hypothetische Kartenverteilungen und spielt jede legale Karte in diesen Verteilungen bis zum Rundenende aus. Die simulierten Spieler verwenden nur ihre jeweilige hypothetische Hand und öffentliches Spielgeschehen.
+Eine Beobachtung enthält nur die eigene Hand, eigene Weitergabedaten und öffentliche Karten, Punkte und Fehlfarben. `src/deals.js` erzeugt hypothetische Hände mit den passenden Kartenzahlen. Bekannte selbst weitergegebene Karten bleiben ihrem Empfänger zugeordnet, solange sie nicht öffentlich gespielt wurden.
 
-Anschließend bewertet die KI den gesamten Spielstand. Ein Korpus aus 1.500 Runden der Referenz-KI liefert plausible weitere Runden mit ihren gemeinsamen Punktverteilungen, einschließlich Durchmärschen. Die Auswertung spielt diese Punktfolgen bis zur 100-Punkte-Grenze weiter und teilt Gleichstände. Vier Sitzrotationen jeder Folge vermeiden einen willkürlichen Vorteil für einen Platz. Die Zukunftsproben bleiben für alle Karten eines Suchlaufs gleich; Ergebnisse für identische Rundenabrechnungen werden zwischengespeichert.
+Für die übrigen Karten zählt dynamische Programmierung, wie viele vollständige Zuteilungen jede mögliche Farbverteilung erlaubt. Die Gewichtung mit Multinomialkoeffizienten liefert gleichverteilte Zuteilungen unter diesen Bedingungen. Ohne Fehlfarben genügt Mischen und Aufteilen. Das Verfahren vermeidet den Verteilungsfehler einer gierigen Zuteilung und berechnet die Zähler nur einmal je Zug. Der Test vergleicht die Stichprobenhäufigkeit mit allen möglichen Zuteilungen einer kleinen vollständig aufzählbaren Situation.
 
-Die Zukunftsproben nehmen Referenz-Spielstärke für alle vier Plätze an. Unterschiede zwischen menschlichen Spielern und der neuen KI werden darin noch nicht gezielt gelernt. Das ist ein Modell des weiteren Spiels, keine Garantie optimaler Entscheidungen. Insbesondere wird nicht behauptet, dass die KI eine berechnete perfekte Strategie besitzt.
+Zusätzlich verwendet die Suche einen **weichen** Weitergabe-Prior: Ein Computerempfänger, dem man selbst keine Pik-Dame gegeben hat, erhält in den Hypothesen seltener die Pik-Dame. Diese Einschätzung beruht auf der bekannten Weitergabeheuristik. Beim Menschen ist sie abgeschwächt; er darf die Dame behalten. Das ist ein Gegnermodell, keine zusätzliche Spielregel oder Kenntnis der wirklichen Hände. Die gewichtete Suchverteilung ist deshalb von der uniformen Basisverteilung zu unterscheiden.
 
-## Eigene Weitergabe als private Information
+## Ausspielsimulation und Bewertung
 
-Die drei Computergegner verwenden dieselbe festgelegte Weitergabeheuristik. Das erlaubt Rückschlüsse, ohne deren tatsächliche Karten einzusehen. Beispielsweise gibt diese Heuristik die Pik-Dame immer weiter. Ein Empfänger, dem der beobachtende Spieler keine Pik-Dame gegeben hat, hat sie daher nicht durch diese Weitergabe erhalten. Beim Menschen bleibt eine bewusste andere Weitergabe möglich.
+Jede legale Karte wird in denselben gezogenen Händen bis zum Rundenende ausgespielt. `src/rollout.js` führt die konservative Referenz-Ausspiellogik in einem kompakten Zustand aus. Die Kartenwahl jedes simulierten Spielers verwendet nur dessen hypothetische Hand und den öffentlichen Stich. Tests vergleichen die Ergebnisse mit dem vollständigen Regelmotor bei identischen Zufallsfolgen über viele Spielpositionen.
 
-Bei mindestens 100 Millisekunden angeforderter Bedenkzeit versucht die KI, einen mit der eigenen Weitergabe und den öffentlichen Karten vereinbaren ursprünglichen Deal zu finden. Die Weitergabe nach links/rechts wird als Kette, die gegenüberliegende Weitergabe als zwei Tauschpaare rückwärts betrachtet. Danach verändern symmetrische Markov-Schritte die unbekannten ursprünglichen Karten. Ein Schritt bleibt nur bestehen, wenn die eigene Hand, die eigenen erhaltenen Karten, bekannte Besitzer gespielter Karten und öffentliche Fehlfarben weiterhin stimmen.
+Alle Karten einer gezogenen Verteilung verwenden dieselbe neu gezogene Zufallsfolge. Diese Kopplung verringert das Rauschen beim Vergleich zweier Karten. Neue Verteilungen haben unabhängige Zufallsfolgen. Die tatsächlichen Entscheidungen und privaten Erinnerungen verschiedener Spieler bleiben unabhängig.
 
-Bei einem menschlichen Gegner wird dessen unbekannte Auswahl als freie Dreiermenge modelliert. Tests decken ausdrücklich den Fall ab, dass ein Mensch die Pik-Dame behält. Die KI erhält dabei nicht dessen tatsächlich gewählte Karten, außer den drei Karten, die sie selbst von ihm bekommen hat.
+Nach einer Simulation wird die echte Rundenabrechnung einschließlich Durchmarsch angewandt. Die Nutzenfunktion ist `Mittelwert(gegnerische Rundenpunkte) - eigene Rundenpunkte`. Ohne Durchmarsch ist das eine lineare Umformung der eigenen Strafpunkte, weil jede Runde genau 26 Punkte verteilt. Jeder Spieler maximiert ausschließlich seinen eigenen Wert. Die KI verwendet keine zukünftigen wirklichen Karten und kein empirisches Zukunftsmodell mehr. Dieses zuvor erprobte Modell ergab keinen belastbaren Vorteil und wurde entfernt.
 
-Das Verfahren ist eine endliche, korrelierte Monte-Carlo-Näherung. Eine begrenzte Initialisierung kann scheitern; dann wird mit der einfacheren Kartenverteilung weitergesucht. Bei kleineren Zeitbudgets wird von Anfang an ein weicher Weitergabe-Prior verwendet. So wird auch bei wenig Rechenzeit eine legale Karte geliefert.
-
-## Trennung der Spieler
+## Trennung der Spieler und Tippfunktion
 
 - `src/observation.js` bildet die Informationsgrenze zwischen Spielzustand und KI.
-- Jeder Worker bekommt nur die Beobachtung des gerade rechnenden Spielers.
-- Die Weitergabe wird in drei getrennten Workern ausschließlich aus der jeweiligen eigenen Hand gewählt.
-- Vorhersagen fremder Hände sind erzeugte Hypothesen, keine Kopien der wirklichen Hände.
-- Ein Neustart beendet bestehende Worker. Epoch-Prüfungen verhindern, dass verspätete Ergebnisse eine neue Partie verändern.
+- Jeder Ausspiel-Worker erhält nur die Beobachtung des gerade rechnenden Spielers.
+- Jeder Weitergabe-Worker erhält ausschließlich seine eigene ursprüngliche Hand und die öffentliche Tauschrichtung.
+- Der Weitergabe-Tipp verwendet dieselbe Auswahlfunktion wie die Computer und markiert drei Karten. Er verändert weder die Auswahl noch die Hand und führt keinen Tausch aus.
+- Neustarts beenden Worker; Epoch-Prüfungen verwerfen verspätete Ergebnisse.
 
-Die Tests prüfen unter anderem unveränderte Entscheidungen bei ausgetauschten tatsächlichen Gegnerkarten, unveränderte Eingabeobjekte, vereinbare Kartenhypothesen, erhaltene Karten und die tatsächlich an Worker gesendeten Nachrichten.
+Die Tests prüfen unter anderem unveränderte Entscheidungen bei veränderten wirklichen Gegnerkarten, unveränderte Eingabeobjekte, zulässige Kartenhypothesen und die tatsächlich an Worker gesendeten Nachrichten.
 
-## Spielstärke messen
+## Stärke und Grenzen
 
-Der bisherige Gegner ist als unveränderte Referenz in `test/fixtures/ai-v1.js` gespeichert. Der neue Benchmark lässt einen neuen Spieler gegen drei Referenzen antreten. Platz und Weitergabe wechseln, Punkte werden nach den wirklichen Regeln abgerechnet, Gleichstände anteilig gezählt. Die Quellcode-Hashes und einzelnen Spielergebnisse bleiben in den Ergebnisdateien erhalten.
+Die unveränderte Vorgänger-KI ist in `test/fixtures/ai-v1.js` eingefroren. Der Benchmark spielt eine neue KI gegen drei dieser Kopien bis zur 100-Punkte-Grenze, rotiert alle Plätze und teilt Gleichstände. Getrennte Zufallsströme verhindern eine gemeinsame private Erinnerung. Ergebnisdateien enthalten Quellcode-Hashes, Budgets, Seeds, tatsächliche Laufzeiten und Einzelpartien.
 
-Einzelne Runden sind von vollständigen Spielen zu unterscheiden. Außerdem sind feste Stichprobenzahlen und gleiche Zeitbudgets unterschiedliche Vergleiche. Die Berichte enthalten deshalb auch tatsächliche mittlere Rechenzeiten. Ein Vergleich mit bloß einer schwachen Ausspielheuristik wird nicht als Nachweis eines Fortschritts gegenüber der vorherigen KI gewertet.
-
-Die abgeschlossenen Vergleichsläufe werden in [RESULTS.md](RESULTS.md) dokumentiert. Die Ergebnisse gelten für die dort genannten Gegner, Regeln und Rechenbudgets, nicht für beliebige Hearts-Programme oder menschliche Strategien.
-
-## Grenzen
-
-Die Ausspielsimulation verwendet ein vereinfachtes Gegnermodell. Auch die Verteilung weiterer Runden ist eine empirische Näherung. Die Annahme über Computer-Weitergaben gilt für die implementierten Referenzstrategien; beim Menschen wird sie bewusst gelockert. Sehr kleine Zeitbudgets liefern weniger aussagekräftige Stichproben. Eine vollständig optimale Hearts-Strategie und eine Überlegenheit über Spitzenprogramme sind nicht nachgewiesen.
+[RESULTS.md](RESULTS.md) dokumentiert die Vergleichsläufe. Feste Stichprobenzahlen und gleiche Zeitbudgets sind unterschiedliche Experimente. Konfidenzintervalle werden aus vollständigen Viererblöcken der Sitzrotationen gebootstrapt. Kleine Stichproben, andere Gegner oder größere Budgets können andere Ergebnisse liefern. Gegen Menschen oder Spitzenprogramme ist keine allgemeine Überlegenheit nachgewiesen. Auch eine längere Suche garantiert keinen besseren Einzelzug; die simulierte Ausspielpolitik bleibt vereinfacht.
