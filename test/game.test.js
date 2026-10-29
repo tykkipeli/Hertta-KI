@@ -274,3 +274,190 @@ test("uniform sampler weights feasible assignments equally despite voids", async
       Math.abs(n - 12000 / expected.size) < (12000 / expected.size) * 0.2,
     );
 });
+
+test("passing creates a diamond void while retaining a well-covered spade king", async () => {
+  const { chooseStrategicPass } = await import("../src/strategy.js");
+  const hand = [0, 5, 9, 19, 20, 26, 27, 28, 29, 30, 31, 37, 49],
+    original = hand.slice();
+  for (const direction of [1, 2, 3])
+    assert.deepEqual(
+      new Set(chooseStrategicPass(hand, { direction })),
+      new Set([19, 20, 49]),
+    );
+  assert.deepEqual(new Set(choosePass(hand)), new Set([19, 20, 49]));
+  assert.deepEqual(hand, original);
+  assert.deepEqual(chooseStrategicPass(hand, { direction: 0 }), []);
+  const exposed = [0, 5, 9, 19, 20, 13, 14, 15, 16, 17, 18, 37, 49];
+  assert.ok(chooseStrategicPass(exposed).includes(37));
+});
+
+test("a controlled moon hand retains the queen and its high heart run", async () => {
+  const { chooseStrategicPass, moonPotential } = await import(
+    "../src/strategy.js"
+  );
+  const hand = [12, 11, 25, 36, 37, 38, 45, 46, 47, 48, 49, 50, 51];
+  assert.ok(moonPotential(hand) > 0.7);
+  assert.ok(
+    moonPotential([0, 1, 2, 13, 14, 26, 39, 40, 41, 42, 43, 44, 45]) < 0.2,
+  );
+  const sent = chooseStrategicPass(hand);
+  for (const c of [36, 48, 49, 50, 51]) assert.ok(!sent.includes(c));
+});
+
+test("moon play takes points economically and abandons the plan when another player scores", async () => {
+  const { strategicChoice } = await import("../src/strategy.js");
+  const v = {
+    hand: [39, 48, 49, 50, 51],
+    choices: [39, 48, 49, 50, 51],
+    led: 3,
+    top: 8,
+    pot: 2,
+    length: 3,
+    played: Array(52).fill(false),
+    taken: [13, 0, 0, 0],
+    turn: 0,
+    winner: 1,
+    completed: 5,
+  };
+  assert.equal(strategicChoice(v), 48);
+  assert.equal(strategicChoice({ ...v, taken: [13, 1, 0, 0] }), 39);
+  assert.equal(strategicChoice({ ...v, taken: [0, 18, 0, 0] }), 48);
+});
+
+test("game-winning objective activates only when public points guarantee the match ends", async () => {
+  const { matchEndsThisRound, terminalWinShare } = await import(
+    "../src/utility.js"
+  );
+  assert.equal(
+    matchEndsThisRound({ totals: [80, 79, 95, 90], taken: [0, 1, 5, 0] }),
+    true,
+  );
+  assert.equal(
+    matchEndsThisRound({ totals: [0, 0, 95, 0], taken: [0, 0, 5, 0] }),
+    false,
+  );
+  assert.equal(
+    matchEndsThisRound({ totals: [80, 0, 95, 0], taken: [0, 0, 5, 0] }),
+    true,
+  );
+  assert.equal(terminalWinShare([0, 10, 10, 6], [80, 79, 95, 90], 0), 1);
+  assert.equal(terminalWinShare([0, 0, 13, 13], [80, 79, 95, 90], 0), 0);
+  assert.equal(terminalWinShare([0, 0, 13, 13], [79, 79, 95, 90], 0), 0.5);
+});
+
+test("a moon plan survives using its high cards and stops when an opponent scores", async () => {
+  const { strategicChoice } = await import("../src/strategy.js");
+  const played = Array(52).fill(true);
+  for (const c of [0, 1, 2, 3, 13, 14, 26, 51]) played[c] = false;
+  const v = {
+    hand: [0, 51],
+    choices: [0, 51],
+    led: -1,
+    top: -1,
+    pot: 0,
+    length: 0,
+    played,
+    taken: [25, 0, 0, 0],
+    turn: 0,
+    winner: -1,
+    completed: 11,
+    moonPlan: true,
+  };
+  assert.equal(strategicChoice(v), 51);
+  assert.equal(strategicChoice({ ...v, taken: [24, 1, 0, 0] }), 0);
+});
+
+test("known endgame search matches exhaustive adversarial play", async () => {
+  const { solveKnownEndgame } = await import("../src/endgame.js");
+  const { matchEndsThisRound, terminalWinShare } = await import(
+    "../src/utility.js"
+  );
+  for (let seed = 0; seed < 50; seed++) {
+    const r = rng(8100 + seed),
+      s = createState(deal(r));
+    while (s.completed < 11) play(s, policy(s, r));
+    const o = observe(s, s.turn, {}, [80, 85, 90, 95]),
+      terminal = matchEndsThisRound(o),
+      p = s.turn;
+    function exhaustive(state) {
+      if (state.completed === 13) {
+        const scores = roundScores(state.taken);
+        return terminal
+          ? terminalWinShare(scores, o.totals, p)
+          : scores.reduce((n, x, q) => n + (q === p ? -3 * x : x), 0);
+      }
+      const values = legal(state).map((c) => {
+        const copy = structuredClone(state);
+        play(copy, c);
+        return exhaustive(copy);
+      });
+      return state.turn === p ? Math.max(...values) : Math.min(...values);
+    }
+    const solved = solveKnownEndgame(s, o, { nodeLimit: 100000 });
+    assert.ok(solved);
+    assert.equal(solved.value, exhaustive(s));
+    const next = structuredClone(s);
+    play(next, solved.card);
+    assert.equal(exhaustive(next), solved.value);
+  }
+});
+
+test("sampler marks a deal unique only when public constraints determine all hands", async () => {
+  const { createDealSampler } = await import("../src/deals.js");
+  const random = rng(844),
+    s = createState(deal(random));
+  while (s.completed < 11) play(s, policy(s, random));
+  const o = observe(s, s.turn);
+  o.known = Object.fromEntries(
+    [0, 1, 2, 3].filter((p) => p !== s.turn).map((p) => [p, [...s.hands[p]]]),
+  );
+  assert.equal(createDealSampler(o).totalDeals, 1);
+  const ordinary = observe(createState(deal(rng(1))), 0);
+  assert.ok(createDealSampler(ordinary).totalDeals > 1);
+});
+
+test("lead rank model matches exhaustive recipient assignments", async () => {
+  const { leadWinProbability } = await import("../src/lead.js");
+  for (let n = 1; n <= 3; n++)
+    for (let lower = 0; lower <= 3; lower++)
+      for (let higher = 0; higher <= 3; higher++) {
+        let retained = 0;
+        const total = n ** (lower + higher);
+        for (let code = 0; code < total; code++) {
+          let state = code;
+          const lows = Array(n).fill(0),
+            highs = Array(n).fill(0);
+          for (let i = 0; i < lower + higher; i++) {
+            const p = state % n;
+            state = Math.floor(state / n);
+            (i < lower ? lows : highs)[p]++;
+          }
+          if (highs.every((v, p) => v === 0 || lows[p] > 0)) retained++;
+        }
+        assert.ok(
+          Math.abs(leadWinProbability(n, lower, higher) - retained / total) <
+            1e-12,
+        );
+      }
+});
+
+test("a printed low card that became a master is not mistaken for a safe exit", async () => {
+  const { strategicChoice } = await import("../src/strategy.js");
+  const played = Array(52).fill(true);
+  for (const c of [0, 23, 24, 25]) played[c] = false;
+  const v = {
+    hand: [0, 23],
+    choices: [0, 23],
+    led: -1,
+    top: -1,
+    pot: 0,
+    length: 0,
+    played,
+    taken: [0, 1, 0, 0],
+    turn: 0,
+    winner: -1,
+    completed: 11,
+    followers: [0, 2, 0, 0],
+  };
+  assert.equal(strategicChoice(v), 23);
+});

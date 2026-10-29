@@ -1,32 +1,19 @@
+import { solveKnownEndgame } from "./endgame.js";
+import { matchEndsThisRound, terminalWinShare } from "./utility.js";
 import { rollout } from "./rollout.js";
-import { conservativePolicy, chooseReferencePass } from "./reference-policy.js";
+import { conservativePolicy } from "./reference-policy.js";
+import { chooseStrategicPass, moonPotential } from "./strategy.js";
 import { legal } from "./game.js";
 export { observe } from "./observation.js";
 import { createDealSampler, sample } from "./deals.js";
 export { sample };
-// Keep the deterministic passing strategy used by the private belief model.
+// Evaluate the whole remaining hand instead of ranking dangerous cards alone.
 export function choosePass(hand, { direction = 1 } = {}) {
-  return direction ? chooseReferencePass(hand) : [];
-}
-
-// A receiver cannot retain a queen under the standard passing strategy if
-// we did not send it. Use a soft opponent-model prior, never a rule exclusion.
-function beliefWorld(o, rng, draw) {
-  const entry = Object.entries(o.known || {})[0];
-  if (!entry || entry[1].includes(36)) return draw(rng);
-  const receiver = Number(entry[0]),
-    acceptance = receiver === o.humanPlayer ? 0.55 : 0.1;
-  let world;
-  for (let attempt = 0; attempt < 32; attempt++) {
-    world = draw(rng);
-    if (!world) return null;
-    if (!world.hands[receiver].includes(36) || rng() < acceptance) return world;
-  }
-  return world;
+  return direction ? chooseStrategicPass(hand) : [];
 }
 
 export const algorithm =
-  "Uniform private Monte Carlo with paired rollout randomness";
+  "Whole-hand passing and moon-aware private Monte Carlo";
 export function decide(
   o,
   { milliseconds = 1200, minSamples = 16, rng = Math.random } = {},
@@ -44,9 +31,40 @@ export function decide(
 
   const draw = createDealSampler(o);
   const beliefs = {
-    next: () => beliefWorld(o, rng, draw),
-    mode: Object.keys(o.known || {}).length ? "passing-prior" : "uniform",
+    next: () => draw(rng),
+    mode: "uniform",
   };
+  const terminal = matchEndsThisRound(o);
+  const originalHand = [
+    ...o.hand,
+    ...o.history
+      .flatMap((t) => t.trick)
+      .concat(o.trick)
+      .filter((x) => x.player === o.player)
+      .map((x) => x.card),
+  ];
+  const moonPlan = moonPotential(originalHand) > 0.7;
+  if (draw.totalDeals === 1 && o.counts.every((n) => n <= 3)) {
+    const exact = solveKnownEndgame(
+      draw(() => 0.5),
+      o,
+    );
+    if (
+      exact &&
+      (exact.terminal
+        ? exact.value === 1
+        : exact.value === 78 || (!moonPlan && exact.value >= 26))
+    )
+      return {
+        card: exact.card,
+        method: "exact",
+        nodes: exact.nodes,
+        samples: 0,
+        simulations: 0,
+        guaranteedValue: exact.value,
+      };
+  }
+  const pointSums = choices.map(() => 0);
   const sums = choices.map(() => 0),
     squares = choices.map(() => 0);
   let n = 0;
@@ -64,10 +82,21 @@ export function decide(
         z ^= z + Math.imul(z ^ (z >>> 7), z | 61);
         return ((z ^ (z >>> 14)) >>> 0) / 4294967296;
       };
-      const scores = rollout(world, choices[i], pairedRandom);
-      const value =
+      const scores = rollout(
+        world,
+        choices[i],
+        pairedRandom,
+        o.player,
+        moonPlan,
+        true,
+      );
+      const pointsValue =
         scores.reduce((n, x, p) => n + (p === o.player ? 0 : x), 0) / 3 -
         scores[o.player];
+      const value = terminal
+        ? terminalWinShare(scores, o.totals, o.player)
+        : pointsValue;
+      pointSums[i] += pointsValue;
       sums[i] += value;
       squares[i] += value * value;
     }
@@ -75,18 +104,27 @@ export function decide(
   } while (n < minSamples || performance.now() < deadline);
   if (!n)
     return { card: conservativePolicy(base, rng), samples: 0, simulations: 0 };
-  const means = sums.map((v) => v / n),
-    index = means.indexOf(Math.max(...means));
+  const means = sums.map((v) => v / n);
+  let index = 0;
+  for (let i = 1; i < choices.length; i++)
+    if (
+      means[i] > means[index] ||
+      (means[i] === means[index] && pointSums[i] > pointSums[index])
+    )
+      index = i;
   return {
     card: choices[index],
     samples: n,
     simulations: n * choices.length,
-    relativeScore: means[index],
+    relativeScore: terminal ? pointSums[index] / n : means[index],
+    objective: terminal ? "match-win" : "round-penalties",
+    ...(terminal ? { winProbability: means[index] } : {}),
     beliefMode: beliefs.mode,
     estimates: choices.map((card, i) => ({
       card,
       samples: n,
-      relativeScore: means[i],
+      relativeScore: pointSums[i] / n,
+      ...(terminal ? { winProbability: means[i] } : {}),
       stderr: Math.sqrt(Math.max(0, squares[i] / n - means[i] ** 2) / n),
     })),
   };

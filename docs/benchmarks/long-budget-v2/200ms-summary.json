@@ -1,0 +1,68 @@
+{
+  "files": [
+    "docs/benchmarks/long-budget-v2/200ms-0.json",
+    "docs/benchmarks/long-budget-v2/200ms-1.json",
+    "docs/benchmarks/long-budget-v2/200ms-2.json",
+    "docs/benchmarks/long-budget-v2/200ms-3.json"
+  ],
+  "mode": "matches-to-100",
+  "budget": {
+    "old": {
+      "milliseconds": 200,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 200,
+      "minSamples": 16
+    }
+  },
+  "games": 320,
+  "independentDealBlocks": 80,
+  "winShares": [
+    0.2203125, 0.2463541666666667, 0.2838541666666667, 0.2494791666666667
+  ],
+  "newWinShareBlockBootstrap95": [0.1828125, 0.2578125],
+  "meanOldWinShare": 0.2598958333333333,
+  "newMinusMeanOld": -0.03958333333333333,
+  "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
+  "runs": [
+    {
+      "file": "docs/benchmarks/long-budget-v2/200ms-0.json",
+      "seed": 710290,
+      "rounds": 847,
+      "winShares": [0.25625, 0.2125, 0.3125, 0.21875],
+      "meanDecisionMilliseconds": [159.44452487067667, 159.39893980125834],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    },
+    {
+      "file": "docs/benchmarks/long-budget-v2/200ms-1.json",
+      "seed": 1710293,
+      "rounds": 791,
+      "winShares": [0.21875, 0.275, 0.2625, 0.24375],
+      "meanDecisionMilliseconds": [159.38000937829068, 159.25866087685475],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    },
+    {
+      "file": "docs/benchmarks/long-budget-v2/200ms-2.json",
+      "seed": 2710296,
+      "rounds": 837,
+      "winShares": [
+        0.15625, 0.2791666666666667, 0.34791666666666665, 0.2166666666666667
+      ],
+      "meanDecisionMilliseconds": [159.45049181922286, 159.65919309230168],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    },
+    {
+      "file": "docs/benchmarks/long-budget-v2/200ms-3.json",
+      "seed": 3710299,
+      "rounds": 825,
+      "winShares": [0.25, 0.21875, 0.2125, 0.31875],
+      "meanDecisionMilliseconds": [159.45987000120883, 159.06585745199652],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    }
+  ]
+}

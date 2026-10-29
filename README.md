@@ -31,15 +31,17 @@ Jedes Herz zählt einen Punkt, die Pik-Dame 13. Wer alle 26 Punkte sammelt, gibt
 
 ## Die KI
 
-Die KI zieht verdeckte Hände aus den Verteilungen, die zur eigenen Hand, den selbst abgegebenen Karten und öffentlichen Fehlfarben passen. Ein kombinatorischer Zähler gewichtet mögliche Verteilungen gleich, statt sie durch eine gierige Kartenzuteilung zu verzerren. Ein weiches Modell der bekannten Weitergabestrategie hilft, die Pik-Dame einzuschätzen; menschliche Weitergaben bleiben möglich.
+Die Weitergabe bewertet alle **286 Dreiergruppen** anhand der verbleibenden Hand: freie Farben, gefährliche hohe Karten, Deckung durch kleine Pik und mögliche Durchmarschkontrolle. Ein gedeckter Pik-König muss daher nicht automatisch weg. Der Tipp erläutert diese Entscheidung; empfangene Karten können eine zuvor geleerte Farbe natürlich wieder auffüllen.
 
-Für jede legale Karte simuliert sie die restliche Runde. Eine kompakte Simulation ermöglicht mehr Stichproben pro Sekunde. Innerhalb einer gezogenen Verteilung verwenden alle Karten dieselbe Zufallsfolge: Unterschiede zwischen den Karten werden dadurch weniger von zufälligen Ausspielvarianten überlagert. Die Bewertung minimiert den eigenen Strafpunktnachteil, einschließlich Durchmarsch. Eine optimale Strategie für den gesamten Match wird damit nicht behauptet.
+Die Suche zieht verdeckte Hände, die zur eigenen Hand, selbst abgegebenen Karten und öffentlichen Fehlfarben passen. Sie simuliert die Runde mit einer eigenen taktischen Ausspielstrategie einschließlich Durchmarschplanung und Abwehr gegnerischer Durchmärsche. Ein plausibler Durchmarschplan bleibt erhalten, wenn die ersten hohen Karten verwendet werden, und endet, sobald ein anderer Spieler Punkte sammelt.
+
+Wenn öffentliche Punkte das Spielende garantieren, zählt der tatsächliche Spielsieg einschließlich Gleichständen. Wenn alle Resthände aus den eigenen und öffentlichen Informationen eindeutig ableitbar sind, kann ein kleines Endspiel exakt gegen alle legalen gegnerischen Fortsetzungen geprüft werden. Tatsächlich verdeckte Hände werden dafür nicht eingesehen.
 
 Jeder Suchlauf läuft in einem eigenen Worker. Er erhält nur die **eigene Hand**, die **eigenen abgegebenen und erhaltenen Karten**, öffentliche Karten, Fehlfarben und Spielstände. Gegnerische tatsächliche Hände werden nicht übergeben. Es gibt keine Mannschaftswertung oder gemeinsame private KI-Erinnerung. Auch der Tipp für den Menschen verwendet ausschließlich dessen Informationen.
 
 Die Bedenkzeit lässt sich zwischen 0,2, 1,2 und 5 Sekunden pro Zug wählen. Sie beeinflusst die Zahl der geprüften Möglichkeiten; ein längerer Suchlauf garantiert keinen besseren Einzelzug. Die KI und sämtliche Modelle laufen lokal im Browser.
 
-Im Vergleich mit drei eingefrorenen Vorgängern erreicht die neue KI bei gleichem **5-ms-Budget 34,69 % Sieganteil in 480 vollständigen Spielen** (95-%-Intervall: 30,73–38,65 %). Ein Vorteil bei längeren Bedenkzeiten ist bisher nicht nachgewiesen. [Rohdaten und Testbedingungen](docs/RESULTS.md).
+**Ein Stärkenachweis bei längeren Bedenkzeiten ist noch offen.** Der frühere Vorteil bei 5 ms ließ sich bei 200 ms nicht bestätigen. Die überarbeitete Strategie wird separat geprüft; funktionierende Strategietests ersetzen keinen Spielstärkenachweis. [Ergebnisse und Testbedingungen](docs/RESULTS.md).
 
 Methodik, Vergleich mit der eingefrorenen Vorgängerversion und Grenzen stehen in [docs/AI.md](docs/AI.md).
 

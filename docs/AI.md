@@ -1,35 +1,43 @@
-# KI und Informationsgrenzen
+# Strategie, Informationsgrenzen und Bewertung
 
-Jeder Spieler bewertet seinen eigenen Strafpunktnachteil. Es gibt keine Teamwertung, keine gemeinsame private Kartenkenntnis und keine Nachrichten zwischen KI-Workern. Die Bewertung ist eine Näherung für erfolgreiches Hearts-Spiel, keine berechnete optimale Match-Strategie.
+Die aktuelle Überarbeitung ist ein zu prüfender Kandidat. Der frühere Vorteil bei 5 ms hat sich bei 200 ms nicht bestätigt. Ein erfolgreicher Strategietest ist kein Spielstärkenachweis; abgeschlossene Vergleiche und ihre jeweiligen Quellstände stehen in [RESULTS.md](RESULTS.md).
 
-## Kartenhypothesen
+## Weitergabe als Entscheidung über die ganze Hand
 
-Eine Beobachtung enthält nur die eigene Hand, eigene Weitergabedaten und öffentliche Karten, Punkte und Fehlfarben. `src/deals.js` erzeugt hypothetische Hände mit den passenden Kartenzahlen. Bekannte selbst weitergegebene Karten bleiben ihrem Empfänger zugeordnet, solange sie nicht öffentlich gespielt wurden.
+`strategy.js` bewertet alle 286 möglichen Dreiergruppen. Maßgeblich sind die verbliebenen Farben und Karten, nicht nur eine Rangliste gefährlicher Einzelkarten. Ein langer Bestand kleiner Pik schützt hohe Pik; das Leeren einer kurzen Nebenfarbe eröffnet Abwurfchancen. Bei schwacher Pik-Deckung bleibt König/Ass gefährlich. Hohe Herzkontrolle und Seiteneinstiege können stattdessen für einen möglichen Durchmarsch erhalten werden. Nach dem Empfang neuer Karten kann eine zuvor geleerte Farbe wieder besetzt sein.
 
-Für die übrigen Karten zählt dynamische Programmierung, wie viele vollständige Zuteilungen jede mögliche Farbverteilung erlaubt. Die Gewichtung mit Multinomialkoeffizienten liefert gleichverteilte Zuteilungen unter diesen Bedingungen. Ohne Fehlfarben genügt Mischen und Aufteilen. Das Verfahren vermeidet den Verteilungsfehler einer gierigen Zuteilung und berechnet die Zähler nur einmal je Zug. Der Test vergleicht die Stichprobenhäufigkeit mit allen möglichen Zuteilungen einer kleinen vollständig aufzählbaren Situation.
+Die festen Gewichte dieser Bewertung sind Heuristiken. Die Regressionstests decken ausdrücklich den Fall ab, Karo 8 und 9 zusammen mit Herz-Dame abzugeben und den durch sechs kleine Pik gedeckten König zu behalten. Eine andere Testhand mit ungeschütztem König gibt ihn ab. Das beweist die beabsichtigte Unterscheidung dieser Situationen, nicht eine optimale Auswahl für jede Hand.
 
-Zusätzlich verwendet die Suche einen **weichen** Weitergabe-Prior: Ein Computerempfänger, dem man selbst keine Pik-Dame gegeben hat, erhält in den Hypothesen seltener die Pik-Dame. Diese Einschätzung beruht auf der bekannten Weitergabeheuristik. Beim Menschen ist sie abgeschwächt; er darf die Dame behalten. Das ist ein Gegnermodell, keine zusätzliche Spielregel oder Kenntnis der wirklichen Hände. Die gewichtete Suchverteilung ist deshalb von der uniformen Basisverteilung zu unterscheiden.
+Der Weitergabe-Tipp verwendet dieselbe Auswahl wie die Computer. Er markiert und erläutert drei Karten, ohne sie auszuwählen oder auszutauschen.
 
-## Ausspielsimulation und Bewertung
+## Eigene Suche und Durchmarsch
 
-Jede legale Karte wird in denselben gezogenen Händen bis zum Rundenende ausgespielt. `src/rollout.js` führt die konservative Referenz-Ausspiellogik in einem kompakten Zustand aus. Die Kartenwahl jedes simulierten Spielers verwendet nur dessen hypothetische Hand und den öffentlichen Stich. Tests vergleichen die Ergebnisse mit dem vollständigen Regelmotor bei identischen Zufallsfolgen über viele Spielpositionen.
+Die Suchverteilung berücksichtigt eigene Karten, eigene bekannte Weitergaben, öffentliche gespielte Karten und Fehlfarben. Dynamische Programmierung zählt die vollständigen Zuteilungen nach Farben und Handgrößen; Multinomialgewichte vermeiden eine gierige Verzerrung. Die frühere Annahme, Computer würden immer die Pik-Dame abgeben, wird **nicht mehr verwendet**, weil die neue Weitergabe diese Karte unter geeigneten Bedingungen behalten darf. Auch menschliche Weitergaben bleiben frei.
 
-Alle Karten einer gezogenen Verteilung verwenden dieselbe neu gezogene Zufallsfolge. Diese Kopplung verringert das Rauschen beim Vergleich zweier Karten. Neue Verteilungen haben unabhängige Zufallsfolgen. Die tatsächlichen Entscheidungen und privaten Erinnerungen verschiedener Spieler bleiben unabhängig.
+Jede legale Karte wird in denselben gezogenen Verteilungen ausgespielt. Gekoppelte Zufallsfolgen reduzieren das Rauschen beim Vergleich. Die eigene simulierte Ausspielstrategie berücksichtigt unter anderem hohe Karten mit Deckung, Abwürfe zum Leeren einer Farbe, plausible eigene Durchmärsche und die Abwehr eines Gegners, der bisher alle Punkte sammelt. Beim Ausspiel einer Farbe berücksichtigt ein Näherungsmodell die noch unbekannten höheren und niedrigeren Karten sowie öffentliche Fehlfarben. Eine gedruckte Zwei, die inzwischen die höchste verbleibende Karte ihrer Farbe ist, wird dadurch nicht für einen sicheren Ausstieg gehalten. Die Rang-Extremfälle sind eindeutig; Zwischenwerte beruhen auf einer vereinfachten Empfängerverteilung ohne vollständige Kapazitätsmodellierung. Die anderen simulierten Spieler verwenden beim Ausspielen ebenfalls dieses Modell, sonst die konservative Referenz-Ausspiellogik. Dieses vereinfachte Gegnermodell bleibt eine mögliche Fehlerquelle.
 
-Nach einer Simulation wird die echte Rundenabrechnung einschließlich Durchmarsch angewandt. Die Nutzenfunktion ist `Mittelwert(gegnerische Rundenpunkte) - eigene Rundenpunkte`. Ohne Durchmarsch ist das eine lineare Umformung der eigenen Strafpunkte, weil jede Runde genau 26 Punkte verteilt. Jeder Spieler maximiert ausschließlich seinen eigenen Wert. Die KI verwendet keine zukünftigen wirklichen Karten und kein empirisches Zukunftsmodell mehr. Dieses zuvor erprobte Modell ergab keinen belastbaren Vorteil und wurde entfernt.
+Ein anfänglicher Durchmarschplan wird aus der eigenen ursprünglichen Nach-Tausch-Hand rekonstruiert: aktuelle eigene Karten plus eigene öffentlich gespielte Karten. Er braucht daher keine gemeinsame oder fremde private Erinnerung. Der Plan bleibt über die ersten gewonnenen Stiche hinweg bestehen, solange kein anderer Spieler punktet. Eine reine Zahl hoher Strafkarten reicht als Begründung nicht aus. Ein Durchmarsch bleibt ein unsicherer Plan; eine andere gespielte Karte kann seinen Erfolg verhindern.
 
-## Trennung der Spieler und Tippfunktion
+Die gewöhnliche Suchbewertung ist `Mittelwert(gegnerische Rundenpunkte) - eigene Rundenpunkte`, einschließlich der echten Durchmarschabrechnung. Sobald öffentliche bereits genommene Punkte garantieren, dass diese Runde das Spiel beendet, wird stattdessen die tatsächliche eigene Gewinnchance bewertet. Gleichstände teilen den Gewinn; Rundenpunkte entscheiden nur bei identischer geschätzter Gewinnchance.
 
-- `src/observation.js` bildet die Informationsgrenze zwischen Spielzustand und KI.
-- Jeder Ausspiel-Worker erhält nur die Beobachtung des gerade rechnenden Spielers.
-- Jeder Weitergabe-Worker erhält ausschließlich seine eigene ursprüngliche Hand und die öffentliche Tauschrichtung.
-- Der Weitergabe-Tipp verwendet dieselbe Auswahlfunktion wie die Computer und markiert drei Karten. Er verändert weder die Auswahl noch die Hand und führt keinen Tausch aus.
+## Exakt bekannte kleine Endspiele
+
+Der Kartensampler zählt auch, ob die zulässige Zuteilung eindeutig ist. Nur bei **einer einzigen** aus den eigenen und öffentlichen Informationen ableitbaren Restverteilung und höchstens drei Karten je Spieler beginnt eine begrenzte exakte Suche. Sie behandelt jede gegnerische legale Fortsetzung als mögliche Gegenwehr. Ein sicheres sofortiges Spielgewinn-Ergebnis kann die Monte-Carlo-Entscheidung ersetzen; im normalen Rundenfall gilt dies für gesicherte punktfreie Ergebnisse beziehungsweise einen gesicherten Durchmarsch. Ein laufender Durchmarschplan wird nicht für eine bloß gesicherte gewöhnliche Nullrunde verworfen. Bei überschrittenem Knotenlimit oder ohne passendes gesichertes Ergebnis rechnet die normale Suche weiter.
+
+Diese Einschränkung verhindert, dass die KI eine gezogene Vermutung für wirklich bekannte gegnerische Hände hält. Tests vergleichen die exakte Suche mit vollständiger Aufzählung kleiner Spiele.
+
+## Trennung der Spieler
+
+- `observation.js` bildet die Informationsgrenze. Jeder Worker erhält nur eigene Hand und Tauschdaten sowie öffentliche Karten, Fehlfarben und Spielstände.
+- Weitergabe-Worker erhalten nur die jeweilige eigene ursprüngliche Hand und die öffentliche Richtung.
+- Die taktische Ausspielauswahl innerhalb der Simulation erhält nur die handelnde hypothetische Hand und öffentliches Stichgeschehen.
+- Die exakte Suche erhält ausschließlich eine eindeutig aus diesen Informationen rekonstruierte Verteilung.
 - Neustarts beenden Worker; Epoch-Prüfungen verwerfen verspätete Ergebnisse.
 
-Die Tests prüfen unter anderem unveränderte Entscheidungen bei veränderten wirklichen Gegnerkarten, unveränderte Eingabeobjekte, zulässige Kartenhypothesen und die tatsächlich an Worker gesendeten Nachrichten.
+Die Tests prüfen unveränderte Entscheidungen nach Veränderungen tatsächlicher unbekannter Gegnerkarten, unveränderte Eingabeobjekte, zulässige Hypothesen sowie die wirklich an Worker gesendeten Nachrichten.
 
-## Stärke und Grenzen
+## Stärke messen
 
-Die unveränderte Vorgänger-KI ist in `test/fixtures/ai-v1.js` eingefroren. Der Benchmark spielt eine neue KI gegen drei dieser Kopien bis zur 100-Punkte-Grenze, rotiert alle Plätze und teilt Gleichstände. Getrennte Zufallsströme verhindern eine gemeinsame private Erinnerung. Ergebnisdateien enthalten Quellcode-Hashes, Budgets, Seeds, tatsächliche Laufzeiten und Einzelpartien.
+Die ursprüngliche KI ist in `test/fixtures/ai-v1.js` eingefroren. Der normale Benchmark spielt einen Kandidaten gegen drei unveränderte Kopien bis 100 Punkte. Vier Sitzrotationen teilen dieselben Kartenfolgen, Zufallsströme bleiben pro Spieler getrennt, Gleichstände werden anteilig gezählt. Ergebnisdateien enthalten Budgets, gemessene Dauer, Seeds, Quellcode-Hashes und jede vollständige Partie. Bootstrapintervalle verwenden ganze Viererblöcke.
 
-[RESULTS.md](RESULTS.md) dokumentiert die Vergleichsläufe. Feste Stichprobenzahlen und gleiche Zeitbudgets sind unterschiedliche Experimente. Konfidenzintervalle werden aus vollständigen Viererblöcken der Sitzrotationen gebootstrapt. Kleine Stichproben, andere Gegner oder größere Budgets können andere Ergebnisse liefern. Gegen Menschen oder Spitzenprogramme ist keine allgemeine Überlegenheit nachgewiesen. Auch eine längere Suche garantiert keinen besseren Einzelzug; die simulierte Ausspielpolitik bleibt vereinfacht.
+Feste Stichprobenzahlen und gleiche Zeitlimits sind verschiedene Experimente. Sehr kurze Zeitlimits reichen für den hier angestrebten Stärkenachweis nicht aus. Eine Aussage über höhere Budgets erfordert abgeschlossene unveränderte Vergleichsserien bei diesen Budgets; Zwischenstände, einzelne Beispielhände und Erkundungsläufe genügen nicht.
