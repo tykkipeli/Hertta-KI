@@ -44,12 +44,20 @@ for (const { data } of runs) {
 }
 const blocks = [],
   totals = [0, 0, 0, 0];
+const runIds = new Set(),
+  dealSeeds = new Set();
 let games = 0;
 for (const { data } of runs) {
+  if (data.runId && runIds.has(data.runId)) throw Error("Duplicate run ID");
+  if (data.runId) runIds.add(data.runId);
   for (let start = 0; start < data.records.length; start += 4) {
     const rows = data.records.slice(start, start + 4);
     if (rows.length !== 4)
       throw Error("Complete seat-rotation blocks required");
+    const dealSeed = (data.seed + Math.floor(start / 4) * 65537) >>> 0;
+    if (dealSeeds.has(dealSeed))
+      throw Error("Overlapping deal blocks cannot be treated as independent");
+    dealSeeds.add(dealSeed);
     const wins = [0, 0, 0, 0];
     for (const row of rows)
       for (const p of row.winners) {
