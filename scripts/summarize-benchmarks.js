@@ -19,6 +19,18 @@ for (const { data } of runs) {
     reference.sourceHashes["test/fixtures/ai-v1.js"]
   )
     throw Error("Reference opponent changed");
+  for (const key of [
+    "activeEngine",
+    "src/agent.js",
+    "src/deals.js",
+    "src/rollout.js",
+    "src/reference-policy.js",
+    "src/game.js",
+    "src/observation.js",
+  ]) {
+    if (data.sourceHashes[key] !== reference.sourceHashes[key])
+      throw Error("Do not combine different AI versions: " + key);
+  }
 }
 const blocks = [],
   totals = [0, 0, 0, 0];
@@ -74,6 +86,7 @@ const report = {
     meanDecisionMilliseconds: data.meanDecisionMilliseconds,
     activeSource:
       data.sourceHashes.activeEngine || data.sourceHashes["src/ai.js"],
+    agentSource: data.sourceHashes["src/agent.js"],
   })),
 };
 await mkdir("artifacts", { recursive: true });

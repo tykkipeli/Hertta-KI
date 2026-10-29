@@ -1,23 +1,58 @@
-# Vergleich mit der eingefrorenen Ausgangs-KI
+# Vergleich mit der ursprünglichen KI
 
-Eine deutlich höhere Spielstärke ist bisher **nicht nachgewiesen**. Diese Änderung verbessert Oberfläche, Nachvollziehbarkeit und die Trennung privaten Wissens; die neue KI bleibt experimentell.
+Bei gleichem **5-ms-Budget** erzielt die neue KI **34,69 % Sieganteil in 480 vollständigen Spielen** gegen drei ursprüngliche Kopien; das 95-%-Intervall beträgt **30,73–38,65 %**. Damit ist im dokumentierten Kleinbudgetvergleich ein Vorteil belegt. Das ist **kein Nachweis einer Überlegenheit bei allen Bedenkzeiten**. Insbesondere ist ein Vorteil bei den längeren GUI-Einstellungen noch nicht nachgewiesen.
 
-Die Referenz ist `test/fixtures/ai-v1.js`, unverändert aus Commit `fa856d4` bis auf den Importpfad. Pro Partie spielt eine neue KI gegen drei Referenzkopien. Partien enden bei mindestens 100 Punkten; vier Sitzrotationen teilen dieselbe Kartenfolge. Geteilte Siege werden anteilig gezählt. Beide Versionen erhalten ihr jeweiliges ursprüngliches Beobachtungsformat und dasselbe Zeitbudget.
+## Bestätigung mit gleichem Zeitbudget
 
-| Budget je Entscheidung | Partien | Neue KI | Alte KI rechts/gegenüber/links |
-| --- | ---: | ---: | --- |
-| 25 ms | 80 | 22,5 % | 23,75 / 28,75 / 25,0 % |
-| 200 ms | 20 | 27,5 % | 17,5 / 22,5 / 32,5 % |
+Alle vier Spieler erhielten dasselbe vorgegebene Budget von **5 ms je Entscheidung**, mit mindestens einer Stichprobe. Zwei vorab festgelegte Serien verwenden dieselbe eingefrorene endgültige KI. Erzwungene Züge können sofort enden; das Zeitmittel enthält auch diese Züge.
 
-Die drei alten Gegner verwenden denselben Algorithmus; die Spalten bezeichnen relative Sitzpositionen. Insbesondere 20 Partien erlauben keine belastbare Aussage über kleine Unterschiede. Das höhere Budget aktiviert die auf dem Kartentausch beruhende Hypothesenbildung. Auch dort ist keine Überlegenheit belegt.
+| Serie           | Vollständige Partien |     Neue KI | Alte Kopien links / gegenüber / rechts |
+| --------------- | -------------------: | ----------: | -------------------------------------- |
+| Seed `20261213` |                  160 |     29,69 % | 25,94 / 21,88 / 22,50 %                |
+| Seed `20261215` |                  320 |     37,19 % | 20,78 / 19,06 / 22,97 %                |
+| **Zusammen**    |              **480** | **34,69 %** | 22,50 / 20,00 / 22,81 %                |
 
-Rohdaten mit Seeds, Budgets, Quellcode-Hashes und Einzelpartien: [25 ms](benchmarks/25ms.json), [200 ms](benchmarks/200ms.json).
+Das 95-%-Bootstrapintervall über **120 vollständige Viererblöcke** der Sitzrotationen beträgt **30,73–38,65 %**. Es liegt vollständig über den erwarteten 25 % bei vier gleich starken Kopien. Die tatsächlich gemessene mittlere Dauer beträgt **3,99 ms** für die neue und **4,06 ms** für die alten KIs. Der Vorteil beruht in diesem Test nicht auf einem größeren vorgegebenen Zeitbudget.
 
-Reproduktion:
+Rohdaten: [160 Partien](benchmarks/equal-time-160.json), [320 Partien](benchmarks/equal-time-320.json), [gemeinsame Auswertung](benchmarks/equal-time-summary.json). Die beiden Serien umfassen zusammen 5.005 gespielte Runden. Sie werden nicht mit den Erkundungsläufen oder anderen Rechenbudgets vermischt.
 
 ```sh
-node benchmark.js 80 --matches --ms 25 --samples 1 --seed 20261127
-node benchmark.js 20 --matches --ms 200 --samples 1 --seed 20261128
+node benchmark.js 160 --matches --ms 5 --samples 1 --seed 20261213
+node benchmark.js 320 --matches --ms 5 --samples 1 --seed 20261215
+node scripts/summarize-benchmarks.js docs/benchmarks/equal-time-160.json docs/benchmarks/equal-time-320.json
 ```
 
-Zeitbasierte Ergebnisse variieren mit Rechner und Last. Frühere explorative Vergleiche sind hier ausgeschlossen: Die Referenz erhielt zusätzliche ungenutzte Metadaten, deren Kopieraufwand sie benachteiligte. Die obigen Kontrollläufe korrigieren das Eingabeformat. Auch gleiche feste Stichprobenzahlen sind kein Nachweis gleicher Rechenzeit.
+## Unabhängige Bestätigung mit festen Stichproben
+
+Die Variante wurde vor diesem Lauf eingefroren. Die endgültig ausgelieferten KI-Dateien stimmen mit den gespeicherten Quellcode-Hashes überein.
+
+| Messwert                                  |     Neue KI | Drei ursprüngliche Kopien, nach relativer Sitzposition |
+| ----------------------------------------- | ----------: | ------------------------------------------------------ |
+| Vollständige Partien                      |         160 | dieselben Partien                                      |
+| Stichproben pro nicht erzwungenem Zug     |         128 | jeweils 16                                             |
+| Sieganteil, Gleichstände anteilig         | **33,75 %** | 24,06 / 22,50 / 19,69 %                                |
+| Mittlerer Gesamtpunktestand bei Spielende |   **65,11** | 76,56 / 78,53 / 77,99                                  |
+| Mittlere Rechenzeit je Entscheidung       | **2,28 ms** | 3,03 ms im Mittel                                      |
+
+Die neue KI gewinnt damit häufiger als jede der drei Kopien in diesem Lauf und verwendet trotz achtfacher Stichprobenzahl weniger mittlere Rechenzeit. Das Zeitmittel enthält auch erzwungene Züge. Dies ist ein **Vergleich fester Stichprobenzahlen**, kein identisches vorgegebenes Zeitlimit.
+
+Das über vollständige Viererblöcke der Sitzrotationen berechnete 95-%-Bootstrapintervall für ihren Sieganteil beträgt **26,875–40,9375 %**. Vier gleich starke Kopien hätten im symmetrischen Vergleich einen erwarteten Anteil von 25 %. Das Intervall ist eine empirische Unsicherheitsangabe für diesen Testaufbau, keine Garantie für andere Gegner oder Einstellungen.
+
+Rohdaten: [Bestätigung](benchmarks/fixed-samples-confirmation.json), [Auswertung](benchmarks/fixed-samples-summary.json). Seed: `20261214`.
+
+```sh
+node benchmark.js 160 --matches --samples 16 --new-samples 128 --seed 20261214
+node scripts/summarize-benchmarks.js docs/benchmarks/fixed-samples-confirmation.json
+```
+
+## Protokoll und Grenzen
+
+Die Referenz ist `test/fixtures/ai-v1.js`, unverändert aus Commit `fa856d4` bis auf den Importpfad. Pro Partie spielt eine neue KI gegen drei Referenzkopien bis mindestens 100 Gesamtpunkte. Vier Sitzrotationen teilen dieselbe Kartenfolge; Zufallsströme bleiben pro Spieler getrennt. Jede Version erhält ihr eigenes ursprüngliches Beobachtungsformat. Tatsächliche gegnerische Hände werden der KI nicht übergeben.
+
+Die drei alten Gegner verwenden denselben Algorithmus. Ihre Spalten bezeichnen die Plätze links, gegenüber und rechts relativ zur neuen KI. Sie sind keine verschiedenen trainierten Gegner. Der neue Algorithmus wurde anhand von Erkundungsläufen ausgewählt; diese werden nicht mit den abschließenden Bestätigungsserien zusammengefasst. Zeitbasierte Ergebnisse variieren mit Rechner und Last. Feste Stichproben sind leichter reproduzierbar.
+
+Ein früherer Stand der gekoppelten Suche erreichte bei 25 ms in 40 Partien nur **23,75 %**. [Rohdaten](benchmarks/earlier-paired-25ms.json), [damaliger KI-Quellstand](benchmarks/earlier-paired-agent.js.txt). Dieser Stand verwendete noch dieselbe Generatorfamilie für Karten-Sampling und Ausspielsimulation. Die fertige Variante trennt diese Generatoren; der ältere Lauf bleibt als Hinweis erhalten, dass der Vorteil nicht pauschal auf größere Budgets übertragen werden darf.
+
+Das zuvor erprobte empirische Match-Modell brachte ebenfalls keinen Vorteil: **22,5 %** in 80 Partien bei 25 ms und **27,5 %** in 20 Partien bei 200 ms. Es wurde entfernt. [25-ms-Daten](benchmarks/retired-match-model-25ms.json), [200-ms-Daten](benchmarks/retired-match-model-200ms.json).
+
+Noch frühere explorative Zeitvergleiche sind ausgeschlossen: Die Referenz erhielt zusätzliche ungenutzte Metadaten, deren Kopieraufwand sie benachteiligte. Alle hier verlinkten Vergleiche verwenden ihr korrektes ursprüngliches Eingabeformat.

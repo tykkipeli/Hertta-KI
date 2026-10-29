@@ -1,0 +1,32 @@
+{
+  "files": ["docs/benchmarks/fixed-samples-confirmation.json"],
+  "mode": "matches-to-100",
+  "budget": {
+    "old": {
+      "milliseconds": 0,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 0,
+      "minSamples": 128
+    }
+  },
+  "games": 160,
+  "independentDealBlocks": 40,
+  "winShares": [0.3375, 0.240625, 0.225, 0.196875],
+  "newWinShareBlockBootstrap95": [0.26875, 0.409375],
+  "meanOldWinShare": 0.22083333333333333,
+  "newMinusMeanOld": 0.1166666666666667,
+  "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
+  "runs": [
+    {
+      "file": "docs/benchmarks/fixed-samples-confirmation.json",
+      "seed": 20261214,
+      "rounds": 1695,
+      "winShares": [0.3375, 0.240625, 0.225, 0.196875],
+      "meanDecisionMilliseconds": [2.2847914481960747, 3.0304057117313046],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "7a131fad673f583d282efdbd60d7840bf22490d35149372b995a7140eb61753d"
+    }
+  ]
+}

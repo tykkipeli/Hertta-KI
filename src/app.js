@@ -177,7 +177,9 @@ function render() {
         disabled: phase === "pass" ? false : locked || !allowed.includes(c),
         extra: [
           selected.includes(c) ? "selected" : "",
-          hinted === c ? "hinted" : "",
+          (Array.isArray(hinted) ? hinted.includes(c) : hinted === c)
+            ? "hinted"
+            : "",
           received.includes(c) ? "received-card" : "",
         ].join(" "),
       }),
@@ -194,7 +196,7 @@ function render() {
     ? "♥ Herzen sind frei"
     : "♡ Herzen noch gesperrt";
   $("hearts-status").classList.toggle("broken", state.broken);
-  $("hint").disabled = locked;
+  $("hint").disabled = phase === "pass" ? busy || hinting : locked;
   $("action").hidden = true;
   $("exchange").hidden = phase !== "receive";
   $("selection-help").hidden = phase !== "pass";
@@ -205,7 +207,7 @@ function render() {
       `${won === 0 ? "Du gewinnst" : names[won] + " gewinnt"} den Stich · +${state.history.at(-1).points} Strafpunkte`;
   if (phase === "pass") {
     status(`Wähle drei Karten zum Weitergeben ${directions[round % 4]}.`);
-    action("3 Karten weitergeben", selected.length !== 3);
+    action("3 Karten weitergeben", busy || selected.length !== 3);
   } else if (phase === "passing") {
     status("Die Gegner wählen ihre Karten …");
   } else if (phase === "receive") {
@@ -342,7 +344,7 @@ async function human(c) {
 }
 
 $("action").onclick = async () => {
-  if (phase === "pass" && selected.length === 3) {
+  if (phase === "pass" && !busy && selected.length === 3) {
     const direction = [1, 3, 2, 0][round % 4];
     const stamp = epoch;
     phase = "passing";
@@ -379,6 +381,7 @@ $("action").onclick = async () => {
     passCards(state.hands, selections, direction);
     state = createState(state.hands);
     selected = [];
+    hinted = null;
     phase = "receive";
     $("received-from").textContent = `Von ${names[sender]}`;
     $("sent-to").textContent = `An ${names[direction]}`;
@@ -448,11 +451,13 @@ function computePass(hand, direction) {
   return new Promise((resolve, reject) => {
     current.onmessage = (event) => {
       current.terminate();
+      passWorkers = passWorkers.filter((w) => w !== current);
       if (event.data.error) reject(Error(event.data.error));
       else resolve(event.data.cards);
     };
     current.onerror = (event) => {
       current.terminate();
+      passWorkers = passWorkers.filter((w) => w !== current);
       reject(Error(event.message));
     };
     current.postMessage({
@@ -519,17 +524,26 @@ async function advance(stamp) {
   }
 }
 $("hint").onclick = async () => {
-  if (busy || animating || phase !== "play" || state.turn !== 0) return;
+  if (
+    busy ||
+    animating ||
+    (phase !== "pass" && (phase !== "play" || state.turn !== 0))
+  )
+    return;
+  const passing = phase === "pass";
   busy = true;
   hinting = true;
   const stamp = epoch;
   render();
   try {
-    const result = await compute(0);
+    const result = passing
+      ? await computePass(state.hands[0], [1, 3, 2, 0][round % 4])
+      : await compute(0);
     if (stamp !== epoch) return;
-    hinted = result.card;
-    $("analysis").textContent =
-      `Tipp: ${label(result.card)} · ${result.samples} Kartenverteilungen geprüft.`;
+    hinted = passing ? result : result.card;
+    $("analysis").textContent = passing
+      ? `Tipp zum Weitergeben: ${result.map(label).join(" · ")}. Die markierten Karten bleiben frei wählbar.`
+      : `Tipp: ${label(result.card)} · ${result.samples} Kartenverteilungen geprüft.`;
   } catch (error) {
     if (stamp === epoch) $("analysis").textContent = error.message;
   } finally {

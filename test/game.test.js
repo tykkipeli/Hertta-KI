@@ -165,23 +165,6 @@ test("search preserves caller state and consumes real samples", () => {
   assert.deepEqual(o, snapshot);
 });
 
-test("match forecasts share ties, end at 100, conserve probabilities and have no seat bias", async () => {
-  const { createMatchEvaluator } = await import("../src/match-value.js");
-  const equal = createMatchEvaluator([0, 0, 0, 0], 0, { sequences: 16 })([
-    0, 0, 0, 0,
-  ]);
-  equal.forEach((n) => assert.ok(Math.abs(n - 0.25) < 1e-10));
-  const end = createMatchEvaluator([80, 90, 99, 99], 1, { sequences: 8 });
-  assert.deepEqual(end([0, 26, 0, 0]), [1, 0, 0, 0]);
-  const tie = createMatchEvaluator([80, 80, 99, 99], 2, { sequences: 8 });
-  assert.deepEqual(tie([0, 0, 1, 1]), [0.5, 0.5, 0, 0]);
-  const state = createMatchEvaluator([12, 24, 38, 19], 3, { sequences: 32 });
-  const a = state([0, 10, 8, 8]);
-  assert.ok(Math.abs(a.reduce((x, y) => x + y) - 1) < 1e-10);
-  a.forEach((n) => assert.ok(n >= 0 && n <= 1));
-  assert.deepEqual(a, state([0, 10, 8, 8]));
-});
-
 test("search visit counts account for every simulated hand", () => {
   const s = createState(deal(rng(700)));
   play(s, 0);
@@ -215,99 +198,79 @@ test("passing model matches the frozen reference strategy", async () => {
     }
 });
 
-test("passing posterior preserves private facts and all public card constraints", async () => {
-  const { createBeliefSampler } = await import("../src/belief.js");
-  const { chooseReferencePass } = await import("../src/reference-policy.js");
-  for (const direction of [1, 2, 3]) {
-    const random = rng(140 + direction),
-      hands = deal(random),
-      selections = hands.map(chooseReferencePass);
-    passCards(hands, selections, direction);
-    const state = createState(hands);
-    for (let i = 0; i < 20; i++) play(state, policy(state, random));
-    const p = state.turn,
-      target = (p + direction) % 4,
-      source = (p - direction + 4) % 4;
-    const o = observe(state, p, { [target]: selections[p] }, [0, 0, 0, 0], {
-      from: source,
-      cards: selections[source],
-    });
-    const sampler = createBeliefSampler(o, random, sample, {
-      setupMilliseconds: 2000,
-    });
-    assert.equal(sampler.mode, "passing-posterior");
-    const played = state.history.flatMap((t) => t.trick).concat(state.trick);
-    for (let i = 0; i < 8; i++) {
-      const world = sampler.next();
-      assert.deepEqual(world.hands[p], o.hand);
-      assert.deepEqual(
-        world.hands.map((h) => h.length),
-        o.counts,
-      );
-      assert.equal(
-        new Set([...world.hands.flat(), ...played.map((x) => x.card)]).size,
-        52,
-      );
-      world.hands.forEach((hand, q) =>
-        assert.ok(hand.every((c) => !o.voids[q].includes(Math.floor(c / 13)))),
-      );
-      const full = [
-        ...world.hands[target],
-        ...played.filter((x) => x.player === target).map((x) => x.card),
-      ];
-      const retained = full.filter((c) => !selections[p].includes(c));
-      assert.ok(!retained.includes(36));
-      assert.ok(!retained.includes(37));
+test("compact rollouts preserve the reference policy's outcomes", async () => {
+  const { rollout } = await import("../src/rollout.js");
+  const { conservativePolicy } = await import("../src/reference-policy.js");
+  for (let seed = 0; seed < 12; seed++) {
+    const s = createState(deal(rng(seed + 800))),
+      random = rng(seed + 900);
+    for (let move = 0; move < 48; move++) {
+      const first = legal(s)[0],
+        copy = structuredClone(s);
+      const actual = rollout(s, first, rng(seed + move));
+      play(copy, first);
+      const simulationRandom = rng(seed + move);
+      while (copy.completed < 13)
+        play(copy, conservativePolicy(copy, simulationRandom));
+      assert.deepEqual(actual, roundScores(copy.taken));
+      play(s, conservativePolicy(s, random));
     }
   }
 });
 
-test("human passing is not forced to follow the computer policy", async () => {
-  const { createBeliefSampler } = await import("../src/belief.js");
-  const { chooseReferencePass } = await import("../src/reference-policy.js");
-  const random = rng(902),
-    hands = deal(random);
-  let owner = hands.findIndex((h) => h.includes(36));
-  if (owner !== 0) {
-    const replacement = hands[0][0];
-    hands[0][0] = 36;
-    hands[owner][hands[owner].indexOf(36)] = replacement;
-  }
-  hands.forEach((h) => h.sort((a, b) => a - b));
-  const selections = hands.map((h, p) =>
-    p === 0 ? h.filter((c) => c !== 36).slice(0, 3) : chooseReferencePass(h),
+test("uniform sampler weights feasible assignments equally despite voids", async () => {
+  const { createDealSampler } = await import("../src/deals.js");
+  const unknown = [1, 2, 14, 15, 27, 28],
+    hand = [0, 13];
+  const seen = Array.from({ length: 52 }, (_, c) => c).filter(
+    (c) => !unknown.includes(c) && !hand.includes(c),
   );
-  passCards(hands, selections, 1);
-  const state = createState(hands);
-  let queenSeen = false;
-  while (state.completed < 13) {
-    if (queenSeen && state.turn === 3) break;
-    const c =
-      state.turn === 0 && legal(state).includes(36)
-        ? 36
-        : policy(state, random);
-    queenSeen ||= c === 36;
-    play(state, c);
+  const o = {
+    player: 0,
+    hand,
+    counts: [2, 2, 2, 2],
+    turn: 0,
+    completed: 11,
+    trick: [],
+    taken: [0, 0, 0, 0],
+    broken: true,
+    known: {},
+    voids: [[], [1], [0], [2]],
+    history: [{ trick: seen.map((card) => ({ card, player: 0 })) }],
+  };
+  const expected = new Set();
+  for (let a = 0; a < 6; a++)
+    for (let b = a + 1; b < 6; b++) {
+      const one = [unknown[a], unknown[b]],
+        rest = unknown.filter((c) => !one.includes(c));
+      for (let c = 0; c < 4; c++)
+        for (let d = c + 1; d < 4; d++) {
+          const two = [rest[c], rest[d]],
+            three = rest.filter((x) => !two.includes(x));
+          if (
+            one.some((x) => Math.floor(x / 13) === 1) ||
+            two.some((x) => Math.floor(x / 13) === 0) ||
+            three.some((x) => Math.floor(x / 13) === 2)
+          )
+            continue;
+          expected.add(JSON.stringify([one, two, three]));
+        }
+    }
+  assert.ok(expected.size > 1);
+  const draw = createDealSampler(o),
+    random = rng(34567),
+    frequencies = new Map();
+  for (let i = 0; i < 12000; i++) {
+    const world = draw(random);
+    const key = JSON.stringify(
+      world.hands.slice(1).map((h) => h.sort((a, b) => a - b)),
+    );
+    assert.ok(expected.has(key));
+    frequencies.set(key, (frequencies.get(key) || 0) + 1);
   }
-  assert.ok(queenSeen);
-  assert.ok(state.completed < 13);
-  const o = observe(state, 3, { 0: selections[3] }, [0, 0, 0, 0], {
-    from: 2,
-    cards: selections[2],
-  });
-  o.humanPlayer = 0;
-  const sampler = createBeliefSampler(o, random, sample, {
-    setupMilliseconds: 2000,
-  });
-  assert.equal(sampler.mode, "passing-posterior");
-  const world = sampler.next(),
-    publicHuman = state.history
-      .flatMap((t) => t.trick)
-      .concat(state.trick)
-      .filter((x) => x.player === 0)
-      .map((x) => x.card);
-  const retained = [...world.hands[0], ...publicHuman].filter(
-    (c) => !selections[3].includes(c),
-  );
-  assert.ok(retained.includes(36));
+  assert.equal(frequencies.size, expected.size);
+  for (const n of frequencies.values())
+    assert.ok(
+      Math.abs(n - 12000 / expected.size) < (12000 / expected.size) * 0.2,
+    );
 });
