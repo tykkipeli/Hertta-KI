@@ -15,6 +15,11 @@ for (const { data } of runs) {
   )
     throw Error("Only combine runs with matching mode and budgets");
   if (
+    JSON.stringify(data.experimentalProvenance || null) !==
+    JSON.stringify(reference.experimentalProvenance || null)
+  )
+    throw Error("Experimental dependencies changed");
+  if (
     data.sourceHashes["test/fixtures/ai-v1.js"] !==
     reference.sourceHashes["test/fixtures/ai-v1.js"]
   )
@@ -28,6 +33,7 @@ for (const { data } of runs) {
     "src/utility.js",
     "src/endgame.js",
     "src/lead.js",
+    "src/queen-belief.js",
     "src/reference-policy.js",
     "src/game.js",
     "src/observation.js",

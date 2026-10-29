@@ -1,5 +1,9 @@
 import { legal, play, roundScores } from "./game.js";
-import { matchEndsThisRound, terminalWinShare } from "./utility.js";
+import {
+  matchEndsThisRound,
+  matchEndThreat,
+  terminalWinShare,
+} from "./utility.js";
 
 // Used only when the public information uniquely determines every remaining
 // hand. Search against every legal opposing continuation, not cooperative play.
@@ -9,12 +13,14 @@ export function solveKnownEndgame(
   { nodeLimit = 8192 } = {},
 ) {
   const player = observation.player,
-    terminal = matchEndsThisRound(observation);
+    terminal = matchEndsThisRound(observation) || matchEndThreat(observation);
   let nodes = 0;
   function utility(s) {
     const scores = roundScores(s.taken);
     return terminal
-      ? terminalWinShare(scores, observation.totals, player)
+      ? Math.max(...scores.map((n, p) => n + observation.totals[p])) >= 100
+        ? terminalWinShare(scores, observation.totals, player)
+        : 0
       : scores.reduce((n, x, p) => n + (p === player ? -3 * x : x), 0);
   }
   function clone(s) {

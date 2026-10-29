@@ -4,7 +4,7 @@
 
 Der folgende 5-ms-Vergleich betrifft **Commit `2d28e63`**, nicht die neue Weitergabe- und Durchmarschstrategie. Er ist kein ausreichender allgemeiner Stärkenachweis. Beim anschließenden gleichzeitigen **200-ms-Vergleich mit 320 vollständigen Partien** erzielte dieser frühere Stand nur **22,03 %** (95-%-Intervall: **18,28–25,78 %**). Ein Vorteil ist damit nicht belegt; auch eine sichere Unterlegenheit folgt aus diesem Intervall nicht. [Rohdaten und Auswertung](benchmarks/long-budget-v2/200ms-summary.json).
 
-Die aktuelle Weitergabe-, Durchmarsch- und Endspielüberarbeitung besitzt **noch keinen abgeschlossenen Stärkenachweis**. Ihre Tests prüfen Strategieeigenschaften und Informationsgrenzen; die neuen Vergleichsserien müssen getrennt bewertet werden. Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden nicht als Zeitbudgetnachweis ausgegeben.
+Die aktuelle Weitergabe-, Durchmarsch- und Endspielüberarbeitung besitzt **noch keinen abgeschlossenen Stärkenachweis**. Ihre Tests prüfen Strategieeigenschaften und Informationsgrenzen; die neuen Vergleichsserien müssen getrennt bewertet werden. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md). Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden nicht als Zeitbudgetnachweis ausgegeben.
 
 ## Historische Ergebnisse von Commit `2d28e63`
 

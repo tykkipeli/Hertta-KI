@@ -21,7 +21,7 @@ npm start
 - Der Stichverlauf lässt sich aufklappen. Die Rundenabrechnung unterscheidet Stiche, Rundenpunkte und Gesamtstand einschließlich Durchmarsch.
 - Die Oberfläche unterstützt schmale Bildschirme, Tastaturbedienung, Screenreader-Beschriftungen und reduzierte Bewegung.
 
-Wähle zunächst drei Karten zum Weitergeben. Danach sind spielbare Karten hell dargestellt. „Tipp berechnen“ markiert in der Weitergabephase drei Vorschläge und beim Ausspielen eine Karte. Die Vorschläge ändern deine Auswahl nicht automatisch. „Neues Spiel“ beendet auch laufende KI-Berechnungen. [Beispiel des Weitergabe-Tipps](docs/screenshots/passing-hint.png).
+Wähle zunächst drei Karten zum Weitergeben. Danach sind spielbare Karten hell dargestellt. „Tipp berechnen“ markiert in der Weitergabephase drei Vorschläge und beim Ausspielen eine Karte. Die Vorschläge ändern deine Auswahl nicht automatisch. „Neues Spiel“ beendet auch laufende KI-Berechnungen. [Nachgestellte Beispielsituation mit gedecktem Pik-König](docs/screenshots/passing-hint.png).
 
 ## Regeln
 
@@ -35,7 +35,7 @@ Die Weitergabe bewertet alle **286 Dreiergruppen** anhand der verbleibenden Hand
 
 Die Suche zieht verdeckte Hände, die zur eigenen Hand, selbst abgegebenen Karten und öffentlichen Fehlfarben passen. Sie simuliert die Runde mit einer eigenen taktischen Ausspielstrategie einschließlich Durchmarschplanung und Abwehr gegnerischer Durchmärsche. Ein plausibler Durchmarschplan bleibt erhalten, wenn die ersten hohen Karten verwendet werden, und endet, sobald ein anderer Spieler Punkte sammelt.
 
-Wenn öffentliche Punkte das Spielende garantieren, zählt der tatsächliche Spielsieg einschließlich Gleichständen. Wenn alle Resthände aus den eigenen und öffentlichen Informationen eindeutig ableitbar sind, kann ein kleines Endspiel exakt gegen alle legalen gegnerischen Fortsetzungen geprüft werden. Tatsächlich verdeckte Hände werden dafür nicht eingesehen.
+Nahe 100 Punkten berücksichtigt die KI, ob ein Zug das Spiel gewinnt, verliert oder zumindest offen hält. Bei sicherem Spielende zählt der tatsächliche Spielsieg einschließlich Gleichständen. Öffentliche verpasste Abwurfgelegenheiten helfen außerdem, mögliche Besitzer der Pik-Dame einzuschätzen; eine gedeckte Dame darf dabei bewusst behalten worden sein. Wenn alle Resthände aus den eigenen und öffentlichen Informationen eindeutig ableitbar sind, kann ein kleines Endspiel exakt gegen alle legalen gegnerischen Fortsetzungen geprüft werden. Tatsächlich verdeckte Hände werden dafür nicht eingesehen.
 
 Jeder Suchlauf läuft in einem eigenen Worker. Er erhält nur die **eigene Hand**, die **eigenen abgegebenen und erhaltenen Karten**, öffentliche Karten, Fehlfarben und Spielstände. Gegnerische tatsächliche Hände werden nicht übergeben. Es gibt keine Mannschaftswertung oder gemeinsame private KI-Erinnerung. Auch der Tipp für den Menschen verwendet ausschließlich dessen Informationen.
 

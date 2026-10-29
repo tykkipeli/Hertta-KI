@@ -173,7 +173,7 @@ export function strategicChoice(v) {
           : c >= 39
             ? 12 + r * 0.3
             : c === 37 || c === 38
-              ? 18 * Math.exp(-0.65 * cover)
+              ? r + 18 * Math.exp(-0.65 * cover)
               : r;
       value = danger + (counts[color] === 1 ? 5 : 0);
     } else if (r <= top) value = r + pt * 10;

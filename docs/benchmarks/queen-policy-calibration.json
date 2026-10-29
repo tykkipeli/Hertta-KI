@@ -1,0 +1,54 @@
+{
+  "purpose": "Opponent-model calibration, not a strength benchmark",
+  "reference": "fa856d4; import-path-only frozen fixture",
+  "referenceSha256": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+  "generatedDeals": 600,
+  "referenceSamples": 512,
+  "decisions": 509,
+  "bins": {
+    "off-suit/3/false": {
+      "n": 111,
+      "kept": 41
+    },
+    "off-suit/2/false": {
+      "n": 121,
+      "kept": 36
+    },
+    "off-suit/0/false": {
+      "n": 65,
+      "kept": 13
+    },
+    "off-suit/4/false": {
+      "n": 74,
+      "kept": 43
+    },
+    "off-suit/1/false": {
+      "n": 106,
+      "kept": 31
+    },
+    "under-high-spade/2/false": {
+      "n": 14,
+      "kept": 0
+    },
+    "under-high-spade/3/false": {
+      "n": 9,
+      "kept": 0
+    },
+    "under-high-spade/1/false": {
+      "n": 7,
+      "kept": 0
+    },
+    "under-high-spade/4/false": {
+      "n": 1,
+      "kept": 0
+    },
+    "off-suit/1/true": {
+      "n": 1,
+      "kept": 0
+    }
+  },
+  "smoothedOffSuitKeepWeights": [0.22, 0.3, 0.31, 0.38, 0.6],
+  "safeSpadeKeepWeight": 0.05,
+  "notes": "Synthetic states. All 509 fixed-sample decisions were reproduced exactly using the unmodified original reference execution. A behaviour-equivalent clone optimisation was used only for the initial exploratory generation, never for the long-budget strength confirmation.",
+  "originalExecutionReproducedDecisions": 509
+}
