@@ -32,6 +32,7 @@ export function publicCardConstraints(o) {
 
 export function createDealSampler(o) {
   const original = originalSampler(o), allowed = publicCardConstraints(o);
+  const voids = allowed.map(cards => [0,1,2,3].filter(s => cards.slice(s*13,(s+1)*13).every(yes => !yes)));
   const players = [0, 1, 2, 3].filter(p => p !== o.player);
   const seen = new Set([...o.hand, ...o.history.flatMap(t => t.trick.map(x => x.card)), ...o.trick.map(x => x.card)]);
   const fixed = Array.from({length: 4}, () => []);
@@ -48,7 +49,14 @@ export function createDealSampler(o) {
   if (invalid) return nullSampler;
   // Preserve the exact old random stream when no additional information exists.
   const changed = pool.some(c => players.some((p,i) => capacity[i] > 0 && !o.voids[p].includes(Math.floor(c/13)) && !allowed[p][c]));
-  if (!changed) return original;
+  if (!changed) {
+    if (voids.every((colors,p) => colors.every(s => o.voids[p].includes(s)))) return original;
+    const draw = rng => {
+      const world = original(rng);
+      return world ? {...world, voids: voids.map(colors => colors.slice())} : null;
+    };
+    return Object.assign(draw, {totalDeals: original.totalDeals, publicRuleConstraints: true});
+  }
   const byMask = new Map();
   for (const c of pool) {
     const mask = players.reduce((n,p,i) => n | (allowed[p][c] && capacity[i] > 0 ? 1 << i : 0),0);
@@ -92,7 +100,7 @@ export function createDealSampler(o) {
       selected.forEach((n,i)=>{hands[players[i]].push(...cards.slice(at,at+n));at+=n;cap[i]-=n;});
     }
     for(const p of players)shuffle(hands[p],rng);
-    return {hands,turn:o.turn,trick:o.trick.map(x=>({...x})),taken:o.taken.slice(),broken:o.broken,completed:o.completed,history:o.history.slice(),voids:o.voids.map(v=>v.slice()),played:played.slice()};
+    return {hands,turn:o.turn,trick:o.trick.map(x=>({...x})),taken:o.taken.slice(),broken:o.broken,completed:o.completed,history:o.history.slice(),voids:voids.map(v=>v.slice()),played:played.slice()};
   };
   return Object.assign(draw,{totalDeals,publicRuleConstraints:true});
 }

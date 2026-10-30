@@ -20,8 +20,9 @@
     "base/src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
     "base/src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
     "base/test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
-    "check-rules.mjs": "7408c568df8dfb45b82cd506ac3cd93610080e11f9a7227dc309ea6dc985d736",
-    "deals.js": "cbde7ace343abbfcaff3d1665593d268bcc07d030031cdbbf7bc2464a115bfa2",
+    "check-rules.mjs": "a93b922e03551bc8d913f9ef7378082c10d53a88435efd66693eb8ea980cf1a7",
+    "deals.js": "31c6142bc8faa8235b0978bb0e178ccb0b97c958b8166256a1a4ab776ec18ce3",
     "provenance.js": "95f71386225eb048d7746ab9c9a6f59b611f7fc3ac44d451f632c1e168db8ba2"
-  }
+  },
+  "updatedAt": "2026-10-30T17:02:43.786Z"
 }

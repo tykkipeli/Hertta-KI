@@ -32,7 +32,7 @@ function collect(dir, relative = '') {
 }
 function archive() {
   const files = new Map(collect(campaign).map(rel => [rel, fs.readFileSync(path.join(campaign, rel))]));
-  for (const name of ['public-rules-next', 'strategy-next', 'match-bound-next']) {
+  for (const name of ['public-rules-next', 'capacity-lead-next', 'strategy-next', 'match-bound-next']) {
     const dir = path.join(repo, 'artifacts', name);
     if (fs.existsSync(dir)) for (const rel of collect(dir)) {
       files.set('hypotheses/' + name + '/' + rel, fs.readFileSync(path.join(dir, rel)));

@@ -68,7 +68,7 @@ const heartObservation=observe(heart,heart.turn), drawHeart=createDealSampler(he
 assert.ok(drawHeart.publicRuleConstraints);
 for(let i=0;i<64;i++) {
   const world=drawHeart(rng);assert.ok(world);
-  assert.ok(world.hands[1].every(c=>c>=39));replay(heartObservation,world);
+  assert.ok(world.hands[1].every(c=>c>=39));assert.deepEqual(world.voids[1],[0,1,2]);replay(heartObservation,world);
 }
 
 // With no additional public restriction, preserve every random draw and world.
