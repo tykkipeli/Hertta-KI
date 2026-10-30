@@ -6,7 +6,14 @@ Die aktuelle Weitergabe-, Durchmarsch-, Dame-Hinweis- und Endspielüberarbeitung
 
 Die Serie enthält 6.640 gespielte Runden. Die mittlere gemessene Entscheidungsdauer einschließlich sofortiger Züge beträgt **165,99 ms** für den Kandidaten und **164,65 ms** für die Referenz. Quell-Snapshot, ursprüngliche Lauf-IDs, Seeds, vollständige Endstände und Summen wurden geprüft. Nach dem Umgebungsausfall wurden 378 abgeschlossene Partien fortgesetzt; der eingefrorene KI-Quellstand blieb erhalten. [Rohdaten, Quellmanifest und Auswertung](benchmarks/strategy-85331e2/README.md).
 
-Die **320-Partien-Serie bei 1.200 ms läuft noch**. Die zusätzliche GitHub-Actions-Bestätigung hat eigene Seeds und wird getrennt ausgewertet. Die abgeschlossene lokale 200-ms-Serie belegt einen Vorteil in diesem Testaufbau; daraus folgt noch kein Ergebnis für 1.200 ms, 5 Sekunden oder andere Gegner. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
+Eine **unabhängige Bestätigung mit 640 weiteren vollständigen Partien** und eigenen Karten-Seeds erreicht bei denselben 200 ms **36,56 % Sieganteil**, 95-%-Blockintervall **33,13–40,08 %**. Auch diese Serie überschreitet die vorab festgelegte 25-%-Untergrenze. Sie lief auf getrennten GitHub-Actions-Runnern mit genau denselben eingefrorenen KI- und Referenzquellen. Sämtliche 160 Viererblöcke, Quell- und Treiber-Hashes, Lauf-IDs, Seeds, Endstände und Metadaten wurden geprüft. [Rohdaten und reproduzierbare Auswertung](benchmarks/strategy-85331e2-ci/README.md).
+
+| Abgeschlossene 200-ms-Serie | Partien | Sieganteil | 95-%-Blockintervall |
+| --- | ---: | ---: | --- |
+| Ursprüngliche Bestätigung | 640 | 38,52 % | 34,77–42,34 % |
+| Unabhängige CI-Bestätigung | 640 | 36,56 % | 33,13–40,08 % |
+
+Die Serien werden getrennt ausgewertet und nicht gepoolt. Die **320-Partien-Serie bei 1.200 ms läuft noch**; auch die unabhängige CI-Serie prüft dieses Budget gesondert. Die beiden abgeschlossenen 200-ms-Serien belegen einen Vorteil in diesem Testaufbau; daraus folgt noch kein Ergebnis für 1.200 ms, 5 Sekunden oder andere Gegner. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
 
 ## Längere Vergleiche des früheren Standes
 

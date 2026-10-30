@@ -41,7 +41,7 @@ Jeder Suchlauf läuft in einem eigenen Worker. Er erhält nur die **eigene Hand*
 
 Die Bedenkzeit lässt sich zwischen 0,2, 1,2 und 5 Sekunden pro Zug wählen. Sie beeinflusst die Zahl der geprüften Möglichkeiten; ein längerer Suchlauf garantiert keinen besseren Einzelzug. Die KI und sämtliche Modelle laufen lokal im Browser.
 
-**Bei 200 ms ist der Stärkenachweis der überarbeiteten Strategie erbracht:** 38,52 % Sieganteil in 640 vollständigen Partien gegen drei unveränderte ursprüngliche KIs; das 95-%-Blockintervall beträgt 34,77–42,34 %. Alle Spieler erhielten dieselben 200 ms und mindestens 16 Stichproben. Die Bestätigung bei 1.200 ms läuft noch; ein Vorteil bei 5 Sekunden ist nicht geprüft. [Ergebnisse und Testbedingungen](docs/RESULTS.md).
+**Bei 200 ms ist der Stärkenachweis der überarbeiteten Strategie erbracht:** 38,52 % Sieganteil in 640 vollständigen Partien gegen drei unveränderte ursprüngliche KIs; das 95-%-Blockintervall beträgt 34,77–42,34 %. Eine unabhängige Bestätigung mit 640 weiteren Partien erreicht 36,56 % (33,13–40,08 %). Alle Spieler erhielten dieselben 200 ms und mindestens 16 Stichproben. Die Bestätigung bei 1.200 ms läuft noch; ein Vorteil bei 5 Sekunden ist nicht geprüft. [Ergebnisse und Testbedingungen](docs/RESULTS.md).
 
 Methodik, Vergleich mit der eingefrorenen Vorgängerversion und Grenzen stehen in [docs/AI.md](docs/AI.md).
 
