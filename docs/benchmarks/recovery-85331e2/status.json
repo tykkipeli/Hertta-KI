@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-30T22:25:09.558Z",
+        "at": "2026-10-30T22:32:11.319Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 27,
-        "currentGame": 28,
-        "currentRound": 10,
-        "completedRounds": 282
+        "completedGames": 28,
+        "currentGame": 29,
+        "currentRound": 6,
+        "completedRounds": 290
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-30T22:25:00.175Z",
+        "at": "2026-10-30T22:32:01.116Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 26,
-        "currentGame": 27,
-        "currentRound": 8,
-        "completedRounds": 292
+        "completedGames": 27,
+        "currentGame": 28,
+        "currentRound": 5,
+        "completedRounds": 300
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-30T22:25:02.682Z",
+        "at": "2026-10-30T22:32:02.295Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 27,
-        "currentGame": 28,
-        "currentRound": 3,
-        "completedRounds": 284
+        "completedGames": 28,
+        "currentGame": 29,
+        "currentRound": 1,
+        "completedRounds": 292
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-30T22:25:40.793Z",
+        "at": "2026-10-30T22:32:31.214Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 28,
-        "currentGame": 29,
-        "currentRound": 4,
-        "completedRounds": 288
+        "completedGames": 29,
+        "currentGame": 30,
+        "currentRound": 3,
+        "completedRounds": 296
       }
     }
   ],
-  "updatedAt": "2026-10-30T22:25:42.269Z",
+  "updatedAt": "2026-10-30T22:32:42.412Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
