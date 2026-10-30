@@ -1,0 +1,104 @@
+{
+  "files": [
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-0/result.json",
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-1/result.json",
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-2/result.json",
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-3/result.json"
+  ],
+  "mode": "matches-to-100",
+  "budget": {
+    "old": {
+      "milliseconds": 200,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 200,
+      "minSamples": 16
+    }
+  },
+  "games": 640,
+  "independentDealBlocks": 160,
+  "winShares": [
+    0.38515625,
+    0.19973958333333336,
+    0.19973958333333333,
+    0.2153645833333333
+  ],
+  "newWinShareBlockBootstrap95": [
+    0.34765625,
+    0.4234375
+  ],
+  "meanOldWinShare": 0.20494791666666667,
+  "newMinusMeanOld": 0.1802083333333333,
+  "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
+  "runs": [
+    {
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-0/result.json",
+      "seed": 20261260,
+      "rounds": 1683,
+      "winShares": [
+        0.38125,
+        0.19583333333333336,
+        0.18020833333333333,
+        0.2427083333333333
+      ],
+      "meanDecisionMilliseconds": [
+        164.8082102282099,
+        165.1462566347202
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-1/result.json",
+      "seed": 21261263,
+      "rounds": 1630,
+      "winShares": [
+        0.41875,
+        0.1875,
+        0.20625,
+        0.1875
+      ],
+      "meanDecisionMilliseconds": [
+        165.7935095691887,
+        164.22463296411945
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-2/result.json",
+      "seed": 22261266,
+      "rounds": 1675,
+      "winShares": [
+        0.396875,
+        0.2,
+        0.225,
+        0.178125
+      ],
+      "meanDecisionMilliseconds": [
+        166.6757733030571,
+        164.50345651017338
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-3/result.json",
+      "seed": 23261269,
+      "rounds": 1652,
+      "winShares": [
+        0.34375,
+        0.215625,
+        0.1875,
+        0.253125
+      ],
+      "meanDecisionMilliseconds": [
+        166.70518468756015,
+        164.71456704103832
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    }
+  ]
+}

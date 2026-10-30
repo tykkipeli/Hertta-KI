@@ -9,21 +9,24 @@
       "milliseconds": 200,
       "seed": 20261260,
       "games": 160,
-      "state": "running",
+      "state": "completed",
       "progress": {
         "pid": 5400,
-        "at": "2026-10-30T18:20:31.344Z",
+        "at": "2026-10-30T18:27:24.989Z",
         "seed": 20261260,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 155,
-        "currentGame": 156,
-        "currentRound": 5,
-        "completedRounds": 1636
+        "completedGames": 159,
+        "currentGame": 160,
+        "currentRound": 10,
+        "completedRounds": 1683
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.830Z",
-      "pid": 5400
+      "pid": 5400,
+      "exitSignal": null,
+      "exitCode": 0,
+      "finishedAt": "2026-10-30T18:27:25.081Z"
     },
     {
       "id": "200ms-1",
@@ -56,21 +59,24 @@
       "milliseconds": 200,
       "seed": 22261266,
       "games": 160,
-      "state": "running",
+      "state": "completed",
       "progress": {
         "pid": 5402,
-        "at": "2026-10-30T18:20:27.179Z",
+        "at": "2026-10-30T18:25:29.413Z",
         "seed": 22261266,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 157,
-        "currentGame": 158,
-        "currentRound": 2,
-        "completedRounds": 1641
+        "completedGames": 159,
+        "currentGame": 160,
+        "currentRound": 13,
+        "completedRounds": 1675
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.842Z",
-      "pid": 5402
+      "pid": 5402,
+      "exitSignal": null,
+      "exitCode": 0,
+      "finishedAt": "2026-10-30T18:25:29.503Z"
     },
     {
       "id": "200ms-3",
@@ -78,21 +84,24 @@
       "milliseconds": 200,
       "seed": 23261269,
       "games": 160,
-      "state": "running",
+      "state": "completed",
       "progress": {
         "pid": 5403,
-        "at": "2026-10-30T18:20:32.374Z",
+        "at": "2026-10-30T18:23:12.818Z",
         "seed": 23261269,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 158,
-        "currentGame": 159,
-        "currentRound": 4,
-        "completedRounds": 1634
+        "completedGames": 159,
+        "currentGame": 160,
+        "currentRound": 12,
+        "completedRounds": 1652
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.848Z",
-      "pid": 5403
+      "pid": 5403,
+      "exitSignal": null,
+      "exitCode": 0,
+      "finishedAt": "2026-10-30T18:23:12.892Z"
     },
     {
       "id": "1200ms-0",
@@ -100,7 +109,10 @@
       "milliseconds": 1200,
       "seed": 20261260,
       "games": 80,
-      "state": "pending"
+      "state": "running",
+      "attempt": 1,
+      "startedAt": "2026-10-30T18:27:25.082Z",
+      "pid": 14125
     },
     {
       "id": "1200ms-1",
@@ -114,14 +126,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-30T18:19:52.486Z",
+        "at": "2026-10-30T18:27:37.965Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 0,
         "currentGame": 1,
-        "currentRound": 1,
-        "completedRounds": 1
+        "currentRound": 10,
+        "completedRounds": 10
       }
     },
     {
@@ -130,7 +142,21 @@
       "milliseconds": 1200,
       "seed": 22261266,
       "games": 80,
-      "state": "pending"
+      "state": "running",
+      "attempt": 1,
+      "startedAt": "2026-10-30T18:25:29.505Z",
+      "pid": 14036,
+      "progress": {
+        "pid": 14036,
+        "at": "2026-10-30T18:28:00.373Z",
+        "seed": 22261266,
+        "milliseconds": 1200,
+        "targetGames": 80,
+        "completedGames": 0,
+        "currentGame": 1,
+        "currentRound": 3,
+        "completedRounds": 3
+      }
     },
     {
       "id": "1200ms-3",
@@ -138,9 +164,23 @@
       "milliseconds": 1200,
       "seed": 23261269,
       "games": 80,
-      "state": "pending"
+      "state": "running",
+      "attempt": 1,
+      "startedAt": "2026-10-30T18:23:12.893Z",
+      "pid": 14025,
+      "progress": {
+        "pid": 14025,
+        "at": "2026-10-30T18:27:21.643Z",
+        "seed": 23261269,
+        "milliseconds": 1200,
+        "targetGames": 80,
+        "completedGames": 0,
+        "currentGame": 1,
+        "currentRound": 5,
+        "completedRounds": 5
+      }
     }
   ],
-  "updatedAt": "2026-10-30T18:20:32.821Z",
+  "updatedAt": "2026-10-30T18:28:03.261Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }

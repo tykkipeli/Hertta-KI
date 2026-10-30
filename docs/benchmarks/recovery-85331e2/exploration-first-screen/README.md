@@ -1,0 +1,3 @@
+# Exploratory results, not long-budget proof
+
+CI run https://github.com/tykkipeli/Hertta-KI/actions/runs/41100074774 at source 9d13b89461e44014fb05ca493d38cf2be25f6055. Five variants, 80 full matches each, identical seed 20270201, fixed candidate128/original16 samples. All 400 records, source hashes, budgets, rotations, terminal scores and paired bootstrap were revalidated. No extra prototype improved the observed win share over baseline; none was deployed. Keep these records separate from both 200/1200-ms campaigns. The proposed terminal-only revision remains local; its new GitHub job was not started after automatic approval review rejected publication.

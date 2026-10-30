@@ -1,0 +1,57 @@
+{
+  "stage": "exploration only, not strength confirmation",
+  "seed": 20270201,
+  "games": 80,
+  "oldSamples": 16,
+  "newSamples": 128,
+  "milliseconds": 0,
+  "variants": {
+    "baseline": "src/ai.js",
+    "public-rules": "docs/benchmarks/recovery-85331e2/hypotheses/public-rules-next/ai.js",
+    "capacity-lead": "docs/benchmarks/recovery-85331e2/hypotheses/capacity-lead-next/ai.js",
+    "public-bounds": "docs/benchmarks/recovery-85331e2/hypotheses/match-bound-next/experimental-engine.js",
+    "endgame-proof": "docs/benchmarks/recovery-85331e2/hypotheses/strategy-next/certified-agent.js"
+  },
+  "criterion": "Compare full matches on identical fresh deal seeds. Report all variants and paired whole-four-seat-block differences. Do not treat a favourable screening result as a long-budget strength proof. Do not change the live 85331e2 confirmation.",
+  "variant": "public-bounds",
+  "engine": "docs/benchmarks/recovery-85331e2/hypotheses/match-bound-next/experimental-engine.js",
+  "node": "v24.22.1",
+  "sourceCommit": "9d13b89461e44014fb05ca493d38cf2be25f6055",
+  "checkpointDriverHash": "53461514d766b5f66315ddd84050012327cbde2753d0781932b9dd0b236fb5f9",
+  "rootManifest": {
+    "sourceCommit": "85331e2",
+    "createdAt": "2026-10-29T14:23:25.375Z",
+    "node": "v24.19.0",
+    "cpuQuota": "400000 100000",
+    "concurrentWorkers": 4,
+    "referenceExecution": "unmodified frozen ai-v1; import path only",
+    "checks": {
+      "unitTests": 29,
+      "browser": "Passing hint on the protected-king regression hand, receipt, 13 tricks, independent worker inputs, mobile sizes, normal animation and restart during collection passed",
+      "checkpoint": "Normal and checkpoint driver agree on four complete fixed-sample games; resume preserves records and run ID",
+      "duplicateData": "Unique run files verified; overlapping deal blocks rejected"
+    },
+    "hashes": {
+      "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+      "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+      "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+      "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+      "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+      "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+      "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+      "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+      "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+      "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+      "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+      "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+      "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+      "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+      "benchmark.js": "03b9a1f677dc5dc17aca8f0e22558822f46d1f7acb0e86d567506b9d6d27077b",
+      "benchmark-original.js": "a75b984dc11cd562051db892b668e7b81347475ffe2e14e86f786c3ffd67bc43",
+      "scripts/summarize-benchmarks.js": "84e4507d437e5dd5b9193ce1c318ee3a90ece8eefd40c055d5213e68dfe44b86",
+      "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3"
+    }
+  },
+  "at": "2026-10-30T17:35:08.524Z"
+}
