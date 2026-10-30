@@ -12,14 +12,14 @@
       "state": "running",
       "progress": {
         "pid": 5400,
-        "at": "2026-10-30T17:09:26.672Z",
+        "at": "2026-10-30T17:16:50.507Z",
         "seed": 20261260,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 107,
-        "currentGame": 108,
-        "currentRound": 3,
-        "completedRounds": 1145
+        "completedGames": 112,
+        "currentGame": 113,
+        "currentRound": 2,
+        "completedRounds": 1197
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.830Z",
@@ -34,14 +34,14 @@
       "state": "running",
       "progress": {
         "pid": 5401,
-        "at": "2026-10-30T17:09:26.870Z",
+        "at": "2026-10-30T17:16:54.191Z",
         "seed": 21261263,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 112,
-        "currentGame": 113,
-        "currentRound": 6,
-        "completedRounds": 1148
+        "completedGames": 117,
+        "currentGame": 118,
+        "currentRound": 8,
+        "completedRounds": 1201
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.837Z",
@@ -56,14 +56,14 @@
       "state": "running",
       "progress": {
         "pid": 5402,
-        "at": "2026-10-30T17:09:20.486Z",
+        "at": "2026-10-30T17:16:55.222Z",
         "seed": 22261266,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 111,
-        "currentGame": 112,
-        "currentRound": 11,
-        "completedRounds": 1148
+        "completedGames": 117,
+        "currentGame": 118,
+        "currentRound": 5,
+        "completedRounds": 1202
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.842Z",
@@ -78,14 +78,14 @@
       "state": "running",
       "progress": {
         "pid": 5403,
-        "at": "2026-10-30T17:09:22.678Z",
+        "at": "2026-10-30T17:16:51.157Z",
         "seed": 23261269,
         "milliseconds": 200,
         "targetGames": 160,
-        "completedGames": 110,
-        "currentGame": 111,
-        "currentRound": 11,
-        "completedRounds": 1144
+        "completedGames": 115,
+        "currentGame": 116,
+        "currentRound": 7,
+        "completedRounds": 1196
       },
       "attempt": 1,
       "startedAt": "2026-10-30T16:40:54.848Z",
@@ -124,6 +124,6 @@
       "state": "pending"
     }
   ],
-  "updatedAt": "2026-10-30T17:09:28.641Z",
+  "updatedAt": "2026-10-30T17:16:58.696Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }

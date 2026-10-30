@@ -23,24 +23,24 @@
   "milliseconds": 200,
   "samples": 16,
   "points": [
-    8164,
-    8396,
-    8614,
-    8964
+    8481,
+    8765,
+    9085,
+    9315
   ],
   "wins": [
-    40.5,
+    43.5,
     23,
-    25.5,
-    23
+    26.5,
+    24
   ],
   "uniqueWins": [
-    39,
+    42,
     22,
-    25,
-    22
+    26,
+    23
   ],
-  "rounds": 1149,
+  "rounds": 1197,
   "records": [
     {
       "game": 0,
@@ -1613,27 +1613,97 @@
       "winners": [
         1
       ]
+    },
+    {
+      "game": 112,
+      "newSeat": 0,
+      "rounds": 9,
+      "totals": [
+        19,
+        43,
+        101,
+        71
+      ],
+      "winners": [
+        0
+      ]
+    },
+    {
+      "game": 113,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [
+        72,
+        48,
+        72,
+        120
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 114,
+      "newSeat": 2,
+      "rounds": 9,
+      "totals": [
+        88,
+        48,
+        84,
+        118
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 115,
+      "newSeat": 3,
+      "rounds": 10,
+      "totals": [
+        71,
+        62,
+        67,
+        112
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 116,
+      "newSeat": 0,
+      "rounds": 10,
+      "totals": [
+        54,
+        65,
+        100,
+        93
+      ],
+      "winners": [
+        0
+      ]
     }
   ],
   "beliefModes": {
-    "uniform": 11123,
-    "public-action-queen-prior": 1090
+    "uniform": 11573,
+    "public-action-queen-prior": 1136
   },
   "engineTimeMs": [
-    2481302.5891500195,
-    7353946.918326053
+    2581904.262924027,
+    7656068.904575048
   ],
   "decisionCounts": [
-    14937,
-    44811
+    15561,
+    46683
   ],
   "passingTimeMs": [
-    804.6854800028702,
-    43.744095003420185
+    853.7371650034072,
+    46.95413500275619
   ],
   "passingCounts": [
-    904,
-    2712
+    942,
+    2826
   ],
-  "seconds": 9859.383761471
+  "seconds": 10262.792880512
 }

@@ -39,6 +39,10 @@ function archive() {
     }
   }
   files.set('recovery-tools/archive.cjs', fs.readFileSync(__filename));
+  for (const [rel, bytes] of files) if (rel.endsWith('.json')) {
+    try { JSON.parse(bytes); }
+    catch { throw Error('JSON file is not complete yet; preserve the previous archive and retry: ' + rel); }
+  }
   const manifest = JSON.parse(files.get('manifest.json'));
   for (const [file, expected] of Object.entries(manifest.hashes)) {
     const actual = crypto.createHash('sha256').update(files.get('snapshot/' + file)).digest('hex');
@@ -104,7 +108,8 @@ async function main() {
     process.on('SIGHUP', () => {});
   }
   do {
-    try { archive(); }
+    let saved = false;
+    try { archive(); saved = true; }
     catch (error) {
       atomic(stateFile, {at: new Date().toISOString(), state: 'failed', error: String(error)});
       console.error(error);
@@ -114,7 +119,7 @@ async function main() {
     const assessmentPath = path.join(campaign, 'assessment.json');
     if (fs.existsSync(assessmentPath)) {
       const assessment = JSON.parse(fs.readFileSync(assessmentPath));
-      if (assessment.budgets?.every(row => row.state === 'completed')) break;
+      if (saved && assessment.budgets?.every(row => row.state === 'completed')) break;
     }
     await new Promise(resolve => setTimeout(resolve, 10 * 60 * 1000));
   } while (true);
