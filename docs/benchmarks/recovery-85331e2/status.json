@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-30T22:53:05.866Z",
+        "at": "2026-10-30T22:55:29.930Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 31,
         "currentGame": 32,
-        "currentRound": 2,
-        "completedRounds": 315
+        "currentRound": 5,
+        "completedRounds": 318
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-30T22:52:51.292Z",
+        "at": "2026-10-30T22:55:18.962Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 30,
         "currentGame": 31,
-        "currentRound": 2,
-        "completedRounds": 325
+        "currentRound": 5,
+        "completedRounds": 328
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-30T22:52:48.971Z",
+        "at": "2026-10-30T22:56:09.489Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 30,
-        "currentGame": 31,
-        "currentRound": 5,
-        "completedRounds": 317
+        "completedGames": 31,
+        "currentGame": 32,
+        "currentRound": 1,
+        "completedRounds": 321
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-30T22:53:09.404Z",
+        "at": "2026-10-30T22:55:41.870Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 31,
         "currentGame": 32,
-        "currentRound": 4,
-        "completedRounds": 321
+        "currentRound": 7,
+        "completedRounds": 324
       }
     }
   ],
-  "updatedAt": "2026-10-30T22:53:12.644Z",
+  "updatedAt": "2026-10-30T22:56:12.662Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
