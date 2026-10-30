@@ -1,0 +1,3 @@
+# Private continuation state
+
+Deployment caveat identified on 2026-10-30: certified-agent.js keeps its continuation policy in a module-local Map. The current browser creates a fresh worker for each request, whereas the benchmark imports an engine once. Therefore this prototype is not a drop-in browser change: a deployed certificate policy needs private per-player continuation transfer or a persistent private worker, with restart/round isolation and privacy tests. A favourable exploratory benchmark of the stateful prototype would not establish the behaviour of the unchanged browser worker lifecycle. Preserve that distinction before any fresh long-budget confirmation.
