@@ -23,24 +23,24 @@
   "milliseconds": 200,
   "samples": 16,
   "points": [
-    6610,
-    7393,
-    7653,
-    7438
+    7142,
+    7832,
+    8139,
+    7879
   ],
   "wins": [
-    39.5,
+    40.5,
     18,
-    18.5,
-    20
+    20.5,
+    23
   ],
   "uniqueWins": [
-    39,
+    40,
     18,
-    18,
-    19
+    20,
+    22
   ],
-  "rounds": 979,
+  "rounds": 1046,
   "records": [
     {
       "game": 0,
@@ -1387,27 +1387,111 @@
       "winners": [
         0
       ]
+    },
+    {
+      "game": 96,
+      "newSeat": 0,
+      "rounds": 12,
+      "totals": [
+        91,
+        65,
+        110,
+        46
+      ],
+      "winners": [
+        3
+      ]
+    },
+    {
+      "game": 97,
+      "newSeat": 1,
+      "rounds": 13,
+      "totals": [
+        86,
+        103,
+        82,
+        67
+      ],
+      "winners": [
+        3
+      ]
+    },
+    {
+      "game": 98,
+      "newSeat": 2,
+      "rounds": 10,
+      "totals": [
+        42,
+        105,
+        107,
+        58
+      ],
+      "winners": [
+        0
+      ]
+    },
+    {
+      "game": 99,
+      "newSeat": 3,
+      "rounds": 11,
+      "totals": [
+        80,
+        81,
+        112,
+        65
+      ],
+      "winners": [
+        3
+      ]
+    },
+    {
+      "game": 100,
+      "newSeat": 0,
+      "rounds": 11,
+      "totals": [
+        80,
+        52,
+        110,
+        44
+      ],
+      "winners": [
+        3
+      ]
+    },
+    {
+      "game": 101,
+      "newSeat": 1,
+      "rounds": 10,
+      "totals": [
+        48,
+        86,
+        102,
+        76
+      ],
+      "winners": [
+        0
+      ]
     }
   ],
   "beliefModes": {
-    "uniform": 9451,
-    "public-action-queen-prior": 894
+    "uniform": 10104,
+    "public-action-queen-prior": 940
   },
   "engineTimeMs": [
-    2070593.2389070627,
-    6040900.148666045
+    2212872.036732062,
+    6460856.217356057
   ],
   "decisionCounts": [
-    12727,
-    38181
+    13598,
+    40794
   ],
   "passingTimeMs": [
-    411.2945359856112,
-    23.173965020153005
+    572.1397839856999,
+    26.839177020419086
   ],
   "passingCounts": [
-    770,
-    2310
+    823,
+    2469
   ],
-  "seconds": 8116.109819085
+  "seconds": 8679.599428222
 }

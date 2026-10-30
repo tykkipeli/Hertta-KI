@@ -1,0 +1,30 @@
+{
+  "baseRuntime": "85331e2",
+  "createdAt": "2026-10-29T15:56:16.479617+00:00",
+  "deployed": false,
+  "playingStrengthEvidence": null,
+  "hashes": {
+    "README.md": "a418c7aa6dcea160e05bf20d68f0357c706cf898659f92ccce404ce79ebac0f4",
+    "benchmark.js": "a75b984dc11cd562051db892b668e7b81347475ffe2e14e86f786c3ffd67bc43",
+    "check-bounds.mjs": "e97b7c65526744b7840b501cbd9d48b132f63c144871123a43ab201ea57b3837",
+    "experimental-engine.js": "0f3c074b3be574f69c7c631bdfd71304de7b12a5f15e9c7d46d04211bba85f3e",
+    "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3",
+    "src/agent.js": "a54ba8e62a89ba7e195cddae702da6fe22461127719d01ebd188cab6006dd79d",
+    "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+    "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+    "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+    "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+    "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+    "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+    "src/match-policy.js": "57a4e1a538181f0a5e0f5ad9c807eca0968cd8407fff5659a61273a989f45a1f",
+    "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+    "src/public-finish.js": "d75e0daacf9df794ce105c3f640dfa3d4e1f8730a403e89bca7c0e2770f6fb47",
+    "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+    "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+    "src/rollout.js": "31507eb07deeb4935508cf1893d7b28112d97816e3ce7addc83e84f2689e28cb",
+    "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+    "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+    "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+    "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e"
+  }
+}
