@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-30T16:55:43.043Z",
+  "change": "research-prototype-prepared",
+  "liveCandidate": "85331e2",
+  "liveSnapshotChanged": false,
+  "prototype": "artifacts/public-rules-next",
+  "evidence": "624 legal observations; 512 first-trick-penalty worlds; 64 unbroken-heart worlds; 24 exact small-deal enumerations; analytical queen marginal; 8 legal integration decisions; protected-king pass preserved",
+  "strengthEvidence": false,
+  "pr": "https://github.com/tykkipeli/Hertta-KI/pull/5"
+}

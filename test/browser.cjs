@@ -71,6 +71,26 @@ mkdirSync("artifacts", { recursive: true });
         }
       };
     });
+    // A legal full-deck permutation reconstructs the reported pattern without
+    // adding test hooks or access to private game state in the application.
+    const regressionHand = [0, 5, 9, 19, 20, 26, 27, 28, 29, 30, 31, 37, 49];
+    const deck = Array.from({ length: 52 }, (_, c) => c);
+    const wanted = [
+      ...regressionHand,
+      ...deck.filter((c) => !regressionHand.includes(c)),
+    ];
+    const draws = [];
+    for (let i = 51; i > 0; i--) {
+      const j = deck.indexOf(wanted[i]);
+      assert.ok(j <= i);
+      draws.push((j + 0.25) / (i + 1));
+      [deck[i], deck[j]] = [deck[j], deck[i]];
+    }
+    await page.addInitScript((values) => {
+      const original = Math.random;
+      let at = 0;
+      Math.random = () => (at < values.length ? values[at++] : original());
+    }, draws);
     await page.goto(baseURL);
     await page.locator("#strength").selectOption("200");
     assert.equal(await page.locator("#hand .card").count(), 13);
@@ -78,12 +98,24 @@ mkdirSync("artifacts", { recursive: true });
     const originalHand = await page
       .locator("#hand .card")
       .evaluateAll((cards) => cards.map((c) => c.dataset.card));
+    assert.deepEqual(originalHand.map(Number), regressionHand);
     await page.locator("#hint").click();
     await page.waitForFunction(() => !document.querySelector("#hint").disabled);
     assert.equal(await page.locator("#hand .hinted").count(), 3);
     const passHint = await page
       .locator("#hand .hinted")
       .evaluateAll((cards) => cards.map((c) => Number(c.dataset.card)));
+    assert.deepEqual(new Set(passHint), new Set([19, 20, 49]));
+    assert.ok(!passHint.includes(37));
+    assert.match(await page.locator("#analysis").textContent(), /Karo/);
+    assert.match(
+      await page.locator("#analysis").textContent(),
+      /6 kleinen Pik/,
+    );
+    await page.screenshot({
+      path: "artifacts/passing-hint-expert.png",
+      fullPage: true,
+    });
     assert.equal(await page.locator("#hand .selected").count(), 0);
     assert.match(
       await page.locator("#analysis").textContent(),

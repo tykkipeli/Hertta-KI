@@ -1,0 +1,106 @@
+{
+  "runId": "f6a74fe5-3f6b-4ce6-84dd-4b04d135a9c0",
+  "experimentalProvenance": {
+    "baseRuntime": "85331e2",
+    "stage": "unconfirmed public-rule inference",
+    "hashes": {
+      "agent.js": "b8242214b0b4d9cd781711e59dbd85916cdda37f169b7ae26ba91f0d7bec6d55",
+      "ai.js": "be52e7487df6f697a95b62e96146ca7ccc2166c704a095a10e7a89be20ce360f",
+      "base/package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3",
+      "base/src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+      "base/src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "base/src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+      "base/src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+      "base/src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+      "base/src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+      "base/src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+      "base/src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+      "base/src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+      "base/src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+      "base/src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+      "base/src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+      "base/src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+      "base/src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+      "base/test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+      "check-rules.mjs": "a93b922e03551bc8d913f9ef7378082c10d53a88435efd66693eb8ea980cf1a7",
+      "deals.js": "31c6142bc8faa8235b0978bb0e178ccb0b97c958b8166256a1a4ab776ec18ce3",
+      "provenance.js": "95f71386225eb048d7746ab9c9a6f59b611f7fc3ac44d451f632c1e168db8ba2"
+    }
+  },
+  "sourceHashes": {
+    "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+    "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+    "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+    "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+    "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+    "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+    "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+    "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+    "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+    "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+    "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+    "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+    "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+    "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+    "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+    "activeEngine": "be52e7487df6f697a95b62e96146ca7ccc2166c704a095a10e7a89be20ce360f"
+  },
+  "enginePath": "docs/benchmarks/recovery-85331e2/hypotheses/public-rules-next/ai.js",
+  "algorithm": "Whole-hand private search with public-rule-constrained worlds (unconfirmed)",
+  "mode": "matches-to-100",
+  "seed": 20270201,
+  "games": 80,
+  "rounds": 862,
+  "budget": {
+    "old": {
+      "milliseconds": 0,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 0,
+      "minSamples": 128
+    }
+  },
+  "beliefModes": {
+    "uniform": 8044,
+    "public-action-queen-prior": 988
+  },
+  "meanDecisionMilliseconds": [
+    7.88925797724435,
+    3.156646905348333
+  ],
+  "meanPassingMilliseconds": [
+    0.3784953709195627,
+    0.004100458457072659
+  ],
+  "engines": [
+    "new",
+    "v1-opponent-1",
+    "v1-opponent-2",
+    "v1-opponent-3"
+  ],
+  "winShares": [
+    0.4125,
+    0.2375,
+    0.10625,
+    0.24375
+  ],
+  "outrightWins": [
+    33,
+    19,
+    8,
+    19
+  ],
+  "meanPoints": [
+    64.975,
+    73.2375,
+    84.6375,
+    77.45
+  ],
+  "newWinRateDescriptive95": [
+    0.31105686511513087,
+    0.5219615887311697
+  ],
+  "seconds": 196.42354185899998,
+  "artifact": "artifacts/benchmark-matches-20270201-80-0ms-16samples-new128samples-0ms-f6a74fe5-3f6b-4ce6-84dd-4b04d135a9c0.json"
+}

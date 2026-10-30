@@ -1,5 +1,11 @@
+import { createQueenBelief } from "./queen-belief.js";
 import { solveKnownEndgame } from "./endgame.js";
-import { matchEndsThisRound, terminalWinShare } from "./utility.js";
+import {
+  matchEndsThisRound,
+  terminalWinShare,
+  matchEndThreat,
+  lateMatchValue,
+} from "./utility.js";
 import { rollout } from "./rollout.js";
 import { conservativePolicy } from "./reference-policy.js";
 import { chooseStrategicPass, moonPotential } from "./strategy.js";
@@ -30,11 +36,10 @@ export function decide(
     return { card: choices[0], samples: 0, simulations: 0 };
 
   const draw = createDealSampler(o);
-  const beliefs = {
-    next: () => draw(rng),
-    mode: "uniform",
-  };
+  const posterior = createQueenBelief(o, draw);
+  const beliefs = { next: () => posterior.next(rng), mode: posterior.mode };
   const terminal = matchEndsThisRound(o);
+  const late = terminal || matchEndThreat(o);
   const originalHand = [
     ...o.hand,
     ...o.history
@@ -95,7 +100,9 @@ export function decide(
         scores[o.player];
       const value = terminal
         ? terminalWinShare(scores, o.totals, o.player)
-        : pointsValue;
+        : late
+          ? lateMatchValue(scores, o.totals, o.player)
+          : pointsValue;
       pointSums[i] += pointsValue;
       sums[i] += value;
       squares[i] += value * value;
@@ -116,15 +123,21 @@ export function decide(
     card: choices[index],
     samples: n,
     simulations: n * choices.length,
-    relativeScore: terminal ? pointSums[index] / n : means[index],
-    objective: terminal ? "match-win" : "round-penalties",
+    relativeScore: pointSums[index] / n,
+    objective: terminal
+      ? "match-win"
+      : late
+        ? "late-match-win-estimate"
+        : "round-penalties",
     ...(terminal ? { winProbability: means[index] } : {}),
+    ...(!terminal && late ? { estimatedWinProbability: means[index] } : {}),
     beliefMode: beliefs.mode,
     estimates: choices.map((card, i) => ({
       card,
       samples: n,
       relativeScore: pointSums[i] / n,
       ...(terminal ? { winProbability: means[i] } : {}),
+      ...(!terminal && late ? { estimatedWinProbability: means[i] } : {}),
       stderr: Math.sqrt(Math.max(0, squares[i] / n - means[i] ** 2) / n),
     })),
   };

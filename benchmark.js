@@ -6,7 +6,7 @@ import {
   observe as oldObserve,
 } from "./test/fixtures/ai-v1.js";
 import { mkdir, writeFile, readFile, readdir } from "node:fs/promises";
-import { createHash } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
@@ -54,6 +54,7 @@ function seeded(initial) {
   };
 }
 const sourceHashes = {};
+const runId = randomUUID();
 for (const path of [
   ...(await readdir("src"))
     .filter((n) => n.endsWith(".js"))
@@ -152,6 +153,8 @@ const radius =
   (z * Math.sqrt((rate * (1 - rate)) / count + (z * z) / (4 * count * count))) /
   (1 + (z * z) / count);
 const result = {
+  runId,
+  experimentalProvenance: selected.experimentalProvenance || null,
   sourceHashes,
   enginePath,
   algorithm: selected.algorithm || "private-belief tree search",
@@ -177,7 +180,7 @@ const result = {
   records,
 };
 await mkdir("artifacts", { recursive: true });
-const path = `artifacts/benchmark-${matches ? "matches" : "rounds"}-${seed}-${count}-${milliseconds}ms-${samples}samples-new${newSamples}samples-${newMilliseconds}ms.json`;
+const path = `artifacts/benchmark-${matches ? "matches" : "rounds"}-${seed}-${count}-${milliseconds}ms-${samples}samples-new${newSamples}samples-${newMilliseconds}ms-${runId}.json`;
 await writeFile(path, JSON.stringify(result, null, 2) + "\n");
 console.log(
   JSON.stringify({ ...result, records: undefined, artifact: path }, null, 2),

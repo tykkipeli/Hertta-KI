@@ -1,0 +1,1474 @@
+{
+  "at": "2026-10-30T19:08:56.828Z",
+  "campaign": "85331e2-ci-v1",
+  "milliseconds": 200,
+  "selectedBlocks": 160,
+  "games": 640,
+  "driverSha": "53461514d766b5f66315ddd84050012327cbde2753d0781932b9dd0b236fb5f9",
+  "pipelineSha": "dd8b9c9d31ef81179a7e6bb2bcb6f4cf6d9826fb3197483b8e5892e597049d51",
+  "expectedSource": {
+    "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+    "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+    "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+    "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+    "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+    "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+    "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+    "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+    "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+    "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+    "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+    "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+    "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+    "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+    "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+    "benchmark.js": "a75b984dc11cd562051db892b668e7b81347475ffe2e14e86f786c3ffd67bc43",
+    "scripts/summarize-benchmarks.js": "84e4507d437e5dd5b9193ce1c318ee3a90ece8eefd40c055d5213e68dfe44b86",
+    "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3"
+  },
+  "seedsDisjointFromOriginalCampaign": true,
+  "selectionRule": "Earliest complete workflow run/attempt, independently of outcome",
+  "selected": [
+    {
+      "slot": "200-0-0",
+      "seed": 20270000,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-0.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-0-1",
+      "runId": "7858d4cc-d279-40bb-9aa5-2da4f87fba96",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-1",
+      "seed": 20335537,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-1.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-1-1",
+      "runId": "7a3acb97-93d2-41ef-82f9-fea09945371f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-2",
+      "seed": 20401074,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-2.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-2-1",
+      "runId": "f170cb87-f5d5-49a5-932a-e8cfc0b27cb2",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-3",
+      "seed": 20466611,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-3.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-3-1",
+      "runId": "69c7eee6-2bd6-4abc-8f27-d09ef8d176ba",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-4",
+      "seed": 20532148,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-4.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-4-1",
+      "runId": "35586e6a-3199-4f3c-8b2a-74db76d1bdab",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-5",
+      "seed": 20597685,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-5.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-5-1",
+      "runId": "cb261d36-66b7-4879-94ae-c0a8b7c99975",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-6",
+      "seed": 20663222,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-6.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-6-1",
+      "runId": "70f5ec7e-ddd8-4b0f-9525-d77b6ad27e4f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-7",
+      "seed": 20728759,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-7.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-7-1",
+      "runId": "9ad69dac-4bd6-4698-a457-5ddad2314d22",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-8",
+      "seed": 20794296,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-8.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-8-1",
+      "runId": "a88b19e7-26bb-409e-b358-ed0900736894",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-9",
+      "seed": 20859833,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-9.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-9-1",
+      "runId": "a12f8be9-c5ec-4def-8dd5-4501b3a48297",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-10",
+      "seed": 20925370,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-10.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-10-1",
+      "runId": "d34913da-6b87-463e-9072-9027beb8a19b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-11",
+      "seed": 20990907,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-11.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-11-1",
+      "runId": "15efa871-4524-4054-8e1a-5420981e3176",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-12",
+      "seed": 21056444,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-12.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-12-1",
+      "runId": "f781c950-0168-4af4-8439-0c420ace31b6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-13",
+      "seed": 21121981,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-13.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-13-1",
+      "runId": "681bc24e-69aa-458c-a1cf-4f7e6f87f478",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-14",
+      "seed": 21187518,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-14.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-14-1",
+      "runId": "78b2f051-91b5-4d90-89f9-275a36e64dd3",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-15",
+      "seed": 21253055,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-15.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-15-1",
+      "runId": "7ad28354-5bed-43e1-9531-02f8a71925c2",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-16",
+      "seed": 21318592,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-16.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-16-1",
+      "runId": "bb0fbfa9-2733-429f-8809-878bf22bdd94",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-17",
+      "seed": 21384129,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-17.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-17-1",
+      "runId": "6b5f3733-0e4d-40e1-9021-96a3510ad208",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-18",
+      "seed": 21449666,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-18.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-18-1",
+      "runId": "3da44c64-923c-415b-8f79-455049dbbe00",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-19",
+      "seed": 21515203,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-19.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-19-1",
+      "runId": "70b89a97-4466-4877-8bd8-67722231318a",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-20",
+      "seed": 21580740,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-20.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-20-1",
+      "runId": "a1366cb9-88a3-4646-884b-4d4919ead343",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-21",
+      "seed": 21646277,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-21.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-21-1",
+      "runId": "7563eda6-3e9e-4316-90e2-7a12a4bb162c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-22",
+      "seed": 21711814,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-22.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-22-1",
+      "runId": "14a8c7ff-ee42-4e76-be33-9c8c7233bba7",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-23",
+      "seed": 21777351,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-23.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-23-1",
+      "runId": "d8f62cb3-66dd-4c28-b0b1-ac2ee6437f96",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-24",
+      "seed": 21842888,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-24.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-24-1",
+      "runId": "179c4665-0ef1-45c6-86ce-d2d2d5010cf6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-25",
+      "seed": 21908425,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-25.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-25-1",
+      "runId": "bc8363f2-112e-4f64-9c66-7640e5063223",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-26",
+      "seed": 21973962,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-26.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-26-1",
+      "runId": "21cfbcf7-df7d-46af-bac7-116191f07dfa",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-27",
+      "seed": 22039499,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-27.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-27-1",
+      "runId": "b1a746ca-2a59-45ef-a5a0-3d8586817172",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-28",
+      "seed": 22105036,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-28.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-28-1",
+      "runId": "e28bac19-cc58-4b4b-a53b-6f044a8cac50",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-29",
+      "seed": 22170573,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-29.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-29-1",
+      "runId": "2aea0f9b-e76c-497d-9076-13cf373bc869",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-30",
+      "seed": 22236110,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-30.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-30-1",
+      "runId": "83243fb7-6868-4f25-84c5-8209dea0c196",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-31",
+      "seed": 22301647,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-31.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-31-1",
+      "runId": "c850b26f-3e3d-438b-b133-b2c1f89c920a",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-32",
+      "seed": 22367184,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-32.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-32-1",
+      "runId": "7eb72fed-62d0-4085-a97f-e78faece6408",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-33",
+      "seed": 22432721,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-33.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-33-1",
+      "runId": "57d1fc2c-0c7b-4197-bc3b-6658a945bad6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-34",
+      "seed": 22498258,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-34.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-34-1",
+      "runId": "a6fd13e6-046f-4605-9889-a0aff66cdf5d",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-35",
+      "seed": 22563795,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-35.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-35-1",
+      "runId": "15c6f0ca-843e-43b2-be8a-08f83344534f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-36",
+      "seed": 22629332,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-36.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-36-1",
+      "runId": "43276176-f561-4a5a-beef-40b920cfb466",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-37",
+      "seed": 22694869,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-37.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-37-1",
+      "runId": "7909e4cf-e783-458d-8411-506f6c4d0ea5",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-38",
+      "seed": 22760406,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-38.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-38-1",
+      "runId": "08320ea9-576b-4cc4-86c5-8318db3b0d64",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-0-39",
+      "seed": 22825943,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-39.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-0-39-1",
+      "runId": "f48f2556-b26f-4a38-abfc-a0f9216675ed",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-0",
+      "seed": 21270003,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-0.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-0-1",
+      "runId": "f9508b20-ade5-4622-9e7b-e29f02df692a",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-1",
+      "seed": 21335540,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-1.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-1-1",
+      "runId": "3a63691c-2931-4200-89d6-3bcccaa8adfd",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-2",
+      "seed": 21401077,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-2.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-2-1",
+      "runId": "c382cae4-18a7-410e-ad9c-77f5d57d67fd",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-3",
+      "seed": 21466614,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-3.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-3-1",
+      "runId": "e9070b79-40c4-442e-bd88-aef5d294234d",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-4",
+      "seed": 21532151,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-4.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-4-1",
+      "runId": "cce026a1-00ca-4f54-bf1e-82e7b844b6f7",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-5",
+      "seed": 21597688,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-5.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-5-1",
+      "runId": "ebc5bb20-5096-4a30-a3e2-f1eddeb265e8",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-6",
+      "seed": 21663225,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-6.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-6-1",
+      "runId": "dd64d033-975c-4403-bf81-2b799c388981",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-7",
+      "seed": 21728762,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-7.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-7-1",
+      "runId": "d8ddcb6d-7e80-4749-880f-363fee857634",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-8",
+      "seed": 21794299,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-8.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-8-1",
+      "runId": "59496d6e-d19b-4988-b1ed-a1ad5d199375",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-9",
+      "seed": 21859836,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-9.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-9-1",
+      "runId": "ff2547fe-d6dd-4794-b78d-a296d4bb7dd1",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-10",
+      "seed": 21925373,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-10.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-10-1",
+      "runId": "ee7dd16a-be1d-41d8-b9d8-e223dc4c4b8e",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-11",
+      "seed": 21990910,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-11.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-11-1",
+      "runId": "aecf99fe-eef7-46fd-8c0f-a4aa594be96f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-12",
+      "seed": 22056447,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-12.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-12-1",
+      "runId": "6cab1dad-a737-47b0-a272-538505971fce",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-13",
+      "seed": 22121984,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-13.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-13-1",
+      "runId": "ad960987-43e0-4131-980c-6aa71d153e5c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-14",
+      "seed": 22187521,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-14.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-14-1",
+      "runId": "2fb41fd2-6583-4645-81d6-83d7c14f3d6c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-15",
+      "seed": 22253058,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-15.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-15-1",
+      "runId": "bbdfd86c-2913-4eae-b567-77d03ca3b217",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-16",
+      "seed": 22318595,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-16.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-16-1",
+      "runId": "b220f5ef-8dc5-4e93-9919-b7972ac838df",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-17",
+      "seed": 22384132,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-17.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-17-1",
+      "runId": "463b662d-1152-4d3e-9c68-78e207da95e9",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-18",
+      "seed": 22449669,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-18.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-18-1",
+      "runId": "d13c4675-bed4-40be-9882-37284e8a81b5",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-19",
+      "seed": 22515206,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-19.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-19-1",
+      "runId": "4f2c3ba5-7b43-4cba-b368-122503e1d8e0",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-20",
+      "seed": 22580743,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-20.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-20-1",
+      "runId": "c9988bdf-fc91-4646-a089-c73bac522c10",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-21",
+      "seed": 22646280,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-21.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-21-1",
+      "runId": "181ee45c-dc15-4f4d-bd7b-2a9dd1571273",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-22",
+      "seed": 22711817,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-22.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-22-1",
+      "runId": "c69aecb5-e25c-4909-8b73-3ee0efa1265f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-23",
+      "seed": 22777354,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-23.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-23-1",
+      "runId": "0f0dac5d-e829-4327-a321-82b87f8ffa4b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-24",
+      "seed": 22842891,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-24.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-24-1",
+      "runId": "dc13a255-3e19-4f00-b341-f3134d7663cc",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-25",
+      "seed": 22908428,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-25.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-25-1",
+      "runId": "df663da1-1c82-4e1e-a721-cf3f3da30b11",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-26",
+      "seed": 22973965,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-26.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-26-1",
+      "runId": "a29b296b-fceb-4cc4-ab63-4e6577b1ecb4",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-27",
+      "seed": 23039502,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-27.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-27-1",
+      "runId": "48f09a8e-b5d6-40d4-a938-25bf58880813",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-28",
+      "seed": 23105039,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-28.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-28-1",
+      "runId": "0a6b33d2-6a6b-4e47-a2b4-ed2b14676667",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-29",
+      "seed": 23170576,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-29.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-29-1",
+      "runId": "f90930a0-a86b-4013-b782-46029215cb89",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-30",
+      "seed": 23236113,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-30.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-30-1",
+      "runId": "ff41d958-16e2-4b03-b16f-7fe78b9b547d",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-31",
+      "seed": 23301650,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-31.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-31-1",
+      "runId": "b275a86d-6cb5-46b0-a426-b64d8a2acd76",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-32",
+      "seed": 23367187,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-32.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-32-1",
+      "runId": "e4e2901e-d358-4a84-93df-2abb6f236b57",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-33",
+      "seed": 23432724,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-33.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-33-1",
+      "runId": "eee8c879-addb-4b28-8f46-8f80d8c4c6b9",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-34",
+      "seed": 23498261,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-34.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-34-1",
+      "runId": "6a71fae2-7ceb-4347-a693-227e11e2a849",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-35",
+      "seed": 23563798,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-35.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-35-1",
+      "runId": "3495d74e-4cdc-4e5e-8000-9b5b59226ac6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-36",
+      "seed": 23629335,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-36.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-36-1",
+      "runId": "c32d97cf-b230-4a0a-9669-c0955c37f3fe",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-37",
+      "seed": 23694872,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-37.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-37-1",
+      "runId": "7b183ed4-89f1-475e-9f45-9d6b540ca5d1",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-38",
+      "seed": 23760409,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-38.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-38-1",
+      "runId": "a96ef24b-1b3b-4157-83a3-fcf753e6b3a5",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-1-39",
+      "seed": 23825946,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-39.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-1-39-1",
+      "runId": "f6035d39-d719-4a97-9057-fb2c9b6973d6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-0",
+      "seed": 22270006,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-0.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-0-1",
+      "runId": "11401ab4-7d8c-4496-a3be-7b5205d8b582",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-1",
+      "seed": 22335543,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-1.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-1-1",
+      "runId": "9acf231d-d7ed-4299-b648-62d0909d5052",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-2",
+      "seed": 22401080,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-2.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-2-1",
+      "runId": "4650f47d-8f15-4077-88f8-d458f46f92d5",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-3",
+      "seed": 22466617,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-3.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-3-1",
+      "runId": "abdc81ae-3575-483a-83ee-67ce5587d642",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-4",
+      "seed": 22532154,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-4.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-4-1",
+      "runId": "452ecbe1-c2d3-495f-84ee-ec26c344dc42",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-5",
+      "seed": 22597691,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-5.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-5-1",
+      "runId": "10d75723-8aed-49fd-8598-36d5c6338550",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-6",
+      "seed": 22663228,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-6.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-6-1",
+      "runId": "280e5a1c-767e-45de-a972-036bdfd6449d",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-7",
+      "seed": 22728765,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-7.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-7-1",
+      "runId": "78f943b9-90e1-4401-a7b8-648bb5eea37e",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-8",
+      "seed": 22794302,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-8.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-8-1",
+      "runId": "38296a07-3bc0-4492-ad3f-01a2d54c8417",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-9",
+      "seed": 22859839,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-9.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-9-1",
+      "runId": "b4d9efee-5541-4db1-a95a-fcd8f9433e64",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-10",
+      "seed": 22925376,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-10.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-10-1",
+      "runId": "d43d0dc4-f09b-4dbd-a1bd-bac1e1edb6d3",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-11",
+      "seed": 22990913,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-11.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-11-1",
+      "runId": "835e96d0-923a-4c1f-93bb-ec62e9ff2f7b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-12",
+      "seed": 23056450,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-12.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-12-1",
+      "runId": "66a281be-7f34-405f-8415-f8535db43312",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-13",
+      "seed": 23121987,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-13.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-13-1",
+      "runId": "bb0d1a87-9008-414e-9331-c1d4a923bf5a",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-14",
+      "seed": 23187524,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-14.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-14-1",
+      "runId": "3e6f9988-9a0a-4d16-ac71-c43aa090676c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-15",
+      "seed": 23253061,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-15.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-15-1",
+      "runId": "d43894f4-77d7-4ad2-9515-57bf39718e5f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-16",
+      "seed": 23318598,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-16.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-16-1",
+      "runId": "bb83edfb-0e04-4f48-a6e7-5b0345cb8e6c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-17",
+      "seed": 23384135,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-17.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-17-1",
+      "runId": "7802aa83-9ed7-4d76-bf81-72ef306a76cb",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-18",
+      "seed": 23449672,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-18.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-18-1",
+      "runId": "13ad4d8f-ac3a-42c2-86e9-c20bf70b6ead",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-19",
+      "seed": 23515209,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-19.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-19-1",
+      "runId": "ec01afb0-dad7-42fe-bf65-3bb8dbdb8ff0",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-20",
+      "seed": 23580746,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-20.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-20-1",
+      "runId": "335df1c8-2938-48e3-9522-ccd2eec1b25d",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-21",
+      "seed": 23646283,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-21.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-21-1",
+      "runId": "14e17613-fd8a-4ad7-911d-5dbdea0165fb",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-22",
+      "seed": 23711820,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-22.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-22-1",
+      "runId": "753440ab-d058-4821-9caf-22824962c086",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-23",
+      "seed": 23777357,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-23.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-23-1",
+      "runId": "14344543-aa6b-48b9-816e-9eadd5fbe761",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-24",
+      "seed": 23842894,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-24.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-24-1",
+      "runId": "ac9a2a86-6ef5-4de1-ba45-c4dcdc9b07ea",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-25",
+      "seed": 23908431,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-25.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-25-1",
+      "runId": "085b85cb-8d83-4322-874a-ab9863e7e476",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-26",
+      "seed": 23973968,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-26.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-26-1",
+      "runId": "02d8c0a5-a18b-45af-a368-df2cfd55ede9",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-27",
+      "seed": 24039505,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-27.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-27-1",
+      "runId": "bb62a435-6c26-4eed-b8c5-808dea8040bb",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-28",
+      "seed": 24105042,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-28.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-28-1",
+      "runId": "826fa0b8-4289-4d20-877c-9ecf03b6560b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-29",
+      "seed": 24170579,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-29.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-29-1",
+      "runId": "f15d2ba4-ac51-423a-9b2a-231bdb58a306",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-30",
+      "seed": 24236116,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-30.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-30-1",
+      "runId": "6ac01b40-d292-46aa-b508-aed4ec0175ba",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-31",
+      "seed": 24301653,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-31.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-31-1",
+      "runId": "f1989e86-1388-48cd-a4d1-ee44ae85a2b1",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-32",
+      "seed": 24367190,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-32.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-32-1",
+      "runId": "e781672b-b514-455f-9994-68a1d9f6110c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-33",
+      "seed": 24432727,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-33.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-33-1",
+      "runId": "a068c66a-eb04-4a0b-85a4-f38b6637b08f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-34",
+      "seed": 24498264,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-34.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-34-1",
+      "runId": "46498cce-6963-4acc-b52a-e12482145b52",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-35",
+      "seed": 24563801,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-35.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-35-1",
+      "runId": "9e1e56b5-6a86-4ecf-9347-b09b415adae7",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-36",
+      "seed": 24629338,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-36.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-36-1",
+      "runId": "18f7285f-e8a1-4c85-8364-bf470bfc6b51",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-37",
+      "seed": 24694875,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-37.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-37-1",
+      "runId": "a5831fa4-9f2e-4f46-9e5c-544c22617792",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-38",
+      "seed": 24760412,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-38.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-38-1",
+      "runId": "890687de-8a20-4042-a07c-02ee750574f1",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-2-39",
+      "seed": 24825949,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-39.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-2-39-1",
+      "runId": "3f72a865-b284-45af-aab9-cd8f20e99f15",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-0",
+      "seed": 23270009,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-0.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-0-1",
+      "runId": "ed76d3a0-e51e-4423-a7a3-69a8857728ed",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-1",
+      "seed": 23335546,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-1.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-1-1",
+      "runId": "c22471c0-384e-4b93-960f-38f27bdc2b8c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-2",
+      "seed": 23401083,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-2.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-2-1",
+      "runId": "1ce325d2-fe25-41d1-8160-fe20fce15a59",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-3",
+      "seed": 23466620,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-3.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-3-1",
+      "runId": "22ba385e-1bdb-453c-a80f-78b9f069255f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-4",
+      "seed": 23532157,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-4.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-4-1",
+      "runId": "1f5834a8-f943-4664-8d4b-e5b3fa0d6354",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-5",
+      "seed": 23597694,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-5.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-5-1",
+      "runId": "f02091e3-81be-44a1-b2e8-d4a6ca7ae645",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-6",
+      "seed": 23663231,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-6.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-6-1",
+      "runId": "3d19d4c9-ae96-477e-858e-7b44709c1e97",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-7",
+      "seed": 23728768,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-7.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-7-1",
+      "runId": "5b0efe5e-129a-4475-a1b0-41e8a63b9be8",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-8",
+      "seed": 23794305,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-8.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-8-1",
+      "runId": "7136b03e-4c3a-4971-b974-32b3aef6fdcd",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-9",
+      "seed": 23859842,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-9.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-9-1",
+      "runId": "ab903d90-d890-4b35-9bad-a6b4de1e105a",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-10",
+      "seed": 23925379,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-10.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-10-1",
+      "runId": "1ed8db70-b4ee-4532-a13d-d5be82b9956b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-11",
+      "seed": 23990916,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-11.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-11-1",
+      "runId": "99eb0a87-5451-4cb1-b4b7-1866cc5434c7",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-12",
+      "seed": 24056453,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-12.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-12-1",
+      "runId": "15ee5a4a-d5de-452b-b0cf-d34ec4c291f7",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-13",
+      "seed": 24121990,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-13.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-13-1",
+      "runId": "7729f164-371b-45d8-80ee-8787067c033d",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-14",
+      "seed": 24187527,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-14.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-14-1",
+      "runId": "2439d89b-f896-4ec0-9147-95de2830f5ce",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-15",
+      "seed": 24253064,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-15.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-15-1",
+      "runId": "95e426b2-dac3-4e64-ae1f-a2705b927626",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-16",
+      "seed": 24318601,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-16.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-16-1",
+      "runId": "3350e634-dbe9-4083-80a7-7eb6fc94ef9a",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-17",
+      "seed": 24384138,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-17.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-17-1",
+      "runId": "cd675215-2e77-484d-86b3-e4117eea825b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-18",
+      "seed": 24449675,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-18.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-18-1",
+      "runId": "e5fef5cb-cb33-4ce7-b183-a0297b89e726",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-19",
+      "seed": 24515212,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-19.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-19-1",
+      "runId": "3712e366-6b97-4367-bc8a-90f82d494d8f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-20",
+      "seed": 24580749,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-20.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-20-1",
+      "runId": "c824680f-9a5a-4a60-93bf-d9920f3edab6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-21",
+      "seed": 24646286,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-21.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-21-1",
+      "runId": "0d236af9-7ee8-4fca-8d17-28204dfebee7",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-22",
+      "seed": 24711823,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-22.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-22-1",
+      "runId": "3b55ba0c-effc-4f73-8141-10c83bd611d5",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-23",
+      "seed": 24777360,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-23.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-23-1",
+      "runId": "1ea2a8b5-66a8-47eb-8114-226d3752644e",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-24",
+      "seed": 24842897,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-24.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-24-1",
+      "runId": "e198a185-6190-4215-bffb-528bc54e5b6b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-25",
+      "seed": 24908434,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-25.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-25-1",
+      "runId": "b64e6161-56e5-4f36-8c70-4929cc0ca11f",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-26",
+      "seed": 24973971,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-26.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-26-1",
+      "runId": "768c948f-5f62-4428-922c-69fa0adf22ac",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-27",
+      "seed": 25039508,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-27.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-27-1",
+      "runId": "72ab3f8a-82f7-4374-a5c6-18f39f41ba13",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-28",
+      "seed": 25105045,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-28.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-28-1",
+      "runId": "1efc749f-141a-441f-bd88-ff9af093716e",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-29",
+      "seed": 25170582,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-29.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-29-1",
+      "runId": "8f1f8fca-8b7d-42ce-8477-b8101822e71c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-30",
+      "seed": 25236119,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-30.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-30-1",
+      "runId": "eacb4644-4566-4580-ac3e-3bcb467a5063",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-31",
+      "seed": 25301656,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-31.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-31-1",
+      "runId": "26767605-1bdd-48e8-92a7-69aa391ae5a5",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-32",
+      "seed": 25367193,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-32.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-32-1",
+      "runId": "3b3095bc-4a31-4527-bf3f-2072bd16382c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-33",
+      "seed": 25432730,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-33.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-33-1",
+      "runId": "38991adb-d1d3-4271-9bb8-4364e0bdbb20",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-34",
+      "seed": 25498267,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-34.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-34-1",
+      "runId": "35700896-5b48-4ca1-90f5-482a4ea0f8b2",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-35",
+      "seed": 25563804,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-35.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-35-1",
+      "runId": "8dd781aa-620a-4dbe-9150-3872cafbe8da",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-36",
+      "seed": 25629341,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-36.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-36-1",
+      "runId": "92eb565f-514e-4a62-bc39-f321f54d235b",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-37",
+      "seed": 25694878,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-37.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-37-1",
+      "runId": "d87b380f-80fa-448f-bddc-6b913a8227a6",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-38",
+      "seed": 25760415,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-38.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-38-1",
+      "runId": "390e4b7e-3d88-4216-a524-72e3cb044d7c",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    },
+    {
+      "slot": "200-3-39",
+      "seed": 25825952,
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-39.json",
+      "origin": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/raw-200ms/hearts-85331e2-ci-v1-block-200-3-39-1",
+      "runId": "7e4a6663-fdad-44ee-8248-0ee9d882e638",
+      "workflowRunId": "41074729210",
+      "attempt": 1
+    }
+  ],
+  "excluded": []
+}

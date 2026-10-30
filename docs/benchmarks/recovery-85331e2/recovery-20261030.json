@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-30T16:40:54.744Z",
+  "event": "restored-after-unavailable-environment",
+  "completedGames": 378,
+  "verified": {
+    "snapshotHashes": true,
+    "workingRuntimeHashes": true,
+    "checkpointParameters": true,
+    "checkpointAggregates": true,
+    "unitTests": 29,
+    "node": "v24.19.0",
+    "cpuQuota": "400000 100000"
+  },
+  "archiveBranch": "codex/hearts-strength-recovery-85331e2",
+  "archiveCommit": "c0fa5158f86b2df286e6f41a674200972e693e76",
+  "note": "All four old workers absent. Resume the same completed-match records and run IDs; repeat only each interrupted match. Frozen AI and original reference unchanged. Original and resumed wall-clock periods are recorded separately."
+}

@@ -325,7 +325,7 @@ test("moon play takes points economically and abandons the plan when another pla
 });
 
 test("game-winning objective activates only when public points guarantee the match ends", async () => {
-  const { matchEndsThisRound, terminalWinShare } = await import(
+  const { matchEndsThisRound, matchEndThreat, terminalWinShare } = await import(
     "../src/utility.js"
   );
   assert.equal(
@@ -369,7 +369,7 @@ test("a moon plan survives using its high cards and stops when an opponent score
 
 test("known endgame search matches exhaustive adversarial play", async () => {
   const { solveKnownEndgame } = await import("../src/endgame.js");
-  const { matchEndsThisRound, terminalWinShare } = await import(
+  const { matchEndsThisRound, matchEndThreat, terminalWinShare } = await import(
     "../src/utility.js"
   );
   for (let seed = 0; seed < 50; seed++) {
@@ -377,13 +377,15 @@ test("known endgame search matches exhaustive adversarial play", async () => {
       s = createState(deal(r));
     while (s.completed < 11) play(s, policy(s, r));
     const o = observe(s, s.turn, {}, [80, 85, 90, 95]),
-      terminal = matchEndsThisRound(o),
+      terminal = matchEndsThisRound(o) || matchEndThreat(o),
       p = s.turn;
     function exhaustive(state) {
       if (state.completed === 13) {
         const scores = roundScores(state.taken);
         return terminal
-          ? terminalWinShare(scores, o.totals, p)
+          ? Math.max(...scores.map((n, q) => n + o.totals[q])) >= 100
+            ? terminalWinShare(scores, o.totals, p)
+            : 0
           : scores.reduce((n, x, q) => n + (q === p ? -3 * x : x), 0);
       }
       const values = legal(state).map((c) => {
@@ -460,4 +462,262 @@ test("a printed low card that became a master is not mistaken for a safe exit", 
     followers: [0, 2, 0, 0],
   };
   assert.equal(strategicChoice(v), 23);
+});
+
+test("late match value prefers surviving a certain loss and securing an available win", async () => {
+  const { matchEndThreat, lateMatchValue } = await import("../src/utility.js");
+  assert.equal(
+    matchEndThreat({ totals: [0, 10, 20, 30], taken: [0, 0, 0, 0] }),
+    false,
+  );
+  assert.equal(
+    matchEndThreat({ totals: [70, 80, 85, 86], taken: [0, 0, 5, 0] }),
+    true,
+  );
+  const ends = [0, 0, 1, 25],
+    survives = [10, 0, 0, 16];
+  assert.equal(lateMatchValue(ends, [84, 50, 99, 80], 0), 0);
+  assert.ok(lateMatchValue(survives, [84, 50, 99, 80], 0) > 0);
+  assert.equal(lateMatchValue(ends, [50, 70, 99, 80], 0), 1);
+  assert.ok(lateMatchValue(survives, [50, 70, 99, 80], 0) < 1);
+  assert.equal(lateMatchValue([0, 13, 7, 6], [53, 50, 95, 96], 0), 1);
+  assert.equal(lateMatchValue([0, 0, 13, 13], [53, 50, 95, 96], 0), 0);
+});
+
+test("public queen beliefs preserve the RNG when there is no relative evidence", async () => {
+  const { createQueenBelief } = await import("../src/queen-belief.js");
+  const o = {
+    player: 0,
+    hand: [0],
+    history: [],
+    trick: [],
+    totals: [0, 0, 0, 0],
+    taken: [0, 0, 0, 0],
+    counts: [1, 1, 1, 1],
+    voids: [[], [], [], []],
+    known: {},
+  };
+  let calls = 0;
+  const random = () => {
+      calls++;
+      return 0.3;
+    },
+    world = { hands: [[0], [36], [13], [39]] };
+  const b = createQueenBelief(o, () => world);
+  assert.equal(b.mode, "uniform");
+  assert.equal(b.next(random), world);
+  assert.equal(calls, 0);
+  const uncertain = createQueenBelief(
+    {
+      ...o,
+      history: [
+        {
+          trick: [
+            { player: 0, card: 0 },
+            { player: 1, card: 1 },
+            { player: 2, card: 2 },
+            { player: 3, card: 3 },
+          ],
+        },
+      ],
+      trick: [
+        { player: 0, card: 37 },
+        { player: 1, card: 27 },
+      ],
+    },
+    () => world,
+  );
+  assert.equal(uncertain.mode, "public-action-queen-prior");
+  assert.equal(
+    uncertain.next(() => 0),
+    world,
+  ); // Even the missed opportunity never excludes this holder.
+  const endgame = createQueenBelief(
+    { ...o, totals: [0, 0, 90, 0] },
+    () => world,
+  );
+  assert.equal(endgame.mode, "uniform");
+});
+
+test("the search keeps a losing match alive instead of gifting the queen to a player at 99", async () => {
+  const { shuffle } = await import("../src/game.js");
+  const { decide: oldDecide, observe: oldObserve } = await import(
+    "./fixtures/ai-v1.js"
+  );
+  const reserved = [
+      [36, 38],
+      [26, 12],
+      [37, 25],
+      [27, 1],
+    ],
+    random = rng(67148);
+  const pool = shuffle(
+    Array.from({ length: 52 }, (_, c) => c).filter(
+      (c) => !reserved.flat().includes(c),
+    ),
+    random,
+  );
+  const state = createState(
+    reserved.map((cards, p) =>
+      [...cards, ...pool.slice(p * 11, p * 11 + 11)].sort((a, b) => a - b),
+    ),
+  );
+  while (state.completed < 11) {
+    const choices = legal(state).filter(
+      (c) => !reserved[state.turn].includes(c),
+    );
+    assert.ok(choices.length);
+    play(state, choices[Math.floor(random() * choices.length)]);
+  }
+  assert.equal(state.turn, 0);
+  assert.deepEqual(state.hands[0], [36, 38]);
+  const known = {
+    2: [
+      37,
+      25,
+      state.history.flatMap((t) => t.trick).find((x) => x.player === 2).card,
+    ],
+  };
+  const totals = [80, 77, 99, 80].map((n, p) => n - state.taken[p]);
+  const old = oldDecide(oldObserve(state, 0, known), {
+    milliseconds: 0,
+    minSamples: 32,
+    rng: rng(5),
+  });
+  const current = decide(observe(state, 0, known, totals), {
+    milliseconds: 0,
+    minSamples: 32,
+    rng: rng(5),
+  });
+  assert.equal(old.card, 36);
+  assert.equal(current.card, 38);
+  assert.equal(current.objective, "late-match-win-estimate");
+});
+
+test("missed safe queen discards reduce a hypothesis weight without excluding it", async () => {
+  const { createQueenBelief } = await import("../src/queen-belief.js");
+  const o = {
+    player: 0,
+    hand: [12],
+    history: [
+      {
+        trick: [
+          { player: 0, card: 0 },
+          { player: 1, card: 1 },
+          { player: 2, card: 2 },
+          { player: 3, card: 3 },
+        ],
+      },
+    ],
+    trick: [
+      { player: 0, card: 37 },
+      { player: 1, card: 27 },
+    ],
+    totals: [0, 0, 0, 0],
+    taken: [0, 0, 0, 0],
+    counts: [1, 1, 1, 1],
+    voids: [[], [], [], []],
+    known: {},
+  };
+  const bad = { hands: [[12], [36], [13], [39]] },
+    good = { hands: [[12], [13], [36], [39]] };
+  let at = 0;
+  const belief = createQueenBelief(o, () => (++at % 2 ? bad : good)),
+    random = rng(7612);
+  let kept = 0;
+  for (let n = 0; n < 5000; n++) kept += belief.next(random) === bad ? 1 : 0;
+  assert.ok(kept > 50 && kept < 500);
+  let draws = 0;
+  const positive = createQueenBelief(o, () => {
+    draws++;
+    return bad;
+  });
+  assert.equal(
+    positive.next(() => 0),
+    bad,
+  );
+  assert.equal(draws, 1);
+});
+
+test("queen beliefs allow a protected queen to be deliberately retained", async () => {
+  const { createQueenBelief } = await import("../src/queen-belief.js");
+  const o = {
+    player: 0,
+    hand: [12],
+    history: [
+      {
+        trick: [
+          { player: 0, card: 0 },
+          { player: 1, card: 1 },
+          { player: 2, card: 2 },
+          { player: 3, card: 3 },
+        ],
+      },
+    ],
+    trick: [
+      { player: 0, card: 4 },
+      { player: 1, card: 13 },
+    ],
+    totals: [0, 0, 0, 0],
+    taken: [0, 0, 0, 0],
+    counts: [1, 5, 5, 5],
+    voids: [[], [], [], []],
+    known: { 1: [36] },
+  };
+  const covered = { hands: [[12], [26, 27, 28, 29, 36], [14], [39]] },
+    exposed = { hands: [[12], [14, 15, 16, 17, 36], [26], [39]] };
+  let at = 0;
+  const belief = createQueenBelief(o, () => (++at % 2 ? covered : exposed)),
+    random = rng(7123);
+  let nCovered = 0;
+  for (let n = 0; n < 5000; n++)
+    nCovered += belief.next(random) === covered ? 1 : 0;
+  assert.ok(nCovered > 3000 && nCovered < 4400);
+});
+
+test("end-of-match bounds account for shooting the moon", async () => {
+  const { matchEndsThisRound, matchEndThreat } = await import(
+    "../src/utility.js"
+  );
+  assert.equal(
+    matchEndsThisRound({ totals: [20, 90, 0, 0], taken: [26, 0, 0, 0] }),
+    true,
+  );
+  assert.equal(
+    matchEndsThisRound({ totals: [95, 20, 0, 0], taken: [26, 0, 0, 0] }),
+    false,
+  );
+  assert.equal(
+    matchEndThreat({ totals: [74, 20, 0, 0], taken: [16, 0, 0, 0] }),
+    false,
+  );
+  assert.equal(
+    matchEndThreat({ totals: [74, 20, 0, 0], taken: [0, 0, 0, 0] }),
+    true,
+  );
+  assert.equal(
+    matchEndThreat({ totals: [20, 20, 87, 20], taken: [0, 13, 0, 0] }),
+    true,
+  );
+});
+
+test("a void is used to discard the protected king rather than burn its small spade guards", async () => {
+  const { strategicChoice } = await import("../src/strategy.js");
+  const hand = [26, 27, 28, 29, 30, 31, 37];
+  const v = {
+    hand,
+    choices: hand,
+    led: 1,
+    top: 5,
+    pot: 0,
+    length: 1,
+    played: Array(52).fill(false),
+    taken: [0, 1, 0, 0],
+    turn: 0,
+    winner: 1,
+    completed: 4,
+  };
+  assert.equal(strategicChoice(v), 37);
+  const withAnotherExit = { ...v, hand: [...hand, 12], choices: [...hand, 12] };
+  assert.equal(strategicChoice(withAnotherExit), 12);
 });

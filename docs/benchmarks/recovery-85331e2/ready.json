@@ -1,0 +1,10 @@
+{
+  "readyAt": "2026-10-29T14:23:25.376Z",
+  "sourceCommit": "85331e2",
+  "checks": {
+    "unitTests": 29,
+    "browser": "Passing hint on the protected-king regression hand, receipt, 13 tricks, independent worker inputs, mobile sizes, normal animation and restart during collection passed",
+    "checkpoint": "Normal and checkpoint driver agree on four complete fixed-sample games; resume preserves records and run ID",
+    "duplicateData": "Unique run files verified; overlapping deal blocks rejected"
+  }
+}
