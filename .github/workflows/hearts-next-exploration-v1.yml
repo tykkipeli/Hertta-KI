@@ -1,0 +1,55 @@
+name: Hearts next hypotheses - exploration only
+on:
+  push:
+    branches: [codex/hearts-next-fixed-exploration-v1]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  variants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        variant: [baseline, public-rules, capacity-lead, public-bounds, endgame-proof]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node scripts/hearts-next-exploration.cjs verify
+      - run: npm test
+      - run: node scripts/hearts-next-exploration.cjs run '${{ matrix.variant }}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hearts-next-exploration-v1-${{ matrix.variant }}
+          path: exploration/
+          retention-days: 30
+          if-no-files-found: error
+  compare:
+    needs: variants
+    runs-on: ubuntu-latest
+    if: always()
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: hearts-next-exploration-v1-*
+          path: exploration-inputs
+      - run: node scripts/hearts-next-exploration.cjs aggregate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hearts-next-exploration-v1-report
+          path: |
+            exploration-report/
+            exploration-inputs/
+          retention-days: 30
+          if-no-files-found: error
