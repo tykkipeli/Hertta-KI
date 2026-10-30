@@ -1,0 +1,98 @@
+name: Frozen Hearts AI strength proof
+on:
+  push:
+    branches: [codex/hearts-strength-85331e2-ci-v1]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: hearts-strength-85331e2-ci-v1
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: node scripts/hearts-strength-ci.cjs verify
+      - run: npm ci --ignore-scripts --no-audit
+      - run: npm test
+      - id: plan
+        shell: bash
+        run: |
+          node scripts/hearts-strength-ci.cjs plan > "$RUNNER_TEMP/hearts-matrix.json"
+          echo "matrix=$(cat "$RUNNER_TEMP/hearts-matrix.json")" >> "$GITHUB_OUTPUT"
+  blocks:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - id: restore
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: hearts-85331e2-ci-v1-block-${{ matrix.slot }}-*
+          path: artifacts/strength-ci/restore
+      - name: Run or resume four complete seat rotations
+        run: node scripts/hearts-strength-ci.cjs block
+        env:
+          HEARTS_BUDGET: ${{ matrix.ms }}
+          HEARTS_WORKER: ${{ matrix.worker }}
+          HEARTS_BLOCK: ${{ matrix.block }}
+          HEARTS_SEED: ${{ matrix.seed }}
+          HEARTS_RESTORE_OUTCOME: ${{ steps.restore.outcome }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hearts-85331e2-ci-v1-block-${{ matrix.slot }}-${{ github.run_attempt }}
+          path: artifacts/strength-ci/job/
+          retention-days: 30
+          if-no-files-found: error
+  aggregate:
+    permissions:
+      contents: write
+      actions: read
+    needs: [prepare, blocks]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: hearts-85331e2-ci-v1-block-*
+          path: proof-inputs
+      - name: Verify all blocks and evaluate both budgets
+        run: node scripts/hearts-strength-ci.cjs aggregate
+      - name: Persist complete and partial proof data on a separate Git branch
+        if: always()
+        run: node scripts/hearts-strength-ci.cjs persist
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hearts-85331e2-ci-v1-report-${{ github.run_attempt }}
+          path: |
+            proof-report/
+            proof-inputs/
+          retention-days: 30
+          if-no-files-found: error
+
