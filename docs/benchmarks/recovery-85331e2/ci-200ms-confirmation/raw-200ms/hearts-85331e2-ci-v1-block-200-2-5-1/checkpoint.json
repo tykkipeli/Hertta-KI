@@ -1,0 +1,125 @@
+{
+  "count": 4,
+  "seed": 22597691,
+  "milliseconds": 200,
+  "samples": 16,
+  "newSamples": 16,
+  "newMilliseconds": 200,
+  "sourceHashes": {
+    "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+    "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+    "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+    "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+    "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+    "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+    "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+    "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+    "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+    "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+    "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+    "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+    "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+    "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+    "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+    "activeEngine": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad"
+  },
+  "runId": "10d75723-8aed-49fd-8598-36d5c6338550",
+  "records": [
+    {
+      "game": 0,
+      "newSeat": 0,
+      "rounds": 9,
+      "totals": [
+        69,
+        33,
+        74,
+        110
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 1,
+      "newSeat": 1,
+      "rounds": 14,
+      "totals": [
+        92,
+        78,
+        101,
+        93
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 2,
+      "newSeat": 2,
+      "rounds": 8,
+      "totals": [
+        57,
+        75,
+        27,
+        101
+      ],
+      "winners": [
+        2
+      ]
+    },
+    {
+      "game": 3,
+      "newSeat": 3,
+      "rounds": 8,
+      "totals": [
+        30,
+        35,
+        42,
+        101
+      ],
+      "winners": [
+        0
+      ]
+    }
+  ],
+  "points": [
+    275,
+    265,
+    259,
+    319
+  ],
+  "wins": [
+    2,
+    2,
+    0,
+    0
+  ],
+  "uniqueWins": [
+    2,
+    2,
+    0,
+    0
+  ],
+  "rounds": 39,
+  "engineTimeMs": [
+    83229.26973200015,
+    242582.92819400108
+  ],
+  "decisionCounts": [
+    507,
+    1521
+  ],
+  "passingTimeMs": [
+    27.822490000030193,
+    1.1956739999205794
+  ],
+  "passingCounts": [
+    30,
+    90
+  ],
+  "beliefModes": {
+    "uniform": 375,
+    "public-action-queen-prior": 41
+  },
+  "seconds": 325.963163134
+}

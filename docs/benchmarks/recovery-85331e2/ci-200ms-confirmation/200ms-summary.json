@@ -1,0 +1,2912 @@
+{
+  "files": [
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-0.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-1.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-2.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-3.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-4.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-5.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-6.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-7.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-8.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-9.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-10.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-11.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-12.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-13.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-14.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-15.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-16.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-17.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-18.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-19.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-20.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-21.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-22.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-23.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-24.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-25.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-26.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-27.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-28.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-29.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-30.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-31.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-32.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-33.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-34.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-35.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-36.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-37.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-38.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-39.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-0.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-1.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-2.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-3.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-4.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-5.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-6.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-7.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-8.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-9.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-10.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-11.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-12.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-13.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-14.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-15.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-16.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-17.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-18.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-19.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-20.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-21.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-22.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-23.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-24.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-25.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-26.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-27.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-28.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-29.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-30.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-31.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-32.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-33.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-34.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-35.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-36.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-37.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-38.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-39.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-0.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-1.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-2.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-3.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-4.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-5.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-6.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-7.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-8.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-9.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-10.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-11.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-12.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-13.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-14.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-15.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-16.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-17.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-18.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-19.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-20.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-21.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-22.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-23.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-24.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-25.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-26.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-27.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-28.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-29.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-30.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-31.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-32.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-33.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-34.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-35.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-36.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-37.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-38.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-39.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-0.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-1.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-2.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-3.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-4.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-5.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-6.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-7.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-8.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-9.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-10.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-11.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-12.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-13.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-14.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-15.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-16.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-17.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-18.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-19.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-20.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-21.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-22.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-23.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-24.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-25.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-26.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-27.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-28.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-29.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-30.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-31.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-32.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-33.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-34.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-35.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-36.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-37.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-38.json",
+    "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-39.json"
+  ],
+  "mode": "matches-to-100",
+  "budget": {
+    "old": {
+      "milliseconds": 200,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 200,
+      "minSamples": 16
+    }
+  },
+  "games": 640,
+  "independentDealBlocks": 160,
+  "winShares": [
+    0.365625,
+    0.221875,
+    0.21875,
+    0.19375
+  ],
+  "newWinShareBlockBootstrap95": [
+    0.33125,
+    0.40078125
+  ],
+  "meanOldWinShare": 0.21145833333333333,
+  "newMinusMeanOld": 0.15416666666666665,
+  "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
+  "runs": [
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-0.json",
+      "seed": 20270000,
+      "rounds": 33,
+      "winShares": [
+        0.5,
+        0.5,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        159.50495688578016,
+        159.6922747692307
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-1.json",
+      "seed": 20335537,
+      "rounds": 39,
+      "winShares": [
+        0,
+        0.25,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.98260116173608,
+        156.85327329980282
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-2.json",
+      "seed": 20401074,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.5176691673081,
+        159.7096929871794
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-3.json",
+      "seed": 20466611,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.2568101454842,
+        157.84472598829382
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-4.json",
+      "seed": 20532148,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        162.79728937606907,
+        158.41133941025635
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-5.json",
+      "seed": 20597685,
+      "rounds": 39,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.0083302978303,
+        158.14752326167002
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-6.json",
+      "seed": 20663222,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.03599866979414,
+        157.46734798373984
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-7.json",
+      "seed": 20728759,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.42377444957333,
+        158.17890200170865
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-8.json",
+      "seed": 20794296,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.34134887062936,
+        156.73098673018657
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-9.json",
+      "seed": 20859833,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.351722562937,
+        159.21491008158492
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-10.json",
+      "seed": 20925370,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.2660060618731,
+        159.8752824593089
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-11.json",
+      "seed": 20990907,
+      "rounds": 37,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.21542469854563,
+        157.53077903534322
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-12.json",
+      "seed": 21056444,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.81093683813995,
+        157.96906863675164
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-13.json",
+      "seed": 21121981,
+      "rounds": 40,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        158.14802805576878,
+        156.66647009487158
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-14.json",
+      "seed": 21187518,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0.125,
+        0.625,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.3012862587407,
+        157.22414788111894
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-15.json",
+      "seed": 21253055,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        162.79720341880258,
+        157.72347531851867
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-16.json",
+      "seed": 21318592,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        160.67315093620996,
+        157.08808378236373
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-17.json",
+      "seed": 21384129,
+      "rounds": 47,
+      "winShares": [
+        0.125,
+        0.5,
+        0,
+        0.375
+      ],
+      "meanDecisionMilliseconds": [
+        161.75410458756195,
+        159.92644584615445
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-18.json",
+      "seed": 21449666,
+      "rounds": 47,
+      "winShares": [
+        0,
+        0.25,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.0367451440266,
+        159.42734289252613
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-19.json",
+      "seed": 21515203,
+      "rounds": 35,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.37978243076955,
+        156.3089125531136
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-20.json",
+      "seed": 21580740,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.345145309481,
+        160.48110365772226
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-21.json",
+      "seed": 21646277,
+      "rounds": 31,
+      "winShares": [
+        0.25,
+        0.75,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.33347301985046,
+        157.43747655169568
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-22.json",
+      "seed": 21711814,
+      "rounds": 47,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.3988867364973,
+        159.75359519039787
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-23.json",
+      "seed": 21777351,
+      "rounds": 40,
+      "winShares": [
+        0,
+        0.25,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        162.36740365961646,
+        157.4037159250002
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-24.json",
+      "seed": 21842888,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.77077651624,
+        156.35798684045625
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-25.json",
+      "seed": 21908425,
+      "rounds": 40,
+      "winShares": [
+        0,
+        0,
+        0.75,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.13339497692186,
+        158.067779975
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-26.json",
+      "seed": 21973962,
+      "rounds": 39,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.38986623274107,
+        159.70645558711388
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-27.json",
+      "seed": 22039499,
+      "rounds": 38,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.6037984595149,
+        158.46940544332006
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-28.json",
+      "seed": 22105036,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.18331853162348,
+        157.00089056410246
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-29.json",
+      "seed": 22170573,
+      "rounds": 46,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.59840291805966,
+        161.32960124804825
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-30.json",
+      "seed": 22236110,
+      "rounds": 29,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        166.64055928116682,
+        158.918556
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-31.json",
+      "seed": 22301647,
+      "rounds": 48,
+      "winShares": [
+        0.125,
+        0,
+        0.375,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        158.71573487339737,
+        158.10948919284243
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-32.json",
+      "seed": 22367184,
+      "rounds": 32,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.0774056250002,
+        157.4659898926278
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-33.json",
+      "seed": 22432721,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        160.12368474542197,
+        158.21213597985383
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-34.json",
+      "seed": 22498258,
+      "rounds": 49,
+      "winShares": [
+        0,
+        0.625,
+        0,
+        0.375
+      ],
+      "meanDecisionMilliseconds": [
+        167.0906458916787,
+        158.88482407692345
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-35.json",
+      "seed": 22563795,
+      "rounds": 44,
+      "winShares": [
+        0,
+        0.25,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        157.7394022132857,
+        156.71254266083932
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-36.json",
+      "seed": 22629332,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        160.9277582625418,
+        159.65331582107007
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-37.json",
+      "seed": 22694869,
+      "rounds": 33,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        157.1681000349646,
+        159.68847088267347
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-38.json",
+      "seed": 22760406,
+      "rounds": 41,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.90643506754222,
+        158.31563768480297
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-0-39.json",
+      "seed": 22825943,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.89495107142827,
+        159.58612618314976
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-0.json",
+      "seed": 21270003,
+      "rounds": 52,
+      "winShares": [
+        0.625,
+        0.25,
+        0.125,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.4780480488174,
+        159.4479746977323
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-1.json",
+      "seed": 21335540,
+      "rounds": 36,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.15875382905983,
+        160.76002706766351
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-2.json",
+      "seed": 21401077,
+      "rounds": 49,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.06426910517905,
+        159.59158904343366
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-3.json",
+      "seed": 21466614,
+      "rounds": 48,
+      "winShares": [
+        0,
+        0.5,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.88280046314105,
+        158.5645073669872
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-4.json",
+      "seed": 21532151,
+      "rounds": 51,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.44636789140182,
+        157.98567408094576
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-5.json",
+      "seed": 21597688,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        159.03466678388276,
+        155.89165625335843
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-6.json",
+      "seed": 21663225,
+      "rounds": 35,
+      "winShares": [
+        0.25,
+        0,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        167.98001925274878,
+        160.708916213187
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-7.json",
+      "seed": 21728762,
+      "rounds": 39,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        160.22169323274125,
+        156.9851913990795
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-8.json",
+      "seed": 21794299,
+      "rounds": 33,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.76595059906768,
+        158.63524880497286
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-9.json",
+      "seed": 21859836,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.55932120572402,
+        158.1115222277875
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-10.json",
+      "seed": 21925373,
+      "rounds": 36,
+      "winShares": [
+        0.375,
+        0.25,
+        0,
+        0.375
+      ],
+      "meanDecisionMilliseconds": [
+        163.31299755341908,
+        158.94764519800606
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-11.json",
+      "seed": 21990910,
+      "rounds": 35,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        165.7647354241762,
+        158.61170059267405
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-12.json",
+      "seed": 22056447,
+      "rounds": 47,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        161.76111590670902,
+        156.36334224549867
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-13.json",
+      "seed": 22121984,
+      "rounds": 37,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        166.7890815239076,
+        158.91684993693713
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-14.json",
+      "seed": 22187521,
+      "rounds": 41,
+      "winShares": [
+        0,
+        0.25,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.16562843527174,
+        159.3459414071289
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-15.json",
+      "seed": 22253058,
+      "rounds": 40,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.75707809615454,
+        154.34520491282046
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-16.json",
+      "seed": 22318595,
+      "rounds": 38,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.59752406477782,
+        158.55844090890676
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-17.json",
+      "seed": 22384132,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        164.27488591949975,
+        157.6203544329159
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-18.json",
+      "seed": 22449669,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.40255460975655,
+        157.4315978180113
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-19.json",
+      "seed": 22515206,
+      "rounds": 42,
+      "winShares": [
+        0,
+        0.75,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        157.93626124175884,
+        160.44032637362662
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-20.json",
+      "seed": 22580743,
+      "rounds": 45,
+      "winShares": [
+        0,
+        0.5,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.7705328307686,
+        159.43759594700836
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-21.json",
+      "seed": 22646280,
+      "rounds": 50,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        164.08435870307667,
+        158.48561054153834
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-22.json",
+      "seed": 22711817,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.40400030769212,
+        157.5511739756099
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-23.json",
+      "seed": 22777354,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.60983080769287,
+        158.03933618414897
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-24.json",
+      "seed": 22842891,
+      "rounds": 45,
+      "winShares": [
+        0,
+        0.5,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.16294343589854,
+        158.2961582028492
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-25.json",
+      "seed": 22908428,
+      "rounds": 36,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.3045215982908,
+        158.34112106196596
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-26.json",
+      "seed": 22973965,
+      "rounds": 46,
+      "winShares": [
+        0,
+        0.25,
+        0.75,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.27038039464875,
+        158.20840288015611
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-27.json",
+      "seed": 23039502,
+      "rounds": 48,
+      "winShares": [
+        0.75,
+        0,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        166.0860824102568,
+        156.95581215064087
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-28.json",
+      "seed": 23105039,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        163.42252596886473,
+        158.20216712454229
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-29.json",
+      "seed": 23170576,
+      "rounds": 39,
+      "winShares": [
+        0,
+        0.5,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        166.14089769822536,
+        158.7000149861932
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-30.json",
+      "seed": 23236113,
+      "rounds": 47,
+      "winShares": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.41074171194572,
+        159.10613999345296
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-31.json",
+      "seed": 23301650,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        160.95904426442303,
+        158.35204457265013
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-32.json",
+      "seed": 23367187,
+      "rounds": 41,
+      "winShares": [
+        0,
+        0.25,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        160.65385266228813,
+        160.30612697060647
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-33.json",
+      "seed": 23432724,
+      "rounds": 42,
+      "winShares": [
+        0.375,
+        0,
+        0.5,
+        0.125
+      ],
+      "meanDecisionMilliseconds": [
+        165.26247371062362,
+        157.38899012271023
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-34.json",
+      "seed": 23498261,
+      "rounds": 47,
+      "winShares": [
+        0,
+        0.75,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.73956133387904,
+        156.90386966175737
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-35.json",
+      "seed": 23563798,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.28465627907016,
+        158.61925618664327
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-36.json",
+      "seed": 23629335,
+      "rounds": 42,
+      "winShares": [
+        0.375,
+        0.625,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.16357281685066,
+        159.69477662026878
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-37.json",
+      "seed": 23694872,
+      "rounds": 47,
+      "winShares": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.74542818821698,
+        158.77088329787233
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-38.json",
+      "seed": 23760409,
+      "rounds": 39,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.20705244970335,
+        160.1560434635107
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-1-39.json",
+      "seed": 23825946,
+      "rounds": 49,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.26906595761255,
+        159.41445303506032
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-0.json",
+      "seed": 22270006,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.5854187731755,
+        156.72102541485853
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-1.json",
+      "seed": 22335543,
+      "rounds": 50,
+      "winShares": [
+        0.25,
+        0,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        164.98761319077005,
+        158.58354211179503
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-2.json",
+      "seed": 22401080,
+      "rounds": 42,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        166.35432673809487,
+        159.9113458382176
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-3.json",
+      "seed": 22466617,
+      "rounds": 48,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        160.96093942147476,
+        158.34169596100423
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-4.json",
+      "seed": 22532154,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.91027681425862,
+        157.59619858724218
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-5.json",
+      "seed": 22597691,
+      "rounds": 39,
+      "winShares": [
+        0.5,
+        0.5,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.16029532938884,
+        159.48910466403754
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-6.json",
+      "seed": 22663228,
+      "rounds": 45,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.79620570256455,
+        159.78331306837543
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-7.json",
+      "seed": 22728765,
+      "rounds": 47,
+      "winShares": [
+        0,
+        0.75,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.72456377086704,
+        159.64565618221496
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-8.json",
+      "seed": 22794302,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.6756601707321,
+        158.71954053345843
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-9.json",
+      "seed": 22859839,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        161.04490485928733,
+        158.1008630243902
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-10.json",
+      "seed": 22925376,
+      "rounds": 43,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.5001729123428,
+        158.61027283959436
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-11.json",
+      "seed": 22990913,
+      "rounds": 37,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        168.04375052182965,
+        160.0676850519749
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-12.json",
+      "seed": 23056450,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.63368870146502,
+        156.28376912820525
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-13.json",
+      "seed": 23121987,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        166.14859450174777,
+        158.28605540034928
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-14.json",
+      "seed": 23187524,
+      "rounds": 37,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.47879619126823,
+        161.87323739847574
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-15.json",
+      "seed": 23253061,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        163.44031851098813,
+        159.1940329261296
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-16.json",
+      "seed": 23318598,
+      "rounds": 40,
+      "winShares": [
+        0.25,
+        0.75,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        157.38432436153835,
+        159.60075896218007
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-17.json",
+      "seed": 23384135,
+      "rounds": 33,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.3618278461539,
+        157.66953878787902
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-18.json",
+      "seed": 23449672,
+      "rounds": 48,
+      "winShares": [
+        0.25,
+        0,
+        0.75,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.5973596410253,
+        158.56239221955124
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-19.json",
+      "seed": 23515209,
+      "rounds": 38,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.21445286841987,
+        159.09562635020268
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-20.json",
+      "seed": 23580746,
+      "rounds": 34,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        157.97825756334885,
+        158.79193238536965
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-21.json",
+      "seed": 23646283,
+      "rounds": 39,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.19268888954613,
+        158.4368395174225
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-22.json",
+      "seed": 23711820,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.42045757410972,
+        161.54539481425837
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-23.json",
+      "seed": 23777357,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        160.95248396634554,
+        160.2468523723295
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-24.json",
+      "seed": 23842894,
+      "rounds": 43,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.5630711305902,
+        157.90466025641072
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-25.json",
+      "seed": 23908431,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.42627690292952,
+        160.06604631501912
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-26.json",
+      "seed": 23973968,
+      "rounds": 46,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.93513649331126,
+        155.0787915111484
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-27.json",
+      "seed": 24039505,
+      "rounds": 45,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        163.4659991367532,
+        160.1912685173795
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-28.json",
+      "seed": 24105042,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        160.8983863898608,
+        159.79650731060644
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-29.json",
+      "seed": 24170579,
+      "rounds": 50,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.6068630953849,
+        160.102025440513
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-30.json",
+      "seed": 24236116,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.40125230944042,
+        159.67179485897432
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-31.json",
+      "seed": 24301653,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.05567939230752,
+        159.19685856218035
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-32.json",
+      "seed": 24367190,
+      "rounds": 42,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.24640632234403,
+        162.16166171611744
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-33.json",
+      "seed": 24432727,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.16198196252438,
+        160.53263574293246
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-34.json",
+      "seed": 24498264,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.32963782783855,
+        158.56032492002404
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-35.json",
+      "seed": 24563801,
+      "rounds": 40,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.7478323769243,
+        159.06593109230755
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-36.json",
+      "seed": 24629338,
+      "rounds": 37,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        158.88781140956357,
+        160.05259694941128
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-37.json",
+      "seed": 24694875,
+      "rounds": 45,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        160.4034447025634,
+        156.46755973504324
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-38.json",
+      "seed": 24760412,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        158.71572957692322,
+        159.7403481559829
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-2-39.json",
+      "seed": 24825949,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.02651648405265,
+        156.7954101938707
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-0.json",
+      "seed": 23270009,
+      "rounds": 39,
+      "winShares": [
+        0.375,
+        0.125,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.00509660946798,
+        155.8012509309668
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-1.json",
+      "seed": 23335546,
+      "rounds": 35,
+      "winShares": [
+        0.625,
+        0,
+        0.375,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.13769471648527,
+        159.954514283516
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-2.json",
+      "seed": 23401083,
+      "rounds": 36,
+      "winShares": [
+        0.25,
+        0,
+        0.75,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.45509661538458,
+        161.0969981531346
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-3.json",
+      "seed": 23466620,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.2157640153855,
+        158.84759586089717
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-4.json",
+      "seed": 23532157,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.5053515350421,
+        158.86983397492963
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-5.json",
+      "seed": 23597694,
+      "rounds": 42,
+      "winShares": [
+        0.375,
+        0,
+        0.25,
+        0.375
+      ],
+      "meanDecisionMilliseconds": [
+        160.86622673076897,
+        157.390283844322
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-6.json",
+      "seed": 23663231,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.74883880069933,
+        159.44967385081588
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-7.json",
+      "seed": 23728768,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.27456371237378,
+        162.10858987513936
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-8.json",
+      "seed": 23794305,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        161.22634556959719,
+        155.54931089987753
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-9.json",
+      "seed": 23859842,
+      "rounds": 54,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        165.29379769658206,
+        159.24237642165224
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-10.json",
+      "seed": 23925379,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        164.16417549309637,
+        159.49229560092058
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-11.json",
+      "seed": 23990916,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.59439251121856,
+        158.44733134882463
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-12.json",
+      "seed": 24056453,
+      "rounds": 40,
+      "winShares": [
+        0.25,
+        0,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        164.68133943846115,
+        157.80396464871808
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-13.json",
+      "seed": 24121990,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.5733173826421,
+        159.05038918671957
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-14.json",
+      "seed": 24187527,
+      "rounds": 49,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        163.95436706122578,
+        158.8870015421248
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-15.json",
+      "seed": 24253064,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.00027822028008,
+        158.04751537820533
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-16.json",
+      "seed": 24318601,
+      "rounds": 49,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.27328964835246,
+        159.72341503035085
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-17.json",
+      "seed": 24384138,
+      "rounds": 36,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        168.43161014102554,
+        158.07497720726477
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-18.json",
+      "seed": 24449675,
+      "rounds": 43,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.63686004114544,
+        158.01754901073318
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-19.json",
+      "seed": 24515212,
+      "rounds": 38,
+      "winShares": [
+        0.125,
+        0,
+        0.375,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        162.8117369028331,
+        158.68846459716607
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-20.json",
+      "seed": 24580749,
+      "rounds": 45,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.47240712478674,
+        155.99084755156622
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-21.json",
+      "seed": 24646286,
+      "rounds": 50,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        161.58819853538364,
+        159.46201220307702
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-22.json",
+      "seed": 24711823,
+      "rounds": 47,
+      "winShares": [
+        0,
+        0.25,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        161.42907428314288,
+        159.3981946972169
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-23.json",
+      "seed": 24777360,
+      "rounds": 50,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        164.6882419461543,
+        158.06843957025663
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-24.json",
+      "seed": 24842897,
+      "rounds": 40,
+      "winShares": [
+        0.75,
+        0,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        167.37135428269193,
+        159.22884417179452
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-25.json",
+      "seed": 24908434,
+      "rounds": 42,
+      "winShares": [
+        0,
+        0.25,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.43347860805838,
+        158.57421070634928
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-26.json",
+      "seed": 24973971,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        165.05675232884568,
+        156.50293061794855
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-27.json",
+      "seed": 25039508,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.79846740854725,
+        159.32103906894568
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-28.json",
+      "seed": 25105045,
+      "rounds": 48,
+      "winShares": [
+        0.25,
+        0,
+        0,
+        0.75
+      ],
+      "meanDecisionMilliseconds": [
+        162.87922909134528,
+        158.4520619043802
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-29.json",
+      "seed": 25170582,
+      "rounds": 47,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        166.34971307692297,
+        160.40744832405872
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-30.json",
+      "seed": 25236119,
+      "rounds": 37,
+      "winShares": [
+        0.375,
+        0,
+        0.375,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        160.5593216902288,
+        156.59853534996526
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-31.json",
+      "seed": 25301656,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.5,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.8892957161171,
+        156.86258386385853
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-32.json",
+      "seed": 25367193,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        164.04179036014034,
+        158.39175410431142
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-33.json",
+      "seed": 25432730,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        162.25637243645508,
+        158.27027308974428
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-34.json",
+      "seed": 25498267,
+      "rounds": 39,
+      "winShares": [
+        0,
+        0.5,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        165.34830877120345,
+        158.43825345233407
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-35.json",
+      "seed": 25563804,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0.375,
+        0,
+        0.125
+      ],
+      "meanDecisionMilliseconds": [
+        165.9046039305825,
+        159.54794974984287
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-36.json",
+      "seed": 25629341,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        162.70634596520185,
+        158.64451891758233
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-37.json",
+      "seed": 25694878,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        164.28137316636935,
+        157.6602533589743
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-38.json",
+      "seed": 25760415,
+      "rounds": 48,
+      "winShares": [
+        0,
+        0.5,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        163.19728385096232,
+        157.7025843023502
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "/workspace/Hertta-KI/artifacts/ci-proof-85331e2-ci-v1/selected-200ms/200-3-39.json",
+      "seed": 25825952,
+      "rounds": 42,
+      "winShares": [
+        0.125,
+        0.375,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        163.44183220512858,
+        157.13523370573844
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    }
+  ]
+}
