@@ -1,0 +1,78 @@
+{
+  "createdAt": "2026-10-29T14:23:25.419Z",
+  "commit": "85331e2",
+  "totalMatches": 960,
+  "concurrency": 4,
+  "minimumSamples": 16,
+  "budgets": [
+    200,
+    1200
+  ],
+  "jobs": [
+    {
+      "id": "200ms-0",
+      "worker": 0,
+      "milliseconds": 200,
+      "seed": 20261260,
+      "games": 160,
+      "state": "pending"
+    },
+    {
+      "id": "200ms-1",
+      "worker": 1,
+      "milliseconds": 200,
+      "seed": 21261263,
+      "games": 160,
+      "state": "pending"
+    },
+    {
+      "id": "200ms-2",
+      "worker": 2,
+      "milliseconds": 200,
+      "seed": 22261266,
+      "games": 160,
+      "state": "pending"
+    },
+    {
+      "id": "200ms-3",
+      "worker": 3,
+      "milliseconds": 200,
+      "seed": 23261269,
+      "games": 160,
+      "state": "pending"
+    },
+    {
+      "id": "1200ms-0",
+      "worker": 0,
+      "milliseconds": 1200,
+      "seed": 20261260,
+      "games": 80,
+      "state": "pending"
+    },
+    {
+      "id": "1200ms-1",
+      "worker": 1,
+      "milliseconds": 1200,
+      "seed": 21261263,
+      "games": 80,
+      "state": "pending"
+    },
+    {
+      "id": "1200ms-2",
+      "worker": 2,
+      "milliseconds": 1200,
+      "seed": 22261266,
+      "games": 80,
+      "state": "pending"
+    },
+    {
+      "id": "1200ms-3",
+      "worker": 3,
+      "milliseconds": 1200,
+      "seed": 23261269,
+      "games": 80,
+      "state": "pending"
+    }
+  ],
+  "protocol": "One frozen new AI versus three frozen original AIs; equal per-move budget; complete matches to 100; four-seat rotation; source snapshot; checkpoints after each match."
+}

@@ -1,0 +1,7 @@
+# Strength goal pending computation
+
+The goal is NOT complete. Earlier runtime 2d28e63 completed 320 matches per budget: 200 ms 22.03125% (95% block interval 18.28125–25.78125%), 1200 ms 24.375% (20.625–28.28125%). Neither demonstrates stronger play. All raw data and summaries are now committed and pushed at 08cb002, alongside the latest candidate runtime.
+
+Candidate 85331e2 is frozen and running 640 new complete matches at 200 ms followed by 320 at 1200 ms, four workers, unmodified original opponents. See manifest.json, plan.json, status.json and docs/VALIDATION.md. Primary criterion is the completed 640-game 200-ms 95% whole-seat-block interval entirely above 25%. Secondary budget evaluated separately. Do not claim strength from interim values or functional tests.
+
+runner.cjs resumes completed-match checkpoints. watcher.cjs validates source hashes, match counts, rotations, terminal scores and equal budgets before creating each completed-budget summary and assessment.json. Both detached processes are running; check actual liveness on returning. Estimated completion October 29 evening / October 30 morning Helsinki time. Results are the outstanding computational dependency. No approval or user input is needed. On return, inspect assessment.json and errors. If primary is negative, continue improving the AI and run an independent confirmation; do not label goal complete. No CPU-intensive exploratory benchmarks while these four workers run.
