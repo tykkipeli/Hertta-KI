@@ -23,24 +23,24 @@
   "milliseconds": 200,
   "samples": 16,
   "points": [
-    11286,
-    10992,
-    11164,
-    10602
+    11538,
+    11388,
+    11600,
+    11026
   ],
   "wins": [
-    46,
+    49,
     33.5,
     28,
-    37.5
+    39.5
   ],
   "uniqueWins": [
-    45,
+    48,
     33,
     28,
-    36
+    38
   ],
-  "rounds": 1496,
+  "rounds": 1550,
   "records": [
     {
       "game": 0,
@@ -2074,27 +2074,97 @@
       "winners": [
         2
       ]
+    },
+    {
+      "game": 145,
+      "newSeat": 1,
+      "rounds": 12,
+      "totals": [
+        118,
+        46,
+        57,
+        91
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 146,
+      "newSeat": 2,
+      "rounds": 8,
+      "totals": [
+        109,
+        37,
+        44,
+        70
+      ],
+      "winners": [
+        1
+      ]
+    },
+    {
+      "game": 147,
+      "newSeat": 3,
+      "rounds": 10,
+      "totals": [
+        106,
+        62,
+        45,
+        47
+      ],
+      "winners": [
+        2
+      ]
+    },
+    {
+      "game": 148,
+      "newSeat": 0,
+      "rounds": 12,
+      "totals": [
+        62,
+        99,
+        97,
+        106
+      ],
+      "winners": [
+        0
+      ]
+    },
+    {
+      "game": 149,
+      "newSeat": 1,
+      "rounds": 12,
+      "totals": [
+        118,
+        53,
+        64,
+        77
+      ],
+      "winners": [
+        1
+      ]
     }
   ],
   "beliefModes": {
-    "uniform": 14392,
-    "public-action-queen-prior": 1428
+    "uniform": 14885,
+    "public-action-queen-prior": 1496
   },
   "engineTimeMs": [
-    3235605.6270190463,
-    9592677.474473042
+    3349122.5026310435,
+    9933990.711886032
   ],
   "decisionCounts": [
-    19448,
-    58344
+    20150,
+    60450
   ],
   "passingTimeMs": [
-    1289.9898239903441,
-    53.075844986451344
+    1341.647471990279,
+    57.853376979095415
   ],
   "passingCounts": [
-    1170,
-    3510
+    1211,
+    3633
   ],
-  "seconds": 12875.054461110001
+  "seconds": 13331.120138675
 }
