@@ -1,11 +1,11 @@
 {
   "pid": 14125,
-  "at": "2026-10-30T22:01:38.223Z",
+  "at": "2026-10-30T22:04:55.991Z",
   "seed": 20261260,
   "milliseconds": 1200,
   "targetGames": 80,
-  "completedGames": 24,
-  "currentGame": 25,
-  "currentRound": 6,
-  "completedRounds": 254
+  "completedGames": 25,
+  "currentGame": 26,
+  "currentRound": 2,
+  "completedRounds": 258
 }

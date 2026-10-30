@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-30T22:01:38.223Z",
+        "at": "2026-10-30T22:04:55.991Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 24,
-        "currentGame": 25,
-        "currentRound": 6,
-        "completedRounds": 254
+        "completedGames": 25,
+        "currentGame": 26,
+        "currentRound": 2,
+        "completedRounds": 258
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-30T22:02:09.892Z",
+        "at": "2026-10-30T22:04:42.515Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 24,
         "currentGame": 25,
-        "currentRound": 3,
-        "completedRounds": 265
+        "currentRound": 6,
+        "completedRounds": 268
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-30T22:01:46.064Z",
+        "at": "2026-10-30T22:05:00.093Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 24,
         "currentGame": 25,
-        "currentRound": 4,
-        "completedRounds": 256
+        "currentRound": 8,
+        "completedRounds": 260
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-30T22:02:03.428Z",
+        "at": "2026-10-30T22:04:31.093Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 25,
         "currentGame": 26,
-        "currentRound": 7,
-        "completedRounds": 260
+        "currentRound": 10,
+        "completedRounds": 263
       }
     }
   ],
-  "updatedAt": "2026-10-30T22:02:11.960Z",
+  "updatedAt": "2026-10-30T22:05:12.093Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
