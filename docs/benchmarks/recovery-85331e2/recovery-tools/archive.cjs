@@ -101,7 +101,7 @@ async function main() {
       try {
         const command = fs.readFileSync('/proc/' + pid + '/cmdline', 'utf8');
         const stat = fs.readFileSync('/proc/' + pid + '/stat', 'utf8').split(') ')[1];
-        if (stat[0] !== 'Z' && command.includes(__filename)) throw Error('Archive controller already running: ' + pid);
+        if (stat[0] !== 'Z' && (command.includes(__filename) || command.includes(path.relative(repo, __filename)))) throw Error('Archive controller already running: ' + pid);
       } catch (error) { if (error.message.startsWith('Archive controller')) throw error; }
     }
     fs.writeFileSync(lock, String(process.pid));
