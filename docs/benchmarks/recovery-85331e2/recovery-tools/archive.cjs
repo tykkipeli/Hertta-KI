@@ -15,7 +15,7 @@ function git(args, input, extraEnv = {}) {
     cwd: repo, input, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024,
     env: {...process.env, ...extraEnv}, timeout: 120000,
   });
-  if (result.status !== 0) throw Error('git ' + args[0] + ' failed: ' + (result.stderr || result.error));
+  if (result.error || result.status !== 0) throw Error('git ' + args[0] + ' failed: ' + (result.stderr || result.error));
   return result.stdout.trim();
 }
 function atomic(file, data) {

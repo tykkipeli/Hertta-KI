@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-30T18:40:57.186Z",
+  "at": "2026-10-30T18:51:01.018Z",
   "controllerState": "running",
   "budgets": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "milliseconds": 1200,
-      "completedGames": 4,
+      "completedGames": 8,
       "targetGames": 320,
       "state": "pending"
     }
