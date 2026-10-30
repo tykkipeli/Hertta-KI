@@ -1,6 +1,6 @@
 # Strategie, Informationsgrenzen und Bewertung
 
-Die aktuelle Überarbeitung ist ein zu prüfender Kandidat. Der frühere Vorteil bei 5 ms hat sich bei 200 ms nicht bestätigt. Ein erfolgreicher Strategietest ist kein Spielstärkenachweis; abgeschlossene Vergleiche und ihre jeweiligen Quellstände stehen in [RESULTS.md](RESULTS.md).
+Die aktuelle Überarbeitung hat den vorab festgelegten 200-ms-Test bestanden: 38,52 % Sieganteil in 640 vollständigen Partien, 95-%-Blockintervall 34,77–42,34 %. Der gesonderte Test bei 1.200 ms läuft noch. Funktionierende Strategietests und diese konkrete Vergleichsserie sind unterschiedliche Belege; Ergebnisse, jeweilige Quellstände und Grenzen stehen in [RESULTS.md](RESULTS.md).
 
 ## Weitergabe als Entscheidung über die ganze Hand
 

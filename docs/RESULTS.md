@@ -2,11 +2,19 @@
 
 ## Aktueller Stand der Überarbeitung
 
-Der folgende 5-ms-Vergleich betrifft **Commit `2d28e63`**, nicht die neue Weitergabe- und Durchmarschstrategie. Er ist kein ausreichender allgemeiner Stärkenachweis. Beim anschließenden gleichzeitigen **200-ms-Vergleich mit 320 vollständigen Partien** erzielte dieser frühere Stand nur **22,03 %** (95-%-Intervall: **18,28–25,78 %**). Ein Vorteil ist damit nicht belegt; auch eine sichere Unterlegenheit folgt aus diesem Intervall nicht. [Rohdaten und Auswertung](benchmarks/long-budget-v2/200ms-summary.json).
+Die aktuelle Weitergabe-, Durchmarsch-, Dame-Hinweis- und Endspielüberarbeitung (**KI-Quellstand `85331e2`**) hat den vorab festgelegten 200-ms-Test bestanden. In **640 vollständigen Partien** gegen drei unveränderte ursprüngliche KIs beträgt ihr Sieganteil **38,52 %**; das 95-%-Block-Bootstrapintervall über **160 vollständige Viererblöcke** liegt bei **34,77–42,34 %**, vollständig über dem 25-%-Vergleichswert bei gleicher Spielstärke. Alle Spieler erhielten **200 ms je Entscheidung und mindestens 16 Stichproben**.
+
+Die Serie enthält 6.640 gespielte Runden. Die mittlere gemessene Entscheidungsdauer einschließlich sofortiger Züge beträgt **165,99 ms** für den Kandidaten und **164,65 ms** für die Referenz. Quell-Snapshot, ursprüngliche Lauf-IDs, Seeds, vollständige Endstände und Summen wurden geprüft. Nach dem Umgebungsausfall wurden 378 abgeschlossene Partien fortgesetzt; der eingefrorene KI-Quellstand blieb erhalten. [Rohdaten, Quellmanifest und Auswertung](benchmarks/strategy-85331e2/README.md).
+
+Die **320-Partien-Serie bei 1.200 ms läuft noch**. Die zusätzliche GitHub-Actions-Bestätigung hat eigene Seeds und wird getrennt ausgewertet. Die abgeschlossene lokale 200-ms-Serie belegt einen Vorteil in diesem Testaufbau; daraus folgt noch kein Ergebnis für 1.200 ms, 5 Sekunden oder andere Gegner. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
+
+## Längere Vergleiche des früheren Standes
+
+Die historischen 5-ms-Ergebnisse betreffen **Commit `2d28e63`**. Sie reichen als allgemeiner Stärkenachweis nicht aus. Beim anschließenden **200-ms-Vergleich mit 320 vollständigen Partien** erzielte dieser frühere Stand nur **22,03 %** (95-%-Intervall: **18,28–25,78 %**). Ein Vorteil ist damit nicht belegt; auch eine sichere Unterlegenheit folgt aus diesem Intervall nicht. [Rohdaten und Auswertung](benchmarks/long-budget-v2/200ms-summary.json).
 
 Auch die inzwischen abgeschlossene **1.200-ms-Serie mit 320 vollständigen Partien** dieses früheren Standes belegt keinen Vorteil: **24,38 % Sieganteil**, 95-%-Block-Bootstrapintervall **20,63–28,28 %**. Beide längeren Serien enthalten denselben früheren Quellstand und werden getrennt ausgewertet. [1.200-ms-Rohdaten und Auswertung](benchmarks/long-budget-v2/1200ms-summary.json).
 
-Die aktuelle Weitergabe-, Durchmarsch- und Endspielüberarbeitung besitzt **noch keinen abgeschlossenen Stärkenachweis**. Ihre Tests prüfen Strategieeigenschaften und Informationsgrenzen; die neuen Vergleichsserien müssen getrennt bewertet werden. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md). Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden nicht als Zeitbudgetnachweis ausgegeben.
+Die früheren Ergebnisse werden getrennt von der neuen 200-ms-Bestätigung aufbewahrt. Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden ebenfalls nicht als Zeitbudgetnachweis ausgegeben.
 
 ## Historische Ergebnisse von Commit `2d28e63`
 
