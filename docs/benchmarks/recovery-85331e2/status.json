@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-30T21:40:56.943Z",
+        "at": "2026-10-30T21:44:11.690Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 22,
         "currentGame": 23,
-        "currentRound": 8,
-        "completedRounds": 229
+        "currentRound": 12,
+        "completedRounds": 233
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-30T21:41:33.689Z",
+        "at": "2026-10-30T21:44:03.809Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 22,
         "currentGame": 23,
-        "currentRound": 3,
-        "completedRounds": 240
+        "currentRound": 6,
+        "completedRounds": 243
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-30T21:40:59.340Z",
+        "at": "2026-10-30T21:44:17.723Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 21,
-        "currentGame": 22,
-        "currentRound": 13,
-        "completedRounds": 231
+        "completedGames": 22,
+        "currentGame": 23,
+        "currentRound": 4,
+        "completedRounds": 235
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-30T21:41:22.115Z",
+        "at": "2026-10-30T21:44:32.027Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 23,
         "currentGame": 24,
-        "currentRound": 6,
-        "completedRounds": 235
+        "currentRound": 10,
+        "completedRounds": 239
       }
     }
   ],
-  "updatedAt": "2026-10-30T21:41:41.800Z",
+  "updatedAt": "2026-10-30T21:44:41.830Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
