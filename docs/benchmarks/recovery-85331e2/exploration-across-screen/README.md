@@ -1,0 +1,3 @@
+# Additional exploratory passing hypothesis
+
+Run41102164083 at sourcee80c695f0b7a9bf9530bd7ae5626d6c593ee3736 completed80 full matches. Candidate128/original16 fixed worlds, same exploratory seed20270201; reuse the prior baseline once. Across-exchange observed42.5% versus baseline45.625%, paired difference-3.125 percentage points,95% paired-block interval[-16.875,11.875] points. No observed improvement and no superiority/inferiority claim from this small screen. The combined table contains6 actual80-game runs (480 total), not an extra baseline. This is not a long-budget proof and no variant was deployed.
