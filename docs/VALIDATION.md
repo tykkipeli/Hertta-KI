@@ -32,3 +32,13 @@ node benchmark.js 160 --matches --ms 200 --samples 16 --seed 20261260
 ```
 
 Die normale Benchmarkablage verwendet inzwischen eindeutige Lauf-IDs, damit Wiederholungen mit gleichen Parametern keine früheren Rohdaten überschreiben.
+
+## Wiederherstellung und unabhängiger CI-Lauf
+
+Nach dem Verlust des Shellzugriffs am 29. Oktober 2026 wurden am 30. Oktober **378 vollständig abgeschlossene 200-ms-Partien** wiederhergestellt. Alle Quell-Snapshot-Hashes, Laufparameter, Sitzrotationen, Endstände und Checkpoint-Summen wurden geprüft; dieselben 29 Funktionstests bestanden auch in der wiederhergestellten Umgebung. Dort laufen dieselben vier Serien mit erhaltenen Lauf-IDs weiter. Nur die jeweils unterbrochene Partie wird wiederholt. Der KI-Quellstand bleibt unverändert. Der Wiederherstellungszeitpunkt und die Laufumgebung sind zusätzlich in den Rohdaten vermerkt.
+
+Der separate Branch [`codex/hearts-strength-recovery-85331e2`](https://github.com/tykkipeli/Hertta-KI/tree/codex/hearts-strength-recovery-85331e2/docs/benchmarks/recovery-85331e2) enthält Quell-Snapshot, Controller, Checkpoints und Wiederherstellungsprotokoll. Ein zusätzlicher Hintergrundprozess sichert den Stand alle zehn Minuten mit normalen, nicht erzwungenen Git-Pushes und prüft den entfernten Commit anschließend erneut. Damit bleiben die gesicherten abgeschlossenen Partien auch bei einem weiteren Ausfall dieser Maschine erhalten. Die jüngsten noch nicht gesicherten Partien können dennoch verloren gehen.
+
+Beim Veröffentlichen der Umgebung wurde außerdem der zuvor vorbereitete [GitHub-Actions-Lauf](https://github.com/tykkipeli/Hertta-KI/actions/runs/41074729210) gestartet. Diese unabhängige Bestätigung verwendet denselben eingefrorenen KI-Quellstand, aber eigene Seeds: `20270000 + worker * 1000003 + block * 65537`. Sie umfasst ebenfalls 640 Partien bei 200 ms und 320 bei 1.200 ms, aufgeteilt in 240 Viererblöcke mit höchstens vier gleichzeitigen Jobs. Referenz und Kandidat erhalten dieselben Budgets und mindestens 16 Stichproben. Vollständige Blöcke werden als Artefakte gespeichert; die abschließende Auswertung archiviert Rohdaten und Bericht zusätzlich auf `codex/hearts-strength-results-85331e2-ci-v1`.
+
+Diese CI-Serie ersetzt die wiederhergestellte Serie nicht. Beide werden vollständig und getrennt ausgewertet, einschließlich negativer Ergebnisse; Budgets und abweichende Quellstände werden weiterhin nicht vermischt. Für das CI-Erfolgskriterium müssen die 95-%-Block-Bootstrapintervalle bei **beiden** Zeitbudgets vollständig über 25 % liegen. Ein gestarteter Job, ein erfolgreicher Funktionstest oder ein günstiger Zwischenstand erfüllt dieses Kriterium nicht.
