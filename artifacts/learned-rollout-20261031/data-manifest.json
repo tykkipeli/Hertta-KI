@@ -1,0 +1,204 @@
+{
+  "at": "2026-10-31T14:01:58.480Z",
+  "featureSha256": "d592b0a4bcb51bc1c09f770e2baabecc259faf4be2451b75745dde286ff0d63e",
+  "sources": [
+    {
+      "file": "artifacts/decision-audit-20261031/worker-0/rounds.jsonl",
+      "sha256": "3de4690a7c6acfeb45c520b421ef4201f2be22e48b47daa886a91ff4c859e9dc",
+      "runId": "061cfe80-6fa2-4515-9f91-f8dd39a4c3df",
+      "seed": 20273101,
+      "games": 80,
+      "opponentSamples": 16,
+      "opponents": "original"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-1/rounds.jsonl",
+      "sha256": "046368e207f34b784d082b6b8425e39011c109b1c6cc67865c3f93f5c75be1d4",
+      "runId": "a1c2322c-dc39-42a6-aafa-4158e2321141",
+      "seed": 21273104,
+      "games": 80,
+      "opponentSamples": 16,
+      "opponents": "original"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-2/rounds.jsonl",
+      "sha256": "23257ac3e88ad3ba436e5bba59462b78daaf01b938427721d5b617eaab4015ed",
+      "runId": "9d9c34b1-2c6a-48a2-a19a-42dbb8e798ad",
+      "seed": 22273107,
+      "games": 80,
+      "opponentSamples": 16,
+      "opponents": "original"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-3/rounds.jsonl",
+      "sha256": "426cf54a6c8c764e597373fd9c7676d664cea3fb322e0d93f9afa17c80386e51",
+      "runId": "72425f6a-b692-44fc-b440-416e9251caae",
+      "seed": 23273110,
+      "games": 80,
+      "opponentSamples": 16,
+      "opponents": "original"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-0/rounds.jsonl",
+      "sha256": "d02d947bbac8ce4d0a620bdff8df77b7615e6eb4780a557316664c4861e8279e",
+      "runId": "3a955a44-e355-42cb-bbe9-02ff439365fa",
+      "seed": 20281113,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "self"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-1/rounds.jsonl",
+      "sha256": "e6b4c5fa7cb25849edc9291b45ef3a1d4bd9ab9fb0fdeab88520eab6f57e59c1",
+      "runId": "d732a79b-66d9-48c4-abf0-6744e9c87946",
+      "seed": 21281116,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "self"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-2/rounds.jsonl",
+      "sha256": "585edfc290f3575a895dc3cd77c9c865d77e3b237634b187e1919af431844ecf",
+      "runId": "b8de029b-3026-4a78-b33c-875f1a52b72c",
+      "seed": 22281119,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "self"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-3/rounds.jsonl",
+      "sha256": "81f0e1ccff0c30abd96673d6f863234c9f1405d286b417ff386cf03766ed44c9",
+      "runId": "6e1662f1-91ff-44f7-af49-a9ff64498f77",
+      "seed": 23281122,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "self"
+    },
+    {
+      "file": "artifacts/moon-defense-comparison-20261031/control/worker-0/rounds.jsonl",
+      "sha256": "80d9235a12d975fe3b9172e95b35566537fbe3776d2d9c9098645c9f11754840",
+      "runId": "241ef9dd-223d-4cae-b82b-a18f2eb6b86d",
+      "seed": 20291201,
+      "games": 80,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/moon-defense-comparison-20261031/control/worker-1/rounds.jsonl",
+      "sha256": "ffeb48ebac217c3a7ef6e06cf197bfec46a3442253686b6b3a170dc1b8906ae5",
+      "runId": "850dd7c2-eaf2-4296-9b06-cc8ac155d8d5",
+      "seed": 21291204,
+      "games": 80,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/moon-defense-comparison-20261031/control/worker-2/rounds.jsonl",
+      "sha256": "05acd92372252038967babbb589306582e40424d6c32484d8b3ffe68c66d5e13",
+      "runId": "d427e32f-35c2-44c7-849f-4c8c2945a193",
+      "seed": 22291207,
+      "games": 80,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/moon-defense-comparison-20261031/control/worker-3/rounds.jsonl",
+      "sha256": "159c1292601c2f655a4ed12c4bce7baffdd563001f18ce22699e11ba0393a239",
+      "runId": "cd84a037-12e4-48e0-bd73-e16044940e1d",
+      "seed": 23291210,
+      "games": 80,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/match-research-20261031/control/worker-0/rounds.jsonl",
+      "sha256": "e0d4a368e8f5a88580df0ff7b86b17e465bef15e0faa8468f470d544188d76fc",
+      "runId": "d071870b-909f-4ed9-8f4b-1e1b01a03f1b",
+      "seed": 20320103,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/match-research-20261031/control/worker-1/rounds.jsonl",
+      "sha256": "2d093344fc0634bb5fcade040d91367981669ad9e20eb4d57725da952614a567",
+      "runId": "9d75cf9d-0751-463a-8900-e9605d081ce8",
+      "seed": 21320106,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/match-research-20261031/control/worker-2/rounds.jsonl",
+      "sha256": "a9c54b5c759129893b4460853ace42e7d517410f3b01410f642e03ae86c132cc",
+      "runId": "078cfc61-7b0c-4a30-8b7f-cd103b24abed",
+      "seed": 22320109,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/match-research-20261031/control/worker-3/rounds.jsonl",
+      "sha256": "111e40e36210ba312b0f51607ede2fe1c17eeabda15b8aa5196ce37b50e999d1",
+      "runId": "13abd4cc-aea1-4693-9b75-e8ca65ab65ab",
+      "seed": 23320112,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/search-allocation-20261031/control/worker-0/rounds.jsonl",
+      "sha256": "4a0191182c09edf0f570d0ab54bb4726089eb8750065d99cd8b22dc87fea648a",
+      "runId": "b787c471-5582-4007-9715-823622165081",
+      "seed": 20350111,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/search-allocation-20261031/control/worker-1/rounds.jsonl",
+      "sha256": "3c24a5469de42384ea2c9e518181248d023406692c52f97b3b23366e2e6e256a",
+      "runId": "4010f9df-bd02-44c5-b65a-a435d505e205",
+      "seed": 21350114,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/search-allocation-20261031/control/worker-2/rounds.jsonl",
+      "sha256": "3c929daf4667114e65d58b4867b1bee28a4088c91a487b8a172486ecc266d51d",
+      "runId": "3e3f401a-b5e9-4164-9a9d-0fb0a760ecb1",
+      "seed": 22350117,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    },
+    {
+      "file": "artifacts/search-allocation-20261031/control/worker-3/rounds.jsonl",
+      "sha256": "cb81c795c4430157407d0b51f6ba0da225cef133097868225e0206a57ba07d0d",
+      "runId": "3c2c217a-0c4e-4f38-a755-98555f7c94d8",
+      "seed": 23350120,
+      "games": 40,
+      "opponentSamples": 64,
+      "opponents": "baseline"
+    }
+  ],
+  "records": 93332,
+  "actions": 436502,
+  "excludedLate": 34142,
+  "split": "whole independent four-seat deal blocks: hash mod10,0=test,1=validation,2..9=train",
+  "inputBoundary": "acting hand and public history only; known private passes not represented; no true opponent hands or future outcomes",
+  "folds": {
+    "0": 10449,
+    "1": 7379,
+    "2": 8573,
+    "3": 9764,
+    "4": 10196,
+    "5": 12832,
+    "6": 6554,
+    "7": 10989,
+    "8": 9267,
+    "9": 7329
+  },
+  "dataSha256": "74b4be5bef137a042594f74a08ae84d377d9f3685fcca15a41007b61b8357d72"
+}

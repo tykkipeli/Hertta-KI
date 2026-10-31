@@ -11,11 +11,13 @@ const args = process.argv.slice(2);
 const option = (name, fallback) => args.includes("--" + name) ? args[args.indexOf("--" + name) + 1] : fallback;
 const count = Number(option("games", 40)), seed = Number(option("seed", 20273101));
 const samples = Number(option("samples", 64)), opponentSamples = Number(option("opponent-samples", 16));
+const rolloutBudgetPerAction = Number(option("rollout-budget", 0));
 const snapshot = option("snapshot", "artifacts/decision-audit-20261031/baseline");
 const output = option("out", "artifacts/decision-audit-20261031/worker-0");
 const opponents = option("opponents", "original");
 for (const n of [count, samples, opponentSamples]) assert.ok(Number.isInteger(n) && n > 0);
 assert.ok(Number.isInteger(seed));
+assert.ok(Number.isInteger(rolloutBudgetPerAction) && rolloutBudgetPerAction >= 0);
 assert.ok(["original", "self", "baseline"].includes(opponents));
 const manifest = JSON.parse(fs.readFileSync(path.join(snapshot, "analysis-manifest.json")));
 const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -39,7 +41,7 @@ const seeded = (initial) => { let n = initial >>> 0; return () => ((n = (Math.im
 assert.ok(!fs.existsSync(output), "Trace directories are immutable; choose a fresh output");
 fs.mkdirSync(output, { recursive: true });
 const runId = randomUUID();
-const meta = { version: 1, runId, seed, games: count, samples, opponentSamples, opponents, ...(opponents === "baseline" ? { opponentEngine: path.resolve(opponentPath), opponentEngineSha256: hash(fs.readFileSync(opponentPath)), opponentManifest } : {}), snapshot: path.resolve(snapshot), createdAt: new Date().toISOString(), exploratory: true, manifest, driverSha256: hash(fs.readFileSync(new URL(import.meta.url))) };
+const meta = { version: 1, runId, seed, games: count, samples, opponentSamples, rolloutBudgetPerAction, opponents, ...(opponents === "baseline" ? { opponentEngine: path.resolve(opponentPath), opponentEngineSha256: hash(fs.readFileSync(opponentPath)), opponentManifest } : {}), snapshot: path.resolve(snapshot), createdAt: new Date().toISOString(), exploratory: true, manifest, driverSha256: hash(fs.readFileSync(new URL(import.meta.url))) };
 fs.writeFileSync(path.join(output, "meta.json"), JSON.stringify(meta, null, 2) + "\n");
 const atomic = (file, value) => { fs.writeFileSync(file + ".tmp", JSON.stringify(value, null, 2) + "\n"); fs.renameSync(file + ".tmp", file); };
 const records = [];
@@ -69,10 +71,12 @@ for (let game = 0; game < count; game++) {
       if (p === seat) {
         // Pass-through RNG tracing verifies diagnostics do not change the engine's policy.
         const calls = [], random = () => { const value = streams[p](); calls.push(value); return value; };
-        result = instrumented.decide(o, { milliseconds: 0, minSamples: samples, rng: random });
+        const options = { milliseconds: 0, minSamples: samples, ...(rolloutBudgetPerAction ? { maxSimulations: rolloutBudgetPerAction * legal(state).length } : {}) };
+        result = instrumented.decide(o, { ...options, rng: random });
+        if (rolloutBudgetPerAction) assert.ok(result.simulations <= options.maxSimulations);
         if (game === 0) {
           let at = 0;
-          const original = baseline.decide(o, { milliseconds: 0, minSamples: samples, rng: () => { assert.ok(at < calls.length); return calls[at++]; } });
+          const original = baseline.decide(o, { ...options, rng: () => { assert.ok(at < calls.length); return calls[at++]; } });
           assert.equal(at, calls.length); assert.equal(original.card, result.card);
           const clean = structuredClone(result); delete clean.analysis;
           for (const estimate of clean.estimates || []) delete estimate.analysis;

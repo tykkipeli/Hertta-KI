@@ -1,0 +1,11 @@
+{
+  "rows": [
+    {
+      "cases": 2000,
+      "legalActions": true,
+      "unchangedInput": true,
+      "allSeatRotations": true,
+      "flatInferenceExactlyEquivalent": true
+    }
+  ]
+}

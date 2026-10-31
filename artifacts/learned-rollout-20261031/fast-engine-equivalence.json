@@ -1,0 +1,284 @@
+{
+  "checks": [
+    {
+      "arm": "neural-opponents",
+      "id": "worker-3/47/12/17",
+      "card": 32,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/48/0/26",
+      "card": 30,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/71/7/13",
+      "card": 38,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-0/70/5/22",
+      "card": 37,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-0/71/9/22",
+      "card": 26,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/15/6/26",
+      "card": 27,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/41/1/25",
+      "card": 36,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/34/5/15",
+      "card": 12,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-3/47/11/31",
+      "card": 27,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-0/5/6/29",
+      "card": 31,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/32/8/21",
+      "card": 33,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/40/6/29",
+      "card": 28,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/54/7/29",
+      "card": 40,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/7/0/25",
+      "card": 31,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/30/10/35",
+      "card": 35,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/38/5/34",
+      "card": 28,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-0/7/0/31",
+      "card": 36,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-3/67/8/27",
+      "card": 12,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/50/9/27",
+      "card": 11,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/24/9/11",
+      "card": 32,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-3/47/12/17",
+      "card": 26,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/48/0/26",
+      "card": 26,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/71/7/13",
+      "card": 30,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-0/70/5/22",
+      "card": 44,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-0/71/9/22",
+      "card": 26,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/15/6/26",
+      "card": 27,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/41/1/25",
+      "card": 32,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/34/5/15",
+      "card": 3,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-3/47/11/31",
+      "card": 27,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-0/5/6/29",
+      "card": 31,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/32/8/21",
+      "card": 5,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/40/6/29",
+      "card": 28,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/54/7/29",
+      "card": 37,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/7/0/25",
+      "card": 28,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/30/10/35",
+      "card": 30,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/38/5/34",
+      "card": 28,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-0/7/0/31",
+      "card": 36,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-3/67/8/27",
+      "card": 12,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/50/9/27",
+      "card": 5,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/24/9/11",
+      "card": 37,
+      "worlds": 16,
+      "exactEstimatesAndRngMatch": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "createdAt": "2026-10-31T14:05:51.449486+00:00",
+  "purpose": "Exploratory learned rollout screen, equal64 samples for all four private players; not equal-time GUI proof",
+  "exploratory": true,
+  "arms": [
+    "control",
+    "neural-opponents",
+    "neural-all"
+  ],
+  "workers": 4,
+  "gamesPerWorker": 40,
+  "gamesPerArm": 160,
+  "milliseconds": 0,
+  "samples": 64,
+  "seeds": [
+    20380131,
+    21380134,
+    22380137,
+    23380140
+  ],
+  "opponentSnapshot": "artifacts/match-research-20261031/baseline",
+  "snapshots": {
+    "control": "artifacts/match-research-20261031/baseline",
+    "neural-opponents": "artifacts/learned-rollout-20261031/neural-opponents/snapshot",
+    "neural-all": "artifacts/learned-rollout-20261031/neural-all/snapshot"
+  },
+  "driverSha256": "48521ae8851f2f634849d39bb9994221b44cfc8629a504565e2a754109dd4f5a",
+  "trainingDataSha256": "74b4be5bef137a042594f74a08ae84d377d9f3685fcca15a41007b61b8357d72",
+  "seedsDisjointFromTraining": true,
+  "selection": "Complete all480matches before win-rate analysis. Preserve negative results. Best exploratory positive candidate needs fresh confirmation with unchanged source and equal actual time budgets."
+}

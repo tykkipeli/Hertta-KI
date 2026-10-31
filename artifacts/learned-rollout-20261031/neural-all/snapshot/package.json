@@ -1,0 +1,19 @@
+{
+  "name": "hertta-ki",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/game.test.js",
+    "benchmark": "node benchmark.js",
+    "test:browser": "node test/browser.cjs",
+    "benchmark:matches": "node benchmark.js 80 --matches --ms 25 --samples 1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}

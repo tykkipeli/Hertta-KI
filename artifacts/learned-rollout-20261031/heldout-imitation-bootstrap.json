@@ -1,0 +1,10 @@
+{
+  "testBlocks": 31,
+  "testDecisions": 10449,
+  "meanTeacherValueGain": 0.1763406386576068,
+  "wholeBlockBootstrap95": [
+    0.13519284532513048,
+    0.22539555941074704
+  ],
+  "interpretation": "Imitation improvement in predicted round value, not played match strength. Selected network only; no source changes."
+}

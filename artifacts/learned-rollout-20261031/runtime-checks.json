@@ -1,0 +1,198 @@
+{
+  "illustrativeOnly": true,
+  "privateInputOnly": true,
+  "rows": [
+    {
+      "arm": "control",
+      "id": "worker-3/47/12/17",
+      "worlds": 593,
+      "simulations": 5337,
+      "milliseconds": 201.779128,
+      "card": 37
+    },
+    {
+      "arm": "control",
+      "id": "worker-1/48/0/26",
+      "worlds": 1465,
+      "simulations": 10255,
+      "milliseconds": 200.37822599999998,
+      "card": 30
+    },
+    {
+      "arm": "control",
+      "id": "worker-1/71/7/13",
+      "worlds": 495,
+      "simulations": 4950,
+      "milliseconds": 200.18236199999996,
+      "card": 23
+    },
+    {
+      "arm": "control",
+      "id": "worker-0/70/5/22",
+      "worlds": 1528,
+      "simulations": 12224,
+      "milliseconds": 200.165071,
+      "card": 44
+    },
+    {
+      "arm": "control",
+      "id": "worker-0/71/9/22",
+      "worlds": 1479,
+      "simulations": 11832,
+      "milliseconds": 200.1687199999999,
+      "card": 43
+    },
+    {
+      "arm": "control",
+      "id": "worker-2/15/6/26",
+      "worlds": 2105,
+      "simulations": 14735,
+      "milliseconds": 200.249051,
+      "card": 27
+    },
+    {
+      "arm": "control",
+      "id": "worker-2/41/1/25",
+      "worlds": 996,
+      "simulations": 6972,
+      "milliseconds": 200.26472599999988,
+      "card": 26
+    },
+    {
+      "arm": "control",
+      "id": "worker-1/34/5/15",
+      "worlds": 808,
+      "simulations": 8080,
+      "milliseconds": 200.19421799999986,
+      "card": 12
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-3/47/12/17",
+      "worlds": 141,
+      "simulations": 1269,
+      "milliseconds": 201.5040680000002,
+      "card": 26
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/48/0/26",
+      "worlds": 232,
+      "simulations": 1624,
+      "milliseconds": 200.60557399999993,
+      "card": 30
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/71/7/13",
+      "worlds": 105,
+      "simulations": 1050,
+      "milliseconds": 201.8909279999998,
+      "card": 30
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-0/70/5/22",
+      "worlds": 257,
+      "simulations": 2056,
+      "milliseconds": 201.2981850000001,
+      "card": 44
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-0/71/9/22",
+      "worlds": 248,
+      "simulations": 1984,
+      "milliseconds": 200.4075859999998,
+      "card": 43
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/15/6/26",
+      "worlds": 302,
+      "simulations": 2114,
+      "milliseconds": 200.6640940000002,
+      "card": 27
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-2/41/1/25",
+      "worlds": 290,
+      "simulations": 2030,
+      "milliseconds": 200.26880500000016,
+      "card": 36
+    },
+    {
+      "arm": "neural-opponents",
+      "id": "worker-1/34/5/15",
+      "worlds": 106,
+      "simulations": 1060,
+      "milliseconds": 200.25035100000014,
+      "card": 3
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-3/47/12/17",
+      "worlds": 51,
+      "simulations": 459,
+      "milliseconds": 220.30153599999994,
+      "card": 43
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/48/0/26",
+      "worlds": 97,
+      "simulations": 679,
+      "milliseconds": 201.86891400000013,
+      "card": 30
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/71/7/13",
+      "worlds": 42,
+      "simulations": 420,
+      "milliseconds": 201.23864099999992,
+      "card": 23
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-0/70/5/22",
+      "worlds": 77,
+      "simulations": 616,
+      "milliseconds": 202.80939800000033,
+      "card": 44
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-0/71/9/22",
+      "worlds": 60,
+      "simulations": 480,
+      "milliseconds": 200.48494500000015,
+      "card": 37
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/15/6/26",
+      "worlds": 66,
+      "simulations": 462,
+      "milliseconds": 203.5269959999996,
+      "card": 27
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-2/41/1/25",
+      "worlds": 77,
+      "simulations": 539,
+      "milliseconds": 202.51767000000018,
+      "card": 32
+    },
+    {
+      "arm": "neural-all",
+      "id": "worker-1/34/5/15",
+      "worlds": 25,
+      "simulations": 250,
+      "milliseconds": 202.14459699999952,
+      "card": 12
+    }
+  ]
+}

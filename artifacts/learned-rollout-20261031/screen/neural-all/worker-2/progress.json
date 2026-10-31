@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T14:18:29.145Z",
+  "state": "running",
+  "runId": "ca5f33c0-cb81-4fc7-967d-d444225dd24d",
+  "completedGames": 6,
+  "targetGames": 40,
+  "currentRound": 10,
+  "completedTricks": 0,
+  "milliseconds": 0,
+  "minSamples": 64
+}

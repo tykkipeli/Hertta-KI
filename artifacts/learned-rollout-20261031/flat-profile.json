@@ -1,0 +1,61 @@
+{
+  "exactLogitsMatch": true,
+  "fixtures": 100,
+  "inferenceOnly": true,
+  "callsPerReplicate": 10000,
+  "rows": [
+    {
+      "name": "original",
+      "milliseconds": 275.68518099999994
+    },
+    {
+      "name": "flat",
+      "milliseconds": 176.5230909999999
+    },
+    {
+      "name": "flat",
+      "milliseconds": 150.6451380000001
+    },
+    {
+      "name": "original",
+      "milliseconds": 249.1449839999999
+    },
+    {
+      "name": "original",
+      "milliseconds": 219.58216000000016
+    },
+    {
+      "name": "flat",
+      "milliseconds": 129.098248
+    },
+    {
+      "name": "flat",
+      "milliseconds": 145.360551
+    },
+    {
+      "name": "original",
+      "milliseconds": 199.7218640000001
+    },
+    {
+      "name": "original",
+      "milliseconds": 207.23012100000005
+    },
+    {
+      "name": "flat",
+      "milliseconds": 192.91861500000005
+    },
+    {
+      "name": "flat",
+      "milliseconds": 115.08664799999997
+    },
+    {
+      "name": "original",
+      "milliseconds": 187.22098800000003
+    }
+  ],
+  "means": {
+    "original": 223.0975496666667,
+    "flat": 151.60538183333333
+  },
+  "speedup": 1.4715674797872806
+}

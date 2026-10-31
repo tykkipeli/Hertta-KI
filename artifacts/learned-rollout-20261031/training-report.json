@@ -1,0 +1,195 @@
+{
+  "dataSha256": "74b4be5bef137a042594f74a08ae84d377d9f3685fcca15a41007b61b8357d72",
+  "featureSha256": "d592b0a4bcb51bc1c09f770e2baabecc259faf4be2451b75745dde286ff0d63e",
+  "seed": 20370117,
+  "temperature": 2.0,
+  "split": "whole independent four-seat deal blocks: hash mod10,0=test,1=validation,2..9=train",
+  "selection": "Lowest validation teacher regret over epochs 5,10,...,40; test examined only after model selection. Imitation accuracy is not match strength.",
+  "reference": {
+    "validation": {
+      "decisions": 7379,
+      "blocks": 22,
+      "teacherRegret": 0.4991106390953064,
+      "withinPoint2": 0.7566065862583006,
+      "crossEntropy": 1.448531150817871
+    },
+    "test": {
+      "decisions": 10449,
+      "blocks": 31,
+      "teacherRegret": 0.5253552794456482,
+      "withinPoint2": 0.7577758637190162,
+      "crossEntropy": 1.4442886114120483
+    }
+  },
+  "models": {
+    "linear": {
+      "width": 0,
+      "selectedEpoch": 40,
+      "history": [
+        {
+          "epoch": 5,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6170777678489685,
+          "withinPoint2": 0.7557934679495867,
+          "crossEntropy": 1.3770147562026978
+        },
+        {
+          "epoch": 10,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6193872094154358,
+          "withinPoint2": 0.7557934679495867,
+          "crossEntropy": 1.3762046098709106
+        },
+        {
+          "epoch": 15,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6152284145355225,
+          "withinPoint2": 0.7560645073858246,
+          "crossEntropy": 1.3759878873825073
+        },
+        {
+          "epoch": 20,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6179783940315247,
+          "withinPoint2": 0.7545737904865157,
+          "crossEntropy": 1.3757855892181396
+        },
+        {
+          "epoch": 25,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6196073889732361,
+          "withinPoint2": 0.7555224285133487,
+          "crossEntropy": 1.3756805658340454
+        },
+        {
+          "epoch": 30,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6165610551834106,
+          "withinPoint2": 0.7552513890771108,
+          "crossEntropy": 1.3756037950515747
+        },
+        {
+          "epoch": 35,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6132211089134216,
+          "withinPoint2": 0.7571486651307765,
+          "crossEntropy": 1.375631332397461
+        },
+        {
+          "epoch": 40,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.6084693670272827,
+          "withinPoint2": 0.7571486651307765,
+          "crossEntropy": 1.375596284866333
+        }
+      ],
+      "validation": {
+        "decisions": 7379,
+        "blocks": 22,
+        "teacherRegret": 0.6084693670272827,
+        "withinPoint2": 0.7571486651307765,
+        "crossEntropy": 1.375596284866333
+      },
+      "test": {
+        "decisions": 10449,
+        "blocks": 31,
+        "teacherRegret": 0.7093202471733093,
+        "withinPoint2": 0.7571059431524548,
+        "crossEntropy": 1.373116135597229
+      }
+    },
+    "neural24": {
+      "width": 24,
+      "selectedEpoch": 35,
+      "history": [
+        {
+          "epoch": 5,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.3971094787120819,
+          "withinPoint2": 0.7887247594525003,
+          "crossEntropy": 1.3466438055038452
+        },
+        {
+          "epoch": 10,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.3838680684566498,
+          "withinPoint2": 0.7941455481772598,
+          "crossEntropy": 1.3434829711914062
+        },
+        {
+          "epoch": 15,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.3651409447193146,
+          "withinPoint2": 0.7934679495866649,
+          "crossEntropy": 1.3415350914001465
+        },
+        {
+          "epoch": 20,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.35572513937950134,
+          "withinPoint2": 0.7945521073316167,
+          "crossEntropy": 1.3407161235809326
+        },
+        {
+          "epoch": 25,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.32236751914024353,
+          "withinPoint2": 0.7975335411302344,
+          "crossEntropy": 1.3393903970718384
+        },
+        {
+          "epoch": 30,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.3264133334159851,
+          "withinPoint2": 0.7959073045128067,
+          "crossEntropy": 1.3387019634246826
+        },
+        {
+          "epoch": 35,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.31374508142471313,
+          "withinPoint2": 0.7995663369020193,
+          "crossEntropy": 1.3385330438613892
+        },
+        {
+          "epoch": 40,
+          "decisions": 7379,
+          "blocks": 22,
+          "teacherRegret": 0.328016996383667,
+          "withinPoint2": 0.7933324298685459,
+          "crossEntropy": 1.338493824005127
+        }
+      ],
+      "validation": {
+        "decisions": 7379,
+        "blocks": 22,
+        "teacherRegret": 0.31374508142471313,
+        "withinPoint2": 0.7995663369020193,
+        "crossEntropy": 1.3385330438613892
+      },
+      "test": {
+        "decisions": 10449,
+        "blocks": 31,
+        "teacherRegret": 0.3490146994590759,
+        "withinPoint2": 0.8068714709541583,
+        "crossEntropy": 1.3365025520324707
+      }
+    }
+  },
+  "seconds": 19.888679062991287
+}

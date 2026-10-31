@@ -8,7 +8,7 @@ const source = process.argv[3] || ".";
 const overrides = process.argv[4];
 if (!destination) throw Error("Usage: node scripts/prepare-analysis.js OUTPUT_DIRECTORY [SOURCE_DIRECTORY] [OVERRIDES_DIRECTORY]");
 const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
-const files = fs.readdirSync(path.join(source, "src")).filter((name) => name.endsWith(".js")).sort()
+const files = fs.readdirSync(path.join(source, "src")).filter((name) => name.endsWith(".js") && name !== "agent-diagnostic.js").sort()
   .map((name) => "src/" + name).concat(["test/fixtures/ai-v1.js", "package.json"]);
 assert.ok(!fs.existsSync(destination), "Analysis snapshots must not overwrite earlier runs");
 fs.mkdirSync(destination, { recursive: true });
@@ -50,8 +50,10 @@ replaceOnce("      pointSums[i] += pointsValue;", `      outcomes[i].ownPoints +
       outcomes[i].zero += Number(scores[o.player] === 0);
       pointSums[i] += pointsValue;`);
 replaceOnce("    beliefMode: beliefs.mode,", "    beliefMode: beliefs.mode,\n    analysis: { moonPlan, openingMoonPotential: moonPotential(originalHand) },");
+const diagnosticVisits = instrumented.includes("const visits =") ? "visits[i]" : "n";
 replaceOnce("      stderr: Math.sqrt(", `      analysis: Object.fromEntries(Object.entries(outcomes[i]).map(([key, value]) => [key, value / n])),
       stderr: Math.sqrt(`);
+if (diagnosticVisits !== "n") instrumented = instrumented.replace("[key, value / n]", "[key, value / visits[i]]");
 const diagnosticFile = "src/agent-diagnostic.js";
 fs.writeFileSync(path.join(destination, diagnosticFile), instrumented);
 const manifest = { createdAt: new Date().toISOString(), sourceDirectory: path.resolve(source), ...(overrides ? { overrideDirectory: path.resolve(overrides), baselineHashes } : {}), purpose: "Exploratory decision analysis; not strength confirmation", hashes, diagnosticFile, diagnosticSha256: hash(instrumented) };
