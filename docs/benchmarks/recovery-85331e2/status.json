@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-30T23:56:55.357Z",
+        "at": "2026-10-31T00:03:28.166Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 37,
-        "currentGame": 38,
-        "currentRound": 13,
-        "completedRounds": 391
+        "completedGames": 38,
+        "currentGame": 39,
+        "currentRound": 7,
+        "completedRounds": 399
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-30T23:57:07.152Z",
+        "at": "2026-10-31T00:03:46.971Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 37,
-        "currentGame": 38,
-        "currentRound": 11,
-        "completedRounds": 402
+        "completedGames": 38,
+        "currentGame": 39,
+        "currentRound": 5,
+        "completedRounds": 410
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-30T23:56:25.989Z",
+        "at": "2026-10-31T00:03:58.880Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 38,
-        "currentGame": 39,
-        "currentRound": 4,
-        "completedRounds": 393
+        "completedGames": 39,
+        "currentGame": 40,
+        "currentRound": 2,
+        "completedRounds": 402
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-30T23:56:46.363Z",
+        "at": "2026-10-31T00:03:23.927Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 38,
-        "currentGame": 39,
-        "currentRound": 5,
-        "completedRounds": 397
+        "completedGames": 39,
+        "currentGame": 40,
+        "currentRound": 1,
+        "completedRounds": 405
       }
     }
   ],
-  "updatedAt": "2026-10-30T23:57:13.396Z",
+  "updatedAt": "2026-10-31T00:04:13.487Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
