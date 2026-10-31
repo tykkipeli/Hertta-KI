@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-31T04:11:17.460Z",
+        "at": "2026-10-31T04:18:03.330Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 67,
-        "currentGame": 68,
-        "currentRound": 4,
-        "completedRounds": 693
+        "completedGames": 68,
+        "currentGame": 69,
+        "currentRound": 3,
+        "completedRounds": 701
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-31T04:11:28.611Z",
+        "at": "2026-10-31T04:18:06.243Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 64,
-        "currentGame": 65,
-        "currentRound": 5,
-        "completedRounds": 702
+        "completedGames": 65,
+        "currentGame": 66,
+        "currentRound": 1,
+        "completedRounds": 710
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-31T04:11:02.471Z",
+        "at": "2026-10-31T04:18:31.671Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 69,
-        "currentGame": 70,
-        "currentRound": 3,
-        "completedRounds": 694
+        "completedGames": 70,
+        "currentGame": 71,
+        "currentRound": 4,
+        "completedRounds": 703
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-31T04:11:43.267Z",
+        "at": "2026-10-31T04:18:22.089Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 68,
-        "currentGame": 69,
-        "currentRound": 3,
-        "completedRounds": 698
+        "completedGames": 69,
+        "currentGame": 70,
+        "currentRound": 5,
+        "completedRounds": 706
       }
     }
   ],
-  "updatedAt": "2026-10-31T04:11:49.542Z",
+  "updatedAt": "2026-10-31T04:18:49.592Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
