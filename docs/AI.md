@@ -1,6 +1,6 @@
 # Strategie, Informationsgrenzen und Bewertung
 
-Die aktuelle Überarbeitung hat den vorab festgelegten 200-ms-Test bestanden: 38,52 % Sieganteil in 640 vollständigen Partien, 95-%-Blockintervall 34,77–42,34 %. Eine unabhängige Serie mit 640 weiteren Partien bestätigt den Vorteil mit 36,56 % (33,13–40,08 %). Der gesonderte Test bei 1.200 ms läuft noch. Funktionierende Strategietests und diese konkreten Vergleichsserien sind unterschiedliche Belege; Ergebnisse, jeweilige Quellstände und Grenzen stehen in [RESULTS.md](RESULTS.md).
+Die aktuelle Überarbeitung hat die vorab festgelegten Vergleiche bei 200 und 1.200 ms abgeschlossen. Bei 200 ms erreicht sie 38,52 % Sieganteil in 640 vollständigen Partien und in einer unabhängigen Bestätigung 36,56 % in weiteren 640 Partien. Bei 1.200 ms erreicht sie 36,25 % in 320 Partien und unabhängig davon 35,78 % in weiteren 320 Partien. Alle vier 95-%-Blockintervalle liegen vollständig über dem Vergleichswert von 25 %. Funktionierende Strategietests und diese konkreten Vergleichsserien sind unterschiedliche Belege; Ergebnisse, jeweilige Quellstände und Grenzen stehen in [RESULTS.md](RESULTS.md).
 
 ## Weitergabe als Entscheidung über die ganze Hand
 

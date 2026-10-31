@@ -1,0 +1,35 @@
+{
+  "campaign": "85331e2-ci-v1",
+  "status": "demonstrated-at-both-budgets",
+  "reports": [
+    {
+      "ms": 200,
+      "games": 640,
+      "winShare": 0.365625,
+      "interval": [
+        0.33125,
+        0.40078125
+      ],
+      "criterionMet": true,
+      "meanDecisionMs": [
+        162.91765601427872,
+        158.57521136172434
+      ]
+    },
+    {
+      "ms": 1200,
+      "games": 320,
+      "winShare": 0.3578125,
+      "interval": [
+        0.315625,
+        0.4
+      ],
+      "criterionMet": true,
+      "meanDecisionMs": [
+        978.6996236285503,
+        952.8258091411614
+      ]
+    }
+  ],
+  "limitation": "This is evidence against three frozen original copies at these two budgets. It is not a universal strength claim."
+}

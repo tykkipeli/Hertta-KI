@@ -8,12 +8,18 @@ Die Serie enthält 6.640 gespielte Runden. Die mittlere gemessene Entscheidungsd
 
 Eine **unabhängige Bestätigung mit 640 weiteren vollständigen Partien** und eigenen Karten-Seeds erreicht bei denselben 200 ms **36,56 % Sieganteil**, 95-%-Blockintervall **33,13–40,08 %**. Auch diese Serie überschreitet die vorab festgelegte 25-%-Untergrenze. Sie lief auf getrennten GitHub-Actions-Runnern mit genau denselben eingefrorenen KI- und Referenzquellen. Sämtliche 160 Viererblöcke, Quell- und Treiber-Hashes, Lauf-IDs, Seeds, Endstände und Metadaten wurden geprüft. [Rohdaten und reproduzierbare Auswertung](benchmarks/strategy-85331e2-ci/README.md).
 
-| Abgeschlossene 200-ms-Serie | Partien | Sieganteil | 95-%-Blockintervall |
-| --- | ---: | ---: | --- |
-| Ursprüngliche Bestätigung | 640 | 38,52 % | 34,77–42,34 % |
-| Unabhängige CI-Bestätigung | 640 | 36,56 % | 33,13–40,08 % |
+Auch die **beiden vollständigen Serien bei 1.200 ms** belegen einen Vorteil: Die ursprüngliche Bestätigung erreicht **36,25 %** in 320 Partien (95-%-Intervall **31,09–41,56 %**), die unabhängige CI-Bestätigung **35,78 %** in weiteren 320 Partien (**31,56–40,00 %**). Beide Untergrenzen überschreiten 25 %. Alle vier Spieler erhalten wiederum dasselbe vorgegebene Budget und mindestens 16 Stichproben.
 
-Die Serien werden getrennt ausgewertet und nicht gepoolt. Die **320-Partien-Serie bei 1.200 ms läuft noch**; auch die unabhängige CI-Serie prüft dieses Budget gesondert. Die beiden abgeschlossenen 200-ms-Serien belegen einen Vorteil in diesem Testaufbau; daraus folgt noch kein Ergebnis für 1.200 ms, 5 Sekunden oder andere Gegner. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
+| Abgeschlossene Serie | Partien | Sieganteil | 95-%-Blockintervall |
+| --- | ---: | ---: | --- |
+| Ursprüngliche Bestätigung, 200 ms | 640 | 38,52 % | 34,77–42,34 % |
+| Unabhängige CI-Bestätigung, 200 ms | 640 | 36,56 % | 33,13–40,08 % |
+| Ursprüngliche Bestätigung, 1.200 ms | 320 | 36,25 % | 31,09–41,56 % |
+| Unabhängige CI-Bestätigung, 1.200 ms | 320 | 35,78 % | 31,56–40,00 % |
+
+Die ursprüngliche 1.200-ms-Serie umfasst 3.313 Runden, die unabhängige Serie 3.301 Runden. Die über alle Runden gewichteten mittleren Entscheidungsdauern einschließlich sofortiger Züge betragen **985,55 / 965,07 ms** für Kandidat / Referenz in der ursprünglichen Serie und **978,70 / 952,83 ms** in der CI-Serie. Gleiche vorgegebene Budgets bedeuten nicht identische tatsächlich verbrauchte Rechenzeit. Die [ursprünglichen Rohdaten](benchmarks/strategy-85331e2/README.md) und die [unabhängigen CI-Rohdaten](benchmarks/strategy-85331e2-ci/README.md) einschließlich Metadaten und Hashes sind vollständig erhalten; die Auswertungen wurden lokal erneut erzeugt und mit den abschließenden Berichten abgeglichen.
+
+Die Serien werden getrennt ausgewertet und nicht gepoolt. Innerhalb einer Kampagne verwenden die beiden Budgets dieselben vorab gewählten Seed-Familien; sie sind deshalb keine unabhängigen Wiederholungen voneinander. Die CI-Kampagne verwendet eigene, von der ursprünglichen Bestätigung getrennte Seeds. Alle geplanten Partien wurden abgeschlossen; es wurde nicht nach einem günstigen Zwischenstand gestoppt. Das CI-Kriterium verlangt den Vorteil bei **beiden** Budgets und ist erfüllt. Damit ist ein Vorteil gegen drei ursprüngliche Kopien bei 200 und 1.200 ms belegt. Für 5 Sekunden oder andere Gegner liegt kein Nachweis vor. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
 
 ## Längere Vergleiche des früheren Standes
 
@@ -21,11 +27,11 @@ Die historischen 5-ms-Ergebnisse betreffen **Commit `2d28e63`**. Sie reichen als
 
 Auch die inzwischen abgeschlossene **1.200-ms-Serie mit 320 vollständigen Partien** dieses früheren Standes belegt keinen Vorteil: **24,38 % Sieganteil**, 95-%-Block-Bootstrapintervall **20,63–28,28 %**. Beide längeren Serien enthalten denselben früheren Quellstand und werden getrennt ausgewertet. [1.200-ms-Rohdaten und Auswertung](benchmarks/long-budget-v2/1200ms-summary.json).
 
-Die früheren Ergebnisse werden getrennt von der neuen 200-ms-Bestätigung aufbewahrt. Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden ebenfalls nicht als Zeitbudgetnachweis ausgegeben.
+Die früheren Ergebnisse werden getrennt von den neuen Bestätigungsserien aufbewahrt. Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden ebenfalls nicht als Zeitbudgetnachweis ausgegeben.
 
 ## Historische Ergebnisse von Commit `2d28e63`
 
-Bei gleichem **5-ms-Budget** erzielte die damalige KI **34,69 % Sieganteil in 480 vollständigen Spielen** gegen drei ursprüngliche Kopien; das 95-%-Intervall beträgt **30,73–38,65 %**. Damit ist im dokumentierten Kleinbudgetvergleich ein Vorteil belegt. Das ist **kein Nachweis einer Überlegenheit bei allen Bedenkzeiten**. Insbesondere ist ein Vorteil bei den längeren GUI-Einstellungen noch nicht nachgewiesen.
+Bei gleichem **5-ms-Budget** erzielte die damalige KI **34,69 % Sieganteil in 480 vollständigen Spielen** gegen drei ursprüngliche Kopien; das 95-%-Intervall beträgt **30,73–38,65 %**. Damit ist im dokumentierten Kleinbudgetvergleich ein Vorteil belegt. Das ist **kein Nachweis einer Überlegenheit bei allen Bedenkzeiten**. Für diesen früheren Quellstand belegen die oben dokumentierten längeren Tests keinen Vorteil.
 
 ## Bestätigung mit gleichem Zeitbudget
 
