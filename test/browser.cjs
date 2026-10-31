@@ -4,6 +4,18 @@ const { mkdirSync, existsSync } = require("node:fs");
 const { spawn } = require("node:child_process");
 const { resolve } = require("node:path");
 mkdirSync("artifacts", { recursive: true });
+function shuffleDrawsForHand(hand) {
+  const deck = Array.from({ length: 52 }, (_, c) => c);
+  const wanted = [...hand, ...deck.filter((c) => !hand.includes(c))];
+  const draws = [];
+  for (let i = 51; i > 0; i--) {
+    const j = deck.indexOf(wanted[i]);
+    assert.ok(j <= i);
+    draws.push((j + 0.25) / (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
+  return draws;
+}
 (async () => {
   let server, browser;
   try {
@@ -74,18 +86,7 @@ mkdirSync("artifacts", { recursive: true });
     // A legal full-deck permutation reconstructs the reported pattern without
     // adding test hooks or access to private game state in the application.
     const regressionHand = [0, 5, 9, 19, 20, 26, 27, 28, 29, 30, 31, 37, 49];
-    const deck = Array.from({ length: 52 }, (_, c) => c);
-    const wanted = [
-      ...regressionHand,
-      ...deck.filter((c) => !regressionHand.includes(c)),
-    ];
-    const draws = [];
-    for (let i = 51; i > 0; i--) {
-      const j = deck.indexOf(wanted[i]);
-      assert.ok(j <= i);
-      draws.push((j + 0.25) / (i + 1));
-      [deck[i], deck[j]] = [deck[j], deck[i]];
-    }
+    const draws = shuffleDrawsForHand(regressionHand);
     await page.addInitScript((values) => {
       const original = Math.random;
       let at = 0;
@@ -294,6 +295,30 @@ mkdirSync("artifacts", { recursive: true });
       .allTextContents();
     assert.deepEqual(resetCounts, ["0", "0", "0", "0"]);
     console.log({ normalMotion: true, cancelDuringCollection: true });
+    const moonPage = await browser.newPage({
+      viewport: { width: 1280, height: 1050 },
+      reducedMotion: "reduce",
+    });
+    moonPage.on("pageerror", (error) => errors.push(String(error)));
+    const moonHand = [0, 12, 28, 35, 37, 39, 41, 42, 46, 48, 49, 50, 51];
+    await moonPage.addInitScript((values) => {
+      const original = Math.random;
+      let at = 0;
+      Math.random = () => (at < values.length ? values[at++] : original());
+    }, shuffleDrawsForHand(moonHand));
+    await moonPage.goto(baseURL);
+    await moonPage.locator("#hint").click();
+    await moonPage.waitForFunction(() => !document.querySelector("#hint").disabled);
+    const moonPass = await moonPage.locator("#hand .hinted").evaluateAll(
+      (cards) => cards.map((card) => Number(card.dataset.card)),
+    );
+    assert.deepEqual(new Set(moonPass), new Set([28, 35, 37]));
+    assert.equal(await moonPage.locator("#hand .selected").count(), 0);
+    assert.match(await moonPage.locator("#analysis").textContent(), /Durchmarsch/);
+    assert.equal(await moonPage.locator("body").getAttribute("data-phase"), "pass");
+    await moonPage.screenshot({ path: "artifacts/moon-passing-hint.png", fullPage: true });
+    assert.deepEqual(errors, []);
+    console.log({ moonPassingKeepsHeartAce: true, moonPass });
   } finally {
     await browser?.close();
     server?.kill("SIGTERM");

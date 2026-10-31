@@ -1,0 +1,909 @@
+{
+  "at": "2026-10-31T12:09:21.872Z",
+  "exploratory": true,
+  "targetedConditionalEvaluation": true,
+  "initialHands": 40,
+  "worldsPerHand": 16,
+  "pairedWorlds": 640,
+  "playedRounds": 1280,
+  "configuredSamplesPerPlayer": 64,
+  "equalTimeBudget": false,
+  "totalsBefore": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "bootstrapUnit": "Whole initial hand, retaining all sixteen paired hidden deals",
+  "bootstrapReplicates": 10000,
+  "arms": [
+    {
+      "name": "control",
+      "ownPoints": 7.4921875,
+      "moonRate": 0.1390625,
+      "relativeValue": 1.6020833333333333,
+      "leadMargin": -3.39375
+    },
+    {
+      "name": "candidate",
+      "ownPoints": 4.8859375,
+      "moonRate": 0.5421875,
+      "relativeValue": 11.739583333333336,
+      "leadMargin": 9.465625
+    }
+  ],
+  "differences": {
+    "deltaValue": {
+      "mean": 10.137500000000003,
+      "interval95": [
+        7.722916666666668,
+        12.504166666666666
+      ]
+    },
+    "ownPointsSaved": {
+      "mean": 2.60625,
+      "interval95": [
+        1.528125,
+        3.69375
+      ]
+    },
+    "deltaMoon": {
+      "mean": 0.403125,
+      "interval95": [
+        0.33125,
+        0.475
+      ]
+    },
+    "deltaLeadMargin": {
+      "mean": 12.859375,
+      "interval95": [
+        10.2859375,
+        15.3875
+      ]
+    }
+  },
+  "criterionMet": true,
+  "limitation": "Only uniformly generated hands affected by the preregistered rare passing change, with fresh hidden completions and all four frozen private AIs. This evaluates round outcomes at fixed samples, not overall match win share or equal-time GUI strength.",
+  "perHand": [
+    {
+      "caseIndex": 0,
+      "arms": [
+        {
+          "ownPoints": 9.625,
+          "moonRate": 0,
+          "relativeValue": -4.166666666666667,
+          "leadMargin": -9
+        },
+        {
+          "ownPoints": 2.75,
+          "moonRate": 0.75,
+          "relativeValue": 18.000000000000004,
+          "leadMargin": 16.9375
+        }
+      ],
+      "deltaValue": 22.16666666666667,
+      "ownPointsSaved": 6.875,
+      "deltaMoon": 0.75,
+      "deltaLeadMargin": 25.9375
+    },
+    {
+      "caseIndex": 1,
+      "arms": [
+        {
+          "ownPoints": 3.625,
+          "moonRate": 0,
+          "relativeValue": 3.8333333333333326,
+          "leadMargin": -3.375
+        },
+        {
+          "ownPoints": 1.625,
+          "moonRate": 0.25,
+          "relativeValue": 10.833333333333332,
+          "leadMargin": 5.4375
+        }
+      ],
+      "deltaValue": 7,
+      "ownPointsSaved": 2,
+      "deltaMoon": 0.25,
+      "deltaLeadMargin": 8.8125
+    },
+    {
+      "caseIndex": 2,
+      "arms": [
+        {
+          "ownPoints": 11.8125,
+          "moonRate": 0.125,
+          "relativeValue": -2.75,
+          "leadMargin": -7.625
+        },
+        {
+          "ownPoints": 7.875,
+          "moonRate": 0.1875,
+          "relativeValue": 1.4166666666666659,
+          "leadMargin": -2.25
+        }
+      ],
+      "deltaValue": 4.166666666666666,
+      "ownPointsSaved": 3.9375,
+      "deltaMoon": 0.0625,
+      "deltaLeadMargin": 5.375
+    },
+    {
+      "caseIndex": 3,
+      "arms": [
+        {
+          "ownPoints": 12.375,
+          "moonRate": 0,
+          "relativeValue": -6.750000000000001,
+          "leadMargin": -12
+        },
+        {
+          "ownPoints": 5.125,
+          "moonRate": 0.4375,
+          "relativeValue": 9.416666666666664,
+          "leadMargin": 6.8125
+        }
+      ],
+      "deltaValue": 16.166666666666664,
+      "ownPointsSaved": 7.25,
+      "deltaMoon": 0.4375,
+      "deltaLeadMargin": 18.8125
+    },
+    {
+      "caseIndex": 4,
+      "arms": [
+        {
+          "ownPoints": 8.6875,
+          "moonRate": 0.375,
+          "relativeValue": 3.583333333333333,
+          "leadMargin": 1.125
+        },
+        {
+          "ownPoints": 4,
+          "moonRate": 0.75,
+          "relativeValue": 17.416666666666664,
+          "leadMargin": 15.5
+        }
+      ],
+      "deltaValue": 13.833333333333332,
+      "ownPointsSaved": 4.6875,
+      "deltaMoon": 0.375,
+      "deltaLeadMargin": 14.375
+    },
+    {
+      "caseIndex": 5,
+      "arms": [
+        {
+          "ownPoints": 7,
+          "moonRate": 0.125,
+          "relativeValue": 1.5000000000000004,
+          "leadMargin": -2.625
+        },
+        {
+          "ownPoints": 4.625,
+          "moonRate": 0.625,
+          "relativeValue": 13.333333333333334,
+          "leadMargin": 11.8125
+        }
+      ],
+      "deltaValue": 11.833333333333334,
+      "ownPointsSaved": 2.375,
+      "deltaMoon": 0.5,
+      "deltaLeadMargin": 14.4375
+    },
+    {
+      "caseIndex": 6,
+      "arms": [
+        {
+          "ownPoints": 9.1875,
+          "moonRate": 0,
+          "relativeValue": -3.583333333333333,
+          "leadMargin": -8.875
+        },
+        {
+          "ownPoints": 3.0625,
+          "moonRate": 0.8125,
+          "relativeValue": 19.75,
+          "leadMargin": 18.0625
+        }
+      ],
+      "deltaValue": 23.333333333333332,
+      "ownPointsSaved": 6.125,
+      "deltaMoon": 0.8125,
+      "deltaLeadMargin": 26.9375
+    },
+    {
+      "caseIndex": 7,
+      "arms": [
+        {
+          "ownPoints": 6.25,
+          "moonRate": 0.0625,
+          "relativeValue": 1.416666666666666,
+          "leadMargin": -4.0625
+        },
+        {
+          "ownPoints": 6.5,
+          "moonRate": 0.5,
+          "relativeValue": 8.666666666666666,
+          "leadMargin": 6.875
+        }
+      ],
+      "deltaValue": 7.25,
+      "ownPointsSaved": -0.25,
+      "deltaMoon": 0.4375,
+      "deltaLeadMargin": 10.9375
+    },
+    {
+      "caseIndex": 8,
+      "arms": [
+        {
+          "ownPoints": 6.9375,
+          "moonRate": 0,
+          "relativeValue": 0.4999999999999991,
+          "leadMargin": -5.5625
+        },
+        {
+          "ownPoints": 2.8125,
+          "moonRate": 0.375,
+          "relativeValue": 11.416666666666668,
+          "leadMargin": 7.9375
+        }
+      ],
+      "deltaValue": 10.916666666666668,
+      "ownPointsSaved": 4.125,
+      "deltaMoon": 0.375,
+      "deltaLeadMargin": 13.5
+    },
+    {
+      "caseIndex": 9,
+      "arms": [
+        {
+          "ownPoints": 6.8125,
+          "moonRate": 0,
+          "relativeValue": 0.6666666666666663,
+          "leadMargin": -6.1875
+        },
+        {
+          "ownPoints": 12.875,
+          "moonRate": 0.125,
+          "relativeValue": -6.333333333333332,
+          "leadMargin": -8.625
+        }
+      ],
+      "deltaValue": -6.999999999999998,
+      "ownPointsSaved": -6.0625,
+      "deltaMoon": 0.125,
+      "deltaLeadMargin": -2.4375
+    },
+    {
+      "caseIndex": 10,
+      "arms": [
+        {
+          "ownPoints": 3.4375,
+          "moonRate": 0.125,
+          "relativeValue": 6.25,
+          "leadMargin": 0.5625
+        },
+        {
+          "ownPoints": 4,
+          "moonRate": 0.4375,
+          "relativeValue": 10.916666666666668,
+          "leadMargin": 7.6875
+        }
+      ],
+      "deltaValue": 4.666666666666668,
+      "ownPointsSaved": -0.5625,
+      "deltaMoon": 0.3125,
+      "deltaLeadMargin": 7.125
+    },
+    {
+      "caseIndex": 11,
+      "arms": [
+        {
+          "ownPoints": 5.6875,
+          "moonRate": 0,
+          "relativeValue": 2.166666666666666,
+          "leadMargin": -5.3125
+        },
+        {
+          "ownPoints": 0.1875,
+          "moonRate": 0.375,
+          "relativeValue": 14.916666666666663,
+          "leadMargin": 10
+        }
+      ],
+      "deltaValue": 12.749999999999996,
+      "ownPointsSaved": 5.5,
+      "deltaMoon": 0.375,
+      "deltaLeadMargin": 15.3125
+    },
+    {
+      "caseIndex": 12,
+      "arms": [
+        {
+          "ownPoints": 7.25,
+          "moonRate": 0.0625,
+          "relativeValue": 0.08333333333333265,
+          "leadMargin": -4.875
+        },
+        {
+          "ownPoints": 5.5,
+          "moonRate": 0.5625,
+          "relativeValue": 11.083333333333336,
+          "leadMargin": 9.3125
+        }
+      ],
+      "deltaValue": 11.000000000000004,
+      "ownPointsSaved": 1.75,
+      "deltaMoon": 0.5,
+      "deltaLeadMargin": 14.1875
+    },
+    {
+      "caseIndex": 13,
+      "arms": [
+        {
+          "ownPoints": 11.375,
+          "moonRate": 0.3125,
+          "relativeValue": -1.083333333333333,
+          "leadMargin": -3
+        },
+        {
+          "ownPoints": 4.625,
+          "moonRate": 0.6875,
+          "relativeValue": 14.416666666666668,
+          "leadMargin": 13.25
+        }
+      ],
+      "deltaValue": 15.5,
+      "ownPointsSaved": 6.75,
+      "deltaMoon": 0.375,
+      "deltaLeadMargin": 16.25
+    },
+    {
+      "caseIndex": 14,
+      "arms": [
+        {
+          "ownPoints": 6.75,
+          "moonRate": 0,
+          "relativeValue": -0.33333333333333437,
+          "leadMargin": -5.75
+        },
+        {
+          "ownPoints": 5.5625,
+          "moonRate": 0.5,
+          "relativeValue": 9.916666666666666,
+          "leadMargin": 7.8125
+        }
+      ],
+      "deltaValue": 10.25,
+      "ownPointsSaved": 1.1875,
+      "deltaMoon": 0.5,
+      "deltaLeadMargin": 13.5625
+    },
+    {
+      "caseIndex": 15,
+      "arms": [
+        {
+          "ownPoints": 7.1875,
+          "moonRate": 0,
+          "relativeValue": -0.9166666666666671,
+          "leadMargin": -7.0625
+        },
+        {
+          "ownPoints": 4.5625,
+          "moonRate": 0.5625,
+          "relativeValue": 12.333333333333336,
+          "leadMargin": 10.125
+        }
+      ],
+      "deltaValue": 13.250000000000004,
+      "ownPointsSaved": 2.625,
+      "deltaMoon": 0.5625,
+      "deltaLeadMargin": 17.1875
+    },
+    {
+      "caseIndex": 16,
+      "arms": [
+        {
+          "ownPoints": 11.5,
+          "moonRate": 0.125,
+          "relativeValue": -4.500000000000001,
+          "leadMargin": -7.875
+        },
+        {
+          "ownPoints": 6.9375,
+          "moonRate": 0.6875,
+          "relativeValue": 11.333333333333332,
+          "leadMargin": 10.9375
+        }
+      ],
+      "deltaValue": 15.833333333333332,
+      "ownPointsSaved": 4.5625,
+      "deltaMoon": 0.5625,
+      "deltaLeadMargin": 18.8125
+    },
+    {
+      "caseIndex": 17,
+      "arms": [
+        {
+          "ownPoints": 5.875,
+          "moonRate": 0.625,
+          "relativeValue": 12.750000000000002,
+          "leadMargin": 10.5
+        },
+        {
+          "ownPoints": 7.875,
+          "moonRate": 0.5625,
+          "relativeValue": 7.916666666666667,
+          "leadMargin": 6.8125
+        }
+      ],
+      "deltaValue": -4.833333333333335,
+      "ownPointsSaved": -2,
+      "deltaMoon": -0.0625,
+      "deltaLeadMargin": -3.6875
+    },
+    {
+      "caseIndex": 18,
+      "arms": [
+        {
+          "ownPoints": 7.6875,
+          "moonRate": 0.125,
+          "relativeValue": 0.5833333333333336,
+          "leadMargin": -3.875
+        },
+        {
+          "ownPoints": 12.0625,
+          "moonRate": 0.25,
+          "relativeValue": -3.083333333333334,
+          "leadMargin": -5.3125
+        }
+      ],
+      "deltaValue": -3.6666666666666674,
+      "ownPointsSaved": -4.375,
+      "deltaMoon": 0.125,
+      "deltaLeadMargin": -1.4375
+    },
+    {
+      "caseIndex": 19,
+      "arms": [
+        {
+          "ownPoints": 5.0625,
+          "moonRate": 0,
+          "relativeValue": 3,
+          "leadMargin": -4.5
+        },
+        {
+          "ownPoints": 1.5625,
+          "moonRate": 0.5,
+          "relativeValue": 15.249999999999996,
+          "leadMargin": 11.9375
+        }
+      ],
+      "deltaValue": 12.249999999999996,
+      "ownPointsSaved": 3.5,
+      "deltaMoon": 0.5,
+      "deltaLeadMargin": 16.4375
+    },
+    {
+      "caseIndex": 20,
+      "arms": [
+        {
+          "ownPoints": 7.625,
+          "moonRate": 0.1875,
+          "relativeValue": 1.75,
+          "leadMargin": -2.375
+        },
+        {
+          "ownPoints": 6.4375,
+          "moonRate": 0.5625,
+          "relativeValue": 10.916666666666668,
+          "leadMargin": 8.1875
+        }
+      ],
+      "deltaValue": 9.166666666666668,
+      "ownPointsSaved": 1.1875,
+      "deltaMoon": 0.375,
+      "deltaLeadMargin": 10.5625
+    },
+    {
+      "caseIndex": 21,
+      "arms": [
+        {
+          "ownPoints": 10.5,
+          "moonRate": 0.125,
+          "relativeValue": -2.0833333333333335,
+          "leadMargin": -6.75
+        },
+        {
+          "ownPoints": 5.8125,
+          "moonRate": 0.25,
+          "relativeValue": 5.250000000000002,
+          "leadMargin": 1.1875
+        }
+      ],
+      "deltaValue": 7.333333333333336,
+      "ownPointsSaved": 4.6875,
+      "deltaMoon": 0.125,
+      "deltaLeadMargin": 7.9375
+    },
+    {
+      "caseIndex": 22,
+      "arms": [
+        {
+          "ownPoints": 10.0625,
+          "moonRate": 0.1875,
+          "relativeValue": -1.5000000000000004,
+          "leadMargin": -4.8125
+        },
+        {
+          "ownPoints": 3.625,
+          "moonRate": 0.75,
+          "relativeValue": 16.833333333333332,
+          "leadMargin": 16.0625
+        }
+      ],
+      "deltaValue": 18.333333333333332,
+      "ownPointsSaved": 6.4375,
+      "deltaMoon": 0.5625,
+      "deltaLeadMargin": 20.875
+    },
+    {
+      "caseIndex": 23,
+      "arms": [
+        {
+          "ownPoints": 15.375,
+          "moonRate": 0.1875,
+          "relativeValue": -8.583333333333334,
+          "leadMargin": -10.4375
+        },
+        {
+          "ownPoints": 9.125,
+          "moonRate": 0.5,
+          "relativeValue": 5.166666666666666,
+          "leadMargin": 3.9375
+        }
+      ],
+      "deltaValue": 13.75,
+      "ownPointsSaved": 6.25,
+      "deltaMoon": 0.3125,
+      "deltaLeadMargin": 14.375
+    },
+    {
+      "caseIndex": 24,
+      "arms": [
+        {
+          "ownPoints": 5.8125,
+          "moonRate": 0.3125,
+          "relativeValue": 7.416666666666667,
+          "leadMargin": 2.4375
+        },
+        {
+          "ownPoints": 4.9375,
+          "moonRate": 0.5625,
+          "relativeValue": 12.916666666666668,
+          "leadMargin": 9.9375
+        }
+      ],
+      "deltaValue": 5.500000000000001,
+      "ownPointsSaved": 0.875,
+      "deltaMoon": 0.25,
+      "deltaLeadMargin": 7.5
+    },
+    {
+      "caseIndex": 25,
+      "arms": [
+        {
+          "ownPoints": 7.625,
+          "moonRate": 0.125,
+          "relativeValue": 2.8333333333333326,
+          "leadMargin": -3.75
+        },
+        {
+          "ownPoints": 8.4375,
+          "moonRate": 0.3125,
+          "relativeValue": 3.916666666666666,
+          "leadMargin": -0.125
+        }
+      ],
+      "deltaValue": 1.0833333333333335,
+      "ownPointsSaved": -0.8125,
+      "deltaMoon": 0.1875,
+      "deltaLeadMargin": 3.625
+    },
+    {
+      "caseIndex": 26,
+      "arms": [
+        {
+          "ownPoints": 2.0625,
+          "moonRate": 0,
+          "relativeValue": 5.916666666666667,
+          "leadMargin": -1.625
+        },
+        {
+          "ownPoints": 5.1875,
+          "moonRate": 0.125,
+          "relativeValue": 3.9166666666666665,
+          "leadMargin": -1.1875
+        }
+      ],
+      "deltaValue": -2.0000000000000004,
+      "ownPointsSaved": -3.125,
+      "deltaMoon": 0.125,
+      "deltaLeadMargin": 0.4375
+    },
+    {
+      "caseIndex": 27,
+      "arms": [
+        {
+          "ownPoints": 5.4375,
+          "moonRate": 0,
+          "relativeValue": 2.499999999999999,
+          "leadMargin": -4.375
+        },
+        {
+          "ownPoints": 1.75,
+          "moonRate": 0.6875,
+          "relativeValue": 18.25,
+          "leadMargin": 16.3125
+        }
+      ],
+      "deltaValue": 15.75,
+      "ownPointsSaved": 3.6875,
+      "deltaMoon": 0.6875,
+      "deltaLeadMargin": 20.6875
+    },
+    {
+      "caseIndex": 28,
+      "arms": [
+        {
+          "ownPoints": 6.625,
+          "moonRate": 0.4375,
+          "relativeValue": 9.583333333333334,
+          "leadMargin": 4.875
+        },
+        {
+          "ownPoints": 6.4375,
+          "moonRate": 0.5625,
+          "relativeValue": 10.916666666666668,
+          "leadMargin": 8.5
+        }
+      ],
+      "deltaValue": 1.333333333333334,
+      "ownPointsSaved": 0.1875,
+      "deltaMoon": 0.125,
+      "deltaLeadMargin": 3.625
+    },
+    {
+      "caseIndex": 29,
+      "arms": [
+        {
+          "ownPoints": 1.375,
+          "moonRate": 0,
+          "relativeValue": 6.833333333333334,
+          "leadMargin": -0.6875
+        },
+        {
+          "ownPoints": 0.9375,
+          "moonRate": 0.8125,
+          "relativeValue": 21.5,
+          "leadMargin": 20.375
+        }
+      ],
+      "deltaValue": 14.666666666666666,
+      "ownPointsSaved": 0.4375,
+      "deltaMoon": 0.8125,
+      "deltaLeadMargin": 21.0625
+    },
+    {
+      "caseIndex": 30,
+      "arms": [
+        {
+          "ownPoints": 9.75,
+          "moonRate": 0.5625,
+          "relativeValue": 5.416666666666667,
+          "leadMargin": 4.875
+        },
+        {
+          "ownPoints": 7.6875,
+          "moonRate": 0.6875,
+          "relativeValue": 10.333333333333334,
+          "leadMargin": 10.1875
+        }
+      ],
+      "deltaValue": 4.916666666666667,
+      "ownPointsSaved": 2.0625,
+      "deltaMoon": 0.125,
+      "deltaLeadMargin": 5.3125
+    },
+    {
+      "caseIndex": 31,
+      "arms": [
+        {
+          "ownPoints": 9.875,
+          "moonRate": 0,
+          "relativeValue": -4.5,
+          "leadMargin": -9.0625
+        },
+        {
+          "ownPoints": 2.125,
+          "moonRate": 0.8125,
+          "relativeValue": 19.916666666666664,
+          "leadMargin": 19
+        }
+      ],
+      "deltaValue": 24.416666666666664,
+      "ownPointsSaved": 7.75,
+      "deltaMoon": 0.8125,
+      "deltaLeadMargin": 28.0625
+    },
+    {
+      "caseIndex": 32,
+      "arms": [
+        {
+          "ownPoints": 6,
+          "moonRate": 0,
+          "relativeValue": 0.6666666666666661,
+          "leadMargin": -5.25
+        },
+        {
+          "ownPoints": 3.6875,
+          "moonRate": 0.5,
+          "relativeValue": 12.416666666666664,
+          "leadMargin": 9.5625
+        }
+      ],
+      "deltaValue": 11.749999999999998,
+      "ownPointsSaved": 2.3125,
+      "deltaMoon": 0.5,
+      "deltaLeadMargin": 14.8125
+    },
+    {
+      "caseIndex": 33,
+      "arms": [
+        {
+          "ownPoints": 4.8125,
+          "moonRate": 0.1875,
+          "relativeValue": 5.500000000000001,
+          "leadMargin": 0.375
+        },
+        {
+          "ownPoints": 2.75,
+          "moonRate": 0.75,
+          "relativeValue": 18,
+          "leadMargin": 16.8125
+        }
+      ],
+      "deltaValue": 12.5,
+      "ownPointsSaved": 2.0625,
+      "deltaMoon": 0.5625,
+      "deltaLeadMargin": 16.4375
+    },
+    {
+      "caseIndex": 34,
+      "arms": [
+        {
+          "ownPoints": 10.0625,
+          "moonRate": 0.0625,
+          "relativeValue": -1.5000000000000004,
+          "leadMargin": -7.875
+        },
+        {
+          "ownPoints": 5.6875,
+          "moonRate": 0.5,
+          "relativeValue": 9.749999999999998,
+          "leadMargin": 7.4375
+        }
+      ],
+      "deltaValue": 11.249999999999998,
+      "ownPointsSaved": 4.375,
+      "deltaMoon": 0.4375,
+      "deltaLeadMargin": 15.3125
+    },
+    {
+      "caseIndex": 35,
+      "arms": [
+        {
+          "ownPoints": 8,
+          "moonRate": 0,
+          "relativeValue": -2,
+          "leadMargin": -7.6875
+        },
+        {
+          "ownPoints": 3.5625,
+          "moonRate": 0.75,
+          "relativeValue": 16.916666666666664,
+          "leadMargin": 15.9375
+        }
+      ],
+      "deltaValue": 18.916666666666664,
+      "ownPointsSaved": 4.4375,
+      "deltaMoon": 0.75,
+      "deltaLeadMargin": 23.625
+    },
+    {
+      "caseIndex": 36,
+      "arms": [
+        {
+          "ownPoints": 1.1875,
+          "moonRate": 0.5625,
+          "relativeValue": 16.833333333333336,
+          "leadMargin": 13.625
+        },
+        {
+          "ownPoints": 3,
+          "moonRate": 0.625,
+          "relativeValue": 15.500000000000002,
+          "leadMargin": 13.3125
+        }
+      ],
+      "deltaValue": -1.333333333333334,
+      "ownPointsSaved": -1.8125,
+      "deltaMoon": 0.0625,
+      "deltaLeadMargin": -0.3125
+    },
+    {
+      "caseIndex": 37,
+      "arms": [
+        {
+          "ownPoints": 15,
+          "moonRate": 0.1875,
+          "relativeValue": -5.916666666666668,
+          "leadMargin": -9.9375
+        },
+        {
+          "ownPoints": 2.75,
+          "moonRate": 0.75,
+          "relativeValue": 19.083333333333332,
+          "leadMargin": 16.75
+        }
+      ],
+      "deltaValue": 25,
+      "ownPointsSaved": 12.25,
+      "deltaMoon": 0.5625,
+      "deltaLeadMargin": 26.6875
+    },
+    {
+      "caseIndex": 38,
+      "arms": [
+        {
+          "ownPoints": 5.75,
+          "moonRate": 0.375,
+          "relativeValue": 7.5,
+          "leadMargin": 4.0625
+        },
+        {
+          "ownPoints": 5.8125,
+          "moonRate": 0.5625,
+          "relativeValue": 10.666666666666668,
+          "leadMargin": 9
+        }
+      ],
+      "deltaValue": 3.166666666666668,
+      "ownPointsSaved": -0.0625,
+      "deltaMoon": 0.1875,
+      "deltaLeadMargin": 4.9375
+    },
+    {
+      "caseIndex": 39,
+      "arms": [
+        {
+          "ownPoints": 2.625,
+          "moonRate": 0,
+          "relativeValue": 5.166666666666666,
+          "leadMargin": -2
+        },
+        {
+          "ownPoints": 1.5625,
+          "moonRate": 0.6875,
+          "relativeValue": 18.5,
+          "leadMargin": 16.375
+        }
+      ],
+      "deltaValue": 13.333333333333334,
+      "ownPointsSaved": 1.0625,
+      "deltaMoon": 0.6875,
+      "deltaLeadMargin": 18.375
+    }
+  ]
+}

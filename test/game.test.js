@@ -304,6 +304,34 @@ test("a controlled moon hand retains the queen and its high heart run", async ()
   for (const c of [36, 48, 49, 50, 51]) assert.ok(!sent.includes(c));
 });
 
+test("passing three side-suit losers can create a moon plan without giving away the heart ace", async () => {
+  const { describePass, moonPotential } = await import("../src/strategy.js");
+  const hand = [0, 12, 28, 35, 37, 39, 41, 42, 46, 48, 49, 50, 51],
+    before = hand.slice();
+  const sent = choosePass(hand), retained = hand.filter((c) => !sent.includes(c));
+  assert.deepEqual(sent, [28, 35, 37]);
+  for (const c of [48, 49, 50, 51]) assert.ok(retained.includes(c));
+  assert.ok(moonPotential(retained) > moonPotential(hand));
+  assert.match(describePass(hand, sent), /Durchmarsch/);
+  assert.deepEqual(hand, before);
+});
+
+test("a created moon plan also recognizes heart control with side-suit entries", () => {
+  const hand = [5, 15, 24, 25, 34, 36, 38, 40, 42, 48, 49, 50, 51];
+  const sent = choosePass(hand),
+    retained = hand.filter((c) => !sent.includes(c));
+  for (const c of [24, 25, 38, 48, 49, 50, 51]) assert.ok(retained.includes(c));
+  assert.equal(retained.length, 10);
+});
+
+test("many low hearts without the top controls do not invent a passing moon plan", async () => {
+  const { describePass } = await import("../src/strategy.js");
+  const hand = [0, 5, 13, 19, 26, 29, 37, 39, 40, 41, 42, 43, 51];
+  const sent = choosePass(hand);
+  assert.ok(sent.includes(51));
+  assert.doesNotMatch(describePass(hand, sent), /Durchmarsch/);
+});
+
 test("moon play takes points economically and abandons the plan when another player scores", async () => {
   const { strategicChoice } = await import("../src/strategy.js");
   const v = {

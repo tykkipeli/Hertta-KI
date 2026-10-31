@@ -1,8 +1,14 @@
 # Vergleich mit der ursprünglichen KI
 
-## Aktueller Stand der Überarbeitung
+## Neue Weitergabe-Erweiterung aus der Spielanalyse
 
-Die aktuelle Weitergabe-, Durchmarsch-, Dame-Hinweis- und Endspielüberarbeitung (**KI-Quellstand `85331e2`**) hat den vorab festgelegten 200-ms-Test bestanden. In **640 vollständigen Partien** gegen drei unveränderte ursprüngliche KIs beträgt ihr Sieganteil **38,52 %**; das 95-%-Block-Bootstrapintervall über **160 vollständige Viererblöcke** liegt bei **34,77–42,34 %**, vollständig über dem 25-%-Vergleichswert bei gleicher Spielstärke. Alle Spieler erhielten **200 ms je Entscheidung und mindestens 16 Stichproben**.
+Eine Analyse von 480 vollständigen Partien hat eine übersehene Durchmarschmöglichkeit vor der Weitergabe aufgedeckt: Die KI berücksichtigt jetzt auch, ob erst die Abgabe dreier Verlustkarten eine stark kontrollierte Hand schafft. In einem getrennten gezielten Vergleich mit 40 neuen betroffenen Ausgangshänden und je 16 gepaarten verdeckten Verteilungen sinken die eigenen mittleren Rundenpunkte von 7,4922 auf 4,8859; die beobachtete Durchmarschquote steigt von 13,9063 % auf 54,2188 %. Alle vier privaten KIs erhalten jeweils 64 Stichproben. Der gepaarte Bootstrap über ganze Ausgangshände belegt einen positiven relativen Rundenwertunterschied.
+
+Dies sind 1.280 ausgespielte **Runden in betroffenen Anfangspositionen**, keine allgemeinen Partien bis 100 Punkte und kein neuer Vergleich bei gleichem Zeitbudget. Ein zusätzlicher allgemeiner Sieganteilsgewinn der neuen Erweiterung ist noch nicht belegt. Eine ebenfalls geprüfte Änderung des Gegnermodells zeigte in 640 vollständigen Vergleichspartien keinen Vorteil und wurde nicht übernommen. [Methodik, Fälle, Rohdaten und Grenzen](analysis/2026-10-31/README.md).
+
+## Bestätigter Ausgangsstand `85331e2`
+
+Die bisherige Weitergabe-, Durchmarsch-, Dame-Hinweis- und Endspielüberarbeitung (**KI-Quellstand `85331e2`**, vor der neuen Weitergabe-Erweiterung) hat den vorab festgelegten 200-ms-Test bestanden. In **640 vollständigen Partien** gegen drei unveränderte ursprüngliche KIs beträgt ihr Sieganteil **38,52 %**; das 95-%-Block-Bootstrapintervall über **160 vollständige Viererblöcke** liegt bei **34,77–42,34 %**, vollständig über dem 25-%-Vergleichswert bei gleicher Spielstärke. Alle Spieler erhielten **200 ms je Entscheidung und mindestens 16 Stichproben**.
 
 Die Serie enthält 6.640 gespielte Runden. Die mittlere gemessene Entscheidungsdauer einschließlich sofortiger Züge beträgt **165,99 ms** für den Kandidaten und **164,65 ms** für die Referenz. Quell-Snapshot, ursprüngliche Lauf-IDs, Seeds, vollständige Endstände und Summen wurden geprüft. Nach dem Umgebungsausfall wurden 378 abgeschlossene Partien fortgesetzt; der eingefrorene KI-Quellstand blieb erhalten. [Rohdaten, Quellmanifest und Auswertung](benchmarks/strategy-85331e2/README.md).
 

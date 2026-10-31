@@ -1,0 +1,398 @@
+{
+  "caseId": "worker-1/9/9/32",
+  "purpose": "Counterexample to a simulated 100% moon claim, not a proof that the selected root card is wrong",
+  "usesActualOpponentHands": false,
+  "sampledHypotheticalWorld": {
+    "hands": [
+      [
+        43,
+        27,
+        30,
+        35,
+        29
+      ],
+      [
+        44,
+        45,
+        47,
+        48,
+        49
+      ],
+      [
+        3,
+        39,
+        32,
+        42,
+        12
+      ],
+      [
+        40,
+        19,
+        41,
+        46,
+        25
+      ]
+    ],
+    "turn": 1,
+    "trick": [],
+    "taken": [
+      0,
+      15,
+      0,
+      0
+    ],
+    "broken": true,
+    "completed": 8,
+    "history": [
+      {
+        "winner": 1,
+        "points": 0,
+        "trick": [
+          {
+            "player": 2,
+            "card": 0
+          },
+          {
+            "player": 3,
+            "card": 1
+          },
+          {
+            "player": 0,
+            "card": 2
+          },
+          {
+            "player": 1,
+            "card": 11
+          }
+        ]
+      },
+      {
+        "winner": 2,
+        "points": 0,
+        "trick": [
+          {
+            "player": 1,
+            "card": 5
+          },
+          {
+            "player": 2,
+            "card": 9
+          },
+          {
+            "player": 3,
+            "card": 8
+          },
+          {
+            "player": 0,
+            "card": 7
+          }
+        ]
+      },
+      {
+        "winner": 0,
+        "points": 0,
+        "trick": [
+          {
+            "player": 2,
+            "card": 33
+          },
+          {
+            "player": 3,
+            "card": 26
+          },
+          {
+            "player": 0,
+            "card": 38
+          },
+          {
+            "player": 1,
+            "card": 6
+          }
+        ]
+      },
+      {
+        "winner": 3,
+        "points": 0,
+        "trick": [
+          {
+            "player": 0,
+            "card": 20
+          },
+          {
+            "player": 1,
+            "card": 14
+          },
+          {
+            "player": 2,
+            "card": 21
+          },
+          {
+            "player": 3,
+            "card": 23
+          }
+        ]
+      },
+      {
+        "winner": 2,
+        "points": 0,
+        "trick": [
+          {
+            "player": 3,
+            "card": 31
+          },
+          {
+            "player": 0,
+            "card": 28
+          },
+          {
+            "player": 1,
+            "card": 22
+          },
+          {
+            "player": 2,
+            "card": 34
+          }
+        ]
+      },
+      {
+        "winner": 1,
+        "points": 0,
+        "trick": [
+          {
+            "player": 2,
+            "card": 17
+          },
+          {
+            "player": 3,
+            "card": 18
+          },
+          {
+            "player": 0,
+            "card": 13
+          },
+          {
+            "player": 1,
+            "card": 24
+          }
+        ]
+      },
+      {
+        "winner": 1,
+        "points": 14,
+        "trick": [
+          {
+            "player": 1,
+            "card": 16
+          },
+          {
+            "player": 2,
+            "card": 50
+          },
+          {
+            "player": 3,
+            "card": 15
+          },
+          {
+            "player": 0,
+            "card": 36
+          }
+        ]
+      },
+      {
+        "winner": 1,
+        "points": 1,
+        "trick": [
+          {
+            "player": 1,
+            "card": 10
+          },
+          {
+            "player": 2,
+            "card": 4
+          },
+          {
+            "player": 3,
+            "card": 51
+          },
+          {
+            "player": 0,
+            "card": 37
+          }
+        ]
+      }
+    ],
+    "voids": [
+      [
+        1,
+        0
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [
+        0
+      ]
+    ],
+    "played": [
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "randomSeed": 29076,
+  "recordedCard": 47,
+  "oldScores": [
+    26,
+    0,
+    26,
+    26
+  ],
+  "legalDefensiveScores": [
+    0,
+    22,
+    0,
+    4
+  ],
+  "legalDefensiveTaken": [
+    0,
+    22,
+    0,
+    4
+  ],
+  "legalContinuation": [
+    {
+      "player": 1,
+      "card": 47
+    },
+    {
+      "player": 2,
+      "card": 39
+    },
+    {
+      "player": 3,
+      "card": 41
+    },
+    {
+      "player": 0,
+      "card": 43
+    },
+    {
+      "player": 1,
+      "card": 48
+    },
+    {
+      "player": 2,
+      "card": 42
+    },
+    {
+      "player": 3,
+      "card": 40
+    },
+    {
+      "player": 0,
+      "card": 35
+    },
+    {
+      "player": 1,
+      "card": 45
+    },
+    {
+      "player": 2,
+      "card": 12
+    },
+    {
+      "player": 3,
+      "card": 46
+    },
+    {
+      "player": 0,
+      "card": 30
+    },
+    {
+      "player": 3,
+      "card": 25
+    },
+    {
+      "player": 0,
+      "card": 29
+    },
+    {
+      "player": 1,
+      "card": 49
+    },
+    {
+      "player": 2,
+      "card": 32
+    },
+    {
+      "player": 3,
+      "card": 19
+    },
+    {
+      "player": 0,
+      "card": 27
+    },
+    {
+      "player": 1,
+      "card": 44
+    },
+    {
+      "player": 2,
+      "card": 3
+    }
+  ],
+  "priorHistoryReplayedLegally": true,
+  "continuationReplayedLegally": true
+}

@@ -4,6 +4,8 @@ Die Weitergabe-, Durchmarsch-, Rang-, Dame-Hinweis- und Spielendeüberarbeitung 
 
 Das folgende Protokoll wurde vor der Datensammlung festgelegt; Partiezahlen und Kriterien blieben unverändert. Die 5-ms-Ergebnisse des früheren Standes gelten hierfür nicht. Die normalen vollständigen Benchmarkpartien werden mit unveränderter Ausführung der ursprünglichen KI gespielt, nicht mit dem beschleunigten Erkundungshelfer.
 
+Dieses Protokoll betrifft ausschließlich den eingefrorenen Stand `85331e2`. Die anschließend ergänzte Weitergabe-Erweiterung hat eine [eigene gezielte Auswertung](analysis/2026-10-31/README.md); die früheren Zeitbudget-Ergebnisse werden ihr nicht als neuer allgemeiner Stärkenachweis zugeschrieben.
+
 ## Vorab festgelegte Serien
 
 | Budget je Entscheidung | Partien insgesamt | Aufteilung                    |

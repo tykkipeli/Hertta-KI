@@ -1,0 +1,149 @@
+{
+  "purpose": "Hashes of the full local audit traces; compact summaries and public observations are committed separately",
+  "traces": [
+    {
+      "file": "artifacts/decision-audit-20261031/worker-0/meta.json",
+      "bytes": 2187,
+      "sha256": "bc221552da47be1d659e38835f864df6ee309213c85bb49fb0ce994fbd3c05fa"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-0/result.json",
+      "bytes": 16780,
+      "sha256": "af4469af68c3bab82ee97cb618e9ec25ee36fc1348dbb5399769aed11269c523"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-0/rounds.jsonl",
+      "bytes": 22186407,
+      "sha256": "3de4690a7c6acfeb45c520b421ef4201f2be22e48b47daa886a91ff4c859e9dc"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-1/meta.json",
+      "bytes": 2187,
+      "sha256": "9fbc237d06cf1a0a4b6788792b540137e0b1ee2762895c856d5a3d0dc005404a"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-1/result.json",
+      "bytes": 16773,
+      "sha256": "fe9f8f063a89cfdd3cd3b1a60ad7dfb9e514656db4a73f81726d72b8b00629a7"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-1/rounds.jsonl",
+      "bytes": 22496319,
+      "sha256": "046368e207f34b784d082b6b8425e39011c109b1c6cc67865c3f93f5c75be1d4"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-2/meta.json",
+      "bytes": 2187,
+      "sha256": "cfb86f69b252f818935a466958f326352e0d8c011a7a322afc397138e93a483e"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-2/result.json",
+      "bytes": 16779,
+      "sha256": "c9f3b7ace9d4208b64b821d9121579c67602e267535e41eefb91ddd24a242edc"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-2/rounds.jsonl",
+      "bytes": 23193815,
+      "sha256": "23257ac3e88ad3ba436e5bba59462b78daaf01b938427721d5b617eaab4015ed"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-3/meta.json",
+      "bytes": 2187,
+      "sha256": "b70d18829670d2436e02804eab2f4a64e4c11142564250cff6e443ad43c56ad5"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-3/result.json",
+      "bytes": 16809,
+      "sha256": "5e20cbdac24c2019b63db9edd79afa89713cd4cce89c04442e9937fd94746b62"
+    },
+    {
+      "file": "artifacts/decision-audit-20261031/worker-3/rounds.jsonl",
+      "bytes": 22455536,
+      "sha256": "426cf54a6c8c764e597373fd9c7676d664cea3fb322e0d93f9afa17c80386e51"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-0/meta.json",
+      "bytes": 2188,
+      "sha256": "009102ee286ead4438016bde4daf31caef54acfaf704bb2f7c8a918b18aabb01"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-0/result.json",
+      "bytes": 9599,
+      "sha256": "24798f5ac4b4652150e0f3f3d3476fd00c0bf10bf333b0728f48c8273508be4a"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-0/rounds.jsonl",
+      "bytes": 11726673,
+      "sha256": "d02d947bbac8ce4d0a620bdff8df77b7615e6eb4780a557316664c4861e8279e"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-1/meta.json",
+      "bytes": 2188,
+      "sha256": "35b7ce6c2027e272c75deaa3b50c2ea749da20aefa070fc328d75b9e8d42d9c5"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-1/result.json",
+      "bytes": 9597,
+      "sha256": "d97df0196fb9c16c3f524fe79ed471ab4ffd3cad40f1e15640886082171247ae"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-1/rounds.jsonl",
+      "bytes": 11954720,
+      "sha256": "e6b4c5fa7cb25849edc9291b45ef3a1d4bd9ab9fb0fdeab88520eab6f57e59c1"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-2/meta.json",
+      "bytes": 2188,
+      "sha256": "62ca14f694f968d6c19e362a7182be418bd1dba0b8e817661b540e083fcc03d3"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-2/result.json",
+      "bytes": 9586,
+      "sha256": "dcd01e8b5233587293d72616560d59e2c2b652a725bb698bfab6c27e44cbc78c"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-2/rounds.jsonl",
+      "bytes": 12893938,
+      "sha256": "585edfc290f3575a895dc3cd77c9c865d77e3b237634b187e1919af431844ecf"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-3/meta.json",
+      "bytes": 2188,
+      "sha256": "1d3d20fece59042d1f68356a20bae0d377118f2d491c9438bb82d96495ee0a01"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-3/result.json",
+      "bytes": 9603,
+      "sha256": "0751bb91b9b8e87e67a12337aa7383adbccbc35dffe9ab10110f4cac5e9fa7f3"
+    },
+    {
+      "file": "artifacts/decision-self-audit-20261031/worker-3/rounds.jsonl",
+      "bytes": 12035394,
+      "sha256": "81f0e1ccff0c30abd96673d6f863234c9f1405d286b417ff386cf03766ed44c9"
+    }
+  ],
+  "baseline": {
+    "createdAt": "2026-10-31T11:24:14.454Z",
+    "purpose": "Exploratory decision analysis; not strength confirmation",
+    "hashes": {
+      "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+      "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+      "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+      "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+      "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+      "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+      "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+      "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+      "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+      "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+      "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+      "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+      "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+      "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+      "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3"
+    },
+    "diagnosticFile": "src/agent-diagnostic.js",
+    "diagnosticSha256": "67c89d14f049ad34b762013a0631d4237f80387ba7d3a56f2992b95e4c515b74"
+  }
+}
