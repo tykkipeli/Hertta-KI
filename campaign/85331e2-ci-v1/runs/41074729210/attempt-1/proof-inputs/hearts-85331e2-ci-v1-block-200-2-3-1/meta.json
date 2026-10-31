@@ -1,0 +1,17 @@
+{
+  "campaign": "85331e2-ci-v1",
+  "ms": 200,
+  "worker": 2,
+  "block": 3,
+  "seed": 22466617,
+  "slot": "200-2-3",
+  "attempt": 1,
+  "runId": "41074729210",
+  "restoreOutcome": "success",
+  "workflowCommit": "74702fceaba54591edb347dd6ae754afa3e83bea",
+  "driverSha": "53461514d766b5f66315ddd84050012327cbde2753d0781932b9dd0b236fb5f9",
+  "pipelineSha": "dd8b9c9d31ef81179a7e6bb2bcb6f4cf6d9826fb3197483b8e5892e597049d51",
+  "node": "v24.22.1",
+  "createdAt": "2026-10-30T16:51:14.011Z",
+  "reference": "Unmodified ai-v1; original observation; equal per-move budgets; minimum 16 worlds; no reference acceleration"
+}
