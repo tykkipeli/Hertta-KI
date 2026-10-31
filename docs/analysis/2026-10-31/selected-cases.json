@@ -1,0 +1,1759 @@
+[
+  {
+    "id": "worker-1/9/9/32",
+    "kind": "optimistic-moon-failed",
+    "severity": 1,
+    "explanation": "High simulated moon probability followed by a failed moon; calibration finding, not proof of a wrong move.",
+    "source": "artifacts/decision-audit-20261031/worker-1/rounds.jsonl",
+    "game": 9,
+    "round": 9,
+    "move": 32,
+    "seat": 1,
+    "hand": [
+      "7♥",
+      "8♥",
+      "T♥",
+      "J♥",
+      "Q♥"
+    ],
+    "playedCard": "T♥",
+    "openingMoonPotential": 0,
+    "actualTaken": [
+      3,
+      23,
+      0,
+      0
+    ],
+    "actualScores": [
+      3,
+      23,
+      0,
+      0
+    ],
+    "observation": {
+      "received": {
+        "from": 2,
+        "cards": [
+          49,
+          24,
+          45
+        ]
+      },
+      "totals": [
+        89,
+        58,
+        43,
+        44
+      ],
+      "player": 1,
+      "hand": [
+        44,
+        45,
+        47,
+        48,
+        49
+      ],
+      "counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "turn": 1,
+      "trick": [],
+      "taken": [
+        0,
+        15,
+        0,
+        0
+      ],
+      "broken": true,
+      "completed": 8,
+      "history": [
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 0
+            },
+            {
+              "player": 3,
+              "card": 1
+            },
+            {
+              "player": 0,
+              "card": 2
+            },
+            {
+              "player": 1,
+              "card": 11
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 5
+            },
+            {
+              "player": 2,
+              "card": 9
+            },
+            {
+              "player": 3,
+              "card": 8
+            },
+            {
+              "player": 0,
+              "card": 7
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 33
+            },
+            {
+              "player": 3,
+              "card": 26
+            },
+            {
+              "player": 0,
+              "card": 38
+            },
+            {
+              "player": 1,
+              "card": 6
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 0,
+          "trick": [
+            {
+              "player": 0,
+              "card": 20
+            },
+            {
+              "player": 1,
+              "card": 14
+            },
+            {
+              "player": 2,
+              "card": 21
+            },
+            {
+              "player": 3,
+              "card": 23
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 31
+            },
+            {
+              "player": 0,
+              "card": 28
+            },
+            {
+              "player": 1,
+              "card": 22
+            },
+            {
+              "player": 2,
+              "card": 34
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 17
+            },
+            {
+              "player": 3,
+              "card": 18
+            },
+            {
+              "player": 0,
+              "card": 13
+            },
+            {
+              "player": 1,
+              "card": 24
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 14,
+          "trick": [
+            {
+              "player": 1,
+              "card": 16
+            },
+            {
+              "player": 2,
+              "card": 50
+            },
+            {
+              "player": 3,
+              "card": 15
+            },
+            {
+              "player": 0,
+              "card": 36
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 1,
+          "trick": [
+            {
+              "player": 1,
+              "card": 10
+            },
+            {
+              "player": 2,
+              "card": 4
+            },
+            {
+              "player": 3,
+              "card": 51
+            },
+            {
+              "player": 0,
+              "card": 37
+            }
+          ]
+        }
+      ],
+      "voids": [
+        [
+          1,
+          0
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "known": {
+        "0": [
+          36,
+          37,
+          38
+        ]
+      }
+    },
+    "result": {
+      "card": 47,
+      "samples": 64,
+      "simulations": 320,
+      "relativeScore": 26,
+      "objective": "late-match-win-estimate",
+      "estimatedWinProbability": 1,
+      "beliefMode": "uniform",
+      "analysis": {
+        "moonPlan": false,
+        "openingMoonPotential": 0
+      },
+      "estimates": [
+        {
+          "card": 44,
+          "samples": 64,
+          "relativeScore": 21.25,
+          "estimatedWinProbability": 0.8924562805577091,
+          "analysis": {
+            "ownPoints": 2.140625,
+            "moon": 0.890625,
+            "opponentMoon": 0,
+            "atLeast13": 0.109375,
+            "zero": 0.890625
+          },
+          "stderr": 0.038361394659319335
+        },
+        {
+          "card": 45,
+          "samples": 64,
+          "relativeScore": 21.25,
+          "estimatedWinProbability": 0.8924562805577091,
+          "analysis": {
+            "ownPoints": 2.140625,
+            "moon": 0.890625,
+            "opponentMoon": 0,
+            "atLeast13": 0.109375,
+            "zero": 0.890625
+          },
+          "stderr": 0.038361394659319335
+        },
+        {
+          "card": 47,
+          "samples": 64,
+          "relativeScore": 26,
+          "estimatedWinProbability": 1,
+          "analysis": {
+            "ownPoints": 0,
+            "moon": 1,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 1
+          },
+          "stderr": 0
+        },
+        {
+          "card": 48,
+          "samples": 64,
+          "relativeScore": 26,
+          "estimatedWinProbability": 1,
+          "analysis": {
+            "ownPoints": 0,
+            "moon": 1,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 1
+          },
+          "stderr": 0
+        },
+        {
+          "card": 49,
+          "samples": 64,
+          "relativeScore": 26,
+          "estimatedWinProbability": 1,
+          "analysis": {
+            "ownPoints": 0,
+            "moon": 1,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 1
+          },
+          "stderr": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "worker-0/7/0/31",
+    "kind": "avoidable-last-seat-points",
+    "severity": 14,
+    "explanation": "Takes a known penalty trick despite a legal losing card; moon or match-win objectives can justify this.",
+    "source": "artifacts/decision-audit-20261031/worker-0/rounds.jsonl",
+    "game": 7,
+    "round": 0,
+    "move": 31,
+    "seat": 3,
+    "hand": [
+      "J♦",
+      "Q♦",
+      "3♠",
+      "4♠",
+      "5♠",
+      "Q♠"
+    ],
+    "playedCard": "Q♠",
+    "openingMoonPotential": 0,
+    "actualTaken": [
+      0,
+      0,
+      0,
+      26
+    ],
+    "actualScores": [
+      26,
+      26,
+      26,
+      0
+    ],
+    "observation": {
+      "received": {
+        "from": 2,
+        "cards": [
+          36,
+          37,
+          20
+        ]
+      },
+      "totals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "player": 3,
+      "hand": [
+        22,
+        23,
+        27,
+        28,
+        29,
+        36
+      ],
+      "counts": [
+        5,
+        5,
+        5,
+        6
+      ],
+      "turn": 3,
+      "trick": [
+        {
+          "player": 0,
+          "card": 32
+        },
+        {
+          "player": 1,
+          "card": 49
+        },
+        {
+          "player": 2,
+          "card": 31
+        }
+      ],
+      "taken": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "broken": true,
+      "completed": 7,
+      "history": [
+        {
+          "winner": 0,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 0
+            },
+            {
+              "player": 3,
+              "card": 3
+            },
+            {
+              "player": 0,
+              "card": 5
+            },
+            {
+              "player": 1,
+              "card": 4
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 0,
+          "trick": [
+            {
+              "player": 0,
+              "card": 30
+            },
+            {
+              "player": 1,
+              "card": 34
+            },
+            {
+              "player": 2,
+              "card": 35
+            },
+            {
+              "player": 3,
+              "card": 37
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 19
+            },
+            {
+              "player": 0,
+              "card": 13
+            },
+            {
+              "player": 1,
+              "card": 18
+            },
+            {
+              "player": 2,
+              "card": 24
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 1,
+          "trick": [
+            {
+              "player": 2,
+              "card": 14
+            },
+            {
+              "player": 3,
+              "card": 20
+            },
+            {
+              "player": 0,
+              "card": 17
+            },
+            {
+              "player": 1,
+              "card": 51
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 1,
+          "trick": [
+            {
+              "player": 3,
+              "card": 6
+            },
+            {
+              "player": 0,
+              "card": 1
+            },
+            {
+              "player": 1,
+              "card": 2
+            },
+            {
+              "player": 2,
+              "card": 44
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 16
+            },
+            {
+              "player": 0,
+              "card": 15
+            },
+            {
+              "player": 1,
+              "card": 7
+            },
+            {
+              "player": 2,
+              "card": 33
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 21
+            },
+            {
+              "player": 0,
+              "card": 25
+            },
+            {
+              "player": 1,
+              "card": 9
+            },
+            {
+              "player": 2,
+              "card": 38
+            }
+          ]
+        }
+      ],
+      "voids": [
+        [],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        []
+      ],
+      "known": {
+        "0": [
+          12,
+          25,
+          50
+        ]
+      }
+    },
+    "result": {
+      "card": 36,
+      "samples": 64,
+      "simulations": 256,
+      "relativeScore": 26,
+      "objective": "round-penalties",
+      "beliefMode": "uniform",
+      "analysis": {
+        "moonPlan": false,
+        "openingMoonPotential": 0
+      },
+      "estimates": [
+        {
+          "card": 27,
+          "samples": 64,
+          "relativeScore": -2.041666666666667,
+          "analysis": {
+            "ownPoints": 8.03125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.21875,
+            "zero": 0
+          },
+          "stderr": 1.5408130378823817
+        },
+        {
+          "card": 28,
+          "samples": 64,
+          "relativeScore": -2.041666666666667,
+          "analysis": {
+            "ownPoints": 8.03125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.21875,
+            "zero": 0
+          },
+          "stderr": 1.5408130378823817
+        },
+        {
+          "card": 29,
+          "samples": 64,
+          "relativeScore": -2.041666666666667,
+          "analysis": {
+            "ownPoints": 8.03125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.21875,
+            "zero": 0
+          },
+          "stderr": 1.5408130378823817
+        },
+        {
+          "card": 36,
+          "samples": 64,
+          "relativeScore": 26,
+          "analysis": {
+            "ownPoints": 0,
+            "moon": 1,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 1
+          },
+          "stderr": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "worker-0/53/9/27",
+    "kind": "opening-moon-plan-abandoned",
+    "severity": 0,
+    "explanation": "A penalty discard gives up the opening moon plan; could be a rational retreat.",
+    "source": "artifacts/decision-audit-20261031/worker-0/rounds.jsonl",
+    "game": 53,
+    "round": 9,
+    "move": 27,
+    "seat": 1,
+    "hand": [
+      "7♥",
+      "9♥",
+      "T♥",
+      "J♥",
+      "Q♥",
+      "K♥",
+      "A♥"
+    ],
+    "playedCard": "9♥",
+    "openingMoonPotential": 0.9750000000000001,
+    "actualTaken": [
+      2,
+      20,
+      3,
+      1
+    ],
+    "actualScores": [
+      2,
+      20,
+      3,
+      1
+    ],
+    "observation": {
+      "received": {
+        "from": 2,
+        "cards": [
+          50,
+          47,
+          46
+        ]
+      },
+      "totals": [
+        28,
+        62,
+        62,
+        82
+      ],
+      "player": 1,
+      "hand": [
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "counts": [
+        6,
+        7,
+        6,
+        6
+      ],
+      "turn": 1,
+      "trick": [
+        {
+          "player": 2,
+          "card": 20
+        },
+        {
+          "player": 3,
+          "card": 11
+        },
+        {
+          "player": 0,
+          "card": 19
+        }
+      ],
+      "taken": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "broken": true,
+      "completed": 6,
+      "history": [
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 0
+            },
+            {
+              "player": 0,
+              "card": 6
+            },
+            {
+              "player": 1,
+              "card": 37
+            },
+            {
+              "player": 2,
+              "card": 12
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 33
+            },
+            {
+              "player": 3,
+              "card": 27
+            },
+            {
+              "player": 0,
+              "card": 34
+            },
+            {
+              "player": 1,
+              "card": 38
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 15
+            },
+            {
+              "player": 2,
+              "card": 18
+            },
+            {
+              "player": 3,
+              "card": 14
+            },
+            {
+              "player": 0,
+              "card": 23
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 0,
+              "card": 28
+            },
+            {
+              "player": 1,
+              "card": 30
+            },
+            {
+              "player": 2,
+              "card": 35
+            },
+            {
+              "player": 3,
+              "card": 31
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 1,
+          "trick": [
+            {
+              "player": 2,
+              "card": 29
+            },
+            {
+              "player": 3,
+              "card": 39
+            },
+            {
+              "player": 0,
+              "card": 26
+            },
+            {
+              "player": 1,
+              "card": 32
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 16
+            },
+            {
+              "player": 2,
+              "card": 21
+            },
+            {
+              "player": 3,
+              "card": 13
+            },
+            {
+              "player": 0,
+              "card": 17
+            }
+          ]
+        }
+      ],
+      "voids": [
+        [],
+        [
+          0
+        ],
+        [],
+        [
+          2,
+          1
+        ]
+      ],
+      "known": {
+        "0": [
+          8,
+          10,
+          36
+        ]
+      }
+    },
+    "result": {
+      "card": 46,
+      "samples": 64,
+      "simulations": 448,
+      "relativeScore": -17.604166666666664,
+      "objective": "late-match-win-estimate",
+      "estimatedWinProbability": 0.02934770414309023,
+      "beliefMode": "uniform",
+      "analysis": {
+        "moonPlan": true,
+        "openingMoonPotential": 0.9750000000000001
+      },
+      "estimates": [
+        {
+          "card": 44,
+          "samples": 64,
+          "relativeScore": -20.583333333333336,
+          "estimatedWinProbability": 0.021041683335842446,
+          "analysis": {
+            "ownPoints": 21.9375,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.921875,
+            "zero": 0
+          },
+          "stderr": 0.006880522838972943
+        },
+        {
+          "card": 46,
+          "samples": 64,
+          "relativeScore": -17.604166666666664,
+          "estimatedWinProbability": 0.02934770414309023,
+          "analysis": {
+            "ownPoints": 19.703125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.84375,
+            "zero": 0
+          },
+          "stderr": 0.00790366187674084
+        },
+        {
+          "card": 47,
+          "samples": 64,
+          "relativeScore": -17.604166666666664,
+          "estimatedWinProbability": 0.02934770414309023,
+          "analysis": {
+            "ownPoints": 19.703125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.84375,
+            "zero": 0
+          },
+          "stderr": 0.00790366187674084
+        },
+        {
+          "card": 48,
+          "samples": 64,
+          "relativeScore": -17.604166666666664,
+          "estimatedWinProbability": 0.02934770414309023,
+          "analysis": {
+            "ownPoints": 19.703125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.84375,
+            "zero": 0
+          },
+          "stderr": 0.00790366187674084
+        },
+        {
+          "card": 49,
+          "samples": 64,
+          "relativeScore": -17.604166666666664,
+          "estimatedWinProbability": 0.02934770414309023,
+          "analysis": {
+            "ownPoints": 19.703125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.84375,
+            "zero": 0
+          },
+          "stderr": 0.00790366187674084
+        },
+        {
+          "card": 50,
+          "samples": 64,
+          "relativeScore": -17.604166666666664,
+          "estimatedWinProbability": 0.02934770414309023,
+          "analysis": {
+            "ownPoints": 19.703125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.84375,
+            "zero": 0
+          },
+          "stderr": 0.00790366187674084
+        },
+        {
+          "card": 51,
+          "samples": 64,
+          "relativeScore": -17.604166666666664,
+          "estimatedWinProbability": 0.02934770414309023,
+          "analysis": {
+            "ownPoints": 19.703125,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.84375,
+            "zero": 0
+          },
+          "stderr": 0.00790366187674084
+        }
+      ]
+    }
+  },
+  {
+    "id": "worker-0/79/1/38",
+    "kind": "safe-queen-discard-declined",
+    "severity": 6.3333333333333375,
+    "explanation": "Early match, own/opponent moons already impossible, legal queen dump declined; inspect alternatives rather than assume an error.",
+    "source": "artifacts/decision-audit-20261031/worker-0/rounds.jsonl",
+    "game": 79,
+    "round": 1,
+    "move": 38,
+    "seat": 3,
+    "hand": [
+      "5♦",
+      "7♠",
+      "Q♠",
+      "Q♥"
+    ],
+    "playedCard": "Q♥",
+    "openingMoonPotential": 0,
+    "actualTaken": [
+      0,
+      1,
+      25,
+      0
+    ],
+    "actualScores": [
+      0,
+      1,
+      25,
+      0
+    ],
+    "observation": {
+      "received": {
+        "from": 0,
+        "cards": [
+          36,
+          49,
+          48
+        ]
+      },
+      "totals": [
+        2,
+        2,
+        14,
+        8
+      ],
+      "player": 3,
+      "hand": [
+        16,
+        31,
+        36,
+        49
+      ],
+      "counts": [
+        4,
+        3,
+        3,
+        4
+      ],
+      "turn": 3,
+      "trick": [
+        {
+          "player": 1,
+          "card": 4
+        },
+        {
+          "player": 2,
+          "card": 9
+        }
+      ],
+      "taken": [
+        0,
+        1,
+        4,
+        0
+      ],
+      "broken": true,
+      "completed": 9,
+      "history": [
+        {
+          "winner": 3,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 0
+            },
+            {
+              "player": 3,
+              "card": 8
+            },
+            {
+              "player": 0,
+              "card": 1
+            },
+            {
+              "player": 1,
+              "card": 6
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 37
+            },
+            {
+              "player": 0,
+              "card": 35
+            },
+            {
+              "player": 1,
+              "card": 32
+            },
+            {
+              "player": 2,
+              "card": 28
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 3
+            },
+            {
+              "player": 0,
+              "card": 33
+            },
+            {
+              "player": 1,
+              "card": 11
+            },
+            {
+              "player": 2,
+              "card": 10
+            }
+          ]
+        },
+        {
+          "winner": 3,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 27
+            },
+            {
+              "player": 2,
+              "card": 26
+            },
+            {
+              "player": 3,
+              "card": 38
+            },
+            {
+              "player": 0,
+              "card": 34
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 1,
+          "trick": [
+            {
+              "player": 3,
+              "card": 29
+            },
+            {
+              "player": 0,
+              "card": 39
+            },
+            {
+              "player": 1,
+              "card": 30
+            },
+            {
+              "player": 2,
+              "card": 22
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 13
+            },
+            {
+              "player": 2,
+              "card": 21
+            },
+            {
+              "player": 3,
+              "card": 20
+            },
+            {
+              "player": 0,
+              "card": 19
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 24
+            },
+            {
+              "player": 3,
+              "card": 14
+            },
+            {
+              "player": 0,
+              "card": 18
+            },
+            {
+              "player": 1,
+              "card": 17
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 4,
+          "trick": [
+            {
+              "player": 2,
+              "card": 50
+            },
+            {
+              "player": 3,
+              "card": 48
+            },
+            {
+              "player": 0,
+              "card": 45
+            },
+            {
+              "player": 1,
+              "card": 40
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 7
+            },
+            {
+              "player": 3,
+              "card": 2
+            },
+            {
+              "player": 0,
+              "card": 15
+            },
+            {
+              "player": 1,
+              "card": 12
+            }
+          ]
+        }
+      ],
+      "voids": [
+        [
+          0,
+          2
+        ],
+        [],
+        [
+          2
+        ],
+        []
+      ],
+      "known": {
+        "2": [
+          23,
+          44,
+          50
+        ]
+      }
+    },
+    "result": {
+      "card": 49,
+      "samples": 64,
+      "simulations": 256,
+      "relativeScore": 8.666666666666671,
+      "objective": "round-penalties",
+      "beliefMode": "uniform",
+      "analysis": {
+        "moonPlan": false,
+        "openingMoonPotential": 0
+      },
+      "estimates": [
+        {
+          "card": 16,
+          "samples": 64,
+          "relativeScore": -2.083333333333332,
+          "analysis": {
+            "ownPoints": 8.0625,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.1875,
+            "zero": 0.09375
+          },
+          "stderr": 0.9982080298381358
+        },
+        {
+          "card": 31,
+          "samples": 64,
+          "relativeScore": -7.666666666666674,
+          "analysis": {
+            "ownPoints": 12.25,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0.5625,
+            "zero": 0.046875
+          },
+          "stderr": 1.2829003598617201
+        },
+        {
+          "card": 36,
+          "samples": 64,
+          "relativeScore": 2.3333333333333335,
+          "analysis": {
+            "ownPoints": 4.75,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 0.09375
+          },
+          "stderr": 0.297559517855952
+        },
+        {
+          "card": 49,
+          "samples": 64,
+          "relativeScore": 8.666666666666671,
+          "analysis": {
+            "ownPoints": 0,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 1
+          },
+          "stderr": 1.4901161193847656e-8
+        }
+      ]
+    }
+  },
+  {
+    "id": "worker-0/11/3/39",
+    "kind": "moon-stop-declined",
+    "severity": 3,
+    "explanation": "Could stop an opponent's sole-point moon now; compare its future threat and match score.",
+    "source": "artifacts/decision-audit-20261031/worker-0/rounds.jsonl",
+    "game": 11,
+    "round": 3,
+    "move": 39,
+    "seat": 3,
+    "hand": [
+      "5♥",
+      "6♥",
+      "J♥",
+      "K♥"
+    ],
+    "playedCard": "5♥",
+    "openingMoonPotential": 0,
+    "actualTaken": [
+      23,
+      0,
+      0,
+      3
+    ],
+    "actualScores": [
+      23,
+      0,
+      0,
+      3
+    ],
+    "observation": {
+      "received": null,
+      "totals": [
+        32,
+        23,
+        16,
+        7
+      ],
+      "player": 3,
+      "hand": [
+        42,
+        43,
+        48,
+        50
+      ],
+      "counts": [
+        3,
+        3,
+        3,
+        4
+      ],
+      "turn": 3,
+      "trick": [
+        {
+          "player": 0,
+          "card": 45
+        },
+        {
+          "player": 1,
+          "card": 39
+        },
+        {
+          "player": 2,
+          "card": 40
+        }
+      ],
+      "taken": [
+        18,
+        0,
+        0,
+        0
+      ],
+      "broken": true,
+      "completed": 9,
+      "history": [
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 3,
+              "card": 0
+            },
+            {
+              "player": 0,
+              "card": 6
+            },
+            {
+              "player": 1,
+              "card": 12
+            },
+            {
+              "player": 2,
+              "card": 10
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 30
+            },
+            {
+              "player": 2,
+              "card": 32
+            },
+            {
+              "player": 3,
+              "card": 34
+            },
+            {
+              "player": 0,
+              "card": 38
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 0,
+              "card": 20
+            },
+            {
+              "player": 1,
+              "card": 21
+            },
+            {
+              "player": 2,
+              "card": 23
+            },
+            {
+              "player": 3,
+              "card": 22
+            }
+          ]
+        },
+        {
+          "winner": 1,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 35
+            },
+            {
+              "player": 3,
+              "card": 25
+            },
+            {
+              "player": 0,
+              "card": 33
+            },
+            {
+              "player": 1,
+              "card": 37
+            }
+          ]
+        },
+        {
+          "winner": 2,
+          "points": 0,
+          "trick": [
+            {
+              "player": 1,
+              "card": 2
+            },
+            {
+              "player": 2,
+              "card": 11
+            },
+            {
+              "player": 3,
+              "card": 5
+            },
+            {
+              "player": 0,
+              "card": 7
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 0,
+          "trick": [
+            {
+              "player": 2,
+              "card": 17
+            },
+            {
+              "player": 3,
+              "card": 13
+            },
+            {
+              "player": 0,
+              "card": 24
+            },
+            {
+              "player": 1,
+              "card": 19
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 14,
+          "trick": [
+            {
+              "player": 0,
+              "card": 36
+            },
+            {
+              "player": 1,
+              "card": 27
+            },
+            {
+              "player": 2,
+              "card": 51
+            },
+            {
+              "player": 3,
+              "card": 3
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 2,
+          "trick": [
+            {
+              "player": 0,
+              "card": 31
+            },
+            {
+              "player": 1,
+              "card": 26
+            },
+            {
+              "player": 2,
+              "card": 49
+            },
+            {
+              "player": 3,
+              "card": 41
+            }
+          ]
+        },
+        {
+          "winner": 0,
+          "points": 2,
+          "trick": [
+            {
+              "player": 0,
+              "card": 28
+            },
+            {
+              "player": 1,
+              "card": 44
+            },
+            {
+              "player": 2,
+              "card": 4
+            },
+            {
+              "player": 3,
+              "card": 47
+            }
+          ]
+        }
+      ],
+      "voids": [
+        [],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "known": {}
+    },
+    "result": {
+      "card": 42,
+      "samples": 64,
+      "simulations": 256,
+      "relativeScore": 3.8333333333333317,
+      "objective": "round-penalties",
+      "beliefMode": "uniform",
+      "analysis": {
+        "moonPlan": false,
+        "openingMoonPotential": 0
+      },
+      "estimates": [
+        {
+          "card": 42,
+          "samples": 64,
+          "relativeScore": 3.8333333333333317,
+          "analysis": {
+            "ownPoints": 6.875,
+            "moon": 0,
+            "opponentMoon": 0.25,
+            "atLeast13": 0.25,
+            "zero": 0.65625
+          },
+          "stderr": 0.922095665680448
+        },
+        {
+          "card": 43,
+          "samples": 64,
+          "relativeScore": 3.8333333333333317,
+          "analysis": {
+            "ownPoints": 6.875,
+            "moon": 0,
+            "opponentMoon": 0.25,
+            "atLeast13": 0.25,
+            "zero": 0.65625
+          },
+          "stderr": 0.922095665680448
+        },
+        {
+          "card": 48,
+          "samples": 64,
+          "relativeScore": 3.333333333333336,
+          "analysis": {
+            "ownPoints": 4,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 0
+          },
+          "stderr": 0
+        },
+        {
+          "card": 50,
+          "samples": 64,
+          "relativeScore": 3.333333333333336,
+          "analysis": {
+            "ownPoints": 4,
+            "moon": 0,
+            "opponentMoon": 0,
+            "atLeast13": 0,
+            "zero": 0
+          },
+          "stderr": 0
+        }
+      ]
+    }
+  }
+]

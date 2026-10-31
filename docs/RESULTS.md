@@ -1,19 +1,31 @@
 # Vergleich mit der ursprünglichen KI
 
-## Aktueller Stand der Überarbeitung
+## Neue Weitergabe-Erweiterung aus der Spielanalyse
 
-Die aktuelle Weitergabe-, Durchmarsch-, Dame-Hinweis- und Endspielüberarbeitung (**KI-Quellstand `85331e2`**) hat den vorab festgelegten 200-ms-Test bestanden. In **640 vollständigen Partien** gegen drei unveränderte ursprüngliche KIs beträgt ihr Sieganteil **38,52 %**; das 95-%-Block-Bootstrapintervall über **160 vollständige Viererblöcke** liegt bei **34,77–42,34 %**, vollständig über dem 25-%-Vergleichswert bei gleicher Spielstärke. Alle Spieler erhielten **200 ms je Entscheidung und mindestens 16 Stichproben**.
+Eine Analyse von 480 vollständigen Partien hat eine übersehene Durchmarschmöglichkeit vor der Weitergabe aufgedeckt: Die KI berücksichtigt jetzt auch, ob erst die Abgabe dreier Verlustkarten eine stark kontrollierte Hand schafft. In einem getrennten gezielten Vergleich mit 40 neuen betroffenen Ausgangshänden und je 16 gepaarten verdeckten Verteilungen sinken die eigenen mittleren Rundenpunkte von 7,4922 auf 4,8859; die beobachtete Durchmarschquote steigt von 13,9063 % auf 54,2188 %. Alle vier privaten KIs erhalten jeweils 64 Stichproben. Der gepaarte Bootstrap über ganze Ausgangshände belegt einen positiven relativen Rundenwertunterschied.
+
+Dies sind 1.280 ausgespielte **Runden in betroffenen Anfangspositionen**, keine allgemeinen Partien bis 100 Punkte und kein neuer Vergleich bei gleichem Zeitbudget. Ein zusätzlicher allgemeiner Sieganteilsgewinn der neuen Erweiterung ist noch nicht belegt. Eine ebenfalls geprüfte Änderung des Gegnermodells zeigte in 640 vollständigen Vergleichspartien keinen Vorteil und wurde nicht übernommen. [Methodik, Fälle, Rohdaten und Grenzen](analysis/2026-10-31/README.md).
+
+## Bestätigter Ausgangsstand `85331e2`
+
+Die bisherige Weitergabe-, Durchmarsch-, Dame-Hinweis- und Endspielüberarbeitung (**KI-Quellstand `85331e2`**, vor der neuen Weitergabe-Erweiterung) hat den vorab festgelegten 200-ms-Test bestanden. In **640 vollständigen Partien** gegen drei unveränderte ursprüngliche KIs beträgt ihr Sieganteil **38,52 %**; das 95-%-Block-Bootstrapintervall über **160 vollständige Viererblöcke** liegt bei **34,77–42,34 %**, vollständig über dem 25-%-Vergleichswert bei gleicher Spielstärke. Alle Spieler erhielten **200 ms je Entscheidung und mindestens 16 Stichproben**.
 
 Die Serie enthält 6.640 gespielte Runden. Die mittlere gemessene Entscheidungsdauer einschließlich sofortiger Züge beträgt **165,99 ms** für den Kandidaten und **164,65 ms** für die Referenz. Quell-Snapshot, ursprüngliche Lauf-IDs, Seeds, vollständige Endstände und Summen wurden geprüft. Nach dem Umgebungsausfall wurden 378 abgeschlossene Partien fortgesetzt; der eingefrorene KI-Quellstand blieb erhalten. [Rohdaten, Quellmanifest und Auswertung](benchmarks/strategy-85331e2/README.md).
 
 Eine **unabhängige Bestätigung mit 640 weiteren vollständigen Partien** und eigenen Karten-Seeds erreicht bei denselben 200 ms **36,56 % Sieganteil**, 95-%-Blockintervall **33,13–40,08 %**. Auch diese Serie überschreitet die vorab festgelegte 25-%-Untergrenze. Sie lief auf getrennten GitHub-Actions-Runnern mit genau denselben eingefrorenen KI- und Referenzquellen. Sämtliche 160 Viererblöcke, Quell- und Treiber-Hashes, Lauf-IDs, Seeds, Endstände und Metadaten wurden geprüft. [Rohdaten und reproduzierbare Auswertung](benchmarks/strategy-85331e2-ci/README.md).
 
-| Abgeschlossene 200-ms-Serie | Partien | Sieganteil | 95-%-Blockintervall |
-| --- | ---: | ---: | --- |
-| Ursprüngliche Bestätigung | 640 | 38,52 % | 34,77–42,34 % |
-| Unabhängige CI-Bestätigung | 640 | 36,56 % | 33,13–40,08 % |
+Auch die **beiden vollständigen Serien bei 1.200 ms** belegen einen Vorteil: Die ursprüngliche Bestätigung erreicht **36,25 %** in 320 Partien (95-%-Intervall **31,09–41,56 %**), die unabhängige CI-Bestätigung **35,78 %** in weiteren 320 Partien (**31,56–40,00 %**). Beide Untergrenzen überschreiten 25 %. Alle vier Spieler erhalten wiederum dasselbe vorgegebene Budget und mindestens 16 Stichproben.
 
-Die Serien werden getrennt ausgewertet und nicht gepoolt. Die **320-Partien-Serie bei 1.200 ms läuft noch**; auch die unabhängige CI-Serie prüft dieses Budget gesondert. Die beiden abgeschlossenen 200-ms-Serien belegen einen Vorteil in diesem Testaufbau; daraus folgt noch kein Ergebnis für 1.200 ms, 5 Sekunden oder andere Gegner. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
+| Abgeschlossene Serie | Partien | Sieganteil | 95-%-Blockintervall |
+| --- | ---: | ---: | --- |
+| Ursprüngliche Bestätigung, 200 ms | 640 | 38,52 % | 34,77–42,34 % |
+| Unabhängige CI-Bestätigung, 200 ms | 640 | 36,56 % | 33,13–40,08 % |
+| Ursprüngliche Bestätigung, 1.200 ms | 320 | 36,25 % | 31,09–41,56 % |
+| Unabhängige CI-Bestätigung, 1.200 ms | 320 | 35,78 % | 31,56–40,00 % |
+
+Die ursprüngliche 1.200-ms-Serie umfasst 3.313 Runden, die unabhängige Serie 3.301 Runden. Die über alle Runden gewichteten mittleren Entscheidungsdauern einschließlich sofortiger Züge betragen **985,55 / 965,07 ms** für Kandidat / Referenz in der ursprünglichen Serie und **978,70 / 952,83 ms** in der CI-Serie. Gleiche vorgegebene Budgets bedeuten nicht identische tatsächlich verbrauchte Rechenzeit. Die [ursprünglichen Rohdaten](benchmarks/strategy-85331e2/README.md) und die [unabhängigen CI-Rohdaten](benchmarks/strategy-85331e2-ci/README.md) einschließlich Metadaten und Hashes sind vollständig erhalten; die Auswertungen wurden lokal erneut erzeugt und mit den abschließenden Berichten abgeglichen.
+
+Die Serien werden getrennt ausgewertet und nicht gepoolt. Innerhalb einer Kampagne verwenden die beiden Budgets dieselben vorab gewählten Seed-Familien; sie sind deshalb keine unabhängigen Wiederholungen voneinander. Die CI-Kampagne verwendet eigene, von der ursprünglichen Bestätigung getrennte Seeds. Alle geplanten Partien wurden abgeschlossen; es wurde nicht nach einem günstigen Zwischenstand gestoppt. Das CI-Kriterium verlangt den Vorteil bei **beiden** Budgets und ist erfüllt. Damit ist ein Vorteil gegen drei ursprüngliche Kopien bei 200 und 1.200 ms belegt. Für 5 Sekunden oder andere Gegner liegt kein Nachweis vor. [Vorab festgelegtes Prüfprotokoll](VALIDATION.md).
 
 ## Längere Vergleiche des früheren Standes
 
@@ -21,11 +33,11 @@ Die historischen 5-ms-Ergebnisse betreffen **Commit `2d28e63`**. Sie reichen als
 
 Auch die inzwischen abgeschlossene **1.200-ms-Serie mit 320 vollständigen Partien** dieses früheren Standes belegt keinen Vorteil: **24,38 % Sieganteil**, 95-%-Block-Bootstrapintervall **20,63–28,28 %**. Beide längeren Serien enthalten denselben früheren Quellstand und werden getrennt ausgewertet. [1.200-ms-Rohdaten und Auswertung](benchmarks/long-budget-v2/1200ms-summary.json).
 
-Die früheren Ergebnisse werden getrennt von der neuen 200-ms-Bestätigung aufbewahrt. Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden ebenfalls nicht als Zeitbudgetnachweis ausgegeben.
+Die früheren Ergebnisse werden getrennt von den neuen Bestätigungsserien aufbewahrt. Erkundungsläufe mit festen Stichproben oder beschleunigter, auf Verhaltensgleichheit geprüfter Referenzausführung werden ebenfalls nicht als Zeitbudgetnachweis ausgegeben.
 
 ## Historische Ergebnisse von Commit `2d28e63`
 
-Bei gleichem **5-ms-Budget** erzielte die damalige KI **34,69 % Sieganteil in 480 vollständigen Spielen** gegen drei ursprüngliche Kopien; das 95-%-Intervall beträgt **30,73–38,65 %**. Damit ist im dokumentierten Kleinbudgetvergleich ein Vorteil belegt. Das ist **kein Nachweis einer Überlegenheit bei allen Bedenkzeiten**. Insbesondere ist ein Vorteil bei den längeren GUI-Einstellungen noch nicht nachgewiesen.
+Bei gleichem **5-ms-Budget** erzielte die damalige KI **34,69 % Sieganteil in 480 vollständigen Spielen** gegen drei ursprüngliche Kopien; das 95-%-Intervall beträgt **30,73–38,65 %**. Damit ist im dokumentierten Kleinbudgetvergleich ein Vorteil belegt. Das ist **kein Nachweis einer Überlegenheit bei allen Bedenkzeiten**. Für diesen früheren Quellstand belegen die oben dokumentierten längeren Tests keinen Vorteil.
 
 ## Bestätigung mit gleichem Zeitbudget
 

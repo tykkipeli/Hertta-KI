@@ -1,0 +1,1472 @@
+{
+  "files": [
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-0/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-1/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-2/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-3/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-4/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-5/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-6/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-7/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-8/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-9/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-10/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-11/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-12/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-13/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-14/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-15/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-16/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-17/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-18/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-19/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-0/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-1/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-2/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-3/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-4/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-5/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-6/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-7/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-8/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-9/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-10/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-11/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-12/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-13/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-14/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-15/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-16/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-17/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-18/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-19/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-0/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-1/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-2/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-3/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-4/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-5/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-6/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-7/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-8/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-9/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-10/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-11/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-12/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-13/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-14/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-15/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-16/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-17/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-18/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-19/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-0/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-1/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-2/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-3/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-4/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-5/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-6/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-7/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-8/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-9/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-10/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-11/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-12/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-13/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-14/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-15/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-16/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-17/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-18/result.json",
+    "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-19/result.json"
+  ],
+  "mode": "matches-to-100",
+  "budget": {
+    "old": {
+      "milliseconds": 1200,
+      "minSamples": 16
+    },
+    "new": {
+      "milliseconds": 1200,
+      "minSamples": 16
+    }
+  },
+  "games": 320,
+  "independentDealBlocks": 80,
+  "winShares": [
+    0.3578125,
+    0.20625,
+    0.240625,
+    0.1953125
+  ],
+  "newWinShareBlockBootstrap95": [
+    0.315625,
+    0.4
+  ],
+  "meanOldWinShare": 0.21406250000000002,
+  "newMinusMeanOld": 0.14374999999999996,
+  "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
+  "runs": [
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-0/result.json",
+      "seed": 20270000,
+      "rounds": 35,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        981.1502149054926,
+        955.6845165641047
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-1/result.json",
+      "seed": 20335537,
+      "rounds": 33,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        987.4914050722673,
+        946.5062421383054
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-2/result.json",
+      "seed": 20401074,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        996.5052577435857,
+        965.7627873806724
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-3/result.json",
+      "seed": 20466611,
+      "rounds": 46,
+      "winShares": [
+        0,
+        0.25,
+        0.75,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        989.3603074448134,
+        955.9814622686704
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-4/result.json",
+      "seed": 20532148,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        963.6660086472742,
+        956.2238073527205
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-5/result.json",
+      "seed": 20597685,
+      "rounds": 35,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        989.07752191428,
+        951.3312778725284
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-6/result.json",
+      "seed": 20663222,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        972.5098904973133,
+        944.6608436147918
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-7/result.json",
+      "seed": 20728759,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        973.6789227545789,
+        948.0783024383363
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-8/result.json",
+      "seed": 20794296,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        984.6726507401725,
+        943.6637203424514
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-9/result.json",
+      "seed": 20859833,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        969.2810724370623,
+        953.2181101416089
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-10/result.json",
+      "seed": 20925370,
+      "rounds": 43,
+      "winShares": [
+        0,
+        0.5,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        966.0706996153835,
+        955.397226573049
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-11/result.json",
+      "seed": 20990907,
+      "rounds": 33,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        965.1136739184185,
+        937.1795338073035
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-12/result.json",
+      "seed": 21056444,
+      "rounds": 43,
+      "winShares": [
+        0.375,
+        0,
+        0.375,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        996.128067257605,
+        954.7650244472263
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-13/result.json",
+      "seed": 21121981,
+      "rounds": 36,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        964.1570596538444,
+        940.5222636631079
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-14/result.json",
+      "seed": 21187518,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0,
+        0.75,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        998.6627286083891,
+        946.9773217587382
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-15/result.json",
+      "seed": 21253055,
+      "rounds": 48,
+      "winShares": [
+        0.75,
+        0,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        982.7547984487139,
+        939.8591697751094
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-16/result.json",
+      "seed": 21318592,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        981.6799842908026,
+        955.471470485303
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-17/result.json",
+      "seed": 21384129,
+      "rounds": 40,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        976.2175610153873,
+        953.2037498487205
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-18/result.json",
+      "seed": 21449666,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        971.3871515996476,
+        959.535188206879
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-0-19/result.json",
+      "seed": 21515203,
+      "rounds": 35,
+      "winShares": [
+        0.25,
+        0,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        960.0561924483486,
+        946.0102499509142
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-0/result.json",
+      "seed": 21270003,
+      "rounds": 43,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        976.797226237922,
+        974.6835614889665
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-1/result.json",
+      "seed": 21335540,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        967.2783483043398,
+        962.6212909286496
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-2/result.json",
+      "seed": 21401077,
+      "rounds": 48,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        980.8248394326919,
+        957.1476180560876
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-3/result.json",
+      "seed": 21466614,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        999.2971206096124,
+        953.1980045121805
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-4/result.json",
+      "seed": 21532151,
+      "rounds": 47,
+      "winShares": [
+        0,
+        0.25,
+        0.25,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        982.0590987790536,
+        948.7271938821605
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-5/result.json",
+      "seed": 21597688,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        976.4775458786356,
+        948.4975185527043
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-6/result.json",
+      "seed": 21663225,
+      "rounds": 47,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        999.739387461545,
+        967.0656007572268
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-7/result.json",
+      "seed": 21728762,
+      "rounds": 44,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        975.5821711993024,
+        937.1759473385766
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-8/result.json",
+      "seed": 21794299,
+      "rounds": 38,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        996.0095254635633,
+        964.453497625505
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-9/result.json",
+      "seed": 21859836,
+      "rounds": 45,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        974.4160411401664,
+        943.7058128279212
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-10/result.json",
+      "seed": 21925373,
+      "rounds": 34,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        961.1411810633484,
+        948.5104278235283
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-11/result.json",
+      "seed": 21990910,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        989.070545119043,
+        954.7002998186792
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-12/result.json",
+      "seed": 22056447,
+      "rounds": 47,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        954.5577501571203,
+        938.2553745990157
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-13/result.json",
+      "seed": 22121984,
+      "rounds": 32,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        983.7118354975987,
+        965.4763404342939
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-14/result.json",
+      "seed": 22187521,
+      "rounds": 36,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        974.4322553205159,
+        942.0028053910246
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-15/result.json",
+      "seed": 22253058,
+      "rounds": 37,
+      "winShares": [
+        0.75,
+        0.25,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        1000.48326934095,
+        934.0066641975055
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-16/result.json",
+      "seed": 22318595,
+      "rounds": 36,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        961.5917184102531,
+        945.3926912905999
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-17/result.json",
+      "seed": 22384132,
+      "rounds": 43,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        970.3650766511661,
+        952.540872147884
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-18/result.json",
+      "seed": 22449669,
+      "rounds": 37,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        983.0054367193329,
+        950.6010598717938
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-1-19/result.json",
+      "seed": 22515206,
+      "rounds": 34,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        963.8609334660608,
+        965.7070957066363
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-0/result.json",
+      "seed": 22270006,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        958.3002152307645,
+        940.755422536629
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-1/result.json",
+      "seed": 22335543,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.125,
+        0,
+        0.625
+      ],
+      "meanDecisionMilliseconds": [
+        984.6685350136723,
+        952.5542859612541
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-2/result.json",
+      "seed": 22401080,
+      "rounds": 38,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        959.5789299392676,
+        966.12523217274
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-3/result.json",
+      "seed": 22466617,
+      "rounds": 49,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        968.3410962496049,
+        954.5514208472003
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-4/result.json",
+      "seed": 22532154,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        985.3884234203916,
+        962.533621180679
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-5/result.json",
+      "seed": 22597691,
+      "rounds": 37,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        985.4975015031151,
+        962.2406550817726
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-6/result.json",
+      "seed": 22663228,
+      "rounds": 42,
+      "winShares": [
+        0.75,
+        0,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        980.27118393773,
+        960.5193951715493
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-7/result.json",
+      "seed": 22728765,
+      "rounds": 40,
+      "winShares": [
+        0,
+        0.5,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        996.9701811980804,
+        965.4625574628203
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-8/result.json",
+      "seed": 22794302,
+      "rounds": 43,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        976.799923733452,
+        956.7912636672629
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-9/result.json",
+      "seed": 22859839,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        969.2844566019219,
+        957.0034368852613
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-10/result.json",
+      "seed": 22925376,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        1001.9907466971139,
+        958.4502978023469
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-11/result.json",
+      "seed": 22990913,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0,
+        0.75,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        987.037508130177,
+        950.7731537264956
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-12/result.json",
+      "seed": 23056450,
+      "rounds": 45,
+      "winShares": [
+        0.25,
+        0.25,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        1005.176142116234,
+        947.0845348974332
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-13/result.json",
+      "seed": 23121987,
+      "rounds": 47,
+      "winShares": [
+        0.25,
+        0,
+        0.625,
+        0.125
+      ],
+      "meanDecisionMilliseconds": [
+        985.9784807283122,
+        954.5818596923062
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-14/result.json",
+      "seed": 23187524,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        986.1812641744873,
+        954.6902004521581
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-15/result.json",
+      "seed": 23253061,
+      "rounds": 43,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        966.0755702361389,
+        947.5289637346435
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-16/result.json",
+      "seed": 23318598,
+      "rounds": 45,
+      "winShares": [
+        0,
+        0,
+        0.25,
+        0.75
+      ],
+      "meanDecisionMilliseconds": [
+        953.9081984102531,
+        955.3067592666674
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-17/result.json",
+      "seed": 23384135,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0.25,
+        0,
+        0.5
+      ],
+      "meanDecisionMilliseconds": [
+        963.3706439151841,
+        931.0795364740317
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-18/result.json",
+      "seed": 23449672,
+      "rounds": 40,
+      "winShares": [
+        0.5,
+        0.25,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        980.8213140249998,
+        960.8465912294831
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-2-19/result.json",
+      "seed": 23515209,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        982.4701139908454,
+        957.6019969322343
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-0/result.json",
+      "seed": 23270009,
+      "rounds": 41,
+      "winShares": [
+        0.5,
+        0.5,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        990.6806416660421,
+        937.4563176072539
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-1/result.json",
+      "seed": 23335546,
+      "rounds": 38,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        988.7313135384612,
+        966.1220162152479
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-2/result.json",
+      "seed": 23401083,
+      "rounds": 37,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        973.0197370353394,
+        955.587982032571
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-3/result.json",
+      "seed": 23466620,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        970.4036424821694,
+        956.176676769226
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-4/result.json",
+      "seed": 23532157,
+      "rounds": 45,
+      "winShares": [
+        0,
+        0.25,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        972.3626602273479,
+        946.4189630148094
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-5/result.json",
+      "seed": 23597694,
+      "rounds": 42,
+      "winShares": [
+        0.25,
+        0,
+        0,
+        0.75
+      ],
+      "meanDecisionMilliseconds": [
+        962.7006279725288,
+        947.3681654114771
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-6/result.json",
+      "seed": 23663231,
+      "rounds": 47,
+      "winShares": [
+        0,
+        0.5,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        984.0230014337127,
+        958.5483830158212
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-7/result.json",
+      "seed": 23728768,
+      "rounds": 39,
+      "winShares": [
+        0.5,
+        0,
+        0.5,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        989.4218657948741,
+        959.4916689796183
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-8/result.json",
+      "seed": 23794305,
+      "rounds": 44,
+      "winShares": [
+        0.5,
+        0.5,
+        0,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        956.7111825594453,
+        945.5763498904456
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-9/result.json",
+      "seed": 23859842,
+      "rounds": 48,
+      "winShares": [
+        0.5,
+        0.25,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        992.3667657131458,
+        955.2504077676249
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-10/result.json",
+      "seed": 23925379,
+      "rounds": 47,
+      "winShares": [
+        0.25,
+        0.5,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        982.0559852635034,
+        957.2389451653019
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-11/result.json",
+      "seed": 23990916,
+      "rounds": 42,
+      "winShares": [
+        0.5,
+        0,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        951.7058038791249,
+        938.5809512747254
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-12/result.json",
+      "seed": 24056453,
+      "rounds": 44,
+      "winShares": [
+        0.75,
+        0,
+        0,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        979.778829106645,
+        960.2340085349636
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-13/result.json",
+      "seed": 24121990,
+      "rounds": 33,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        1007.0457628974345,
+        960.4544886317016
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-14/result.json",
+      "seed": 24187527,
+      "rounds": 40,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        983.136293886539,
+        950.1259943935878
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-15/result.json",
+      "seed": 24253064,
+      "rounds": 29,
+      "winShares": [
+        0.75,
+        0.125,
+        0,
+        0.125
+      ],
+      "meanDecisionMilliseconds": [
+        964.5193377692292,
+        951.8494208832909
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-16/result.json",
+      "seed": 24318601,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        987.0456070019663,
+        956.3368815213688
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-17/result.json",
+      "seed": 24384138,
+      "rounds": 41,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        1004.193742416511,
+        960.735430805504
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-18/result.json",
+      "seed": 24449675,
+      "rounds": 46,
+      "winShares": [
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      "meanDecisionMilliseconds": [
+        961.2577927892999,
+        947.2343761192849
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    },
+    {
+      "file": "docs/benchmarks/strategy-85331e2-ci/1200ms/1200-3-19/result.json",
+      "seed": 24515212,
+      "rounds": 39,
+      "winShares": [
+        0.25,
+        0,
+        0.5,
+        0.25
+      ],
+      "meanDecisionMilliseconds": [
+        970.4719962859974,
+        954.7259239802809
+      ],
+      "activeSource": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+      "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
+    }
+  ]
+}

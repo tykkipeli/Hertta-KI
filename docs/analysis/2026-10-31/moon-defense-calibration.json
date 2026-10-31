@@ -1,0 +1,618 @@
+{
+  "createdAt": "2026-10-31T11:37:11.907Z",
+  "exploratory": true,
+  "note": "Actual hidden hands are used only to reconstruct past legal choices for offline aggregate calibration; no engine receives them.",
+  "rounds": 5081,
+  "moves": 264212,
+  "groups": [
+    {
+      "type": "original",
+      "band": "13-14",
+      "decisions": 317,
+      "canWinAndLose": 116,
+      "stoppedNow": 17,
+      "allLosingMultiple": 131,
+      "keptHighest": 70,
+      "discardedLowest": 35,
+      "discardedHighest": 61,
+      "discardedMiddle": 35
+    },
+    {
+      "type": "original",
+      "band": "15-17",
+      "decisions": 253,
+      "canWinAndLose": 76,
+      "stoppedNow": 16,
+      "allLosingMultiple": 142,
+      "keptHighest": 81,
+      "discardedLowest": 51,
+      "discardedHighest": 61,
+      "discardedMiddle": 30
+    },
+    {
+      "type": "current",
+      "band": "15-17",
+      "decisions": 257,
+      "canWinAndLose": 101,
+      "stoppedNow": 20,
+      "allLosingMultiple": 119,
+      "keptHighest": 79,
+      "discardedLowest": 52,
+      "discardedHighest": 40,
+      "discardedMiddle": 27
+    },
+    {
+      "type": "original",
+      "band": "18-21",
+      "decisions": 196,
+      "canWinAndLose": 61,
+      "stoppedNow": 22,
+      "allLosingMultiple": 122,
+      "keptHighest": 98,
+      "discardedLowest": 89,
+      "discardedHighest": 24,
+      "discardedMiddle": 9
+    },
+    {
+      "type": "current",
+      "band": "18-21",
+      "decisions": 232,
+      "canWinAndLose": 93,
+      "stoppedNow": 38,
+      "allLosingMultiple": 116,
+      "keptHighest": 102,
+      "discardedLowest": 92,
+      "discardedHighest": 14,
+      "discardedMiddle": 10
+    },
+    {
+      "type": "current",
+      "band": "13-14",
+      "decisions": 359,
+      "canWinAndLose": 123,
+      "stoppedNow": 11,
+      "allLosingMultiple": 149,
+      "keptHighest": 95,
+      "discardedLowest": 56,
+      "discardedHighest": 54,
+      "discardedMiddle": 39
+    },
+    {
+      "type": "current",
+      "band": "22-25",
+      "decisions": 24,
+      "canWinAndLose": 13,
+      "stoppedNow": 4,
+      "allLosingMultiple": 7,
+      "keptHighest": 7,
+      "discardedLowest": 7,
+      "discardedHighest": 0,
+      "discardedMiddle": 0
+    },
+    {
+      "type": "original",
+      "band": "22-25",
+      "decisions": 20,
+      "canWinAndLose": 7,
+      "stoppedNow": 2,
+      "allLosingMultiple": 9,
+      "keptHighest": 9,
+      "discardedLowest": 9,
+      "discardedHighest": 0,
+      "discardedMiddle": 0
+    }
+  ],
+  "examples": [
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 1,
+      "round": 9,
+      "move": 37,
+      "player": 3,
+      "shooter": 2,
+      "choices": [
+        39,
+        41,
+        45,
+        47
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 15,
+      "finalTaken": [
+        0,
+        5,
+        19,
+        2
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 1,
+      "round": 9,
+      "move": 39,
+      "player": 1,
+      "shooter": 2,
+      "choices": [
+        43,
+        46,
+        49,
+        50
+      ],
+      "selected": 46,
+      "pointsAlreadyTaken": 15,
+      "finalTaken": [
+        0,
+        5,
+        19,
+        2
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 3,
+      "round": 0,
+      "move": 31,
+      "player": 3,
+      "shooter": 1,
+      "choices": [
+        39,
+        42,
+        44,
+        45,
+        47,
+        48
+      ],
+      "selected": 44,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        1,
+        21,
+        4,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 4,
+      "round": 3,
+      "move": 41,
+      "player": 3,
+      "shooter": 2,
+      "choices": [
+        39,
+        42,
+        46
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 16,
+      "finalTaken": [
+        0,
+        0,
+        23,
+        3
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 4,
+      "round": 3,
+      "move": 45,
+      "player": 3,
+      "shooter": 2,
+      "choices": [
+        42,
+        46
+      ],
+      "selected": 42,
+      "pointsAlreadyTaken": 20,
+      "finalTaken": [
+        0,
+        0,
+        23,
+        3
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 4,
+      "round": 3,
+      "move": 47,
+      "player": 1,
+      "shooter": 2,
+      "choices": [
+        40,
+        41
+      ],
+      "selected": 40,
+      "pointsAlreadyTaken": 20,
+      "finalTaken": [
+        0,
+        0,
+        23,
+        3
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 4,
+      "round": 6,
+      "move": 26,
+      "player": 2,
+      "shooter": 0,
+      "choices": [
+        39,
+        41,
+        43,
+        44
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        21,
+        5,
+        0,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 6,
+      "round": 0,
+      "move": 33,
+      "player": 2,
+      "shooter": 1,
+      "choices": [
+        39,
+        41,
+        44,
+        46,
+        47
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        5,
+        17,
+        0,
+        4
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 6,
+      "round": 0,
+      "move": 35,
+      "player": 0,
+      "shooter": 1,
+      "choices": [
+        40,
+        45,
+        48
+      ],
+      "selected": 40,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        5,
+        17,
+        0,
+        4
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 8,
+      "round": 4,
+      "move": 21,
+      "player": 0,
+      "shooter": 3,
+      "choices": [
+        40,
+        41
+      ],
+      "selected": 40,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        2,
+        4,
+        0,
+        20
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 10,
+      "round": 1,
+      "move": 34,
+      "player": 0,
+      "shooter": 2,
+      "choices": [
+        39,
+        42,
+        44
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 18,
+      "finalTaken": [
+        0,
+        0,
+        26,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 10,
+      "round": 5,
+      "move": 29,
+      "player": 0,
+      "shooter": 3,
+      "choices": [
+        45,
+        46
+      ],
+      "selected": 45,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        0,
+        4,
+        4,
+        18
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 10,
+      "round": 5,
+      "move": 31,
+      "player": 2,
+      "shooter": 3,
+      "choices": [
+        39,
+        42,
+        43,
+        47,
+        49,
+        50
+      ],
+      "selected": 47,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        0,
+        4,
+        4,
+        18
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 12,
+      "round": 5,
+      "move": 33,
+      "player": 2,
+      "shooter": 1,
+      "choices": [
+        43,
+        44,
+        46
+      ],
+      "selected": 44,
+      "pointsAlreadyTaken": 14,
+      "finalTaken": [
+        0,
+        22,
+        0,
+        4
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 13,
+      "round": 5,
+      "move": 43,
+      "player": 0,
+      "shooter": 1,
+      "choices": [
+        40,
+        42
+      ],
+      "selected": 40,
+      "pointsAlreadyTaken": 15,
+      "finalTaken": [
+        0,
+        23,
+        3,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 13,
+      "round": 8,
+      "move": 39,
+      "player": 0,
+      "shooter": 1,
+      "choices": [
+        43,
+        47,
+        49
+      ],
+      "selected": 47,
+      "pointsAlreadyTaken": 17,
+      "finalTaken": [
+        3,
+        23,
+        0,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 15,
+      "round": 5,
+      "move": 41,
+      "player": 2,
+      "shooter": 1,
+      "choices": [
+        43,
+        44,
+        46
+      ],
+      "selected": 44,
+      "pointsAlreadyTaken": 16,
+      "finalTaken": [
+        4,
+        22,
+        0,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 15,
+      "round": 5,
+      "move": 42,
+      "player": 3,
+      "shooter": 1,
+      "choices": [
+        39,
+        41
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 16,
+      "finalTaken": [
+        4,
+        22,
+        0,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 15,
+      "round": 5,
+      "move": 43,
+      "player": 0,
+      "shooter": 1,
+      "choices": [
+        40,
+        42,
+        47
+      ],
+      "selected": 40,
+      "pointsAlreadyTaken": 16,
+      "finalTaken": [
+        4,
+        22,
+        0,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 18,
+      "round": 1,
+      "move": 30,
+      "player": 0,
+      "shooter": 2,
+      "choices": [
+        39,
+        44,
+        46
+      ],
+      "selected": 44,
+      "pointsAlreadyTaken": 17,
+      "finalTaken": [
+        0,
+        0,
+        26,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 18,
+      "round": 1,
+      "move": 34,
+      "player": 0,
+      "shooter": 2,
+      "choices": [
+        39,
+        46
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 19,
+      "finalTaken": [
+        0,
+        0,
+        26,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 23,
+      "round": 8,
+      "move": 19,
+      "player": 3,
+      "shooter": 0,
+      "choices": [
+        39,
+        41,
+        45,
+        46,
+        47
+      ],
+      "selected": 41,
+      "pointsAlreadyTaken": 15,
+      "finalTaken": [
+        24,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 23,
+      "round": 8,
+      "move": 23,
+      "player": 3,
+      "shooter": 0,
+      "choices": [
+        39,
+        45,
+        46,
+        47
+      ],
+      "selected": 45,
+      "pointsAlreadyTaken": 18,
+      "finalTaken": [
+        24,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "trace": "artifacts/decision-audit-20261031/worker-0",
+      "game": 23,
+      "round": 8,
+      "move": 27,
+      "player": 3,
+      "shooter": 0,
+      "choices": [
+        39,
+        46,
+        47
+      ],
+      "selected": 39,
+      "pointsAlreadyTaken": 21,
+      "finalTaken": [
+        24,
+        0,
+        2,
+        0
+      ]
+    }
+  ]
+}
