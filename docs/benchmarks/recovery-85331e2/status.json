@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-31T05:39:48.597Z",
+        "at": "2026-10-31T05:43:07.877Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 77,
         "currentGame": 78,
-        "currentRound": 2,
-        "completedRounds": 799
+        "currentRound": 6,
+        "completedRounds": 803
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-31T05:39:56.060Z",
+        "at": "2026-10-31T05:43:10.662Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 75,
-        "currentGame": 76,
-        "currentRound": 9,
-        "completedRounds": 808
+        "completedGames": 76,
+        "currentGame": 77,
+        "currentRound": 1,
+        "completedRounds": 812
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-31T05:40:17.347Z",
+        "at": "2026-10-31T05:42:47.421Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 78,
-        "currentGame": 79,
-        "currentRound": 11,
-        "completedRounds": 800
+        "completedGames": 79,
+        "currentGame": 80,
+        "currentRound": 1,
+        "completedRounds": 803
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-31T05:39:50.842Z",
+        "at": "2026-10-31T05:43:12.522Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 78,
         "currentGame": 79,
-        "currentRound": 9,
-        "completedRounds": 803
+        "currentRound": 13,
+        "completedRounds": 807
       }
     }
   ],
-  "updatedAt": "2026-10-31T05:40:20.429Z",
+  "updatedAt": "2026-10-31T05:43:20.448Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
