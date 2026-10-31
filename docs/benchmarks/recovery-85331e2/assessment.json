@@ -1,6 +1,6 @@
 {
-  "at": "2026-10-31T06:13:09.389Z",
-  "controllerState": "running",
+  "at": "2026-10-31T06:18:09.405Z",
+  "controllerState": "completed",
   "budgets": [
     {
       "milliseconds": 200,
@@ -17,9 +17,16 @@
     },
     {
       "milliseconds": 1200,
-      "completedGames": 319,
+      "completedGames": 320,
       "targetGames": 320,
-      "state": "pending"
+      "state": "completed",
+      "winShare": 0.3625,
+      "interval95": [
+        0.3109375,
+        0.415625
+      ],
+      "criterionMet": true,
+      "sourceAndProtocolVerified": true
     }
   ]
 }

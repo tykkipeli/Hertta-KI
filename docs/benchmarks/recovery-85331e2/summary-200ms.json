@@ -1,9 +1,9 @@
 {
   "files": [
-    "../jobs/200ms-0/result.json",
-    "../jobs/200ms-1/result.json",
-    "../jobs/200ms-2/result.json",
-    "../jobs/200ms-3/result.json"
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-0/result.json",
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-1/result.json",
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-2/result.json",
+    "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-3/result.json"
   ],
   "mode": "matches-to-100",
   "budget": {
@@ -33,7 +33,7 @@
   "relativePositionNote": "Old opponents are labeled by position relative to the new agent, not distinct policies.",
   "runs": [
     {
-      "file": "../jobs/200ms-0/result.json",
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-0/result.json",
       "seed": 20261260,
       "rounds": 1683,
       "winShares": [
@@ -50,7 +50,7 @@
       "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
     },
     {
-      "file": "../jobs/200ms-1/result.json",
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-1/result.json",
       "seed": 21261263,
       "rounds": 1630,
       "winShares": [
@@ -67,7 +67,7 @@
       "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
     },
     {
-      "file": "../jobs/200ms-2/result.json",
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-2/result.json",
       "seed": 22261266,
       "rounds": 1675,
       "winShares": [
@@ -84,7 +84,7 @@
       "agentSource": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812"
     },
     {
-      "file": "../jobs/200ms-3/result.json",
+      "file": "/workspace/Hertta-KI/artifacts/strategy-validation-85331e2/jobs/200ms-3/result.json",
       "seed": 23261269,
       "rounds": 1652,
       "winShares": [
