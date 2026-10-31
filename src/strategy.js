@@ -67,6 +67,13 @@ export function chooseStrategicPass(hand, { direction = 1 } = {}) {
   let best,
     cost = Infinity;
   const moon = moonPotential(hand) > 0.7;
+  // A mediocre thirteen-card hand can become a controlled moon hand after
+  // passing three losers. Evaluate that possibility before giving away an ace.
+  const exploreMoon =
+    !moon && hand.includes(51) && hand.filter((c) => c >= 39).length >= 6;
+  let createdMoon,
+    createdPotential = -Infinity,
+    createdRisk = Infinity;
   for (let a = 0; a < 11; a++)
     for (let b = a + 1; b < 12; b++)
       for (let c = b + 1; c < 13; c++) {
@@ -78,8 +85,21 @@ export function chooseStrategicPass(hand, { direction = 1 } = {}) {
           cost = value;
           best = [hand[a], hand[b], hand[c]];
         }
+        if (exploreMoon && retained.filter((card) => card >= 39).length >= 6) {
+          const potential = moonPotential(retained),
+            risk = defensiveRisk(retained);
+          if (
+            potential >= 0.9 &&
+            (potential > createdPotential ||
+              (potential === createdPotential && risk < createdRisk))
+          ) {
+            createdPotential = potential;
+            createdRisk = risk;
+            createdMoon = [hand[a], hand[b], hand[c]];
+          }
+        }
       }
-  return best;
+  return createdMoon || best;
 }
 
 function moonPassRisk(retained, original) {
@@ -204,7 +224,11 @@ export function describePass(hand, cards) {
   const cover = retained.filter((c) => c >= 26 && c < 36).length;
   if (retained.includes(37) && cover >= 4)
     reasons.push(`Pik-König mit ${cover} kleinen Pik als Deckung behalten.`);
-  if (moonPotential(hand) > 0.7)
+  if (
+    moonPotential(hand) > 0.7 ||
+    (retained.filter((card) => card >= 39).length >= 6 &&
+      moonPotential(retained) >= 0.9)
+  )
     reasons.push(
       "Hohe Herzkontrolle für einen möglichen Durchmarsch erhalten.",
     );
