@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-31T05:43:07.877Z",
+        "at": "2026-10-31T05:50:35.877Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 77,
-        "currentGame": 78,
-        "currentRound": 6,
-        "completedRounds": 803
+        "completedGames": 78,
+        "currentGame": 79,
+        "currentRound": 5,
+        "completedRounds": 812
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-31T05:43:10.662Z",
+        "at": "2026-10-31T05:50:48.206Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 76,
-        "currentGame": 77,
+        "completedGames": 77,
+        "currentGame": 78,
         "currentRound": 1,
-        "completedRounds": 812
+        "completedRounds": 821
       }
     },
     {
@@ -153,21 +153,24 @@
       "milliseconds": 1200,
       "seed": 22261266,
       "games": 80,
-      "state": "running",
+      "state": "completed",
       "attempt": 1,
       "startedAt": "2026-10-30T18:25:29.505Z",
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-31T05:42:47.421Z",
+        "at": "2026-10-31T05:50:22.664Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 79,
         "currentGame": 80,
-        "currentRound": 1,
-        "completedRounds": 803
-      }
+        "currentRound": 10,
+        "completedRounds": 812
+      },
+      "exitSignal": null,
+      "exitCode": 0,
+      "finishedAt": "2026-10-31T05:50:22.789Z"
     },
     {
       "id": "1200ms-3",
@@ -181,17 +184,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-31T05:43:12.522Z",
+        "at": "2026-10-31T05:50:49.105Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
-        "completedGames": 78,
-        "currentGame": 79,
-        "currentRound": 13,
-        "completedRounds": 807
+        "completedGames": 79,
+        "currentGame": 80,
+        "currentRound": 9,
+        "completedRounds": 816
       }
     }
   ],
-  "updatedAt": "2026-10-31T05:43:20.448Z",
+  "updatedAt": "2026-10-31T05:50:50.495Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
