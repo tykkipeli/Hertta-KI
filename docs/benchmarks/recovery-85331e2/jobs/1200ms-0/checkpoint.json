@@ -23,24 +23,24 @@
   "milliseconds": 1200,
   "samples": 16,
   "points": [
-    3917,
-    3760,
-    3748,
-    4097
+    4010,
+    3856,
+    3851,
+    4195
   ],
   "wins": [
-    17,
+    18,
     11.5,
     10,
     12.5
   ],
   "uniqueWins": [
-    17,
+    18,
     11,
     10,
     12
   ],
-  "rounds": 531,
+  "rounds": 544,
   "records": [
     {
       "game": 0,
@@ -756,27 +756,41 @@
       "winners": [
         0
       ]
+    },
+    {
+      "game": 51,
+      "newSeat": 3,
+      "rounds": 13,
+      "totals": [
+        96,
+        103,
+        98,
+        93
+      ],
+      "winners": [
+        3
+      ]
     }
   ],
   "beliefModes": {
-    "uniform": 5150,
-    "public-action-queen-prior": 463
+    "uniform": 5271,
+    "public-action-queen-prior": 479
   },
   "engineTimeMs": [
-    6792923.6927669905,
-    20006583.039512053
+    6958298.686175,
+    20485441.50426801
   ],
   "decisionCounts": [
-    6903,
-    20709
+    7072,
+    21216
   ],
   "passingTimeMs": [
-    589.1745160073626,
-    516.9382140215108
+    610.9400820099402,
+    517.295967018939
   ],
   "passingCounts": [
-    417,
-    1251
+    427,
+    1281
   ],
-  "seconds": 26847.675910329
+  "seconds": 27492.387438899
 }
