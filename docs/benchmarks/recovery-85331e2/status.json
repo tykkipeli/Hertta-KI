@@ -115,14 +115,14 @@
       "pid": 14125,
       "progress": {
         "pid": 14125,
-        "at": "2026-10-31T00:24:18.393Z",
+        "at": "2026-10-31T00:26:41.072Z",
         "seed": 20261260,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 41,
         "currentGame": 42,
-        "currentRound": 3,
-        "completedRounds": 424
+        "currentRound": 6,
+        "completedRounds": 427
       }
     },
     {
@@ -137,14 +137,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-31T00:24:03.886Z",
+        "at": "2026-10-31T00:26:34.003Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 41,
         "currentGame": 42,
-        "currentRound": 1,
-        "completedRounds": 434
+        "currentRound": 4,
+        "completedRounds": 437
       }
     },
     {
@@ -159,14 +159,14 @@
       "pid": 14036,
       "progress": {
         "pid": 14036,
-        "at": "2026-10-31T00:24:02.782Z",
+        "at": "2026-10-31T00:26:39.741Z",
         "seed": 22261266,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 41,
         "currentGame": 42,
-        "currentRound": 4,
-        "completedRounds": 426
+        "currentRound": 7,
+        "completedRounds": 429
       }
     },
     {
@@ -181,17 +181,17 @@
       "pid": 14025,
       "progress": {
         "pid": 14025,
-        "at": "2026-10-31T00:24:26.968Z",
+        "at": "2026-10-31T00:27:01.207Z",
         "seed": 23261269,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 41,
         "currentGame": 42,
-        "currentRound": 3,
-        "completedRounds": 430
+        "currentRound": 6,
+        "completedRounds": 433
       }
     }
   ],
-  "updatedAt": "2026-10-31T00:24:44.147Z",
+  "updatedAt": "2026-10-31T00:27:44.951Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
