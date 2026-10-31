@@ -140,14 +140,14 @@
       "pid": 13569,
       "progress": {
         "pid": 13569,
-        "at": "2026-10-31T06:10:30.037Z",
+        "at": "2026-10-31T06:13:01.357Z",
         "seed": 21261263,
         "milliseconds": 1200,
         "targetGames": 80,
         "completedGames": 79,
         "currentGame": 80,
-        "currentRound": 2,
-        "completedRounds": 845
+        "currentRound": 5,
+        "completedRounds": 848
       }
     },
     {
@@ -201,6 +201,6 @@
       "finishedAt": "2026-10-31T05:51:38.440Z"
     }
   ],
-  "updatedAt": "2026-10-31T06:10:50.670Z",
+  "updatedAt": "2026-10-31T06:13:50.693Z",
   "actualBenchmarkStartedAt": "2026-10-30T16:40:54.828Z"
 }
