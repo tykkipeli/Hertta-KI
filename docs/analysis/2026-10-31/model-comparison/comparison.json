@@ -1,0 +1,592 @@
+{
+  "at": "2026-10-31T11:57:32.705Z",
+  "exploratory": true,
+  "comparison": "One candidate versus three frozen copies of the previously proven 85331e2 AI",
+  "configuredSamples": 64,
+  "opponentSamples": 64,
+  "equalTimeBudget": false,
+  "gamesPerArm": 320,
+  "independentDealBlocks": 80,
+  "pairedWholeBlockBootstrapReplicates": 10000,
+  "rounds": {
+    "control": 3575,
+    "moon-defense": 3620
+  },
+  "results": {
+    "control": {
+      "mean": 0.259375,
+      "interval95": [
+        0.215625,
+        0.3046875
+      ]
+    },
+    "candidate": {
+      "mean": 0.2484375,
+      "interval95": [
+        0.203125,
+        0.29375
+      ]
+    },
+    "delta": {
+      "mean": -0.0109375,
+      "interval95": [
+        -0.0640625,
+        0.0421875
+      ]
+    }
+  },
+  "sourceManifests": {
+    "control": {
+      "createdAt": "2026-10-31T11:24:14.454Z",
+      "purpose": "Exploratory decision analysis; not strength confirmation",
+      "hashes": {
+        "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+        "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+        "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+        "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+        "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+        "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+        "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+        "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+        "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+        "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+        "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+        "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+        "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+        "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+        "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+        "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3"
+      },
+      "diagnosticFile": "src/agent-diagnostic.js",
+      "diagnosticSha256": "67c89d14f049ad34b762013a0631d4237f80387ba7d3a56f2992b95e4c515b74"
+    },
+    "moon-defense": {
+      "createdAt": "2026-10-31T11:39:36.103Z",
+      "purpose": "Exploratory decision analysis; not strength confirmation",
+      "hashes": {
+        "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+        "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+        "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+        "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+        "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+        "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+        "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+        "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+        "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+        "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+        "src/rollout.js": "d57d5a326d90c0e40a51eb1f90100045d29170b66ad30fa8c657e43e6ab6494b",
+        "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+        "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+        "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+        "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+        "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3",
+        "src/moon-defense.js": "b0c4584a1a2e6a00176e671d8ea768a515e793d1eb8910d4547af85c4352e5b8"
+      },
+      "diagnosticFile": "src/agent-diagnostic.js",
+      "diagnosticSha256": "67c89d14f049ad34b762013a0631d4237f80387ba7d3a56f2992b95e4c515b74",
+      "variant": "Empirically calibrated public moon-defense model",
+      "baselineHashes": {
+        "src/agent.js": "140393371adb40597c2ad5fd593f73def403240bbdcfc247f1c7c92fca041812",
+        "src/ai.js": "287ca48ca1f3d453b2f8331954e883c2e2fe847a25315aa33e0a5ff963a70dad",
+        "src/app.js": "0d688ab6f23984f899268a7d1587f29f42b10d76a846821e23bd56512a71dab2",
+        "src/deals.js": "66cb930632da835e7b75f59db883e14dc444818ae025a5c5e3276ed0967d39f9",
+        "src/endgame.js": "be8b084324db3f59167d2594f56a528b77a9eaeb122e8de95d514286f8b3340e",
+        "src/game.js": "f72960d7ca7c29d4df24a7fa8b45981c1540097cb49529c7ceec6b5f29363bd1",
+        "src/lead.js": "e3bba13a9e1f153d82a496ae30e79a0bea6c6dd86a9d75f8e41fc20f939ad902",
+        "src/observation.js": "c44161b8863ecb39b7fa54e0bd80b633a00e9d101d70c64a75297b15d6b722d5",
+        "src/queen-belief.js": "b9eb53419e84650d432536f0d371cb61fbf8967402624f6fde7effc261226d15",
+        "src/reference-policy.js": "8187a3171457f3fdbf4442d9230bab3772e6d292f52e35844f9f841da2588860",
+        "src/rollout.js": "85fa0b1e99723468c6e44abbb360e1bffc7d9899a882ec088b8e3b55658e5078",
+        "src/strategy.js": "cc5cd71c9fd4a11e2023b8f7158004bcd74dcb15a587505b75e60d07e4e9d293",
+        "src/utility.js": "0b630ccb16be4bfdcf5d953b33cab7c3ba0b122f382e5786cc8e5a77f0be2d8d",
+        "src/worker.js": "a6c8bbd9c02d85c612886c16b39adfabe91994dc7e1a08fc6e24052bc737c171",
+        "test/fixtures/ai-v1.js": "324d9a684de5c2c4e79feb9a8270c789d741fa9964bacba2424f74b38743d06e",
+        "package.json": "4169b8ee66b06d84d451154658e8b21005b117da918e18d13456a4764c4f66a3"
+      },
+      "calibrationSha256": "0b315e46862f5a1fb12789128d6851acc919f91065a2853f3d3cc425fbb2eceb"
+    }
+  },
+  "interpretation": "Fixed-sample selection data only. A positive exploratory result requires fresh equal-time confirmation before claiming stronger play at the GUI budgets.",
+  "blocks": [
+    {
+      "seed": 20291201,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 20356738,
+      "control": 0.75,
+      "candidate": 0.5,
+      "delta": -0.25
+    },
+    {
+      "seed": 20422275,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 20487812,
+      "control": 0.75,
+      "candidate": 0.5,
+      "delta": -0.25
+    },
+    {
+      "seed": 20553349,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 20618886,
+      "control": 0.5,
+      "candidate": 0.5,
+      "delta": 0
+    },
+    {
+      "seed": 20684423,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 20749960,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 20815497,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 20881034,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 20946571,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 21012108,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 21077645,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 21143182,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 21208719,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 21274256,
+      "control": 0.5,
+      "candidate": 0,
+      "delta": -0.5
+    },
+    {
+      "seed": 21339793,
+      "control": 0.5,
+      "candidate": 1,
+      "delta": 0.5
+    },
+    {
+      "seed": 21405330,
+      "control": 0.25,
+      "candidate": 0.375,
+      "delta": 0.125
+    },
+    {
+      "seed": 21470867,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 21536404,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 21291204,
+      "control": 0,
+      "candidate": 0.5,
+      "delta": 0.5
+    },
+    {
+      "seed": 21356741,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 21422278,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 21487815,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 21553352,
+      "control": 0.375,
+      "candidate": 0.5,
+      "delta": 0.125
+    },
+    {
+      "seed": 21618889,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 21684426,
+      "control": 0.375,
+      "candidate": 0.5,
+      "delta": 0.125
+    },
+    {
+      "seed": 21749963,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 21815500,
+      "control": 0.25,
+      "candidate": 0.375,
+      "delta": 0.125
+    },
+    {
+      "seed": 21881037,
+      "control": 0.5,
+      "candidate": 0.25,
+      "delta": -0.25
+    },
+    {
+      "seed": 21946574,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 22012111,
+      "control": 0.5,
+      "candidate": 0.5,
+      "delta": 0
+    },
+    {
+      "seed": 22077648,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 22143185,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 22208722,
+      "control": 0.5,
+      "candidate": 0.25,
+      "delta": -0.25
+    },
+    {
+      "seed": 22274259,
+      "control": 0.5,
+      "candidate": 0.5,
+      "delta": 0
+    },
+    {
+      "seed": 22339796,
+      "control": 0,
+      "candidate": 0.5,
+      "delta": 0.5
+    },
+    {
+      "seed": 22405333,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 22470870,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 22536407,
+      "control": 0.5,
+      "candidate": 0,
+      "delta": -0.5
+    },
+    {
+      "seed": 22291207,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 22356744,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 22422281,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 22487818,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 22553355,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 22618892,
+      "control": 0,
+      "candidate": 0.5,
+      "delta": 0.5
+    },
+    {
+      "seed": 22684429,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 22749966,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 22815503,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 22881040,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 22946577,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 23012114,
+      "control": 0.5,
+      "candidate": 0.25,
+      "delta": -0.25
+    },
+    {
+      "seed": 23077651,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 23143188,
+      "control": 0.75,
+      "candidate": 0.25,
+      "delta": -0.5
+    },
+    {
+      "seed": 23208725,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 23274262,
+      "control": 0.25,
+      "candidate": 0.5,
+      "delta": 0.25
+    },
+    {
+      "seed": 23339799,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 23405336,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 23470873,
+      "control": 0.5,
+      "candidate": 0.25,
+      "delta": -0.25
+    },
+    {
+      "seed": 23536410,
+      "control": 0.5,
+      "candidate": 0,
+      "delta": -0.5
+    },
+    {
+      "seed": 23291210,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 23356747,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 23422284,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 23487821,
+      "control": 0.5,
+      "candidate": 0.5,
+      "delta": 0
+    },
+    {
+      "seed": 23553358,
+      "control": 0.5,
+      "candidate": 0.25,
+      "delta": -0.25
+    },
+    {
+      "seed": 23618895,
+      "control": 0.25,
+      "candidate": 0,
+      "delta": -0.25
+    },
+    {
+      "seed": 23684432,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 23749969,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 23815506,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 23881043,
+      "control": 0,
+      "candidate": 0.25,
+      "delta": 0.25
+    },
+    {
+      "seed": 23946580,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 24012117,
+      "control": 0,
+      "candidate": 0,
+      "delta": 0
+    },
+    {
+      "seed": 24077654,
+      "control": 0,
+      "candidate": 0.5,
+      "delta": 0.5
+    },
+    {
+      "seed": 24143191,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 24208728,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 24274265,
+      "control": 0.5,
+      "candidate": 0.125,
+      "delta": -0.375
+    },
+    {
+      "seed": 24339802,
+      "control": 0.5,
+      "candidate": 0.5,
+      "delta": 0
+    },
+    {
+      "seed": 24405339,
+      "control": 0.5,
+      "candidate": 0,
+      "delta": -0.5
+    },
+    {
+      "seed": 24470876,
+      "control": 0.25,
+      "candidate": 0.25,
+      "delta": 0
+    },
+    {
+      "seed": 24536413,
+      "control": 0.75,
+      "candidate": 0.5,
+      "delta": -0.25
+    }
+  ]
+}

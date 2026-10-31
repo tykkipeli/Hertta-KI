@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-10-31T11:41:23.930Z",
+  "purpose": "Exploratory paired comparison against the previously proven AI, not equal-time strength confirmation",
+  "arms": [
+    "control",
+    "moon-defense"
+  ],
+  "gamesPerArm": 320,
+  "gamesPerWorker": 80,
+  "workers": 4,
+  "samples": 64,
+  "opponentSamples": 64,
+  "opponents": "three unchanged frozen 85331e2 copies",
+  "seeds": [
+    20291201,
+    21291204,
+    22291207,
+    23291210
+  ],
+  "selection": "Complete both predeclared arms; paired bootstrap of whole four-seat blocks; no tuning or stopping on interim outcomes",
+  "controlSnapshot": "artifacts/decision-audit-20261031/baseline",
+  "candidateSnapshot": "artifacts/moon-defense-next"
+}

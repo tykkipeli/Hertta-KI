@@ -1,0 +1,114 @@
+{
+  "at": "2026-10-31T11:53:10.897Z",
+  "exploratory": true,
+  "note": "Passing hypotheses only: retained-hand moon scores are not success probabilities. Counterfactual worlds use own pre-pass hand only, uniform unknown initial deals and the frozen original opponents' passing policy. Full-game private-agent confirmation is required before changing passing.",
+  "consideredHandsWithPassing": 2604,
+  "flaggedHands": 1,
+  "reviewedHands": 1,
+  "reports": [
+    {
+      "id": "worker-3/27/6",
+      "seat": 3,
+      "direction": 2,
+      "hand": [
+        0,
+        12,
+        28,
+        35,
+        37,
+        39,
+        41,
+        42,
+        46,
+        48,
+        49,
+        50,
+        51
+      ],
+      "originalPass": [
+        0,
+        12,
+        51
+      ],
+      "alternatePass": [
+        28,
+        35,
+        37
+      ],
+      "originalRetainedPotential": 0,
+      "alternateRetainedPotential": 0.955,
+      "openingPotential": 0.5349999999999999,
+      "originalRisk": 0.17581595307171072,
+      "alternateRisk": 7.843832498862085,
+      "labels": {
+        "hand": [
+          "2♣",
+          "A♣",
+          "4♠",
+          "J♠",
+          "K♠",
+          "2♥",
+          "4♥",
+          "5♥",
+          "9♥",
+          "J♥",
+          "Q♥",
+          "K♥",
+          "A♥"
+        ],
+        "originalPass": [
+          "2♣",
+          "A♣",
+          "A♥"
+        ],
+        "alternatePass": [
+          "4♠",
+          "J♠",
+          "K♠"
+        ]
+      },
+      "models": [
+        {
+          "model": "baseline-rollout",
+          "samples": 512,
+          "arms": [
+            {
+              "pass": "original",
+              "value": 7.104166666666664,
+              "ownPoints": 3.583984375,
+              "moonFrequency": 0.169921875
+            },
+            {
+              "pass": "alternate",
+              "value": 21.138020833333336,
+              "ownPoints": 0.955078125,
+              "moonFrequency": 0.783203125
+            }
+          ],
+          "pairedValueDifference": 14.033854166666663,
+          "pairedStandardError": 0.6597113881699449
+        },
+        {
+          "model": "defensive-opponent-rollout",
+          "samples": 512,
+          "arms": [
+            {
+              "pass": "original",
+              "value": 6.132812499999999,
+              "ownPoints": 4.033203125,
+              "moonFrequency": 0.1484375
+            },
+            {
+              "pass": "alternate",
+              "value": 21.138020833333336,
+              "ownPoints": 0.955078125,
+              "moonFrequency": 0.783203125
+            }
+          ],
+          "pairedValueDifference": 15.00520833333332,
+          "pairedStandardError": 0.6827139287895262
+        }
+      ]
+    }
+  ]
+}
